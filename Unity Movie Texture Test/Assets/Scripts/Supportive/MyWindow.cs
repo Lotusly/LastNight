@@ -3,11 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
-public class MyWindow : EditorWindow {
-
-    [MenuItem("Window/MyWindow")]
-    public static void ShowWindow()
+namespace Supportive
+{
+    public class MyWindow : EditorWindow
     {
-        GetWindow<MyWindow>(false, "MyWindow", true);
+
+        [MenuItem("Window/MyWindow")]
+        public static void ShowWindow()
+        {
+            GetWindow<MyWindow>(false, "MyWindow", true);
+        }
     }
 }

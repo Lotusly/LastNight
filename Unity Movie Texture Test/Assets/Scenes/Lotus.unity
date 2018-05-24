@@ -505,11 +505,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3104d37a894d4e148b1c1a61e2060f04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spaceInScreen: {x: 0, y: 0, z: 0}
-  objects: []
-  index: 0
-  generate: 0
-  eliminate: 0
+  _spaceInScreen: {x: 0, y: 0, z: 0}
+  _objects: []
+  _index: 0
+  _generate: 0
+  _eliminate: 0
 --- !u!4 &1322754883
 Transform:
   m_ObjectHideFlags: 0
@@ -563,9 +563,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7016e67d78849d14da228447cfa7bbbd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  items:
+  _items:
   - {fileID: 1874263428312208, guid: fb729072c70831e4982ed00e6d72692a, type: 2}
-  parent: {fileID: 588283947}
+  _parent: {fileID: 588283947}
 --- !u!1 &1876707732
 GameObject:
   m_ObjectHideFlags: 0

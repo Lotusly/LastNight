@@ -2,18 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Singleton<T> : MonoBehaviour where T: Component
+namespace Supportive
 {
-
-	public static T instance;
-
-	void Awake()
+	public class Singleton<T> : MonoBehaviour where T : Component
 	{
-		if (instance == null) instance = this as T;
-		else
+
+		public static T instance;
+
+		void Awake()
 		{
-			Debug.LogError("Singleton instance exists when " + typeof(T).Name + "awake");
+			if (instance == null) instance = this as T;
+			else
+			{
+				Debug.LogError("Singleton instance exists when " + typeof(T).Name + "awake");
+			}
 		}
+
 	}
-	
 }

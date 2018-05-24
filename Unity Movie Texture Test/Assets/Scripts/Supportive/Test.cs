@@ -1,32 +1,43 @@
 ﻿
 using System.Collections.Generic;
+using Ui;
 using UnityEngine;
 
-
-public class Test : MonoBehaviour
+namespace Supportive
 {
-	[SerializeField] private Vector3 spaceInScreen;
-	[SerializeField] private List<GameObject> objects;
-	[SerializeField] private int index;
-	
-	[SerializeField] private bool generate=false;
-	[SerializeField] private bool eliminate = false;
+	public class Test : MonoBehaviour
+	{
+		[SerializeField] private Vector3 _spaceInScreen;
+		[SerializeField] private List<GameObject> _objects;
+		[SerializeField] private int _index;
+
+		[SerializeField] private bool _generate = false;
+		[SerializeField] private bool _eliminate = false;
+		[SerializeField] private bool _transfer = false;
 
 
-	void Update () {
-		if (generate)
+		void Update()
 		{
-			generate = false;
-			GameObject newItem = UIManager.instance.Generate(0, spaceInScreen, true);
-			objects.Add(newItem);
-		}
+			if (_generate)
+			{
+				_generate = false;
+				GameObject newItem = Ui.UiManager.instance.Generate(0, _spaceInScreen, true);
+				_objects.Add(newItem);
+			}
 
-		if (eliminate)
-		{
-			eliminate = false;
-			Destroy(objects[index]);
-			objects.RemoveAt(index);
-			
+			if (_eliminate)
+			{
+				_eliminate = false;
+				Destroy(_objects[_index]);
+				_objects.RemoveAt(_index);
+
+			}
+
+			if (_transfer)
+			{
+				_transfer = false;
+				_objects[_index].GetComponent<UiItem>().Transfer(Coordinate.instance.Screen2Space(_spaceInScreen));
+			}
 		}
 	}
 }

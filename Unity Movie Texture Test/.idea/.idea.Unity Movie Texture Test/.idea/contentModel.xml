@@ -1157,14 +1157,16 @@
         </e>
       </e>
       <e p="Assets\Scripts" t="Include">
-        <e p="Coordinate.cs" t="Include" />
         <e p="Supportive" t="Include">
           <e p="MyWindow.cs" t="Include" />
           <e p="Singleton.cs" t="Include" />
           <e p="Test.cs" t="Include" />
-          <e p="UIItem.cs" t="Include" />
         </e>
-        <e p="UIManager.cs" t="Include" />
+        <e p="UI" t="Include">
+          <e p="Coordinate.cs" t="Include" />
+          <e p="UIItem.cs" t="Include" />
+          <e p="UIManager.cs" t="Include" />
+        </e>
       </e>
       <e p="Assets\Shaders" t="Include">
         <e p="FG_Video_UI.shader" t="Include" />
