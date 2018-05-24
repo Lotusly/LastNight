@@ -512,6 +512,7 @@ MonoBehaviour:
   _generate: 0
   _eliminate: 0
   _transfer: 0
+  _clearAll: 0
 --- !u!4 &1322754883
 Transform:
   m_ObjectHideFlags: 0

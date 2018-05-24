@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Lotus.unity
+- path: Assets/Scenes/Luigi 11b.unity
   isLoaded: 1
   isActive: 1
