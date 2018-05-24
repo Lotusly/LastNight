@@ -465,7 +465,11 @@
     <Compile Include="Assets\ProCore\ProBuilder\API Examples\Runtime Editing\RuntimeEdit.cs" />
     <Compile Include="Assets\ProCore\ProBuilder\API Examples\Vertex Colors\HighlightNearestFace.cs" />
     <Compile Include="Assets\Scripts\Coordinate.cs" />
-    <Compile Include="Assets\Scripts\Test.cs" />
+    <Compile Include="Assets\Scripts\Supportive\MyWindow.cs" />
+    <Compile Include="Assets\Scripts\Supportive\Singleton.cs" />
+    <Compile Include="Assets\Scripts\Supportive\Test.cs" />
+    <Compile Include="Assets\Scripts\Supportive\UIItem.cs" />
+    <Compile Include="Assets\Scripts\UIManager.cs" />
     <Compile Include="Assets\Shaders\LastNightColorTint.cs" />
     <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Blend2Camera_SplitScreen3D.shader" />
     <None Include="Assets\Colorful FX\Shaders\ContrastGain.shader" />
@@ -938,31 +942,31 @@
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
     </Reference>
     <Reference Include="DOTween">
-      <HintPath>C:/Users/genlab/Desktop/SIPX/Unity Movie Texture Test/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
+      <HintPath>C:/Users/genlab/Documents/GitHub/LastNight/Unity Movie Texture Test/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
     </Reference>
     <Reference Include="DOTween43">
-      <HintPath>C:/Users/genlab/Desktop/SIPX/Unity Movie Texture Test/Assets/Demigiant/DOTween/DOTween43.dll</HintPath>
+      <HintPath>C:/Users/genlab/Documents/GitHub/LastNight/Unity Movie Texture Test/Assets/Demigiant/DOTween/DOTween43.dll</HintPath>
     </Reference>
     <Reference Include="DOTween46">
-      <HintPath>C:/Users/genlab/Desktop/SIPX/Unity Movie Texture Test/Assets/Demigiant/DOTween/DOTween46.dll</HintPath>
+      <HintPath>C:/Users/genlab/Documents/GitHub/LastNight/Unity Movie Texture Test/Assets/Demigiant/DOTween/DOTween46.dll</HintPath>
     </Reference>
     <Reference Include="DOTween50">
-      <HintPath>C:/Users/genlab/Desktop/SIPX/Unity Movie Texture Test/Assets/Demigiant/DOTween/DOTween50.dll</HintPath>
+      <HintPath>C:/Users/genlab/Documents/GitHub/LastNight/Unity Movie Texture Test/Assets/Demigiant/DOTween/DOTween50.dll</HintPath>
     </Reference>
     <Reference Include="ProBuilderCore-Unity5">
-      <HintPath>C:/Users/genlab/Desktop/SIPX/Unity Movie Texture Test/Assets/ProCore/ProBuilder/Classes/ProBuilderCore-Unity5.dll</HintPath>
+      <HintPath>C:/Users/genlab/Documents/GitHub/LastNight/Unity Movie Texture Test/Assets/ProCore/ProBuilder/Classes/ProBuilderCore-Unity5.dll</HintPath>
     </Reference>
     <Reference Include="ProBuilderMeshOps-Unity5">
-      <HintPath>C:/Users/genlab/Desktop/SIPX/Unity Movie Texture Test/Assets/ProCore/ProBuilder/Classes/ProBuilderMeshOps-Unity5.dll</HintPath>
+      <HintPath>C:/Users/genlab/Documents/GitHub/LastNight/Unity Movie Texture Test/Assets/ProCore/ProBuilder/Classes/ProBuilderMeshOps-Unity5.dll</HintPath>
     </Reference>
     <Reference Include="KdTreeLib">
-      <HintPath>C:/Users/genlab/Desktop/SIPX/Unity Movie Texture Test/Assets/ProCore/ProBuilder/Classes/ClassesLib/KdTreeLib.dll</HintPath>
+      <HintPath>C:/Users/genlab/Documents/GitHub/LastNight/Unity Movie Texture Test/Assets/ProCore/ProBuilder/Classes/ClassesLib/KdTreeLib.dll</HintPath>
     </Reference>
     <Reference Include="pb_Stl">
-      <HintPath>C:/Users/genlab/Desktop/SIPX/Unity Movie Texture Test/Assets/ProCore/ProBuilder/Classes/ClassesLib/pb_Stl.dll</HintPath>
+      <HintPath>C:/Users/genlab/Documents/GitHub/LastNight/Unity Movie Texture Test/Assets/ProCore/ProBuilder/Classes/ClassesLib/pb_Stl.dll</HintPath>
     </Reference>
     <Reference Include="Poly2Tri">
-      <HintPath>C:/Users/genlab/Desktop/SIPX/Unity Movie Texture Test/Assets/ProCore/ProBuilder/Classes/ClassesLib/Poly2Tri.dll</HintPath>
+      <HintPath>C:/Users/genlab/Documents/GitHub/LastNight/Unity Movie Texture Test/Assets/ProCore/ProBuilder/Classes/ClassesLib/Poly2Tri.dll</HintPath>
     </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

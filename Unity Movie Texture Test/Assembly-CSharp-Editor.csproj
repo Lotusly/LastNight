@@ -720,40 +720,40 @@
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
     <Reference Include="DOTween">
-      <HintPath>C:/Users/genlab/Desktop/SIPX/Unity Movie Texture Test/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
+      <HintPath>C:/Users/genlab/Documents/GitHub/LastNight/Unity Movie Texture Test/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
     </Reference>
     <Reference Include="DOTween43">
-      <HintPath>C:/Users/genlab/Desktop/SIPX/Unity Movie Texture Test/Assets/Demigiant/DOTween/DOTween43.dll</HintPath>
+      <HintPath>C:/Users/genlab/Documents/GitHub/LastNight/Unity Movie Texture Test/Assets/Demigiant/DOTween/DOTween43.dll</HintPath>
     </Reference>
     <Reference Include="DOTween46">
-      <HintPath>C:/Users/genlab/Desktop/SIPX/Unity Movie Texture Test/Assets/Demigiant/DOTween/DOTween46.dll</HintPath>
+      <HintPath>C:/Users/genlab/Documents/GitHub/LastNight/Unity Movie Texture Test/Assets/Demigiant/DOTween/DOTween46.dll</HintPath>
     </Reference>
     <Reference Include="DOTween50">
-      <HintPath>C:/Users/genlab/Desktop/SIPX/Unity Movie Texture Test/Assets/Demigiant/DOTween/DOTween50.dll</HintPath>
+      <HintPath>C:/Users/genlab/Documents/GitHub/LastNight/Unity Movie Texture Test/Assets/Demigiant/DOTween/DOTween50.dll</HintPath>
     </Reference>
     <Reference Include="DOTweenEditor">
-      <HintPath>C:/Users/genlab/Desktop/SIPX/Unity Movie Texture Test/Assets/Demigiant/DOTween/Editor/DOTweenEditor.dll</HintPath>
-    </Reference>
-    <Reference Include="ProBuilderCore-Unity5">
-      <HintPath>C:/Users/genlab/Desktop/SIPX/Unity Movie Texture Test/Assets/ProCore/ProBuilder/Classes/ProBuilderCore-Unity5.dll</HintPath>
-    </Reference>
-    <Reference Include="ProBuilderMeshOps-Unity5">
-      <HintPath>C:/Users/genlab/Desktop/SIPX/Unity Movie Texture Test/Assets/ProCore/ProBuilder/Classes/ProBuilderMeshOps-Unity5.dll</HintPath>
-    </Reference>
-    <Reference Include="KdTreeLib">
-      <HintPath>C:/Users/genlab/Desktop/SIPX/Unity Movie Texture Test/Assets/ProCore/ProBuilder/Classes/ClassesLib/KdTreeLib.dll</HintPath>
-    </Reference>
-    <Reference Include="pb_Stl">
-      <HintPath>C:/Users/genlab/Desktop/SIPX/Unity Movie Texture Test/Assets/ProCore/ProBuilder/Classes/ClassesLib/pb_Stl.dll</HintPath>
-    </Reference>
-    <Reference Include="Poly2Tri">
-      <HintPath>C:/Users/genlab/Desktop/SIPX/Unity Movie Texture Test/Assets/ProCore/ProBuilder/Classes/ClassesLib/Poly2Tri.dll</HintPath>
-    </Reference>
-    <Reference Include="ProBuilderEditor-Unity5">
-      <HintPath>C:/Users/genlab/Desktop/SIPX/Unity Movie Texture Test/Assets/ProCore/ProBuilder/Editor/ProBuilderEditor-Unity5.dll</HintPath>
+      <HintPath>C:/Users/genlab/Documents/GitHub/LastNight/Unity Movie Texture Test/Assets/Demigiant/DOTween/Editor/DOTweenEditor.dll</HintPath>
     </Reference>
     <Reference Include="JetBrains.Rider.Unity.Editor.Plugin.Repacked">
-      <HintPath>C:/Users/genlab/Desktop/SIPX/Unity Movie Texture Test/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll</HintPath>
+      <HintPath>C:/Users/genlab/Documents/GitHub/LastNight/Unity Movie Texture Test/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll</HintPath>
+    </Reference>
+    <Reference Include="ProBuilderCore-Unity5">
+      <HintPath>C:/Users/genlab/Documents/GitHub/LastNight/Unity Movie Texture Test/Assets/ProCore/ProBuilder/Classes/ProBuilderCore-Unity5.dll</HintPath>
+    </Reference>
+    <Reference Include="ProBuilderMeshOps-Unity5">
+      <HintPath>C:/Users/genlab/Documents/GitHub/LastNight/Unity Movie Texture Test/Assets/ProCore/ProBuilder/Classes/ProBuilderMeshOps-Unity5.dll</HintPath>
+    </Reference>
+    <Reference Include="KdTreeLib">
+      <HintPath>C:/Users/genlab/Documents/GitHub/LastNight/Unity Movie Texture Test/Assets/ProCore/ProBuilder/Classes/ClassesLib/KdTreeLib.dll</HintPath>
+    </Reference>
+    <Reference Include="pb_Stl">
+      <HintPath>C:/Users/genlab/Documents/GitHub/LastNight/Unity Movie Texture Test/Assets/ProCore/ProBuilder/Classes/ClassesLib/pb_Stl.dll</HintPath>
+    </Reference>
+    <Reference Include="Poly2Tri">
+      <HintPath>C:/Users/genlab/Documents/GitHub/LastNight/Unity Movie Texture Test/Assets/ProCore/ProBuilder/Classes/ClassesLib/Poly2Tri.dll</HintPath>
+    </Reference>
+    <Reference Include="ProBuilderEditor-Unity5">
+      <HintPath>C:/Users/genlab/Documents/GitHub/LastNight/Unity Movie Texture Test/Assets/ProCore/ProBuilder/Editor/ProBuilderEditor-Unity5.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
