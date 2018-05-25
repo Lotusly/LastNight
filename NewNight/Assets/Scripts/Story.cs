@@ -18,7 +18,7 @@ public class Story : Singleton<Story> {
 
 	public void Initialize()
 	{
-		GameObject woman = UiManager.instance.Generate("Characters", 0, new Vector3(-1.4f, -0.2f, 18), true);
-		woman.GetComponent<Character>().Transfer(new Vector3(0,-0.2f,18),true,true );
+		GameObject woman = UiManager.instance.Generate("Characters", 0, new Vector3(-1.4f, -0.2f, 15), true);
+		woman.GetComponent<Character>().Transfer(new Vector3(0,-0.2f,15),true,true );
 	}
 }

@@ -99,7 +99,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FrontDecoration.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FrontDecoration.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Ui/FrontDecoration.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
@@ -110,6 +110,22 @@
                 <marker date="1527272418122" expanded="true" signature="133:260" ph="{...}" />
                 <marker date="1527272418122" expanded="true" signature="185:194" ph="{...}" />
                 <marker date="1527272418122" expanded="true" signature="248:257" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MarkCircle.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Ui/MarkCircle.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+              <folding>
+                <marker date="1527277139230" expanded="false" signature="6:108" ph="..." />
+                <marker date="1527277139230" expanded="true" signature="122:406" ph="{...}" />
+                <marker date="1527277139230" expanded="true" signature="165:404" ph="{...}" />
+                <marker date="1527277139230" expanded="true" signature="259:268" ph="{...}" />
+                <marker date="1527277139230" expanded="true" signature="322:397" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -196,7 +212,6 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/test/Background.shader" />
         <option value="$PROJECT_DIR$/Assets/test/Mask.shader" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Ui/MarkCircle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Ui/Coordinate.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Ui/UiItem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Ui/UiCamera.cs" />
@@ -206,6 +221,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Ui/UiManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Story.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Ui/FrontDecoration.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Ui/MarkCircle.cs" />
       </list>
     </option>
   </component>
@@ -279,12 +295,12 @@
       <option name="presentableId" value="Default" />
       <updated>1527254588763</updated>
       <workItem from="1527254605543" duration="8128000" />
-      <workItem from="1527268313811" duration="4660000" />
+      <workItem from="1527268313811" duration="4926000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12788000" />
+    <option name="totallyTimeSpent" value="13054000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -296,7 +312,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
+    <frame x="-7" y="-7" width="2062" height="1126" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -437,13 +453,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1040">
           <caret line="102" column="18" selection-start-line="102" selection-start-column="18" selection-end-line="102" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Ui/MarkCircle.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="44" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -591,6 +600,20 @@
             <marker date="1527272418122" expanded="true" signature="133:260" ph="{...}" />
             <marker date="1527272418122" expanded="true" signature="185:194" ph="{...}" />
             <marker date="1527272418122" expanded="true" signature="248:257" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Ui/MarkCircle.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+          <folding>
+            <marker date="1527277139230" expanded="false" signature="6:108" ph="..." />
+            <marker date="1527277139230" expanded="true" signature="122:406" ph="{...}" />
+            <marker date="1527277139230" expanded="true" signature="165:404" ph="{...}" />
+            <marker date="1527277139230" expanded="true" signature="259:268" ph="{...}" />
+            <marker date="1527277139230" expanded="true" signature="322:397" ph="{...}" />
           </folding>
         </state>
       </provider>

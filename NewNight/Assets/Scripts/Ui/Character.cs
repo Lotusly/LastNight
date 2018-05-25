@@ -23,12 +23,12 @@ namespace Ui
 
 		void OnMouseEnter()
 		{
-			EnableCircleMark();
+			_mark.Pop();
 		}
 
 		void OnMouseExit()
 		{
-			DisableCircleMark();
+			_mark.Shrink();
 		}
 
 		void OnMouseDown()
@@ -37,16 +37,6 @@ namespace Ui
 			
 		}
 
-		public void EnableCircleMark()
-		{
-			_mark.enabled = true;
-			_mark.gameObject.GetComponent<MeshRenderer>().enabled = true;
-		}
 		
-		public void DisableCircleMark()
-		{
-			_mark.enabled = false;
-			_mark.gameObject.GetComponent<MeshRenderer>().enabled = false;
-		}
 	}
 }

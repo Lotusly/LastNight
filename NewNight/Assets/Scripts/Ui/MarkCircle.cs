@@ -8,17 +8,29 @@ namespace Ui
 	public class MarkCircle : MonoBehaviour
 	{
 
+		private Animator _anim;
+
 		private const float RotatingSpeed = 60;
 		// Use this for initialization
 		void Start()
 		{
-
+			_anim = GetComponent<Animator>();
 		}
 
 		// Update is called once per frame
 		void Update()
 		{
 			transform.Rotate(Vector3.forward*RotatingSpeed*Time.deltaTime);
+		}
+
+		public void Pop()
+		{
+			_anim.SetTrigger("POP");
+		}
+
+		public void Shrink()
+		{
+			_anim.SetTrigger("SHRINK");
 		}
 	}
 }
