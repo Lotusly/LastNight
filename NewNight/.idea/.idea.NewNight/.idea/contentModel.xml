@@ -5,6 +5,7 @@
     <e p="C:\Users\genlab\Documents\GitHub\LastNight\NewNight" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets\Scripts" t="Include">
+        <e p="Story.cs" t="Include" />
         <e p="Supportive" t="Include">
           <e p="MyWindow.cs" t="Include" />
           <e p="Singleton.cs" t="Include" />
@@ -13,7 +14,9 @@
         <e p="Ui" t="Include">
           <e p="Character.cs" t="Include" />
           <e p="Coordinate.cs" t="Include" />
+          <e p="FrontDecoration.cs" t="Include" />
           <e p="MarkCircle.cs" t="Include" />
+          <e p="UiCamera.cs" t="Include" />
           <e p="UiItem.cs" t="Include" />
           <e p="UiManager.cs" t="Include" />
         </e>

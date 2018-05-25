@@ -21,6 +21,11 @@ namespace Supportive
 
 		void Update()
 		{
+			if (Input.GetKeyDown(KeyCode.Escape))
+			{
+				UiManager.instance.ZoomOut();
+			}
+			
 			if (_generate)
 			{
 				_generate = false;
@@ -40,7 +45,7 @@ namespace Supportive
 			if (_transfer)
 			{
 				_transfer = false;
-				_objects[_index].GetComponent<UiItem>().Transfer(Coordinate.instance.Screen2Space(_spaceInScreen),false);
+				_objects[_index].GetComponent<UiItem>().Transfer(Coordinate.instance.Screen2Space(_spaceInScreen),true,true);
 			}
 
 			if (_clearAll)

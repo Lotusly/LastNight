@@ -24,6 +24,12 @@ namespace Ui
 			return _originalPosition;
 		}
 
+		public virtual void MoveBack()
+		{
+			Transfer(_originalPosition,false,false);
+		}
+
+
 		public void Transfer(Vector3 newPosition, bool inScreenSpace, bool replaceOrigin)
 		{
 			_destination = newPosition;

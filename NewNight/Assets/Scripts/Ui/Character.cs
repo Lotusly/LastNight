@@ -33,8 +33,8 @@ namespace Ui
 
 		void OnMouseDown()
 		{
-			UiManager.instance.ZoomIn();
-			Transfer(new Vector3(-0.5f,-0.4f,5),true);
+			UiManager.instance.ZoomIn(this);
+			
 		}
 
 		public void EnableCircleMark()
