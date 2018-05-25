@@ -11,6 +11,13 @@ namespace Ui
 
 		// later should replace with a few different parents
 		[SerializeField] private Transform _parent;
+		[SerializeField] private Transform _portraits;
+		[SerializeField] private Transform _characters;
+		[SerializeField] private Transform _options;
+		[SerializeField] private Transform _descriptions;
+		[SerializeField] private Transform _frontDecorations;
+		[SerializeField] private Transform _backDecorations;
+		[SerializeField] private Transform _backgrounds;
 
 
 		public GameObject Generate(string pathName, int index, Vector3 position, bool inScreenSpace)
@@ -55,6 +62,16 @@ namespace Ui
 			newItem.transform.position = positionInWorld;
 			return newItem;
 
+		}
+
+		public void ZoomIn()
+		{
+			Camera.main.gameObject.GetComponent<UiItem>().Transfer(new Vector3(0,0,3),false);
+		}
+
+		public void ZoomOut()
+		{
+			Camera.main.gameObject.GetComponent<UiItem>().Transfer(new Vector3(0,0,0),false);
 		}
 	}
 }
