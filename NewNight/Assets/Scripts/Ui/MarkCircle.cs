@@ -26,11 +26,13 @@ namespace Ui
 		public void Pop()
 		{
 			_anim.SetTrigger("POP");
+			_anim.ResetTrigger("SHRINK");
 		}
 
 		public void Shrink()
 		{
 			_anim.SetTrigger("SHRINK");
+			_anim.ResetTrigger("POP");
 		}
 	}
 }

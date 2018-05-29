@@ -11,6 +11,7 @@ namespace Ui
 		{
 			Transfer(Vector3.zero,false,false);
 		}
+
 		
 	}
 }
