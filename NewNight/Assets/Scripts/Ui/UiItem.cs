@@ -14,6 +14,8 @@ namespace Ui
 		
 		private Vector3 _destination;
 		private bool _isInScreenSpace;
+
+		private bool _followingCamera = false; // UiItem should have function to stay static to the camera
 		
 
 		private Coroutine _runningCoroutine=null; // this method can only run one animation at the same time: no addition
@@ -27,6 +29,15 @@ namespace Ui
 		public virtual void MoveBack()
 		{
 			Transfer(_originalPosition,false,false);
+		}
+
+
+		public void SetPosition(Vector3 newPosition, bool inScreenSpace, bool replaceOrigin)
+		{
+			_destination = newPosition;
+			_isInScreenSpace = inScreenSpace;
+			if (replaceOrigin) _originalPosition = newPosition;
+			transform.position = (inScreenSpace ? Coordinate.instance.Screen2Space(newPosition) : newPosition);
 		}
 
 

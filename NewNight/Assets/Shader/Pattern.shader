@@ -7,6 +7,7 @@ Shader "Costume/Background"
 		[PerRendererData] _MainTex ("Sprite Texture", 2D) = "white" {}
 		_Color ("Tint", Color) = (1,1,1,1)
 		[MaterialToggle] PixelSnap ("Pixel snap", Float) = 0
+		__StencilRead("Int to Compare with Stencil", Range(0,255)) = 0
 	}
 
 	SubShader
@@ -30,7 +31,7 @@ Shader "Costume/Background"
 		// Write the value 1 to the stencil buffer
         Stencil 
         {
-            Ref 1
+            Ref [__StencilRead]
             Comp Equal
         }
         
