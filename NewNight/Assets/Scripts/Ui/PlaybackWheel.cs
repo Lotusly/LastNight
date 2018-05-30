@@ -9,9 +9,16 @@ namespace Ui
 
         [SerializeField] private Rotate _rotatingPart;
 
-        void Start () {
-		    SetPosition(new Vector3(-1.1f,-1,4),true,false);
-            EnableFollowCamera();
+        void Start()
+        {
+            Initialize();
+        }
+
+        
+        public override void Initialize(Vector3 aimPosition=new Vector3())
+        {
+            SetPosition(new Vector3(-1.1f,-1,4),true,false,true);
+            UpdateOriginPosition();
         }
 	
         private void OnMouseEnter()

@@ -137,7 +137,7 @@ Transform:
   m_Children:
   - {fileID: 1232663776}
   m_Father: {fileID: 588283947}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &29844398
 GameObject:
@@ -385,34 +385,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0eaab2a3b8638341a3cee6db403929e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &244373259
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 244373260}
-  m_Layer: 0
-  m_Name: Options
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &244373260
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 244373259}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 588283947}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &428985367
 GameObject:
   m_ObjectHideFlags: 0
@@ -667,7 +639,6 @@ Transform:
   m_Children:
   - {fileID: 1203881459}
   - {fileID: 1786295859}
-  - {fileID: 244373260}
   - {fileID: 1655680174}
   - {fileID: 1212309954}
   - {fileID: 697776448}
@@ -769,7 +740,7 @@ GameObject:
   m_Component:
   - component: {fileID: 697776448}
   m_Layer: 0
-  m_Name: BackDecorations
+  m_Name: Props
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -786,7 +757,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 588283947}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &815916275
 GameObject:
@@ -815,7 +786,7 @@ Transform:
   m_Children:
   - {fileID: 2113629091}
   m_Father: {fileID: 588283947}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &917485620
 Prefab:
@@ -826,11 +797,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4728333805258246, guid: ba8b023ccfccdd04db6ba641f4dcca88, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.19665527
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4728333805258246, guid: ba8b023ccfccdd04db6ba641f4dcca88, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.27000427
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4728333805258246, guid: ba8b023ccfccdd04db6ba641f4dcca88, type: 2}
       propertyPath: m_LocalPosition.z
@@ -860,28 +831,7 @@ Prefab:
       propertyPath: m_Name
       value: Background
       objectReference: {fileID: 0}
-    - target: {fileID: 4728333805258246, guid: ba8b023ccfccdd04db6ba641f4dcca88, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 27.69211
-      objectReference: {fileID: 0}
-    - target: {fileID: 1915409557226764, guid: ba8b023ccfccdd04db6ba641f4dcca88, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4728333805258246, guid: ba8b023ccfccdd04db6ba641f4dcca88, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 53.027462
-      objectReference: {fileID: 0}
-    - target: {fileID: 1915409557226764, guid: ba8b023ccfccdd04db6ba641f4dcca88, type: 2}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4728333805258246, guid: ba8b023ccfccdd04db6ba641f4dcca88, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 64382173629323684, guid: ba8b023ccfccdd04db6ba641f4dcca88, type: 2}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ba8b023ccfccdd04db6ba641f4dcca88, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1013779330
@@ -1065,7 +1015,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1212309954}
   m_Layer: 0
-  m_Name: FrontDecorations
+  m_Name: ForegroundItems
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1082,7 +1032,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 588283947}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1232663775
 GameObject:
@@ -1108,7 +1058,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1232663775}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11.37, y: 0, z: 4}
+  m_LocalPosition: {x: 0, y: 0, z: 4}
   m_LocalScale: {x: 0.83470106, y: 0.8347009, z: 0.8347009}
   m_Children:
   - {fileID: 1013779331}
@@ -1238,7 +1188,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1655680174}
   m_Layer: 0
-  m_Name: Descriptions
+  m_Name: Dialogue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1255,7 +1205,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 588283947}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1769315590
 GameObject:
@@ -1300,10 +1250,9 @@ MonoBehaviour:
   _generalParent: {fileID: 588283947}
   _characters: {fileID: 1203881459}
   _portraits: {fileID: 1786295859}
-  _options: {fileID: 244373260}
-  _descriptions: {fileID: 1655680174}
-  _frontDecorations: {fileID: 1212309954}
-  _backDecorations: {fileID: 697776448}
+  _dialogues: {fileID: 1655680174}
+  _foregroundItems: {fileID: 1212309954}
+  _props: {fileID: 697776448}
   _backgrounds: {fileID: 815916276}
   _camera: {fileID: 208202045}
 --- !u!1 &1786295858

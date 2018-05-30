@@ -9,17 +9,13 @@ namespace Ui
 		private MarkCircle _mark;
 
 		
-		// Use this for initialization
-		void Start()
+		
+		public override void Initialize(Vector3 aimPosition=new Vector3())
 		{
 			_mark = GetComponentInChildren<MarkCircle>();
+			UpdateOriginPosition();
 		}
 
-		// Update is called once per frame
-		void Update()
-		{
-
-		}
 
 		void OnMouseEnter()
 		{
@@ -33,8 +29,13 @@ namespace Ui
 
 		void OnMouseDown()
 		{
-			UiManager.instance.ZoomIn(this);
-			
+			UiManager.instance.ZoomIn(this);	
+		}
+
+		public override void MoveOut(UiItem focus = null)
+		{
+			if(focus==this)
+				Transfer(new Vector3(-0.5f,-0.4f,5),true,true);
 		}
 
 		

@@ -11,6 +11,12 @@ namespace Ui
 		{
 			Transfer(Vector3.zero,false,false);
 		}
+		
+		public override void Initialize(Vector3 aimPosition=new Vector3())
+		{
+			SetPosition(Vector3.zero,false,true);
+			UpdateOriginPosition();
+		}
 
 		
 	}

@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Ui
 {
-	public class UiItem : MonoBehaviour
+	public abstract class UiItem : MonoBehaviour
 	{
 
 		private const float Deviation = 0.1f;
@@ -13,9 +13,10 @@ namespace Ui
 		
 		
 		private Vector3 _destination;
-		private bool _isInScreenSpace;// used in both Follow Camera and Lerp To Transfer
+		private bool _isInScreenSpace=false;// used in both Follow Camera and Lerp To Transfer
 
 		private bool _followingCamera = false; // UiItem should have function to stay static to the camera
+		
 		
 
 		private Coroutine _runningCoroutine=null; // this method can only run one animation at the same time: no addition
@@ -36,18 +37,24 @@ namespace Ui
 			}
 		}
 
+		public abstract void Initialize(Vector3 aimPosition=new Vector3()); // new function
+		
+
 
 		public Vector3 GetOriginalPosition()
 		{
 			return _originalPosition;
 		}
 
+		public virtual void MoveOut(UiItem focus = null) {} // new function
+
+
 		public virtual void MoveBack()
 		{
 			Transfer(_originalPosition,false,false);
 		}
 
-		public void EnableFollowCamera()
+		private void EnableFollowCamera()
 		{
 			if(_runningCoroutine!=null) StopCoroutine(_runningCoroutine);
 			_destination = _isInScreenSpace ? _destination : Coordinate.instance.Space2Screen(_destination);
@@ -56,36 +63,41 @@ namespace Ui
 			
 		}
 
-		public void DisableFolloeCamera()
+		private void DisableFollowCamera()
 		{
 			_followingCamera = false;
 		}
 
 
-		public void SetPosition(Vector3 newPosition, bool inScreenSpace, bool replaceOrigin, bool followCamera = false)
+		public void SetPosition(Vector3 newPosition, bool inScreenSpace, bool recordOrigin, bool followCamera = false) //new function
 		{
+			if (recordOrigin) _originalPosition = transform.position; // if record, then remember where it leaves; otherwise don't update
+			DisableFollowCamera();
 			if(_runningCoroutine!=null) StopCoroutine(_runningCoroutine);
 			_destination = newPosition;
 			_isInScreenSpace = inScreenSpace;
-			if (replaceOrigin) _originalPosition = newPosition;
 			transform.position = (inScreenSpace ? Coordinate.instance.Screen2Space(newPosition) : newPosition);
 			if(followCamera) EnableFollowCamera();
 		}
 
-
-		public void Transfer(Vector3 newPosition, bool inScreenSpace, bool replaceOrigin, bool followCamera = false)
+		public void UpdateOriginPosition() //new function
 		{
+			_originalPosition = transform.position;
+		}
+
+		public void SetOriginPosition(Vector3 position, bool inScreenSpace)
+		{
+			_originalPosition = inScreenSpace?Coordinate.instance.Screen2Space(position):position;
+		}
+
+
+		public void Transfer(Vector3 newPosition, bool inScreenSpace, bool recordOrigin, bool followCamera = false)
+		{
+			if (recordOrigin) _originalPosition = transform.position; // if record, then remember where it leaves; otherwise don't update
+			DisableFollowCamera();
 			_destination = newPosition;
 			_isInScreenSpace = inScreenSpace;
-			if (replaceOrigin)
-			{
-				if (inScreenSpace)
-				{
-					Debug.LogWarning("Unsafe usage: transfer an UiItem with replaceOrigin==true while inScreenSpace==true");
-					_originalPosition = Coordinate.instance.Screen2Space(newPosition);
-				}
-				else _originalPosition = newPosition;
-			}
+			
 			if(_runningCoroutine!=null) StopCoroutine(_runningCoroutine);
 			_runningCoroutine = StartCoroutine(PlainLerp(followCamera));
 		}

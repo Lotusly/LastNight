@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Supportive
 {
-	public class Singleton<T> : MonoBehaviour where T : Component
+	public abstract class Singleton<T> : MonoBehaviour where T : Component
 	{
 
 		public static T instance;

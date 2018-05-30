@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/TextMesh Pro/Examples & Extras/Scenes/24 - Surface Shader Example.unity
+- path: Assets/Scenes/Lotus.unity
   isLoaded: 1
   isActive: 1

@@ -60,6 +60,8 @@
     <Compile Include="Assets\Scripts\Supportive\Test.cs" />
     <Compile Include="Assets\Scripts\Ui\Character.cs" />
     <Compile Include="Assets\Scripts\Ui\Coordinate.cs" />
+    <Compile Include="Assets\Scripts\Ui\Dialogue.cs" />
+    <Compile Include="Assets\Scripts\Ui\ForegroundItem.cs" />
     <Compile Include="Assets\Scripts\Ui\MarkCircle.cs" />
     <Compile Include="Assets\Scripts\Ui\PlaybackWheel.cs" />
     <Compile Include="Assets\Scripts\Ui\UiCamera.cs" />
@@ -143,11 +145,11 @@
     <Reference Include="UnityEngine.HoloLens">
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
     </Reference>
-    <Reference Include="TextMeshPro-2017.1-Runtime">
-      <HintPath>C:/Users/genlab/Documents/GitHub/LastNight/NewNight/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.1-Runtime.dll</HintPath>
-    </Reference>
     <Reference Include="TextMeshPro-2017.1-Editor">
       <HintPath>C:/Users/genlab/Documents/GitHub/LastNight/NewNight/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.1-Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="TextMeshPro-2017.1-Runtime">
+      <HintPath>C:/Users/genlab/Documents/GitHub/LastNight/NewNight/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.1-Runtime.dll</HintPath>
     </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
