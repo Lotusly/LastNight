@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -107,10 +107,10 @@ MonoBehaviour:
     y: 30
     width: 2048
     height: 1019
-  m_MinSize: {x: 783, y: 471}
+  m_MinSize: {x: 787, y: 492}
   m_MaxSize: {x: 18008, y: 14042}
   vertical: 0
-  controlID: 1917
+  controlID: 117
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -156,10 +156,10 @@ MonoBehaviour:
     y: 0
     width: 1256
     height: 1019
-  m_MinSize: {x: 304, y: 471}
+  m_MinSize: {x: 308, y: 492}
   m_MaxSize: {x: 10004, y: 14042}
   vertical: 1
-  controlID: 1848
+  controlID: 118
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -180,10 +180,10 @@ MonoBehaviour:
     y: 0
     width: 1256
     height: 723
-  m_MinSize: {x: 304, y: 200}
-  m_MaxSize: {x: 8004, y: 4021}
+  m_MinSize: {x: 308, y: 221}
+  m_MaxSize: {x: 8008, y: 4021}
   vertical: 0
-  controlID: 1849
+  controlID: 119
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -393,9 +393,9 @@ MonoBehaviour:
     height: 998
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: d62d0000
-    m_LastClickedID: 11734
-    m_ExpandedIDs: 7cf0ffff1afcffff00000000562d0000902d0000ba2d0000dc2d0000e02d0000
+    m_SelectedIDs: 524efdff
+    m_LastClickedID: -176558
+    m_ExpandedIDs: 1afcffff000000001e2c0000482c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -445,14 +445,14 @@ MonoBehaviour:
     width: 846
     height: 702
   m_SceneLighting: 0
-  lastFramingTime: 21254.535776389268
+  lastFramingTime: 604.3473048341149
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 2.3577182, y: 1.159798, z: 4.228044}
+    m_Target: {x: 0.024593174, y: 2.4116812, z: 7.694707}
     speed: 2
-    m_Value: {x: 2.3577182, y: 1.159798, z: 4.228044}
+    m_Value: {x: 0.024593174, y: 2.4116812, z: 7.694707}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -475,13 +475,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.14190169, y: -0.07654092, z: 0.011005484, w: -0.9868558}
+    m_Target: {x: -0.15999317, y: -0.039380096, z: 0.00638751, w: -0.9863117}
     speed: 2
-    m_Value: {x: -0.14190169, y: -0.07654092, z: 0.011005484, w: -0.9868558}
+    m_Value: {x: -0.15999317, y: -0.039380096, z: 0.00638751, w: -0.9863117}
   m_Size:
-    m_Target: 1.6334165
+    m_Target: 11.265279
     speed: 2
-    m_Value: 1.6334165
+    m_Value: 11.265279
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -602,19 +602,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scripts/Ui
+    - Assets/Resources/ForegroundItems
   m_ViewMode: 1
   m_StartGridSize: 96
   m_LastFolders:
-  - Assets/Scripts/Ui
+  - Assets/Resources/ForegroundItems
   m_LastFoldersGridSize: 96
   m_LastProjectPath: C:\Users\genlab\Documents\GitHub\LastNight\NewNight
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 63}
-    m_SelectedIDs: d6290000
-    m_LastClickedID: 10710
-    m_ExpandedIDs: 000000008c290000ac290000462a0000482a00007a2a00008a2a0000a62a0000222b00001a2d000000ca9a3bffffff7f
+    m_SelectedIDs: 2c2a0000
+    m_LastClickedID: 10796
+    m_ExpandedIDs: 0000000090290000b02900004c2a00004e2a0000802a0000902a0000ac2a0000282b0000ee2c000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -642,7 +642,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000008c290000ac290000462a0000482a00007a2a00008a2a0000a62a0000222b00001a2d000000ca9a3bffffff7f
+    m_ExpandedIDs: 0000000090290000b02900004c2a00004e2a0000802a0000902a0000ac2a0000282b0000ee2c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

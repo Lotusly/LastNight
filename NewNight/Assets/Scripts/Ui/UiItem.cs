@@ -46,6 +46,11 @@ namespace Ui
 			return _originalPosition;
 		}
 
+		public Vector3 GetDestination()
+		{
+			return _destination;
+		}
+
 		public virtual void MoveOut(UiItem focus = null) {} // new function
 
 

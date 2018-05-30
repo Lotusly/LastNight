@@ -7,7 +7,16 @@ namespace Ui
 	public class ForegroundItem : UiItem
 	{
 
-		private Vector3 _potentialPosition; // this is always in screen space
+		[SerializeField]private Vector3 _potentialPosition; // this is always in screen space
+		[SerializeField] private bool _selfBoost=false;
+
+		void Start()
+		{
+			if (_selfBoost)
+			{
+				Initialize(_potentialPosition);
+			}
+		}
 		public override void Initialize(Vector3 aimPosition=new Vector3())
 		{
 			SetPosition(transform.position, false, false, true);
@@ -35,7 +44,7 @@ namespace Ui
 
 		public override void MoveOut(UiItem focus=null)
 		{
-			Transfer(_potentialPosition,true,true,true);
+			Transfer(_potentialPosition,true,false,true);
 		}
 	}
 }
