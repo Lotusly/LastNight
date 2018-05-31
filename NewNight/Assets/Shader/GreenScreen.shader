@@ -9,6 +9,14 @@ Shader "Costume/GreenScreen"
 		[MaterialToggle] PixelSnap ("Pixel snap", Float) = 0
 		_Cutoff ("Green Cutoff", Range(0,1)) = 0.5 //use this parameter to test transparent
 		_BeginDim("Green value to go dim",Range(0,1))=0.5
+		//_DistinguishColor("Color to distinguish parts",Color) = (1,1,1,1)
+		[Toggle(_ORIGINALCOLOR_ON)] _OriginalColor("Use Original Color",float)=0
+		
+		_ColorBoundary("Value to distinguish parts",Range(0,1))=0.3
+		_UpperMask("Bright Color",Color)=(1,1,1,1)
+		[Toggle(_UPPERFIX_ON)] _UpperFix("Fixed color",float)=0
+		_LowerMask("Dim Color",Color)=(1,1,1,1)
+		[Toggle(_LOWERFIX_ON)] _LowerFix("Fixed color",float)=0
 		
 	}
 
@@ -28,6 +36,7 @@ Shader "Costume/GreenScreen"
 		Lighting Off
 		ZWrite Off
 		Blend One OneMinusSrcAlpha
+		
 
 		Pass
 		{
@@ -37,6 +46,9 @@ Shader "Costume/GreenScreen"
 			#pragma fragment frag
 			#pragma multi_compile _ PIXELSNAP_ON
 			#include "UnityCG.cginc"
+			#pragma shader_feature _UPPERFIX_ON
+			#pragma shader_feature _LOWERFIX_ON
+			#pragma shader_feature _ORIGINALCOLOR_ON
 			
 			struct appdata_t
 			{
@@ -72,6 +84,13 @@ Shader "Costume/GreenScreen"
 			float _AlphaSplitEnabled;
 			fixed _Cutoff;//......................
 			fixed _BeginDim;
+			fixed _ColorBoundary;
+			fixed4 _UpperMask;
+			fixed4 _LowerMask;
+			bool UpperFix;
+			bool LowerFix;
+			//fixed _UpperFix;
+			//fixed _LowerFix;
 
 			fixed4 SampleSpriteTexture (float2 uv)
 			{
@@ -98,6 +117,35 @@ Shader "Costume/GreenScreen"
 				    //c.g=0.5;
 				    //c.g=0;
 				}
+				#if _ORIGINALCOLOR_ON
+				    return c;
+				#endif
+				fixed tmp = (c.r+c.b+c.g)/3;
+				if(tmp<_ColorBoundary) {
+				    #if _LOWERFIX_ON
+				        //c.r=0.8;c.b=0.1;c.g=0.1;c.a=0.85;
+				        c.rgba=_LowerMask.rgba;
+				    #else
+				        c.r=min(1,tmp*_LowerMask.r*2);
+				        c.g=min(1,tmp*_LowerMask.g*2);
+				        c.b=min(1,tmp*_LowerMask.b*2);
+				        c.a=_LowerMask.a;
+				    #endif
+				    
+				}
+				else{
+				    #if _UPPERFIX_ON
+				        c.rgba=_UpperMask.rgba;
+				    #else
+				        c.r=min(1,tmp*_UpperMask.r*2);
+				        c.g=min(1,tmp*_UpperMask.g*2);
+				        c.b=min(1,tmp*_UpperMask.b*2);
+				        c.a=_UpperMask.a;
+				    #endif
+				    
+				}
+				//if(c.r>c.b) c.b=0;
+				///if(c.b>c.r) c.r=0;
 				c.rgb *= c.a;
 				
 				return c;

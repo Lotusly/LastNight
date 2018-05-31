@@ -26,6 +26,7 @@
       </e>
       <e p="Assets\Shader" t="Include">
         <e p="Background.shader" t="Include" />
+        <e p="GreenMask.shader" t="Include" />
         <e p="GreenScreen.shader" t="Include" />
         <e p="Layer.shader" t="Include" />
         <e p="Mask.shader" t="Include" />
