@@ -4,4 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Lotus.unity
+    guid: 98561f710129a704aa57fa3b7e41c636
+  m_configObjects: {}

@@ -33,18 +33,7 @@
       <file leaf-file-name="Mask.shader" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Shader/Mask.shader">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-835">
-              <folding>
-                <marker date="1527609899907" expanded="true" signature="106:2402" ph="{...}" />
-                <marker date="1527609899907" expanded="true" signature="121:431" ph="{...}" />
-                <marker date="1527609899907" expanded="true" signature="445:2400" ph="{...}" />
-                <marker date="1527609899907" expanded="true" signature="456:747" ph="{...}" />
-                <marker date="1527609899907" expanded="true" signature="894:2397" ph="{...}" />
-                <marker date="1527609899907" expanded="true" signature="911:950" ph="{...}" />
-                <marker date="1527609899907" expanded="true" signature="1020:1113" ph="{...}" />
-                <marker date="1527609899907" expanded="true" signature="1134:2388" ph="{...}" />
-              </folding>
-            </state>
+            <state relative-caret-position="-835" />
           </provider>
         </entry>
       </file>
@@ -53,14 +42,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
               <caret line="120" column="29" selection-start-line="120" selection-start-column="29" selection-end-line="120" selection-end-column="29" />
-              <folding>
-                <marker date="1527781141429" expanded="true" signature="113:3722" ph="{...}" />
-                <marker date="1527781141429" expanded="true" signature="128:843" ph="{...}" />
-                <marker date="1527781141429" expanded="true" signature="857:3720" ph="{...}" />
-                <marker date="1527781141429" expanded="true" signature="868:1041" ph="{...}" />
-                <marker date="1527781141429" expanded="true" signature="1124:3717" ph="{...}" />
-                <marker date="1527781141429" expanded="true" signature="1138:3708" ph="{...}" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -222,7 +203,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
+    <frame x="-7" y="-7" width="2062" height="1126" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -375,14 +356,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1425">
           <caret line="95" column="22" selection-start-line="95" selection-start-column="22" selection-end-line="95" selection-end-column="22" />
-          <folding>
-            <marker date="1527781141429" expanded="true" signature="113:3722" ph="{...}" />
-            <marker date="1527781141429" expanded="true" signature="128:843" ph="{...}" />
-            <marker date="1527781141429" expanded="true" signature="857:3720" ph="{...}" />
-            <marker date="1527781141429" expanded="true" signature="868:1041" ph="{...}" />
-            <marker date="1527781141429" expanded="true" signature="1124:3717" ph="{...}" />
-            <marker date="1527781141429" expanded="true" signature="1138:3708" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -940,7 +913,6 @@
         <state>
           <caret selection-end-line="105" selection-end-column="1" />
           <folding>
-            <marker date="1527609832643" expanded="true" signature="107:2125" ph="{...}" />
             <marker date="1527609832643" expanded="true" signature="122:418" ph="{...}" />
             <marker date="1527609832643" expanded="true" signature="432:2123" ph="{...}" />
             <marker date="1527609832643" expanded="true" signature="443:616" ph="{...}" />
@@ -953,32 +925,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Shader/Mask.shader">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-835">
-          <folding>
-            <marker date="1527609899907" expanded="true" signature="106:2402" ph="{...}" />
-            <marker date="1527609899907" expanded="true" signature="121:431" ph="{...}" />
-            <marker date="1527609899907" expanded="true" signature="445:2400" ph="{...}" />
-            <marker date="1527609899907" expanded="true" signature="456:747" ph="{...}" />
-            <marker date="1527609899907" expanded="true" signature="894:2397" ph="{...}" />
-            <marker date="1527609899907" expanded="true" signature="911:950" ph="{...}" />
-            <marker date="1527609899907" expanded="true" signature="1020:1113" ph="{...}" />
-            <marker date="1527609899907" expanded="true" signature="1134:2388" ph="{...}" />
-          </folding>
-        </state>
+        <state relative-caret-position="-835" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Shader/GreenScreen.shader">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="120" column="29" selection-start-line="120" selection-start-column="29" selection-end-line="120" selection-end-column="29" />
-          <folding>
-            <marker date="1527781141429" expanded="true" signature="113:3722" ph="{...}" />
-            <marker date="1527781141429" expanded="true" signature="128:843" ph="{...}" />
-            <marker date="1527781141429" expanded="true" signature="857:3720" ph="{...}" />
-            <marker date="1527781141429" expanded="true" signature="868:1041" ph="{...}" />
-            <marker date="1527781141429" expanded="true" signature="1124:3717" ph="{...}" />
-            <marker date="1527781141429" expanded="true" signature="1138:3708" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
