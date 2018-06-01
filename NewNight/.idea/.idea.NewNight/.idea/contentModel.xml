@@ -9,7 +9,6 @@
           <e p="Rotate.cs" t="Include" />
           <e p="Story.cs" t="Include" />
           <e p="Supportive" t="Include">
-            <e p="MyWindow.cs" t="Include" />
             <e p="Singleton.cs" t="Include" />
             <e p="Test.cs" t="Include" />
           </e>
@@ -24,6 +23,7 @@
             <e p="UiItem.cs" t="Include" />
             <e p="UiManager.cs" t="Include" />
           </e>
+          <e p="Video.cs" t="Include" />
         </e>
         <e p="Shader" t="Include">
           <e p="Background.shader" t="Include" />

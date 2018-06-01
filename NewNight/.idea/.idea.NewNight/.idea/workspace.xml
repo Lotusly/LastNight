@@ -11,10 +11,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GreenMask.shader" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GreenMask.shader" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Shader/GreenMask.shader">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="770">
+            <state relative-caret-position="995">
               <caret line="113" column="16" selection-start-line="113" selection-start-column="16" selection-end-line="113" selection-end-column="16" />
               <folding>
                 <marker date="1527774690140" expanded="true" signature="111:2572" ph="{...}" />
@@ -42,6 +42,39 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
               <caret line="120" column="29" selection-start-line="120" selection-start-column="29" selection-end-line="120" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Story.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Story.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
+              <folding>
+                <marker date="1527862432437" expanded="false" signature="6:106" ph="..." />
+                <marker date="1527862432437" expanded="true" signature="145:602" ph="{...}" />
+                <marker date="1527862432437" expanded="true" signature="198:205" ph="{...}" />
+                <marker date="1527862432437" expanded="true" signature="260:267" ph="{...}" />
+                <marker date="1527862432437" expanded="true" signature="294:600" ph="{...}" />
+                <marker date="1527862432437" expanded="true" signature="300:597" ph="/* GameObject woman = UiManager.instance.Generate(&quot;Characters&quot;, 0, new Vector3(-1.4f, -0.2f, 15), true); ... */" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Video.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Video.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="49" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
+              <folding>
+                <marker date="1527876339605" expanded="true" signature="6:125" ph="..." />
+                <marker date="1527876339605" expanded="true" signature="161:626" ph="{...}" />
+                <marker date="1527876339605" expanded="true" signature="277:439" ph="{...}" />
+                <marker date="1527876339605" expanded="true" signature="494:624" ph="{...}" />
+                <marker date="1527876339605" expanded="true" signature="553:616" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -80,6 +113,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ui/Coordinate.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shader/Background.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ui/UiItem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Video.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ui/UiManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shader/Mask.shader" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -105,11 +139,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Ui/PlaybackWheel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Ui/Dialogue.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Ui/UiManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Story.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Ui/ForegroundItem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Ui/UiItem.cs" />
         <option value="$PROJECT_DIR$/Assets/Shader/GreenMask.shader" />
         <option value="$PROJECT_DIR$/Assets/Shader/GreenScreen.shader" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Story.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Video.cs" />
       </list>
     </option>
   </component>
@@ -191,7 +226,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48698000" />
+    <option name="totallyTimeSpent" value="50117000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -203,7 +238,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="2062" height="1126" extended-state="7" />
+    <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -239,20 +274,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Ui/UiCamera.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="14" column="73" selection-start-line="14" selection-start-column="73" selection-end-line="14" selection-end-column="73" />
-          <folding>
-            <marker date="1527701773225" expanded="false" signature="6:78" ph="..." />
-            <marker date="1527701773225" expanded="true" signature="92:368" ph="{...}" />
-            <marker date="1527701773225" expanded="true" signature="126:366" ph="{...}" />
-            <marker date="1527701773225" expanded="true" signature="164:211" ph="{...}" />
-            <marker date="1527701773225" expanded="true" signature="283:359" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Ui/PlaybackWheel.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -274,11 +295,12 @@
         <state relative-caret-position="300">
           <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
           <folding>
-            <marker date="1527709327066" expanded="false" signature="6:106" ph="..." />
-            <marker date="1527709327066" expanded="true" signature="145:596" ph="{...}" />
-            <marker date="1527709327066" expanded="true" signature="198:205" ph="{...}" />
-            <marker date="1527709327066" expanded="true" signature="260:267" ph="{...}" />
-            <marker date="1527709327066" expanded="true" signature="294:594" ph="{...}" />
+            <marker date="1527862432437" expanded="false" signature="6:106" ph="..." />
+            <marker date="1527862432437" expanded="true" signature="145:602" ph="{...}" />
+            <marker date="1527862432437" expanded="true" signature="198:205" ph="{...}" />
+            <marker date="1527862432437" expanded="true" signature="260:267" ph="{...}" />
+            <marker date="1527862432437" expanded="true" signature="294:600" ph="{...}" />
+            <marker date="1527862432437" expanded="true" signature="300:597" ph="/* GameObject woman = UiManager.instance.Generate(&quot;Characters&quot;, 0, new Vector3(-1.4f, -0.2f, 15), true); ... */" />
           </folding>
         </state>
       </provider>
@@ -578,11 +600,12 @@
         <state relative-caret-position="360">
           <caret line="24" selection-start-line="24" selection-end-line="24" />
           <folding>
-            <marker date="1527709327066" expanded="false" signature="6:106" ph="..." />
-            <marker date="1527709327066" expanded="true" signature="145:596" ph="{...}" />
-            <marker date="1527709327066" expanded="true" signature="198:205" ph="{...}" />
-            <marker date="1527709327066" expanded="true" signature="260:267" ph="{...}" />
-            <marker date="1527709327066" expanded="true" signature="294:594" ph="{...}" />
+            <marker date="1527862432437" expanded="false" signature="6:106" ph="..." />
+            <marker date="1527862432437" expanded="true" signature="145:602" ph="{...}" />
+            <marker date="1527862432437" expanded="true" signature="198:205" ph="{...}" />
+            <marker date="1527862432437" expanded="true" signature="260:267" ph="{...}" />
+            <marker date="1527862432437" expanded="true" signature="294:600" ph="{...}" />
+            <marker date="1527862432437" expanded="true" signature="300:597" ph="/* GameObject woman = UiManager.instance.Generate(&quot;Characters&quot;, 0, new Vector3(-1.4f, -0.2f, 15), true); ... */" />
           </folding>
         </state>
       </provider>
@@ -833,20 +856,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Story.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
-          <folding>
-            <marker date="1527709327066" expanded="false" signature="6:106" ph="..." />
-            <marker date="1527709327066" expanded="true" signature="145:596" ph="{...}" />
-            <marker date="1527709327066" expanded="true" signature="198:205" ph="{...}" />
-            <marker date="1527709327066" expanded="true" signature="260:267" ph="{...}" />
-            <marker date="1527709327066" expanded="true" signature="294:594" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Ui/ForegroundItem.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -937,7 +946,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Shader/GreenMask.shader">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="770">
+        <state relative-caret-position="995">
           <caret line="113" column="16" selection-start-line="113" selection-start-column="16" selection-end-line="113" selection-end-column="16" />
           <folding>
             <marker date="1527774690140" expanded="true" signature="111:2572" ph="{...}" />
@@ -948,6 +957,35 @@
             <marker date="1527774690140" expanded="true" signature="967:1006" ph="{...}" />
             <marker date="1527774690140" expanded="true" signature="1076:1169" ph="{...}" />
             <marker date="1527774690140" expanded="true" signature="1190:2558" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Story.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
+          <folding>
+            <marker date="1527862432437" expanded="false" signature="6:106" ph="..." />
+            <marker date="1527862432437" expanded="true" signature="145:602" ph="{...}" />
+            <marker date="1527862432437" expanded="true" signature="198:205" ph="{...}" />
+            <marker date="1527862432437" expanded="true" signature="260:267" ph="{...}" />
+            <marker date="1527862432437" expanded="true" signature="294:600" ph="{...}" />
+            <marker date="1527862432437" expanded="true" signature="300:597" ph="/* GameObject woman = UiManager.instance.Generate(&quot;Characters&quot;, 0, new Vector3(-1.4f, -0.2f, 15), true); ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Video.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="49" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
+          <folding>
+            <marker date="1527876339605" expanded="true" signature="6:125" ph="..." />
+            <marker date="1527876339605" expanded="true" signature="161:626" ph="{...}" />
+            <marker date="1527876339605" expanded="true" signature="277:439" ph="{...}" />
+            <marker date="1527876339605" expanded="true" signature="494:624" ph="{...}" />
+            <marker date="1527876339605" expanded="true" signature="553:616" ph="{...}" />
           </folding>
         </state>
       </provider>
