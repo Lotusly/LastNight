@@ -66,14 +66,15 @@
       <file leaf-file-name="Video.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Video.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="49" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
+            <state relative-caret-position="300">
+              <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
               <folding>
-                <marker date="1527876339605" expanded="true" signature="6:125" ph="..." />
-                <marker date="1527876339605" expanded="true" signature="161:626" ph="{...}" />
-                <marker date="1527876339605" expanded="true" signature="277:439" ph="{...}" />
-                <marker date="1527876339605" expanded="true" signature="494:624" ph="{...}" />
-                <marker date="1527876339605" expanded="true" signature="553:616" ph="{...}" />
+                <marker date="1527879085613" expanded="true" signature="6:125" ph="..." />
+                <marker date="1527879085613" expanded="true" signature="161:633" ph="{...}" />
+                <marker date="1527879085613" expanded="true" signature="234:294" ph="/* private bool flag = true; ... */" />
+                <marker date="1527879085613" expanded="true" signature="309:432" ph="{...}" />
+                <marker date="1527879085613" expanded="true" signature="485:629" ph="{...}" />
+                <marker date="1527879085613" expanded="true" signature="551:623" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -226,7 +227,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50117000" />
+    <option name="totallyTimeSpent" value="52379000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -239,7 +240,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Errors In Solution" order="3" />
@@ -978,14 +978,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Video.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="49" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
+        <state relative-caret-position="300">
+          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
           <folding>
-            <marker date="1527876339605" expanded="true" signature="6:125" ph="..." />
-            <marker date="1527876339605" expanded="true" signature="161:626" ph="{...}" />
-            <marker date="1527876339605" expanded="true" signature="277:439" ph="{...}" />
-            <marker date="1527876339605" expanded="true" signature="494:624" ph="{...}" />
-            <marker date="1527876339605" expanded="true" signature="553:616" ph="{...}" />
+            <marker date="1527879085613" expanded="true" signature="6:125" ph="..." />
+            <marker date="1527879085613" expanded="true" signature="161:633" ph="{...}" />
+            <marker date="1527879085613" expanded="true" signature="234:294" ph="/* private bool flag = true; ... */" />
+            <marker date="1527879085613" expanded="true" signature="309:432" ph="{...}" />
+            <marker date="1527879085613" expanded="true" signature="485:629" ph="{...}" />
+            <marker date="1527879085613" expanded="true" signature="551:623" ph="{...}" />
           </folding>
         </state>
       </provider>

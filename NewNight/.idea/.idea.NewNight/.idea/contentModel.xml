@@ -5,6 +5,15 @@
     <e p="C:\Users\genlab\Documents\GitHub\LastNight\NewNight" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Fonts" t="Include">
+          <e p="Documentation" t="Include">
+            <e p="JazzCreateAltKeys_BubbleFont.txt" t="Include" />
+            <e p="JazzCreateBubble_VersionHistory_1.1.txt" t="Include" />
+          </e>
+          <e p="Script" t="Include">
+            <e p="scriptTexttest.cs" t="Include" />
+          </e>
+        </e>
         <e p="Scripts" t="Include">
           <e p="Rotate.cs" t="Include" />
           <e p="Story.cs" t="Include" />
