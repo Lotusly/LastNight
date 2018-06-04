@@ -82,7 +82,7 @@ Shader "Costume/GreenScreen"
 			sampler2D _MainTex;
 			sampler2D _AlphaTex;
 			float _AlphaSplitEnabled;
-			fixed _Cutoff;//......................
+			fixed _Cutoff;
 			fixed _BeginDim;
 			fixed _ColorBoundary;
 			fixed4 _UpperMask;
