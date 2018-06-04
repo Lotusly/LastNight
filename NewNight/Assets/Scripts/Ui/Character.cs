@@ -8,6 +8,8 @@ namespace Ui
 	{
 		private MarkCircle _mark;
 
+		[SerializeField] private Vector3 _moveOutTo;
+
 		
 		
 		public override void Initialize(Vector3 aimPosition=new Vector3())
@@ -35,7 +37,7 @@ namespace Ui
 		public override void MoveOut(UiItem focus = null)
 		{
 			if(focus==this)
-				Transfer(new Vector3(-0.5f,-0.4f,5),true,true);
+				Transfer(_moveOutTo,true,true);
 		}
 
 		
