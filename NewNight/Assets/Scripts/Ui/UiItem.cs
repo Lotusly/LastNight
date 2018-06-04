@@ -7,9 +7,12 @@ namespace Ui
 	public abstract class UiItem : MonoBehaviour
 	{
 
-		private const float Deviation = 0.1f;
+		private const float Deviation = 0.2f;
 		private float _speed=1f; // later make this adjustable
 		private Vector3 _originalPosition;
+		[SerializeField] protected bool _selfBoost=false;
+
+		
 		
 		
 		private Vector3 _destination;
@@ -62,7 +65,8 @@ namespace Ui
 		private void EnableFollowCamera()
 		{
 			if(_runningCoroutine!=null) StopCoroutine(_runningCoroutine);
-			_destination = _isInScreenSpace ? _destination : Coordinate.instance.Space2Screen(_destination);
+			//_destination = _isInScreenSpace ? _destination : Coordinate.instance.Space2Screen(_destination);
+			_destination = Coordinate.instance.Space2Screen(transform.position);
 			_isInScreenSpace = true;
 			_followingCamera = true;
 			

@@ -8,7 +8,7 @@ namespace Ui
 	{
 
 		[SerializeField]private Vector3 _potentialPosition; // this is always in screen space
-		[SerializeField] private bool _selfBoost=false;
+		
 
 		void Start()
 		{
