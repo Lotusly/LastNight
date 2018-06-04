@@ -21,10 +21,10 @@ MonoBehaviour:
     y: 30
     width: 1366
     height: 635
-  m_MinSize: {x: 779, y: 471}
-  m_MaxSize: {x: 18004, y: 14042}
+  m_MinSize: {x: 787, y: 471}
+  m_MaxSize: {x: 18004, y: 14021}
   vertical: 0
-  controlID: 3900
+  controlID: 4710
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -198,10 +198,10 @@ MonoBehaviour:
     y: 0
     width: 781
     height: 635
-  m_MinSize: {x: 304, y: 471}
-  m_MaxSize: {x: 10004, y: 14042}
+  m_MinSize: {x: 308, y: 471}
+  m_MaxSize: {x: 10000, y: 14021}
   vertical: 1
-  controlID: 3901
+  controlID: 4711
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -222,10 +222,10 @@ MonoBehaviour:
     y: 0
     width: 781
     height: 364
-  m_MinSize: {x: 304, y: 200}
-  m_MaxSize: {x: 8004, y: 4021}
+  m_MinSize: {x: 308, y: 221}
+  m_MaxSize: {x: 8008, y: 4021}
   vertical: 0
-  controlID: 3902
+  controlID: 4712
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -244,8 +244,8 @@ MonoBehaviour:
     y: 0
     width: 369
     height: 364
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 104, y: 121}
+  m_MaxSize: {x: 4004, y: 4021}
   m_ActualView: {fileID: 8}
   m_Panes:
   - {fileID: 8}
@@ -316,7 +316,7 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: -0.08558662, y: -0.053182967, z: 0.0045746886, w: -0.99489987}
     speed: 2
-    m_Value: {x: -0.08558662, y: -0.053182967, z: 0.0045746886, w: -0.99489987}
+    m_Value: {x: -0.085586615, y: -0.053182963, z: 0.0045746886, w: -0.99489987}
   m_Size:
     m_Target: 2.6384625
     speed: 2
@@ -480,8 +480,8 @@ MonoBehaviour:
     y: 364
     width: 781
     height: 271
-  m_MinSize: {x: 234, y: 271}
-  m_MaxSize: {x: 10004, y: 10021}
+  m_MinSize: {x: 230, y: 250}
+  m_MaxSize: {x: 10000, y: 10000}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -675,7 +675,7 @@ MonoBehaviour:
   m_AnimEditor: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 13020
+  m_LastSelectedObjectID: -113122
 --- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
