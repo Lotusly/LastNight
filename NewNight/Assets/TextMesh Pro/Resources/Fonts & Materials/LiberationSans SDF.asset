@@ -8,7 +8,7 @@ Material:
   m_PrefabInternal: {fileID: 0}
   m_Name: LiberationSans SDF Material
   m_Shader: {fileID: 4800000, guid: 4a7755d6b5b67874f89c85f56f95fe97, type: 3}
-  m_ShaderKeywords: _EMISSION
+  m_ShaderKeywords: UNDERLAY_ON _EMISSION
   m_LightmapFlags: 1
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -68,11 +68,11 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _Ambient: 0.478
-    - _Bevel: 0.419
+    - _Bevel: 0.372
     - _BevelClamp: 0
-    - _BevelOffset: -0.25
-    - _BevelRoundness: 0
-    - _BevelWidth: 0.177
+    - _BevelOffset: 0
+    - _BevelRoundness: 1
+    - _BevelWidth: 0.5
     - _BumpFace: 0
     - _BumpOutline: 0
     - _BumpScale: 1
@@ -81,7 +81,7 @@ Material:
     - _DetailNormalMapScale: 1
     - _Diffuse: 0
     - _DstBlend: 0
-    - _FaceDilate: 0.3
+    - _FaceDilate: 0.253
     - _FaceShininess: 0.22
     - _FaceUVSpeedX: 0
     - _FaceUVSpeedY: 0
@@ -103,14 +103,14 @@ Material:
     - _OutlineSoftness: 0
     - _OutlineUVSpeedX: 0
     - _OutlineUVSpeedY: 0
-    - _OutlineWidth: 0.161
+    - _OutlineWidth: 0
     - _Padding: 0
     - _Parallax: 0.02
     - _PerspectiveFilter: 0.875
     - _Reflectivity: 10.09
     - _ScaleRatioA: 0.9
-    - _ScaleRatioB: 0.46124998
-    - _ScaleRatioC: 0.46124998
+    - _ScaleRatioB: 0.50355
+    - _ScaleRatioC: 0.251775
     - _ScaleX: 1
     - _ScaleY: 1
     - _ShaderFlags: 0
@@ -126,10 +126,10 @@ Material:
     - _TextureHeight: 1024
     - _TextureWidth: 1024
     - _UVSec: 0
-    - _UnderlayDilate: -0.181
+    - _UnderlayDilate: 1
     - _UnderlayOffsetX: 1
-    - _UnderlayOffsetY: 1
-    - _UnderlaySoftness: 0.142
+    - _UnderlayOffsetY: -1
+    - _UnderlaySoftness: 0
     - _VertexOffsetX: 0
     - _VertexOffsetY: 0
     - _WeightBold: 0.75
@@ -148,7 +148,7 @@ Material:
     - _ReflectOutlineColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecularColor: {r: 0.7830189, g: 0.7830189, b: 0.7830189, a: 1}
-    - _UnderlayColor: {r: 1, g: 1, b: 1, a: 0.67058825}
+    - _UnderlayColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!28 &2846298
 Texture2D:
   m_ObjectHideFlags: 1
