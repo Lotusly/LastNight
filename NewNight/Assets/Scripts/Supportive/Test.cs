@@ -21,15 +21,18 @@ namespace Supportive
 
 		void Update()
 		{
+			
 			if (Input.GetKeyDown(KeyCode.Escape))
 			{
 				UiManager.instance.ZoomOut();
 			}
 			
+			// the block below is to test Coordinate class and UiManager.Generate and UiItem.Transfer
+			/*
 			if (_generate)
 			{
 				_generate = false;
-				GameObject newItem = Ui.UiManager.instance.Generate(pathName,_index, _spaceInScreen, true);
+				GameObject newItem = Ui.UiManager.instance.Generate(pathName,_index, _spaceInScreen, true).gameObject;
 				_objects.Add(newItem);
 				
 			}
@@ -56,7 +59,7 @@ namespace Supportive
 					Destroy(_objects[i]);
 				}
 				_objects.Clear();
-			}
+			}*/
 		}
 	}
 }

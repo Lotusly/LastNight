@@ -8,8 +8,9 @@ namespace Ui
 	{
 
 		private const float Deviation = 0.2f;
-		private float _speed=1f; // later make this adjustable
-		private Vector3 _originalPosition;
+		protected float _speed=1f; // later make this adjustable
+		[SerializeField]protected Vector3 _positionOutScreen;
+		protected Vector3 _originalPosition;
 		[SerializeField] protected bool _selfBoost=false;
 
 		
@@ -18,12 +19,15 @@ namespace Ui
 		private Vector3 _destination;
 		private bool _isInScreenSpace=false;// used in both Follow Camera and Lerp To Transfer
 
-		private bool _followingCamera = false; // UiItem should have function to stay static to the camera
+		protected bool _followingCamera = false; // UiItem should have function to stay static to the camera
 		
 		
 
 		private Coroutine _runningCoroutine=null; // this method can only run one animation at the same time: no addition
 
+
+		
+		
 		void Update()
 		{
 			if (_followingCamera)

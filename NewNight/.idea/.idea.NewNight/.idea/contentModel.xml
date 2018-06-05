@@ -29,6 +29,7 @@
             <e p="Test.cs" t="Include" />
           </e>
           <e p="Ui" t="Include">
+            <e p="Background.cs" t="Include" />
             <e p="Character.cs" t="Include" />
             <e p="Coordinate.cs" t="Include" />
             <e p="Dialogue.cs" t="Include" />
@@ -38,6 +39,7 @@
             <e p="UiCamera.cs" t="Include" />
             <e p="UiItem.cs" t="Include" />
             <e p="UiManager.cs" t="Include" />
+            <e p="UiMask.cs" t="Include" />
           </e>
           <e p="Video.cs" t="Include" />
           <e p="VoffsetLetter.cs" t="Include" />

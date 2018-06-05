@@ -16,11 +16,15 @@ namespace Ui
 		[SerializeField] private Transform _dialogues;
 		[SerializeField] private Transform _foregroundItems;
 		[SerializeField] private Transform _props;
-		[SerializeField] private Transform _backgrounds;
+		[SerializeField] private Transform _backgroundParent;
 		[SerializeField] private UiCamera _camera;
 
 		private bool exitable = false;
 		private Dictionary<string, Transform> _nameToParent;
+
+		[SerializeField] private UiMask _backgroundMask;
+		
+		private Background[] _backgrounds;
 
 		void Start()
 		{
@@ -30,16 +34,37 @@ namespace Ui
 				{"BackDecorations",_props},
 				{"FrontDecorations",_foregroundItems},
 				{"Dialogues",_dialogues},
-				{"Backgrounds",_backgrounds}
-				
+				{"Backgrounds",_backgroundParent}
 				
 			};
+			_backgrounds=new Background[4];
+			_backgrounds[0]=(Background)Generate("Backgrounds",0,new Vector3(0,0,30),false);
+			_backgrounds[0].SetLayer(0);
+			_backgroundMask.Initialize();
 			
 			Story.instance.Initialize();
 		}
 
+		public void SwitchBackground(int index)
+		{
+			_backgrounds[1]=(Background)Generate("Backgrounds",index,new Vector3(0,0,30),false);
+			if (_backgrounds[1] == null)
+			{
+				Debug.LogError("try to switch to an unexisted background: "+index.ToString());
+				return;
+			}
+			else
+			{
+				_backgrounds[2]=(Background)Generate("Backgrounds",index,new Vector3(0,0,25),false);
+				_backgrounds[2].SetLayer(2);
+				_backgrounds[3]=(Background)Generate("Backgrounds",index,new Vector3(0,0,25),false);
+				_backgrounds[3].SetLayer(3);
+				_backgroundMask.SwitchBackground();
+			}
+		}
 
-		public GameObject Generate(string pathName, int index, Vector3 position, bool inScreenSpace)
+
+		public UiItem Generate(string pathName, int index, Vector3 position, bool inScreenSpace)
 		{
 			string path="Assets/Resources/"+pathName;
 			// these error detects can be replaced by neater class initialization
@@ -90,7 +115,7 @@ namespace Ui
 			}
 
 			newItem.GetComponent<UiItem>().Initialize();
-			return newItem;
+			return newItem.GetComponent<UiItem>();
 
 		}
 

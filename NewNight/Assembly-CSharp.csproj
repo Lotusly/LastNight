@@ -68,6 +68,7 @@
     <Compile Include="Assets\Scripts\Story.cs" />
     <Compile Include="Assets\Scripts\Supportive\Singleton.cs" />
     <Compile Include="Assets\Scripts\Supportive\Test.cs" />
+    <Compile Include="Assets\Scripts\Ui\Background.cs" />
     <Compile Include="Assets\Scripts\Ui\Character.cs" />
     <Compile Include="Assets\Scripts\Ui\Coordinate.cs" />
     <Compile Include="Assets\Scripts\Ui\Dialogue.cs" />
@@ -77,6 +78,7 @@
     <Compile Include="Assets\Scripts\Ui\UiCamera.cs" />
     <Compile Include="Assets\Scripts\Ui\UiItem.cs" />
     <Compile Include="Assets\Scripts\Ui\UiManager.cs" />
+    <Compile Include="Assets\Scripts\Ui\UiMask.cs" />
     <Compile Include="Assets\Scripts\Video.cs" />
     <Compile Include="Assets\Scripts\VoffsetLetter.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
