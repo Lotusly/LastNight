@@ -8,6 +8,7 @@ Shader "Costume/Background"
 		_Color ("Tint", Color) = (1,1,1,1)
 		[MaterialToggle] PixelSnap ("Pixel snap", Float) = 0
 		_StencilRead("Int to Compare with Stencil", Range(0,255)) = 0
+		_Lighting("Bright Degree",Range(-1,1))=0
 	}
 
 	SubShader
@@ -56,6 +57,7 @@ Shader "Costume/Background"
 			};
 			
 			fixed4 _Color;
+			fixed _Lighting;
 
 			v2f vert(appdata_t IN)
 			{
@@ -89,7 +91,7 @@ Shader "Costume/Background"
 			fixed4 frag(v2f IN) : SV_Target
 			{
 				fixed4 c = SampleSpriteTexture (IN.texcoord) * IN.color;
-				c.rgb *= c.a;
+				c.rgb *= (_Lighting+1)*c.a;
 				return c;
 			}
 		ENDCG

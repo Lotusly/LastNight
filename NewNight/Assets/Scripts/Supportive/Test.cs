@@ -26,6 +26,11 @@ namespace Supportive
 			{
 				UiManager.instance.ZoomOut();
 			}
+
+			if (Input.GetKeyDown(KeyCode.Space))
+			{
+				UiManager.instance.SwitchBackground(1);
+			}
 			
 			// the block below is to test Coordinate class and UiManager.Generate and UiItem.Transfer
 			/*

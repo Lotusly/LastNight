@@ -78,7 +78,7 @@ Material:
     - _SrcBlend: 1
     - _StencilRead: 0
     - _StencilValue: 1
-    - _StencilWrite: 2
+    - _StencilWrite: 20
     - _UVSec: 0
     - _UpperFix: 0
     - _ZWrite: 1

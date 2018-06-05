@@ -47,7 +47,7 @@ namespace Ui
 
 		public void SwitchBackground(int index)
 		{
-			_backgrounds[1]=(Background)Generate("Backgrounds",index,new Vector3(0,0,30),false);
+			_backgrounds[1]=(Background)Generate("Backgrounds",index,new Vector3(0,0,25),false);
 			if (_backgrounds[1] == null)
 			{
 				Debug.LogError("try to switch to an unexisted background: "+index.ToString());
@@ -55,9 +55,9 @@ namespace Ui
 			}
 			else
 			{
-				_backgrounds[2]=(Background)Generate("Backgrounds",index,new Vector3(0,0,25),false);
+				_backgrounds[2]=(Background)Generate("Backgrounds",index+1,new Vector3(0,0,25),false);
 				_backgrounds[2].SetLayer(2);
-				_backgrounds[3]=(Background)Generate("Backgrounds",index,new Vector3(0,0,25),false);
+				_backgrounds[3]=(Background)Generate("Backgrounds",index+2,new Vector3(0,0,30),false);
 				_backgrounds[3].SetLayer(3);
 				_backgroundMask.SwitchBackground();
 			}

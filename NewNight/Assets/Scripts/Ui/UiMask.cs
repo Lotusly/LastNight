@@ -22,7 +22,7 @@ namespace Ui
 		public void SwitchBackground()
 		{
 			transform.position = Coordinate.instance.Screen2Space(_positionOutScreen);
-			Transfer(new Vector3(-_positionOutScreen.x,-_positionOutScreen.y,_positionOutScreen.z),
+			Transfer(new Vector3(0,0,_positionOutScreen.z),
 				true,false,true);
 			
 		}
