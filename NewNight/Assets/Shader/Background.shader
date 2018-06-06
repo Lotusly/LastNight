@@ -6,7 +6,7 @@ Shader "Costume/Background"
 	{
 	    _StencilRead("Stencil Read", Range(0,255)) = 0
 		_Lighting("Bright Degree",Range(-1,1))=0
-		[PerRendererData] _MainTex ("Sprite Texture", 2D) = "white" {}
+		[PerRendererData]_MainTex ("Sprite Texture", 2D) = "white" {}
 		_Color ("Tint", Color) = (1,1,1,1)
 		[MaterialToggle] PixelSnap ("Pixel snap", Float) = 0
 		
@@ -16,7 +16,8 @@ Shader "Costume/Background"
 	{
 		Tags
 		{ 
-			"Queue"="Transparent" 
+			//"Queue"="Graphics_1" 
+			"Queue"="Transparent"
 			"IgnoreProjector"="True" 
 			"RenderType"="Transparent" 
 			"PreviewType"="Plane"
@@ -27,15 +28,19 @@ Shader "Costume/Background"
 		Lighting Off
 		ZWrite Off
 		Blend One OneMinusSrcAlpha
+		
+		Stencil 
+        {
+            ReadMask [_StencilRead]
+            Ref 255
+            //Ref [_StencilRead]
+            Comp Equal
+        }
 
 		Pass
 		{
 		// Write the value 1 to the stencil buffer
-        Stencil 
-        {
-            Ref [_StencilRead]
-            Comp Equal
-        }
+        
         
 		CGPROGRAM
 			#pragma vertex vert
@@ -58,6 +63,7 @@ Shader "Costume/Background"
 			};
 			
 			fixed4 _Color;
+			fixed _StencilRead;
 			fixed _Lighting;
 
 			v2f vert(appdata_t IN)
@@ -91,8 +97,11 @@ Shader "Costume/Background"
 
 			fixed4 frag(v2f IN) : SV_Target
 			{
+			
 				fixed4 c = SampleSpriteTexture (IN.texcoord) * IN.color;
-				fixed stencilDepth = 
+	
+        
+				
 				c.rgb *= (_Lighting+1)*c.a;
 				return c;
 			}

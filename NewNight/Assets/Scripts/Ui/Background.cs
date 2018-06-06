@@ -9,7 +9,7 @@ namespace Ui
 		private Material _mat;
 		public override void Initialize(Vector3 aimPosition)
 		{
-			_mat = GetComponent<Renderer>().material;
+			//_mat = GetComponent<Renderer>().material;
 		}
 
 		

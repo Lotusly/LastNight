@@ -24,11 +24,13 @@ namespace Ui
 
 		[SerializeField] private UiMask _backgroundMask;
 		
-		// TEST
-		public Renderer[] _backgrounds;
+		private Renderer[] _backgrounds;
 		private MaterialPropertyBlock _block;
+		[SerializeField] private Material[] _backgroundMats;
 
-
+		
+		//TEST
+		public Texture _tmpTex;
 		
 		
 		void Start()
@@ -42,49 +44,44 @@ namespace Ui
 				{"Backgrounds",_backgroundParent}
 				
 			};
-
 			_backgrounds=new Renderer[4];
 			_block=new MaterialPropertyBlock();
 			
 			_backgrounds[0]=Generate("Backgrounds",0,new Vector3(0,0,30),false).gameObject.GetComponent<Renderer>();
-			_backgrounds[0].GetPropertyBlock(_block);
 
+
+			_tmpTex = _backgrounds[0].material.mainTexture;
 			
-			_block.SetFloat("_StencilRead",0);
-			_block.SetFloat("_Lighting",1);
 
+			//print(_block.GetFloat("_StencilRead"));
+			_backgrounds[0].material = _backgroundMats[0];
+			
+			//_backgrounds[0].GetPropertyBlock(_block);
+			_block.SetTexture("_MainTex",_tmpTex);
+			//_block.SetFloat("_Lighting",1);
 			_backgrounds[0].SetPropertyBlock(_block);
+
 			_backgroundMask.Initialize();
 
 			Story.instance.Initialize();
 		}
 
+		private void PlaceBackground(int index, int stencilLayer, Vector3 worldPosition, float lighting)
+		{
+			_backgrounds[stencilLayer]=Generate("Backgrounds", index, worldPosition, false).gameObject.GetComponent<Renderer>();
+			_tmpTex = _backgrounds[stencilLayer].material.mainTexture;
+			_backgrounds[stencilLayer].material = _backgroundMats[stencilLayer];
+			_block.Clear();
+			_block.SetTexture("_MainTex",_tmpTex);
+			_block.SetFloat("_Lighting",lighting);
+			_backgrounds[stencilLayer].SetPropertyBlock(_block);
+		}
+
 		public void SwitchBackground(int index)
 		{
-			Background newBackground = (Background)Generate("Backgrounds", index, new Vector3(0, 0, 25), false);
-			if (newBackground == null)
-			{
-				Debug.LogError("try to switch to an unexisted background: "+index.ToString());
-				return;
-			}
-			_backgrounds[1]=newBackground.gameObject.GetComponent<Renderer>();
-			_backgrounds[1].GetPropertyBlock(_block);
-			_block.SetFloat("_StencilRead",1);
-			_block.SetFloat("_Lighting",0.3f);
-			_backgrounds[1].SetPropertyBlock(_block);
-			
-			_backgrounds[2]=Generate("Backgrounds", index, new Vector3(0, 0, 25), false).gameObject.GetComponent<Renderer>();
-			_backgrounds[2].GetPropertyBlock(_block);
-			_block.SetFloat("_StencilRead",2);
-			_block.SetFloat("_Lighting",-0.3f);
-			_backgrounds[2].SetPropertyBlock(_block);
-			
-			_backgrounds[3]=Generate("Backgrounds", index, new Vector3(0, 0, 30), false).gameObject.GetComponent<Renderer>();
-			_backgrounds[3].GetPropertyBlock(_block);
-			_block.SetFloat("_StencilRead",3);
-			_block.SetFloat("_Lighting",0.0f);
-			_backgrounds[3].SetPropertyBlock(_block);
-			
+			PlaceBackground(index,1,new Vector3(0,0,15),-.3f);
+			PlaceBackground(index,2,new Vector3(0,0,15), 0.3f);
+			PlaceBackground(index,3,new Vector3(0,0,30), 0f);
 			_backgroundMask.SwitchBackground();
 			
 		}
