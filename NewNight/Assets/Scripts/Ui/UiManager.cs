@@ -86,8 +86,9 @@ namespace Ui
 			
 		}
 
-		public void GenerateBackground(int index)
+		public void AfterBackground()
 		{
+			
 			
 		}
 

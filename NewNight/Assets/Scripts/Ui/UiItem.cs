@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace Ui
 {
@@ -12,6 +13,7 @@ namespace Ui
 		[SerializeField]protected Vector3 _positionOutScreen;
 		protected Vector3 _originalPosition;
 		[SerializeField] protected bool _selfBoost=false;
+		protected UnityEvent _afterArrival = new UnityEvent();
 
 		
 		
@@ -126,6 +128,7 @@ namespace Ui
 			}
 			if(followCamera) EnableFollowCamera();
 			_runningCoroutine = null;
+			_afterArrival.Invoke();
 		}
 	}
 }

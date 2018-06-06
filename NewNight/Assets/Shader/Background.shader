@@ -9,6 +9,7 @@ Shader "Costume/Background"
 		[PerRendererData]_MainTex ("Sprite Texture", 2D) = "white" {}
 		_Color ("Tint", Color) = (1,1,1,1)
 		[MaterialToggle] PixelSnap ("Pixel snap", Float) = 0
+		_EqualOrSmaller("Compare with Equal or Smaller. 0 or 255",float)=0
 		
 	}
 
@@ -31,9 +32,8 @@ Shader "Costume/Background"
 		
 		Stencil 
         {
-            ReadMask [_StencilRead]
-            Ref 255
-            //Ref [_StencilRead]
+
+            Ref [_StencilRead]
             Comp Equal
         }
 
