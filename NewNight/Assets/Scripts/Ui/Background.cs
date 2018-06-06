@@ -12,9 +12,6 @@ namespace Ui
 			_mat = GetComponent<Renderer>().material;
 		}
 
-		public void SetLayer(int i)
-		{
-			_mat.SetInt("_StencilRead",i);
-		}
+		
 	}
 }

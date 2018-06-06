@@ -9,7 +9,7 @@ Shader "Costume/Mask"
 		[MaterialToggle] PixelSnap ("Pixel snap", Float) = 0
 		_Cutoff ("Alpha Cutoff", Range(0,1)) = 0.5 //use this parameter to test transparent
 		
-		_StencilWrite("Int to Write to Stencil",Range(0,255)) = 0
+		_StencilWrite("Stencil Write",Range(0,255)) = 0
 	}
 
 	SubShader

@@ -5,7 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/Scenes/Lotus.unity
+  - enabled: 0
+    path: Assets/Scenes/Object.unity
     guid: 98561f710129a704aa57fa3b7e41c636
+  - enabled: 1
+    path: Assets/Scenes/UI.unity
+    guid: e36404ea210f0394fb3e22c0c35adeb1
   m_configObjects: {}
