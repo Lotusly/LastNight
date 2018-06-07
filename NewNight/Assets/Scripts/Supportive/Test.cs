@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using Ui;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Supportive
 {
-	public class Test : MonoBehaviour
+	public class Test : Singleton<Test>
 	{
 		[SerializeField] private string pathName;
 		[SerializeField] private int _index;
@@ -20,7 +21,19 @@ namespace Supportive
 
 
 		private int index=0;
+		
+		private Image [] _images;
 
+		void Start()
+		{
+			_images = GetComponentsInChildren<Image>();
+		}
+
+		public void ShowImage(int index)
+		{
+			_images[index].enabled = true;
+		}
+		
 		void Update()
 		{
 			
@@ -31,7 +44,8 @@ namespace Supportive
 
 			if (Input.GetKeyDown(KeyCode.Space))
 			{
-				UiManager.instance.SwitchBackground(1);
+				index = (index + 1) % 2;
+				UiManager.instance.SwitchBackground(index);
 			}
 
 			if (Input.GetMouseButtonDown(0))

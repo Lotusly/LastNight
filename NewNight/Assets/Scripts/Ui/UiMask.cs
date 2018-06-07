@@ -37,7 +37,7 @@ namespace Ui
 				direction=new Vector2(0,1);
 			}
 			Vector2 norm = direction.normalized;
-			SetPosition(new Vector3(norm.x*5, norm.y*5, _positionOutScreen.z), true, false, true);
+			SetPosition(new Vector3(norm.x*4.2f, norm.y*4.2f, _positionOutScreen.z), true, false, true); // this can be upgraded to calculate the edge distance
 			float radius=Mathf.Acos(Vector2.Dot(norm, new Vector2(0, -1)));
 			float degree=degree = radius * 180 / Mathf.PI;
 			if (direction.x < 0 )
@@ -51,7 +51,7 @@ namespace Ui
 
 			transform.rotation=Quaternion.Euler(0,0,degree);
 			Transfer(new Vector3(0,0,_positionOutScreen.z),
-				true,false,true,1,0.75f);
+				true,false,true,1,0.9f);
 			
 		}
 

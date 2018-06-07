@@ -1,8 +1,9 @@
-﻿using System.Collections;
+﻿
 using System.Collections.Generic;
 using System.IO;
-using System.Runtime.InteropServices;
+using Supportive;
 using UnityEngine;
+
 
 namespace Ui
 {
@@ -32,6 +33,8 @@ namespace Ui
 
 		
 		private Texture _tmpTex;
+
+		
 		
 		
 		void Start()
@@ -45,18 +48,17 @@ namespace Ui
 				{"Backgrounds",_backgroundParent}
 				
 			};
+			
 			_backgrounds=new Renderer[4];
 			_block=new MaterialPropertyBlock();
-			
-			_backgrounds[0]=Generate("Backgrounds",0,new Vector3(0,0,30),false).gameObject.GetComponent<Renderer>();
-
+			UiItem tmp = Generate("Backgrounds", 0, new Vector3(0, 0, 30), false);
+			//GameObject tmpObject = tmp.gameObject;
+			_backgrounds[0]=tmp.GetComponent<Renderer>();
 
 			_tmpTex = _backgrounds[0].material.mainTexture;
 			
-
 			//print(_block.GetFloat("_StencilRead"));
 			_backgrounds[0].material = _backgroundMats[0];
-			
 			//_backgrounds[0].GetPropertyBlock(_block);
 			_block.SetTexture("_MainTex",_tmpTex);
 			//_block.SetFloat("_Lighting",1);
@@ -67,7 +69,7 @@ namespace Ui
 			Story.instance.Initialize();
 		}
 
-		private void PlaceBackground(int index, int stencilLayer, Vector3 worldPosition, float lighting)
+		private void PlaceBackground(int index, int stencilLayer, Vector3 worldPosition,  float lighting)
 		{
 			_backgrounds[stencilLayer]=Generate("Backgrounds", index, worldPosition, false).gameObject.GetComponent<Renderer>();
 			_tmpTex = _backgrounds[stencilLayer].material.mainTexture;
@@ -83,11 +85,43 @@ namespace Ui
 			
 			if (!switchingBackground)
 			{
+				float randomSeed = Random.value-0.5f;
+				print(randomSeed);
+				//bool close = seed > 0;
 				switchingBackground = true;
-				PlaceBackground(index, 1, new Vector3(0, 0, 15), -.3f);
-				PlaceBackground(index, 2, new Vector3(0, 0, 15), 0.3f);
-				PlaceBackground(index, 3, new Vector3(0, 0, 30), 0f);
 				
+				
+				
+				PlaceBackground(index, 1, new Vector3(0, 0, 20-randomSeed*5),  -.4f);
+				_backgrounds[1].gameObject.GetComponent<UiItem>().Transfer(_backgrounds[1].transform.position+new Vector3(0,0,1)*5*randomSeed,false,false);
+				PlaceBackground(index, 2, new Vector3(0, 0, 20-randomSeed*5),  0.4f);
+				_backgrounds[2].gameObject.GetComponent<UiItem>().Transfer(_backgrounds[2].transform.position+new Vector3(0,0,1)*5*randomSeed,false,false);
+				PlaceBackground(index, 3, new Vector3(0, 0, 30-randomSeed*7.5f), 0f);
+				_backgrounds[3].gameObject.GetComponent<UiItem>().Transfer(_backgrounds[3].transform.position+new Vector3(0,0,1)*7.5f*randomSeed,false,false);
+				
+				if (direction.x > direction.y)
+				{
+					if (direction.x > -direction.y)
+					{
+						_backgrounds[0].gameObject.GetComponent<UiItem>().Transfer(_backgrounds[0].transform.position-Vector3.right*2,true,false,false,2,0.7f);
+					}
+					else
+					{
+						_backgrounds[0].gameObject.GetComponent<UiItem>().Transfer(_backgrounds[0].transform.position-Vector3.down*2,true,false,false,2,0.7f);
+					}
+				}
+				else
+				{
+					if (direction.x > -direction.y)
+					{
+						_backgrounds[0].gameObject.GetComponent<UiItem>().Transfer(_backgrounds[0].transform.position-Vector3.up*2,true,false,false,2,0.7f);
+					}
+					else
+					{
+						_backgrounds[0].gameObject.GetComponent<UiItem>().Transfer(_backgrounds[0].transform.position-Vector3.left*2,true,false,false,2,0.7f);
+					}
+				}
+				//_backgrounds[0].gameObject.GetComponent<UiItem>().Transfer(_backgrounds[0].transform.position-Vector3.left*2,true,false,false,2);
 				_backgroundMask.SwitchBackground(direction);
 				
 			}
@@ -98,7 +132,9 @@ namespace Ui
 		{
 			//Destroy(_backgrounds[0].gameObject);
 			//_backgrounds[0] = _backgrounds[3];
-			_backgrounds[1].gameObject.GetComponent<UiItem>().EnableFollowObject(_backgrounds[3].gameObject.GetComponent<UiItem>());
+			_backgrounds[0].transform.SetPositionAndRotation(_backgrounds[3].transform.position,_backgrounds[3].transform.rotation);
+			_backgrounds[0].transform.localScale = _backgrounds[3].transform.localScale;
+			_backgrounds[0].gameObject.GetComponent<UiItem>().EnableFollowObject(_backgrounds[3].gameObject.GetComponent<UiItem>());
 			_backgrounds[3].GetPropertyBlock(_block);
 			_backgrounds[0].SetPropertyBlock(_block);
 			_backgroundMask.Reset();
@@ -111,33 +147,13 @@ namespace Ui
 
 		public UiItem Generate(string pathName, int index, Vector3 position, bool inScreenSpace)
 		{
-			string path="Assets/Resources/"+pathName;
-			// these error detects can be replaced by neater class initialization
-			if (!Directory.Exists(path))
-			{
-				Debug.LogError("UiManager try to generate item from unexisted directory: "+path);
-				return null;
-			}
-			int numberOfFiles = Directory.GetFiles(path,"*.prefab").Length;
-			if (numberOfFiles < 1)
-			{
-				Debug.LogError("UiManager try to generate an item from empty directory: "+path);
-				return null;
-			}
+
 
 			if (index < 0)
 			{
-				index = Random.Range(0,numberOfFiles);
-			}
-
-			path = path + "/" + index.ToString()+".prefab";
-			
-			if (!File.Exists(path))
-			{
-				Debug.LogError("UiManager try to generate an unexisted item: "+path);
+				Debug.LogError("error: try to generate item with negative index");
 				return null;
 			}
-			
 			
 
 			Vector3 positionInWorld = position;
@@ -145,13 +161,18 @@ namespace Ui
 			{
 				positionInWorld = Coordinate.instance.Screen2Space(positionInWorld);
 			}
-
-			GameObject newItem = Instantiate(Resources.Load<GameObject>(pathName+"/"+index.ToString()));
+			GameObject newItem = Resources.Load<GameObject>(pathName + "/" + index.ToString());
+			if (newItem == null)
+			{
+				Debug.LogError("error: try to generate item that doesn't exist");
+				return null;
+			}
+			newItem = Instantiate(newItem);
 			newItem.transform.position = positionInWorld;
 			
 			if (!_nameToParent.ContainsKey(pathName))
 			{
-				Debug.LogWarning("UiManager generates an item that doesn't have registered  category/parent: "+pathName);
+				Debug.LogWarning("warning: UiManager generates an item that doesn't have registered  category/parent: "+pathName);
 				newItem.transform.parent = _generalParent;
 			}
 			else

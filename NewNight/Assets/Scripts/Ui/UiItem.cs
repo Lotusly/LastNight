@@ -128,6 +128,9 @@ namespace Ui
 				case 0:
 					_runningCoroutine = StartCoroutine(PlainLerp(followCamera,speed));
 					break;
+				case 2:
+					_runningCoroutine = StartCoroutine(AccelerateTransfer(followCamera,speed,1f));
+					break;
 			}
 		}
 
@@ -159,6 +162,29 @@ namespace Ui
 				if (Vector3.Distance(transform.position,
 					    _isInScreenSpace ? Coordinate.instance.Screen2Space(_destination) : _destination) <
 				    Deviation*scope*0.1f) break;
+			}
+			if(followCamera) EnableFollowObject();
+			_afterArrival.Invoke();
+			_runningCoroutine = null;
+			
+		}
+		
+		private IEnumerator AccelerateTransfer(bool followCamera, float speedMax, float acce)
+		{
+			yield return null;
+			float scope = ((_isInScreenSpace ? Coordinate.instance.Screen2Space(_destination) : _destination) -
+			               transform.position).magnitude;
+			speedMax *= scope;
+			float speed = 0;
+			
+			while (true)
+			{
+				if(speed<speedMax) speed += Time.deltaTime * acce*scope;
+				transform.position +=( (_isInScreenSpace?Coordinate.instance.Screen2Space(_destination):_destination) - transform.position).normalized * Time.deltaTime * speed;
+				yield return new WaitForEndOfFrame();
+				if (Vector3.Distance(transform.position,
+					    _isInScreenSpace ? Coordinate.instance.Screen2Space(_destination) : _destination) <
+				    Deviation*scope) break;
 			}
 			if(followCamera) EnableFollowObject();
 			_afterArrival.Invoke();
