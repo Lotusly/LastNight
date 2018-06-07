@@ -31,6 +31,13 @@ namespace Supportive
 			{
 				UiManager.instance.SwitchBackground(1);
 			}
+
+			if (Input.GetMouseButtonDown(0))
+			{
+				Vector2 direction = new Vector2(2*Input.mousePosition.x/Screen.width-1,2*Input.mousePosition.y/Screen.height-1);
+				print(direction);
+				UiManager.instance.SwitchBackground(1,direction);
+			}
 			
 			// the block below is to test Coordinate class and UiManager.Generate and UiItem.Transfer
 			/*

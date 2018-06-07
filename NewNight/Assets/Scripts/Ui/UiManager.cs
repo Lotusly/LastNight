@@ -17,20 +17,21 @@ namespace Ui
 		[SerializeField] private Transform _foregroundItems;
 		[SerializeField] private Transform _props;
 		[SerializeField] private Transform _backgroundParent;
-		[SerializeField] private UiCamera _camera;
+		public UiCamera _camera;
 
 		private bool exitable = false;
+		private bool switchingBackground = false;
 		private Dictionary<string, Transform> _nameToParent;
 
 		[SerializeField] private UiMask _backgroundMask;
 		
-		private Renderer[] _backgrounds;
+		//TEST
+		public Renderer[] _backgrounds;
 		private MaterialPropertyBlock _block;
 		[SerializeField] private Material[] _backgroundMats;
 
 		
-		//TEST
-		public Texture _tmpTex;
+		private Texture _tmpTex;
 		
 		
 		void Start()
@@ -77,19 +78,36 @@ namespace Ui
 			_backgrounds[stencilLayer].SetPropertyBlock(_block);
 		}
 
-		public void SwitchBackground(int index)
+		public void SwitchBackground(int index, Vector2 direction=new Vector2())
 		{
-			PlaceBackground(index,1,new Vector3(0,0,15),-.3f);
-			PlaceBackground(index,2,new Vector3(0,0,15), 0.3f);
-			PlaceBackground(index,3,new Vector3(0,0,30), 0f);
-			_backgroundMask.SwitchBackground();
 			
+			if (!switchingBackground)
+			{
+				switchingBackground = true;
+				PlaceBackground(index, 1, new Vector3(0, 0, 15), -.3f);
+				PlaceBackground(index, 2, new Vector3(0, 0, 15), 0.3f);
+				PlaceBackground(index, 3, new Vector3(0, 0, 30), 0f);
+				
+				_backgroundMask.SwitchBackground(direction);
+				
+			}
+
 		}
 
 		public void AfterBackground()
 		{
-			
-			
+			//Destroy(_backgrounds[0].gameObject);
+			//_backgrounds[0] = _backgrounds[3];
+			_backgrounds[1].gameObject.GetComponent<UiItem>().EnableFollowObject(_backgrounds[3].gameObject.GetComponent<UiItem>());
+			_block.Clear();
+			_block.SetTexture("_MainTex",_backgrounds[3].material.mainTexture);
+			_block.SetFloat("_Lighting",_backgrounds[3].material.GetFloat("_Lighting"));
+			_backgrounds[0].SetPropertyBlock(_block);
+			_backgroundMask.Reset();
+			Destroy(_backgrounds[1].gameObject);
+			Destroy(_backgrounds[2].gameObject);
+			Destroy(_backgrounds[3].gameObject);
+			switchingBackground = false;
 		}
 
 
