@@ -99,9 +99,7 @@ namespace Ui
 			//Destroy(_backgrounds[0].gameObject);
 			//_backgrounds[0] = _backgrounds[3];
 			_backgrounds[1].gameObject.GetComponent<UiItem>().EnableFollowObject(_backgrounds[3].gameObject.GetComponent<UiItem>());
-			_block.Clear();
-			_block.SetTexture("_MainTex",_backgrounds[3].material.mainTexture);
-			_block.SetFloat("_Lighting",_backgrounds[3].material.GetFloat("_Lighting"));
+			_backgrounds[3].GetPropertyBlock(_block);
 			_backgrounds[0].SetPropertyBlock(_block);
 			_backgroundMask.Reset();
 			Destroy(_backgrounds[1].gameObject);

@@ -8,7 +8,7 @@ namespace Ui
 	public abstract class UiItem : MonoBehaviour
 	{
 
-		private const float Deviation = 0.2f;
+		private const float Deviation = 0.1f;
 		protected float _speed=1f; // later make this adjustable
 		[SerializeField]protected Vector3 _positionOutScreen;
 		protected Vector3 _originalPosition;
@@ -111,7 +111,8 @@ namespace Ui
 		}
 
 
-		public void Transfer(Vector3 newPosition, bool inScreenSpace, bool recordOrigin, bool followCamera = false)
+		public void Transfer(Vector3 newPosition, bool inScreenSpace, bool recordOrigin, bool followCamera = false,
+			int mode = 0, float speed = 1f)
 		{
 			if (recordOrigin) _originalPosition = transform.position; // if record, then remember where it leaves; otherwise don't update
 			DisableFollowObject();
@@ -119,21 +120,50 @@ namespace Ui
 			_isInScreenSpace = inScreenSpace;
 			
 			if(_runningCoroutine!=null) StopCoroutine(_runningCoroutine);
-			_runningCoroutine = StartCoroutine(PlainLerp(followCamera));
+			switch (mode)
+			{
+				case 1:
+					_runningCoroutine = StartCoroutine(ConstantTransfer(followCamera,speed));
+					break;
+				case 0:
+					_runningCoroutine = StartCoroutine(PlainLerp(followCamera,speed));
+					break;
+			}
 		}
 
-		private IEnumerator PlainLerp(bool followCamera)
+		private IEnumerator PlainLerp(bool followCamera, float speed)
 		{
 			yield return null;
 			while (true)
 			{
-				transform.position = Vector3.Lerp(transform.position, (_isInScreenSpace?Coordinate.instance.Screen2Space(_destination):_destination),Time.deltaTime*_speed);
+				transform.position = Vector3.Lerp(transform.position, (_isInScreenSpace?Coordinate.instance.Screen2Space(_destination):_destination),Time.deltaTime*speed);
 				yield return new WaitForEndOfFrame();
 				if (Vector3.Distance(transform.position, (_isInScreenSpace?Coordinate.instance.Screen2Space(_destination):_destination)) < Deviation) break;
 			}
 			if(followCamera) EnableFollowObject();
-			_runningCoroutine = null;
 			_afterArrival.Invoke();
+			_runningCoroutine = null;
+			
+		}
+
+		private IEnumerator ConstantTransfer(bool followCamera, float speed)
+		{
+			yield return null;
+			float scope = ((_isInScreenSpace ? Coordinate.instance.Screen2Space(_destination) : _destination) -
+			               transform.position).magnitude;
+			speed *= scope;
+			while (true)
+			{
+				transform.position +=( (_isInScreenSpace?Coordinate.instance.Screen2Space(_destination):_destination) - transform.position).normalized * Time.deltaTime * speed;
+				yield return new WaitForEndOfFrame();
+				if (Vector3.Distance(transform.position,
+					    _isInScreenSpace ? Coordinate.instance.Screen2Space(_destination) : _destination) <
+				    Deviation*scope*0.1f) break;
+			}
+			if(followCamera) EnableFollowObject();
+			_afterArrival.Invoke();
+			_runningCoroutine = null;
+			
 		}
 	}
 }

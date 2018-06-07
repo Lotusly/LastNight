@@ -19,6 +19,8 @@ namespace Supportive
 		[SerializeField] private bool _clearAll = false;
 
 
+		private int index=0;
+
 		void Update()
 		{
 			
@@ -34,9 +36,10 @@ namespace Supportive
 
 			if (Input.GetMouseButtonDown(0))
 			{
+				index = (index + 1) % 2;
 				Vector2 direction = new Vector2(2*Input.mousePosition.x/Screen.width-1,2*Input.mousePosition.y/Screen.height-1);
 				print(direction);
-				UiManager.instance.SwitchBackground(1,direction);
+				UiManager.instance.SwitchBackground(index,direction);
 			}
 			
 			// the block below is to test Coordinate class and UiManager.Generate and UiItem.Transfer

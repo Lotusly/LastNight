@@ -51,7 +51,7 @@ namespace Ui
 
 			transform.rotation=Quaternion.Euler(0,0,degree);
 			Transfer(new Vector3(0,0,_positionOutScreen.z),
-				true,false,true);
+				true,false,true,1,0.75f);
 			
 		}
 
