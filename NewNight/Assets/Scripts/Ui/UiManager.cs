@@ -85,6 +85,9 @@ namespace Ui
 			
 			if (!switchingBackground)
 			{
+				//TEST
+				Test.instance.index = (Test.instance.index + 1) % 2;
+				
 				float randomSeed = Random.value-0.5f;
 				print(randomSeed);
 				//bool close = seed > 0;

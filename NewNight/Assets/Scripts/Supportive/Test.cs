@@ -20,7 +20,7 @@ namespace Supportive
 		[SerializeField] private bool _clearAll = false;
 
 
-		private int index=0;
+		public int index=1;
 		
 		private Image [] _images;
 
@@ -50,7 +50,7 @@ namespace Supportive
 
 			if (Input.GetMouseButtonDown(0))
 			{
-				index = (index + 1) % 2;
+				
 				Vector2 direction = new Vector2(2*Input.mousePosition.x/Screen.width-1,2*Input.mousePosition.y/Screen.height-1);
 				print(direction);
 				UiManager.instance.SwitchBackground(index,direction);
