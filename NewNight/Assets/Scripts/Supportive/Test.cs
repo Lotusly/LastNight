@@ -24,6 +24,8 @@ namespace Supportive
 		
 		private Image [] _images;
 
+
+
 		void Start()
 		{
 			_images = GetComponentsInChildren<Image>();

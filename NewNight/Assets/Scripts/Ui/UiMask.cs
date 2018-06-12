@@ -12,10 +12,16 @@ namespace Ui
 		// Use this for initialization
 
 		private Quaternion _rotationOutScreen;
+		private Background[] _backgrounds;
+		private Vector2 _originalInterval;
 
 		public override void Initialize(Vector3 aimPosition=new Vector3()) // parameter aimPositiom is not used
 		{
-			_afterArrival.AddListener(UiManager.instance.AfterBackground);
+			_backgrounds = GetComponentsInChildren<Background>();
+			_originalInterval = new Vector2(
+				_backgrounds[1].transform.localPosition.y - _backgrounds[0].transform.localPosition.y,
+				_backgrounds[2].transform.localPosition.y - _backgrounds[1].transform.localPosition.y);
+			AfterArrival.AddListener(UiManager.instance.AfterBackground);
 			aimPosition = Coordinate.instance.Space2Screen(transform.position);
 			_positionOutScreen = aimPosition;
 			_rotationOutScreen = transform.rotation;
@@ -27,7 +33,16 @@ namespace Ui
 		{
 			transform.rotation = _rotationOutScreen;
 			SetPosition(_positionOutScreen,true,false,true);
-			//transform.position = Coordinate.instance.Screen2Space(_positionOutScreen);
+		}
+
+		public void SetInterval(Vector2 interval)
+		{
+			if(interval[0]<0) SetInterval(_originalInterval); // interval[0]<0 => reset interval
+			else
+			{
+				_backgrounds[1].transform.localPosition = _backgrounds[0].transform.localPosition + Vector3.up * interval[0];
+				_backgrounds[2].transform.localPosition = _backgrounds[1].transform.localPosition + Vector3.up * interval[1];
+			}
 		}
 
 		public void SwitchBackground(Vector2 direction=new Vector2()) // direction here is in screen space

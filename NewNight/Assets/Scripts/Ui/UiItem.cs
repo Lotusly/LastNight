@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 namespace Ui
 {
-	public abstract class UiItem : MonoBehaviour
+	public class UiItem : MonoBehaviour
 	{
 
 		private const float Deviation = 0.1f;
@@ -13,7 +13,7 @@ namespace Ui
 		[SerializeField]protected Vector3 _positionOutScreen;
 		protected Vector3 _originalPosition;
 		[SerializeField] protected bool _selfBoost=false;
-		protected UnityEvent _afterArrival = new UnityEvent();
+		public UnityEvent AfterArrival = new UnityEvent();
 
 		private Vector3 _followingCoordinate;
 
@@ -48,8 +48,8 @@ namespace Ui
 			}
 		}
 
-		public abstract void Initialize(Vector3 aimPosition=new Vector3()); // new function
-		
+		public virtual void Initialize(Vector3 aimPosition = new Vector3()) {}
+
 
 
 		public Vector3 GetOriginalPosition()
@@ -62,7 +62,7 @@ namespace Ui
 			return _destination;
 		}
 
-		public virtual void MoveOut(UiItem focus = null) {} // new function
+		public virtual void MoveOut(UiItem focus = null) {} 
 
 
 		public virtual void MoveBack()
@@ -105,6 +105,8 @@ namespace Ui
 			_originalPosition = transform.position;
 		}
 
+	
+
 		public void SetOriginPosition(Vector3 position, bool inScreenSpace)
 		{
 			_originalPosition = inScreenSpace?Coordinate.instance.Screen2Space(position):position;
@@ -144,7 +146,7 @@ namespace Ui
 				if (Vector3.Distance(transform.position, (_isInScreenSpace?Coordinate.instance.Screen2Space(_destination):_destination)) < Deviation) break;
 			}
 			if(followCamera) EnableFollowObject();
-			_afterArrival.Invoke();
+			AfterArrival.Invoke();
 			_runningCoroutine = null;
 			
 		}
@@ -164,7 +166,7 @@ namespace Ui
 				    Deviation*scope*0.1f) break;
 			}
 			if(followCamera) EnableFollowObject();
-			_afterArrival.Invoke();
+			AfterArrival.Invoke();
 			_runningCoroutine = null;
 			
 		}
@@ -187,9 +189,14 @@ namespace Ui
 				    Deviation*scope) break;
 			}
 			if(followCamera) EnableFollowObject();
-			_afterArrival.Invoke();
+			AfterArrival.Invoke();
 			_runningCoroutine = null;
 			
+		}
+
+		public void DestroyHandler()
+		{
+			Destroy(gameObject);
 		}
 	}
 }
