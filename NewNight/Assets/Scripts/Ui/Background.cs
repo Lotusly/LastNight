@@ -7,11 +7,11 @@ namespace Ui
 	public class Background : UiItem
 	{
 		private Material _mat;
-		public override void Initialize(Vector3 aimPosition)
-		{
-			//_mat = GetComponent<Renderer>().material;
-		}
 
-		
+
+		private void OnMouseDown()
+		{
+			Story.instance.OnClick(0);
+		}
 	}
 }

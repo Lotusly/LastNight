@@ -41,7 +41,11 @@ namespace Ui
 		
 		private Texture _tmpTex;
 
-		private List<Item> _potentialItems;
+		private List<Item> _potentialItems; // used to switch props
+		// TEMP
+		[SerializeField] private Dialogue _singleDialogue;
+
+		
 
 		
 		
@@ -52,12 +56,13 @@ namespace Ui
 			{
 				{ "Characters",_characters},
 				{"Props",_props},
-				{"FrontDecorations",_foregroundItems},
+				{"ForegroundItems",_foregroundItems},
 				{"Dialogues",_dialogues},
 				{"Backgrounds",_backgroundParent}
 				
 			};
 
+			
 			_potentialItems = new List<Item>();
 			_backgrounds=new Renderer[4];
 			_block=new MaterialPropertyBlock();
@@ -100,7 +105,6 @@ namespace Ui
 				Test.instance.index = (Test.instance.index + 1) % 2;
 				
 				float randomSeed = Random.value-0.5f;
-				print(randomSeed);
 				switchingBackground = true;
 				
 				
@@ -213,7 +217,7 @@ namespace Ui
 		}
 
 
-		public UiItem Generate(string pathName, int index, Vector3 position, bool inScreenSpace)
+		public UiItem Generate(string pathName, int index, Vector3 position, bool inScreenSpace, bool initialize=true)
 		{
 
 
@@ -248,39 +252,46 @@ namespace Ui
 				newItem.transform.parent = _nameToParent[pathName];
 			}
 
-			newItem.GetComponent<UiItem>().Initialize();
+			if(initialize)newItem.GetComponent<UiItem>().Initialize();
 			return newItem.GetComponent<UiItem>();
 
 		}
 
-		public UiItem GenerateForegroundItem(int index, Vector3 position, Vector3 potentialPosition, bool inScreenSpace)
+		public ForegroundItem GenerateForegroundItem(int index, Vector3 positionInScreen, Vector3 potentialPositionInScreen)
 		{
-			string path = "Assets/Resources/ForegroundItems/" + index.ToString()+".prefab";
-			if (!File.Exists(path))
-			{
-				Debug.LogError("UiManager try to generate an unexisted item: "+path);
-				return null;
-			}
-			
-			Vector3 positionInWorld = position;
-			if (inScreenSpace)
-			{
-				positionInWorld = Coordinate.instance.Screen2Space(position);
-			}
-			
-			GameObject itemObject = Instantiate(Resources.Load<GameObject>("ForegroundItems/"+index.ToString()),_foregroundItems);
-			itemObject.transform.position = positionInWorld;
-			ForegroundItem item = itemObject.GetComponent<ForegroundItem>();
+
+			ForegroundItem item = (ForegroundItem) Generate("ForegroundItems", index, positionInScreen, true,false);
 			if (item == null)
 			{
-				Debug.LogError("Resources/ForegroundItems/"+index.ToString()+" does not have component ForgroundItem");
+				Debug.LogError("UiManager.GenerateForegroundItem: Resources/ForegroundItems/"+index.ToString()+" does not exist");
 				return null;
 			}
-			item.Initialize(inScreenSpace?potentialPosition:Coordinate.instance.Space2Screen(potentialPosition));
+			item.Initialize(potentialPositionInScreen);
 			return item;
 		}
 
-		
+		/* Now only has one single dialogue
+		public Dialogue GenerateDialogue(int index, Vector3 positionInScreen, Vector3 potentialPositionInScreen)
+		{
+			Dialogue item = (Dialogue) Generate("Dialogues", index, positionInScreen, true, false);
+			if (item == null)
+			{
+				Debug.LogError("UiManager.GenerateDialogue: Resources/Dialogues/"+index.ToString()+" does not exist");
+				return null;
+			}
+			item.Initialize(potentialPositionInScreen);
+			return item;
+		} */
+
+		public void SetDialogueCon(Dialogue.DialogueContaining newDiaCon, bool updateNow=true)
+		{
+			_singleDialogue.SetDialogueContaining(newDiaCon,updateNow);
+		}
+
+		public void ClearDialogue()
+		{
+			_singleDialogue.ClearDialogue();
+		}
 
 		public void ZoomIn(Character focus)
 		{
@@ -289,6 +300,9 @@ namespace Ui
 			MoveOutGroup(_characters,focus);
 			MoveOutGroup(_foregroundItems,focus);
 			focus.transform.parent = _portraits;
+			// TEMP
+			Story.instance.OnClick(0);
+			_singleDialogue.MoveOut();
 			
 		}
 
@@ -300,13 +314,15 @@ namespace Ui
 				_camera.MoveBack();
 				MoveBackGroup(_portraits,_characters);
 				MoveBackGroup(_foregroundItems);
+				// TEMP
+				_singleDialogue.MoveBack();
 			}
 
 		}
 
 		private void MoveOutGroup(Transform parent, UiItem focus)
 		{
-			int numChildren = parent.GetChildCount();
+			int numChildren = parent.childCount;
 			for (int i = 0; i < numChildren; i++)
 			{
 				UiItem item = parent.GetChild(i).gameObject.GetComponent<UiItem>();
@@ -323,7 +339,7 @@ namespace Ui
 
 		private void MoveBackGroup(Transform parent, Transform switchToParent = null)
 		{
-			int numChildren = parent.GetChildCount();
+			int numChildren = parent.childCount;
 			for (int i = 0; i < numChildren; i++)
 			{
 				UiItem item = parent.GetChild(i).gameObject.GetComponent<UiItem>();

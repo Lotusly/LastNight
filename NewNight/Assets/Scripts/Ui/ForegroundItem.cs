@@ -27,8 +27,7 @@ namespace Ui
 			}
 			else
 			{
-				Debug.LogWarning("ForegroundItem didn't get potential position assigned when initialize");
-				aimPosition = transform.position;
+				_potentialPosition = transform.position;
 			}
 		}
 

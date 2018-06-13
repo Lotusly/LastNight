@@ -54,7 +54,7 @@ namespace Ui
 			Vector2 norm = direction.normalized;
 			SetPosition(new Vector3(norm.x*4.2f, norm.y*4.2f, _positionOutScreen.z), true, false, true); // this can be upgraded to calculate the edge distance
 			float radius=Mathf.Acos(Vector2.Dot(norm, new Vector2(0, -1)));
-			float degree=degree = radius * 180 / Mathf.PI;
+			float degree = radius * 180 / Mathf.PI;
 			if (direction.x < 0 )
 			{
 				degree = 360-degree;

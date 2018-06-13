@@ -8,7 +8,7 @@ namespace Ui
 	public class UiItem : MonoBehaviour
 	{
 
-		private const float Deviation = 0.1f;
+		private const float Deviation = 0.2f;
 		protected float _speed=1f; // later make this adjustable
 		[SerializeField]protected Vector3 _positionOutScreen;
 		protected Vector3 _originalPosition;
@@ -114,7 +114,7 @@ namespace Ui
 
 
 		public void Transfer(Vector3 newPosition, bool inScreenSpace, bool recordOrigin, bool followCamera = false,
-			int mode = 0, float speed = 1f)
+			int mode = 0, float speed = 1.5f)
 		{
 			if (recordOrigin) _originalPosition = transform.position; // if record, then remember where it leaves; otherwise don't update
 			DisableFollowObject();

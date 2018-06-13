@@ -36,6 +36,7 @@
             <e p="Dialogue.cs" t="Include" />
             <e p="ForegroundItem.cs" t="Include" />
             <e p="MarkCircle.cs" t="Include" />
+            <e p="Option.cs" t="Include" />
             <e p="PlaybackWheel.cs" t="Include" />
             <e p="UiCamera.cs" t="Include" />
             <e p="UiItem.cs" t="Include" />

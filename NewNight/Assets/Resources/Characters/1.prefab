@@ -39,7 +39,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4650671186046540}
   - component: {fileID: 33839744076897390}
-  - component: {fileID: 64400495220306170}
   - component: {fileID: 23394464114994778}
   m_Layer: 0
   m_Name: Pattern
@@ -57,7 +56,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4443724341041036}
   - component: {fileID: 33740677910434614}
-  - component: {fileID: 64295626056410382}
   - component: {fileID: 23805496143567834}
   - component: {fileID: 328395721566069254}
   - component: {fileID: 95813468467045156}
@@ -369,34 +367,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1311442366510400}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!64 &64295626056410382
-MeshCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1590532801782830}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!64 &64400495220306170
-MeshCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1477853722204090}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!65 &65209511425975358
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -458,6 +428,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _positionOutScreen: {x: 0, y: 0, z: 0}
   _selfBoost: 0
+  AfterArrival:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   _moveOutTo: {x: -0.5, y: -1, z: 5}
 --- !u!114 &114213849560411578
 MonoBehaviour:

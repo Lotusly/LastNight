@@ -8,16 +8,6 @@ namespace Supportive
 {
 	public class Test : Singleton<Test>
 	{
-		[SerializeField] private string pathName;
-		[SerializeField] private int _index;
-		[SerializeField] private Vector3 _spaceInScreen;
-		[SerializeField] private List<GameObject> _objects;
-		
-
-		[SerializeField] private bool _generate = false;
-		[SerializeField] private bool _eliminate = false;
-		[SerializeField] private bool _transfer = false;
-		[SerializeField] private bool _clearAll = false;
 
 
 		public int index=1;
@@ -54,12 +44,26 @@ namespace Supportive
 			{
 				
 				Vector2 direction = new Vector2(2*Input.mousePosition.x/Screen.width-1,2*Input.mousePosition.y/Screen.height-1);
-				print(direction);
+				//print(direction);
 				UiManager.instance.SwitchBackground(index,direction);
 			}
+
+		
 			
 			// the block below is to test Coordinate class and UiManager.Generate and UiItem.Transfer
 			/*
+			 
+			[SerializeField] private string pathName;
+			[SerializeField] private int _index;
+			[SerializeField] private Vector3 _spaceInScreen;
+			[SerializeField] private List<GameObject> _objects;
+			
+	
+			[SerializeField] private bool _generate = false;
+			[SerializeField] private bool _eliminate = false;
+			[SerializeField] private bool _transfer = false;
+			[SerializeField] private bool _clearAll = false;
+			
 			if (_generate)
 			{
 				_generate = false;

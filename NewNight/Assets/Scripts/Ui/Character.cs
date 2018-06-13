@@ -7,6 +7,7 @@ namespace Ui
 	public class Character : UiItem
 	{
 		private MarkCircle _mark;
+		private BoxCollider _col;
 
 		[SerializeField] private Vector3 _moveOutTo;
 
@@ -14,6 +15,7 @@ namespace Ui
 		
 		public override void Initialize(Vector3 aimPosition=new Vector3())
 		{
+			_col=GetComponent<BoxCollider>();
 			_mark = GetComponentInChildren<MarkCircle>();
 			UpdateOriginPosition();
 		}
@@ -36,10 +38,20 @@ namespace Ui
 
 		public override void MoveOut(UiItem focus = null)
 		{
+			_col.enabled = false;
 			if(focus==this)
-				Transfer(_moveOutTo,true,true);
+				Transfer(_moveOutTo,true,false);
+			
 		}
 
+
+		public override void MoveBack()
+		{
+			_col.enabled = true;
+			Transfer(_originalPosition,false,false);
+		}
+
+		
 		
 	}
 }
