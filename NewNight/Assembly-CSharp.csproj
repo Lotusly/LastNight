@@ -63,6 +63,7 @@
     <Compile Include="Assets\Scripts\Supportive\Singleton.cs" />
     <Compile Include="Assets\Scripts\Supportive\Test.cs" />
     <Compile Include="Assets\Scripts\Ui\Background.cs" />
+    <Compile Include="Assets\Scripts\Ui\Bar.cs" />
     <Compile Include="Assets\Scripts\Ui\Character.cs" />
     <Compile Include="Assets\Scripts\Ui\Coordinate.cs" />
     <Compile Include="Assets\Scripts\Ui\Dialogue.cs" />
@@ -70,6 +71,7 @@
     <Compile Include="Assets\Scripts\Ui\MarkCircle.cs" />
     <Compile Include="Assets\Scripts\Ui\Option.cs" />
     <Compile Include="Assets\Scripts\Ui\PlaybackWheel.cs" />
+    <Compile Include="Assets\Scripts\Ui\StatBar.cs" />
     <Compile Include="Assets\Scripts\Ui\UiCamera.cs" />
     <Compile Include="Assets\Scripts\Ui\UiItem.cs" />
     <Compile Include="Assets\Scripts\Ui\UiManager.cs" />
@@ -389,16 +391,6 @@
   <Target Name="AfterBuild">
   </Target>
   -->
-  <ItemGroup>
-    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
-      <HintPath>C:/Program Files/Unity/Editor\Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="UnityEditor.iOS.Extensions.Common">
-      <HintPath>C:/Program Files/Unity/Editor\Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Common.dll</HintPath>
-    </Reference>
-  </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>C:/Program Files/Unity/Editor\Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>

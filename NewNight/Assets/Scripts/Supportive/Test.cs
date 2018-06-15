@@ -16,6 +16,7 @@ namespace Supportive
 
 
 
+
 		void Start()
 		{
 			_images = GetComponentsInChildren<Image>();
@@ -28,6 +29,7 @@ namespace Supportive
 		
 		void Update()
 		{
+
 			
 			if (Input.GetKeyDown(KeyCode.Escape))
 			{

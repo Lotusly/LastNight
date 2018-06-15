@@ -14,6 +14,7 @@ namespace Ui
 		{
 			if (_selfBoost)
 			{
+				
 				Initialize(_potentialPosition);
 			}
 		}

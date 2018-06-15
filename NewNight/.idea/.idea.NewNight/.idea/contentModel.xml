@@ -31,6 +31,7 @@
           </e>
           <e p="Ui" t="Include">
             <e p="Background.cs" t="Include" />
+            <e p="Bar.cs" t="Include" />
             <e p="Character.cs" t="Include" />
             <e p="Coordinate.cs" t="Include" />
             <e p="Dialogue.cs" t="Include" />
@@ -38,6 +39,7 @@
             <e p="MarkCircle.cs" t="Include" />
             <e p="Option.cs" t="Include" />
             <e p="PlaybackWheel.cs" t="Include" />
+            <e p="StatBar.cs" t="Include" />
             <e p="UiCamera.cs" t="Include" />
             <e p="UiItem.cs" t="Include" />
             <e p="UiManager.cs" t="Include" />

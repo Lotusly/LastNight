@@ -15,8 +15,8 @@ Shader "Costume/Layer"
 	{
 		Tags
 		{ 
-			//"Queue"="ALphaTest" 
-			"Queue"="Transparent" 
+			"Queue"="ALphaTest" 
+			//"Queue"="Transparent" 
 			"IgnoreProjector"="True" 
 			"RenderType"="Transparent" 
 			"PreviewType"="Plane"

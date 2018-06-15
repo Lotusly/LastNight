@@ -29,7 +29,13 @@ namespace Ui
 
 		private Coroutine _runningCoroutine=null; // this method can only run one animation at the same time: no addition
 
-
+		void Start()
+		{
+			if (_selfBoost)
+			{
+				Initialize();
+			}
+		}
 		
 		
 		void Update()
