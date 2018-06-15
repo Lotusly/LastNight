@@ -42,6 +42,8 @@ namespace Ui
 		private Texture _tmpTex;
 
 		private List<Item> _potentialItems; // used to switch props
+
+		[SerializeField] private StatBar _statBar;
 		// TEMP
 		[SerializeField] private Dialogue _singleDialogue;
 
@@ -291,6 +293,11 @@ namespace Ui
 		public void ClearDialogue()
 		{
 			_singleDialogue.ClearDialogue();
+		}
+
+		public void ModifyStat(string name, int value)
+		{
+			_statBar.ModifyStat(name,value);
 		}
 
 		public void ZoomIn(Character focus)

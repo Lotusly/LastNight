@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Globalization;
 using Supportive;
 using Ui;
 using UnityEngine;
@@ -11,32 +12,17 @@ public class Story : Singleton<Story>
 	private int state = 0;
 	private string name = "Cara";
 	private char[] _vowels = new char[5] {'a', 'e', 'i', 'o', 'u'};
+	private Option.OptionCon _tmpOptionCon;
+	private Option.Cost _tmpCost;
 
 	private char[] _consonant = new char[21]
 		{'b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'v', 'w', 'x', 'y', 'z'};
 
-	private int[,] _events = new int[6,5]
-	{
-		{
-			-1, 1, 2, -1, -1
-		},
-		{
-			3,-1,-1,-1,-1
-		},
-		{
-			-1,0,3,4,-1
-		},
-		{
-			5,-1,-1,-1,-1
-		},
-		{
-			5,-1,-1,-1,-1
-		},
-		{
-			0,-1,-1,-1,-1
-		}
 
-	};
+
+	private int _num;
+	[SerializeField] private TMPStory _tmpStory;
+	private Dialogue.DialogueContaining[] _dialogues;
 	
 
 	public void Initialize()
@@ -47,7 +33,16 @@ public class Story : Singleton<Story>
 		woman.Transfer(new Vector3(0,-0.1f,15),true,false);
 		woman.SetOriginPosition(new Vector3(0,-0.1f,15),true);
 		
-		_tmpDiaCon.Options=new List<string>();
+		// Clone from TmpStory to _dialogues (local variable)
+		_num = _tmpStory.TmpDialogues.Length;
+		_dialogues=new Dialogue.DialogueContaining[_num];
+		for (int i = 0; i < _num; i++)
+		{
+			_dialogues[i] = _tmpStory.TmpDialogues[i];
+		}
+		
+		//_tmpDiaCon.Options=new List<Option.OptionCon>();
+		//_tmpOptionCon.Costs = new List<Option.Cost>();
 		SwitchDialogue(0);
 		
 		
@@ -66,76 +61,29 @@ public class Story : Singleton<Story>
 	public void OnClick( int optionIndex)
 	{
 		// TEST
-		print("click "+optionIndex.ToString()+" when "+state.ToString());
-		SwitchDialogue(_events[state,optionIndex]);
+		//print("click "+optionIndex.ToString()+" when "+state.ToString());
+		if (state > 0)
+		{
+			if (optionIndex > 0) SwitchDialogue(_dialogues[state - 1].Options[optionIndex - 1].IndexToInOption);
+			else
+				SwitchDialogue(_dialogues[state - 1].IndexToOutOption);
+		}
 	}
 	
 	// TEMP
 	private void SwitchDialogue(int i)
 	{
-		
-		switch (i)
+		if (i > 0)
 		{
-			case 0:
-			{
-				_tmpDiaCon.Name = name;
-				_tmpDiaCon.Containing = "Hello! My name is <color=white>"+name+"</color>! Shall we DANCE ?";
-				_tmpDiaCon.Options.Clear();
-				_tmpDiaCon.Options.Add("\"Of course! Let's Dance!\"");
-				_tmpDiaCon.Options.Add("Ignore her and dance alone.");
-				UiManager.instance.SetDialogueCon(_tmpDiaCon);
-				state = i;
-				break;
-			}
-			case 1:
-			{
-				_tmpDiaCon.Name = name;
-				_tmpDiaCon.Containing = "Stupid! I was just joking. I don't want to dance with you!";
-				_tmpDiaCon.Options.Clear();
-				UiManager.instance.SetDialogueCon(_tmpDiaCon);
-				state = i;
-				break;
-			}
-			case 2:
-			{
-				_tmpDiaCon.Name = name;
-				_tmpDiaCon.Containing = "Oh! Why don't you dance with me? Don't you want to consider it again?";
-				_tmpDiaCon.Options.Clear();
-				_tmpDiaCon.Options.Add("Apologize to her.");
-				_tmpDiaCon.Options.Add("Ignore her. You are the best! She can only drag you back!");
-				_tmpDiaCon.Options.Add("Hit her. She is too noisy.");
-				UiManager.instance.SetDialogueCon(_tmpDiaCon);
-				state = i;
-				break;
-			}
-			case 3:
-			{
-				_tmpDiaCon.Name = "";
-				_tmpDiaCon.Containing = name+ " quickly steps away, leaving you alone.";
-				_tmpDiaCon.Options.Clear();
-				UiManager.instance.SetDialogueCon(_tmpDiaCon);
-				SwitchName();
-				state = i;
-				break;
-			}
-			
-			case 4:
-			{
-				_tmpDiaCon.Name = "";
-				_tmpDiaCon.Containing = name+" was knocked down. It looks she will not wake up for a while.";
-				_tmpDiaCon.Options.Clear();
-				UiManager.instance.SetDialogueCon(_tmpDiaCon);
-				state = i;
-				SwitchName();
-				break;
-			}
-			case 5:
-			{
-				UiManager.instance.ClearDialogue();
-				UiManager.instance.ZoomOut();
-				state = i;
-				break;
-			}
+			UiManager.instance.SetDialogueCon(_dialogues[i-1]);
+			state = i;
 		}
+		else
+		{
+			UiManager.instance.ClearDialogue();
+			UiManager.instance.ZoomOut();
+			state = 0;
+		}
+		
 	}
 }

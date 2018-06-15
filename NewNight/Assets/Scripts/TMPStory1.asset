@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac82d619ef0b2a943886249a24dcbf3f, type: 3}
+  m_Name: TMPStory1
+  m_EditorClassIdentifier: 
+  TmpDialogues:
+  - IndexToOutOption: -1
+    Name: Cara
+    Containing: Hello! My name is <color=white> Cara </color>! Shall we DANCE ?
+    Options:
+    - IndexToInOption: 2
+      Containing: \"Of course! Let's Dance!\"
+      Costs:
+      - Name: Stamina
+        Value: -10
+    - IndexToInOption: 3
+      Containing: Ignore her and dance alone.
+      Costs:
+      - Name: Salsa
+        Value: 10
+  - IndexToOutOption: 4
+    Name: Cara
+    Containing: Stupid! I was just joking. I don't want to dance with you!
+    Options: []
+  - IndexToOutOption: -1
+    Name: Cara
+    Containing: '"Oh! Why don''t you dance with me? Don''t you want to consider it
+      again?'
+    Options:
+    - IndexToInOption: 1
+      Containing: Apologize to her.
+      Costs:
+      - Name: Patience
+        Value: -10
+    - IndexToInOption: 4
+      Containing: Ignore her. You are the best! She can only drag you back!
+      Costs:
+      - Name: Salsa
+        Value: 10
+      - Name: Patience
+        Value: 10
+    - IndexToInOption: 5
+      Containing: Hit her. She is too noisy.
+      Costs:
+      - Name: Stamina
+        Value: -10
+      - Name: Patience
+        Value: 20
+  - IndexToOutOption: 0
+    Name: Cara
+    Containing: Cara quickly steps away, leaving you alone.
+    Options: []
+  - IndexToOutOption: 0
+    Name: Cara
+    Containing: Cara was knocked down. It looks she will not wake up for a while.
+    Options: []

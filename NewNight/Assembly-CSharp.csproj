@@ -62,6 +62,7 @@
     <Compile Include="Assets\Scripts\Story.cs" />
     <Compile Include="Assets\Scripts\Supportive\Singleton.cs" />
     <Compile Include="Assets\Scripts\Supportive\Test.cs" />
+    <Compile Include="Assets\Scripts\TMPStory.cs" />
     <Compile Include="Assets\Scripts\Ui\Background.cs" />
     <Compile Include="Assets\Scripts\Ui\Bar.cs" />
     <Compile Include="Assets\Scripts\Ui\Character.cs" />

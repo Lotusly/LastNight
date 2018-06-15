@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -8,11 +9,13 @@ namespace Ui
 {
 	public class Dialogue : ForegroundItem
 	{
-		public struct DialogueContaining
+		[Serializable]public struct DialogueContaining
 		{
+			public int IndexToOutOption;
 			public string Name;
 			public string Containing;
-			public List<string> Options;
+			public List<Option.OptionCon> Options;
+			//public Option.OptionCon[] Options;
 		};
 
 		[SerializeField] private TextMeshPro _name;

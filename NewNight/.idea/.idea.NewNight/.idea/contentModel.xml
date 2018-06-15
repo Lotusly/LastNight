@@ -29,6 +29,7 @@
             <e p="Singleton.cs" t="Include" />
             <e p="Test.cs" t="Include" />
           </e>
+          <e p="TMPStory.cs" t="Include" />
           <e p="Ui" t="Include">
             <e p="Background.cs" t="Include" />
             <e p="Bar.cs" t="Include" />
