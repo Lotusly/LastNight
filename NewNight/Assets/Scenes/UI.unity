@@ -7540,7 +7540,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 2ed8e34c97b0c468680aa2ba40abc679, type: 2}
   - {fileID: 2100000, guid: 1d74cb21806914c4ca1d142de7fbf67e, type: 2}
   - {fileID: 2100000, guid: 0aef71f29f6854a18824a16dad3204b0, type: 2}
-  _statBar: {fileID: 0}
+  _statBar: {fileID: 5341821}
   _singleDialogue: {fileID: 944922563}
 --- !u!1 &1780995432
 GameObject:
