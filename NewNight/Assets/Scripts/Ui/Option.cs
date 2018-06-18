@@ -68,10 +68,16 @@ namespace Ui
 				{
 					_costs.Add(con.Costs[i]);
 					int value = con.Costs[i].Value;
-					if(value>=0)
-						_tags[i].text=con.Costs[i].Name +'+'+ value.ToString();
+					if (value >= 0)
+					{
+						_tags[i].color = Color.green;
+						_tags[i].text = con.Costs[i].Name + '+' + value.ToString();
+					}
 					else
-						_tags[i].text=con.Costs[i].Name + value.ToString();
+					{
+						_tags[i].color = Color.red;
+						_tags[i].text = con.Costs[i].Name + value.ToString();
+					}
 				}
 				else
 				{
