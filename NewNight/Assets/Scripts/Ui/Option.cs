@@ -67,7 +67,11 @@ namespace Ui
 				if (i < con.Costs.Count)
 				{
 					_costs.Add(con.Costs[i]);
-					_tags[i].text=con.Costs[i].Name+con.Costs[i].Value.ToString();
+					int value = con.Costs[i].Value;
+					if(value>=0)
+						_tags[i].text=con.Costs[i].Name +'+'+ value.ToString();
+					else
+						_tags[i].text=con.Costs[i].Name + value.ToString();
 				}
 				else
 				{

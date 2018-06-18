@@ -22,7 +22,8 @@ public class Story : Singleton<Story>
 
 	private int _num;
 	[SerializeField] private TMPStory _tmpStory;
-	private Dialogue.DialogueContaining[] _dialogues;
+	// TEST
+	public Dialogue.DialogueContaining[] _dialogues;
 	
 
 	public void Initialize()
@@ -43,7 +44,7 @@ public class Story : Singleton<Story>
 		
 		//_tmpDiaCon.Options=new List<Option.OptionCon>();
 		//_tmpOptionCon.Costs = new List<Option.Cost>();
-		SwitchDialogue(0);
+		SwitchDialogue(1);
 		
 		
 		//UiManager.instance.GenerateForegroundItem(0, new Vector3(1.2f, 1.2f, 4), new Vector3(0.8f, 0.7f, 4), true);
@@ -68,6 +69,14 @@ public class Story : Singleton<Story>
 			else
 				SwitchDialogue(_dialogues[state - 1].IndexToOutOption);
 		}
+		// TMP
+		else
+		{
+			if (optionIndex == 0)
+			{
+				SwitchDialogue(1);
+			}
+		}
 	}
 	
 	// TEMP
@@ -78,7 +87,7 @@ public class Story : Singleton<Story>
 			UiManager.instance.SetDialogueCon(_dialogues[i-1]);
 			state = i;
 		}
-		else
+		if(i==0)
 		{
 			UiManager.instance.ClearDialogue();
 			UiManager.instance.ZoomOut();
