@@ -1,13 +1,23 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿
+using TMPro;
 using UnityEngine;
+
 
 namespace Ui
 {
 	public class Bar : MonoBehaviour
 	{
 		[SerializeField]private int _value=0;
-		[SerializeField]private int _maxValue=100; 
+		[SerializeField]private int _maxValue=100;
+		[SerializeField] private Transform _workingScale;
+		private TextMeshPro _text;
+		
+
+		public void Awake()
+		{
+			_text = GetComponentInChildren<TextMeshPro>();
+		}
+		
 		public bool SetValue(int newValue)
 		{
 			if (newValue > _maxValue || newValue < 0)
@@ -18,7 +28,7 @@ namespace Ui
 			else
 			{
 				_value = newValue;
-				transform.localScale=new Vector3((float)newValue/_maxValue,transform.localScale.y,transform.localScale.z);
+				_workingScale.localScale=new Vector3((float)newValue/_maxValue,1,1);
 				return true;
 			}
 			
@@ -27,6 +37,16 @@ namespace Ui
 		public int GetValue()
 		{
 			return _value;
+		}
+
+		void OnMouseEnter()
+		{
+			_text.text = _value.ToString() + "/" + _maxValue.ToString();
+		}
+
+		void OnMouseExit()
+		{
+			_text.text = "";
 		}
 
 		
