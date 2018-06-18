@@ -295,9 +295,14 @@ namespace Ui
 			_singleDialogue.ClearDialogue();
 		}
 
-		public void ModifyStat(string name, int value)
+		public void ModifyStat(string name, int addition)
 		{
-			_statBar.ModifyStat(name,value);
+			_statBar.ModifyStat(name,addition);
+		}
+
+		public bool CheckStat(string name, int addition)
+		{
+			return _statBar.CheckStat(name, addition);
 		}
 
 		public void ZoomIn(Character focus)

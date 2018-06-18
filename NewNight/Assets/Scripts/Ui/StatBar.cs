@@ -41,6 +41,19 @@ namespace Ui
 				_stats[name].SetValue(_stats[name].GetValue()+value);
 			}
 		}
+
+		public bool CheckStat(string name, int addition)
+		{
+			if (!_stats.ContainsKey(name))
+			{
+				Debug.LogError("StatBar: ModifyStat tries to modify unexisted stat "+name+" "+addition.ToString());
+				return false;
+			}
+			else
+			{
+				return _stats[name].ChechModify(addition);
+			}
+		}
 		
 	}
 }

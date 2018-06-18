@@ -1,4 +1,5 @@
 ﻿
+using System.Runtime.Serialization.Formatters;
 using TMPro;
 using UnityEngine;
 
@@ -18,21 +19,31 @@ namespace Ui
 			_text = GetComponentInChildren<TextMeshPro>();
 		}
 		
-		public bool SetValue(int newValue)
+		public void SetValue(int newValue)
 		{
-			if (newValue > _maxValue || newValue < 0)
+			if (newValue < 0)
 			{
-				Debug.LogError("Bar: "+name+" SetValue use invalid value: "+newValue.ToString());
-				return false;
+				return;
+			}
+			if (newValue > _maxValue)
+			{
+				_value = _maxValue;
+				_workingScale.localScale=new Vector3(1,1,1);
 			}
 			else
 			{
 				_value = newValue;
 				_workingScale.localScale=new Vector3((float)newValue/_maxValue,1,1);
-				return true;
 			}
 			
 		}
+
+		public bool ChechModify(int addition)
+		{
+			if (_value + addition < 0) return false;
+			else return true;
+		}
+
 
 		public int GetValue()
 		{

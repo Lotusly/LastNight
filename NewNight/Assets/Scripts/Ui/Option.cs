@@ -98,11 +98,28 @@ namespace Ui
 
 		void OnMouseDown()
 		{
+			bool testResult = true;
 			for (int i = 0; i < _costs.Count; i++)
 			{
-				UiManager.instance.ModifyStat(_costs[i].Name,_costs[i].Value);
+				testResult = testResult && UiManager.instance.CheckStat(_costs[i].Name, _costs[i].Value);
+				if (!testResult) break;
 			}
-			Story.instance.OnClick(_index);
+
+			if (testResult)
+			{
+				for (int i = 0; i < _costs.Count; i++)
+				{
+					UiManager.instance.ModifyStat(_costs[i].Name, _costs[i].Value);
+
+				}
+				Story.instance.OnClick(_index);
+			}
+			else
+			{
+				_textMesh.color = Color.red;
+			}
+
+			
 		}
 
 
