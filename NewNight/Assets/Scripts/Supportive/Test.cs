@@ -44,7 +44,11 @@ namespace Supportive
 
 			if (Input.GetMouseButtonDown(0))
 			{
-				
+				for (int i = 0; i < 10; i++)
+				{
+					UiManager.instance.Generate("Midground", 0, new Vector3(-1f+i*0.2f,0,6), true, false);
+
+				}
 				Vector2 direction = new Vector2(2*Input.mousePosition.x/Screen.width-1,2*Input.mousePosition.y/Screen.height-1);
 				//print(direction);
 				UiManager.instance.SwitchBackground(index,direction);

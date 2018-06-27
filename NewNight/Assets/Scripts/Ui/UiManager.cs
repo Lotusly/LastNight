@@ -24,7 +24,7 @@ namespace Ui
 		[SerializeField] private Transform _portraits;
 		[SerializeField] private Transform _dialogues;
 		[SerializeField] private Transform _foregroundItems;
-		[SerializeField] private Transform _props;
+		[SerializeField] private Transform _props; // this transform contains both props (static picture) and midground (floating picture)
 		[SerializeField] private Transform _backgroundParent;
 		public UiCamera _camera;
 
@@ -60,7 +60,8 @@ namespace Ui
 				{"Props",_props},
 				{"ForegroundItems",_foregroundItems},
 				{"Dialogues",_dialogues},
-				{"Backgrounds",_backgroundParent}
+				{"Backgrounds",_backgroundParent},
+				{"Midground",_props}
 				
 			};
 
@@ -222,14 +223,12 @@ namespace Ui
 		public UiItem Generate(string pathName, int index, Vector3 position, bool inScreenSpace, bool initialize=true)
 		{
 
-
 			if (index < 0)
 			{
 				Debug.LogError("error: try to generate item with negative index");
 				return null;
 			}
 			
-
 			Vector3 positionInWorld = position;
 			if (inScreenSpace)
 			{
@@ -243,7 +242,7 @@ namespace Ui
 			}
 			newItem = Instantiate(newItem);
 			newItem.transform.position = positionInWorld;
-			
+			newItem.name = pathName + "/" + index.ToString();
 			if (!_nameToParent.ContainsKey(pathName))
 			{
 				Debug.LogWarning("warning: UiManager generates an item that doesn't have registered  category/parent: "+pathName);

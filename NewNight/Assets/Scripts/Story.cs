@@ -11,12 +11,10 @@ public class Story : Singleton<Story>
 	private Dialogue.DialogueContaining _tmpDiaCon = new Dialogue.DialogueContaining(); // used to control dialogue
 	private int state = 0;
 	private string name = "Cara";
-	private char[] _vowels = new char[5] {'a', 'e', 'i', 'o', 'u'};
 	private Option.OptionCon _tmpOptionCon;
 	private Option.Cost _tmpCost;
 
-	private char[] _consonant = new char[21]
-		{'b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'v', 'w', 'x', 'y', 'z'};
+
 
 
 
@@ -33,6 +31,11 @@ public class Story : Singleton<Story>
 		Character woman = (Character)UiManager.instance.Generate("Characters", 1, new Vector3(-1.8f, -0.1f, 15), true);
 		woman.Transfer(new Vector3(0,-0.1f,15),true,false);
 		woman.SetOriginPosition(new Vector3(0,-0.1f,15),true);
+		for (int i = 0; i < 10; i++)
+		{
+			UiManager.instance.Generate("Midground", 0, new Vector3(-1f+i*0.2f,0,6), true, false);
+
+		}
 		
 		// Clone from TmpStory to _dialogues (local variable)
 		_num = _tmpStory.TmpDialogues.Length;
@@ -50,14 +53,7 @@ public class Story : Singleton<Story>
 		//UiManager.instance.GenerateForegroundItem(0, new Vector3(1.2f, 1.2f, 4), new Vector3(0.8f, 0.7f, 4), true);
 	}
 
-	private void SwitchName()
-	{
 
-		name = _consonant[Random.Range(0, 21)].ToString().ToUpper() + _vowels[Random.Range(0, 5)] +
-		       _consonant[Random.Range(0, 21)] + _vowels[Random.Range(0, 5)];
-
-
-	}
 
 	public void OnClick( int optionIndex)
 	{

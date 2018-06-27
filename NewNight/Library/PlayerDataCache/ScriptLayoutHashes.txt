@@ -252,3 +252,4 @@ a69b3ee0402770d02d1c122324e4b00e Assembly-CSharp.dll:TMPro.Examples.SkewTextExam
 c17f36de98bf3316431b688f709b9c63 Assembly-CSharp.dll:.VoffsetLetter
 34e025057ef78b1bf238460cdf6583a3 Assembly-CSharp.dll:TMPro.Examples.ObjectSpin
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:TMPro.Examples.SimpleScript
+cd5b4170db2e0e783e8805b60ff86f71 Assembly-CSharp.dll:Ui.Midground
