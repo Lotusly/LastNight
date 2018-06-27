@@ -62,12 +62,17 @@
 			fixed4 frag (v2f i) : SV_Target
 			{
 				// sample the texture
-				float4 col = tex2D(_MainTex, i.uv.xy) + tex2D(_LightLeakTex, i.uv.zw)/3;
-				float range = max(max(col.r, col.g),col.b);
+				//float4 col = tex2D(_MainTex, i.uv.xy) + tex2D(_LightLeakTex, i.uv.zw)/3;
+				float4 col = tex2D(_MainTex,i.uv.xy);
+				fixed4 leak = tex2D(_LightLeakTex,i.uv.zw);
+				
+				col=float4(1-(1-col.r)*(1-leak.r),1-(1-col.g)*(1-leak.g),1-(1-col.b)*(1-leak.b),1);
+
+				/*float range = max(max(col.r, col.g),col.b);
 				if(range>1){
 				    col.rgb=col.rgb/range;
-				}
-				col.a=0;
+				}*/
+				//col.a=1;
 				/*
 				fixed3 finalColor=col.rgb*_Brightness;
 				
