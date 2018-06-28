@@ -316,6 +316,13 @@ namespace Ui
 			_singleDialogue.MoveOut();
 			
 		}
+		
+		// TEMP
+		public void CallDialogue()
+		{
+			Story.instance.OnClick(0);
+			_singleDialogue.MoveOut();
+		}
 
 		public void ZoomOut()
 		{

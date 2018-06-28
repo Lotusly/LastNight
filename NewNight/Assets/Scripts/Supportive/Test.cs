@@ -42,7 +42,7 @@ namespace Supportive
 				UiManager.instance.SwitchBackground(index);
 			}
 
-			if (Input.GetMouseButtonDown(0))
+			/*if (Input.GetMouseButtonDown(0))
 			{
 				for (int i = 0; i < 10; i++)
 				{
@@ -52,7 +52,7 @@ namespace Supportive
 				Vector2 direction = new Vector2(2*Input.mousePosition.x/Screen.width-1,2*Input.mousePosition.y/Screen.height-1);
 				//print(direction);
 				UiManager.instance.SwitchBackground(index,direction);
-			}
+			}*/
 
 		
 			

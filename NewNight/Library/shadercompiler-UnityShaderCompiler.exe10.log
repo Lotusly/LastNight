@@ -1,7 +1,43 @@
 Base path: C:/Program Files/Unity/Editor/Data
 Cmd: initializeCompiler
-Cmd: compileSnippet
-  api=4 type=0 insize=2071 outsize=1066 kw=PIXELSNAP_ON pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_RGBM_ENCODING ok=1
+Cmd: compileComputeKernel
+  api=4 insize=13402 outsize=15257 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=13402 outsize=19337 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=13402 outsize=44281 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=13402 outsize=15917 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=13402 outsize=35721 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=13402 outsize=18953 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=13402 outsize=26425 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=19973 outsize=14953 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=2863 outsize=48113 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=7524 outsize=9809 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=5188 outsize=9105 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=2444 outsize=2505 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=5469 outsize=6421 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=1542 outsize=1829 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=15322 outsize=5905 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=15322 outsize=7005 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=15322 outsize=8293 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=15322 outsize=8245 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=15322 outsize=9917 ok=1
 Cmd: initializeCompiler
 Cmd: initializeCompiler
 Cmd: initializeCompiler
@@ -20,26 +56,5 @@ Cmd: initializeCompiler
 Cmd: initializeCompiler
 Cmd: initializeCompiler
 Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
+
+Quitting shader compiler process

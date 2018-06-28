@@ -1,5 +1,29 @@
 Base path: C:/Program Files/Unity/Editor/Data
 Cmd: initializeCompiler
+Cmd: compileComputeKernel
+  api=4 insize=13402 outsize=35081 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=13402 outsize=18265 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=13402 outsize=19009 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=13402 outsize=25605 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=13402 outsize=24153 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=13402 outsize=29829 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=13402 outsize=52757 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=19973 outsize=14753 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=15322 outsize=6869 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=15322 outsize=9649 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=15322 outsize=7741 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=15322 outsize=10445 ok=1
 Cmd: initializeCompiler
 Cmd: initializeCompiler
 Cmd: initializeCompiler
@@ -18,26 +42,5 @@ Cmd: initializeCompiler
 Cmd: initializeCompiler
 Cmd: initializeCompiler
 Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
+
+Quitting shader compiler process

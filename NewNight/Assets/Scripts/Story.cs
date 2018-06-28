@@ -28,14 +28,15 @@ public class Story : Singleton<Story>
 	{
 		//UiManager.instance.Generate("Backgrounds", 1, new Vector3(0, 0, 30), false);
 		UiManager.instance.PutPotentialProp(0,new Vector3(0.3f,-0.2f,15f));
-		Character woman = (Character)UiManager.instance.Generate("Characters", 1, new Vector3(-1.8f, -0.1f, 15), true);
-		woman.Transfer(new Vector3(0,-0.1f,15),true,false);
-		woman.SetOriginPosition(new Vector3(0,-0.1f,15),true);
-		for (int i = 0; i < 10; i++)
+		//Character woman = (Character)UiManager.instance.Generate("Characters", 1, new Vector3(-1.8f, -0.1f, 15), true);
+		//woman.Transfer(new Vector3(0,-0.1f,15),true,false);
+		//woman.SetOriginPosition(new Vector3(0,-0.1f,15),true);
+		/*for (int i = 0; i < 10; i++)
 		{
 			UiManager.instance.Generate("Midground", 0, new Vector3(-1f+i*0.2f,0,6), true, false);
 
-		}
+		}*/
+		
 		
 		// Clone from TmpStory to _dialogues (local variable)
 		_num = _tmpStory.TmpDialogues.Length;
@@ -48,7 +49,7 @@ public class Story : Singleton<Story>
 		//_tmpDiaCon.Options=new List<Option.OptionCon>();
 		//_tmpOptionCon.Costs = new List<Option.Cost>();
 		SwitchDialogue(1);
-		
+		//UiManager.instance.CallDialogue();
 		
 		//UiManager.instance.GenerateForegroundItem(0, new Vector3(1.2f, 1.2f, 4), new Vector3(0.8f, 0.7f, 4), true);
 	}

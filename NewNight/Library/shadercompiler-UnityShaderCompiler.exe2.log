@@ -1,28 +1,31 @@
 Base path: C:/Program Files/Unity/Editor/Data
 Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
+Cmd: compileComputeKernel
+  api=4 insize=13402 outsize=86917 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=9894 outsize=9589 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=30861 outsize=209 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=2953 outsize=1305 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=15322 outsize=5401 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=15322 outsize=6477 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=15322 outsize=7309 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=15322 outsize=6853 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=15322 outsize=7357 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=15322 outsize=9461 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=15322 outsize=11425 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=2783 outsize=4089 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=6056 outsize=10813 ok=1
 Cmd: initializeCompiler
 Cmd: initializeCompiler
 Cmd: initializeCompiler
