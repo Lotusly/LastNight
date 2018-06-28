@@ -1082,7 +1082,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b4e9ff918c4019419b4831dee64206c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  briSatConShader: {fileID: 4800000, guid: d5cd33fc668853c42a49f8037db5fb0e, type: 3}
+  briSatConMaterial: {fileID: 2100000, guid: 677d3aa7f38f35748a97147689b64fdc, type: 2}
 --- !u!21 &215380697
 Material:
   serializedVersion: 6
@@ -2205,7 +2205,7 @@ VideoPlayer:
   m_TargetMaterialRenderer: {fileID: 0}
   m_TargetMaterialProperty: _MainTex
   m_RenderMode: 2
-  m_AspectRatio: 2
+  m_AspectRatio: 5
   m_DataSource: 0
   m_PlaybackSpeed: 1
   m_AudioOutputMode: 0
@@ -5749,15 +5749,15 @@ Prefab:
       objectReference: {fileID: 2100000, guid: 0b319eca7c526314589e61d4b53a1826, type: 2}
     - target: {fileID: 4728333805258246, guid: ba8b023ccfccdd04db6ba641f4dcca88, type: 2}
       propertyPath: m_LocalScale.x
-      value: 34.55354
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4728333805258246, guid: ba8b023ccfccdd04db6ba641f4dcca88, type: 2}
       propertyPath: m_LocalScale.y
-      value: 18.65891
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4728333805258246, guid: ba8b023ccfccdd04db6ba641f4dcca88, type: 2}
       propertyPath: m_LocalScale.z
-      value: 0.6910708
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 23792017905170428, guid: ba8b023ccfccdd04db6ba641f4dcca88, type: 2}

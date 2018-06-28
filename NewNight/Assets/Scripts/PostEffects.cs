@@ -62,6 +62,7 @@ public class PostEffects : MonoBehaviour {
 		{
 			material = new Material(shader);
 			material.hideFlags = HideFlags.DontSave;
+			
 			if (material)
 			{
 				return material;

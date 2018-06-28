@@ -1,9 +1,10 @@
-﻿Shader "Unlit/LightLeak"
+﻿Shader "Costume/LightLeak"
 {
 	Properties
 	{
 		_MainTex ("Texture", 2D) = "white" {}
 		_LightLeakTex("Light Leak Texture", 2D) = "white" {}
+		_LightLeakDegree("Light Leak Degree", Range(0,2)) = 1
 		//_Brightness("Brightness",Float) = 1
 		//_Saturation("Saturation",Float)=1
 		//_Contrast("Contrast",Float)=1
@@ -45,6 +46,7 @@
 			float4 _MainTex_ST;
 			sampler2D _LightLeakTex;
 			float4 _LightLeakTex_ST;
+			half _LightLeakDegree;
 			//half _Brightness;
 			//half _Saturation;
 			//half _Contrast;
@@ -64,7 +66,7 @@
 				// sample the texture
 				//float4 col = tex2D(_MainTex, i.uv.xy) + tex2D(_LightLeakTex, i.uv.zw)/3;
 				float4 col = tex2D(_MainTex,i.uv.xy);
-				fixed4 leak = tex2D(_LightLeakTex,i.uv.zw);
+				fixed4 leak = _LightLeakDegree*tex2D(_LightLeakTex,i.uv.zw);
 				
 				col=float4(1-(1-col.r)*(1-leak.r),1-(1-col.g)*(1-leak.g),1-(1-col.b)*(1-leak.b),1);
 
