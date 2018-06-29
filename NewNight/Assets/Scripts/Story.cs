@@ -59,7 +59,7 @@ public class Story : Singleton<Story>
 	public void OnClick( int optionIndex)
 	{
 		// TEST
-		//print("click "+optionIndex.ToString()+" when "+state.ToString());
+		print("click "+optionIndex.ToString()+" when "+state.ToString());
 		if (state > 0)
 		{
 			if (optionIndex > 0) SwitchDialogue(_dialogues[state - 1].Options[optionIndex - 1].IndexToInOption);
@@ -87,7 +87,7 @@ public class Story : Singleton<Story>
 		if(i==0)
 		{
 			UiManager.instance.ClearDialogue();
-			UiManager.instance.ZoomOut();
+			//UiManager.instance.ZoomOut();
 			state = 0;
 		}
 		

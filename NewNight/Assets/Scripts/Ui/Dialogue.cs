@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Networking;
 using UnityEngine.UI;
 
 namespace Ui
@@ -22,6 +23,13 @@ namespace Ui
 		[SerializeField] private TextMeshPro _containing;
 		[SerializeField] private Option[] _options; // can optimize: initialize _options
 		private DialogueContaining _diaCon;
+		private GameObject _backPad;
+
+
+		void Awake()
+		{
+			_backPad = transform.GetChild(0).gameObject;
+		}
 
 
 		public void SetDialogueContaining(DialogueContaining newDiaCon, bool updateNow=true)
@@ -33,6 +41,7 @@ namespace Ui
 
 		public void UpdateDialogueContaining()
 		{
+			_backPad.active = true;
 			_name.text = _diaCon.Name;
 			_containing.text = _diaCon.Containing;
 			for (int i = 0; i < _options.Length; i++)
@@ -50,6 +59,7 @@ namespace Ui
 
 		public void ClearDialogue()
 		{
+			_backPad.active = false;
 			_name.text = "";
 			_containing.text = "";
 			for (int i = 0; i < _options.Length; i++)

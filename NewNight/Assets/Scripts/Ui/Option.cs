@@ -32,6 +32,7 @@ namespace Ui
 		private BoxCollider _col;
 		[SerializeField] private TextMeshPro[] _tags;
 		private List<Cost> _costs=new List<Cost>();
+		private GameObject _backPad;
 
 
 
@@ -42,7 +43,8 @@ namespace Ui
 			_dia = GetComponentInParent<Dialogue>();
 			_oriColor = _textMesh.color;
 			_col = GetComponent<BoxCollider>();
-			
+			_backPad = transform.GetChild(0).gameObject;
+
 		}
 
 
@@ -51,6 +53,7 @@ namespace Ui
 		{
 			_textMesh.text = "";
 			_col.enabled = false;
+			_backPad.active = false;
 			_costs.Clear();
 			for (int i = 0; i < 4; i++) // TMP: replace with a variable later
 			{
@@ -60,6 +63,7 @@ namespace Ui
 		
 		public void SetOption(OptionCon con)
 		{
+			_backPad.active = true;
 			_textMesh.text = con.Containing;
 			_costs.Clear();
 			for (int i = 0; i < 4; i++) // TMP: replace with a variable later
@@ -84,7 +88,9 @@ namespace Ui
 					_tags[i].text = "";
 				}
 			}
-			StartCoroutine(DelayUpdateCollider());
+			// here is the adjustment of collider: to make collider the size of text
+			// StartCoroutine(DelayUpdateCollider());
+			_col.enabled = true;
 
 		}
 
