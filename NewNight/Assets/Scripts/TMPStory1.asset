@@ -17,7 +17,7 @@ MonoBehaviour:
     Containing: Hello! My name is <color=white> Cara </color>! Shall we DANCE ?
     Options:
     - IndexToInOption: 2
-      Containing: \"Of course! Let's Dance!\"
+      Containing: '"Of course! Let''s Dance!"'
       Costs:
       - Name: Stamina
         Value: -10

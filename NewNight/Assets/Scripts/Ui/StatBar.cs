@@ -10,7 +10,7 @@ namespace Ui
 
 		public override void  Initialize(Vector3 aimPosition=new Vector3())
 		{
-			SetPosition(new Vector3(1,-1,8),true,false, true );
+			SetPosition(_positionOutScreen,true,false, true );
 			Bar[] bars = GetComponentsInChildren<Bar>();
 			for (int i = 0; i < bars.Length; i++)
 			{

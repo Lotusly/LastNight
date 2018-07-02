@@ -144,6 +144,7 @@
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\LiberationSans - OFL.txt" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Bangers - OFL.txt" />
+    <None Include="Assets\Shader\BlackTransparent.shader" />
     <None Include="Assets\Shader\Background.shader" />
     <None Include="Assets\Shader\LightLeaking.shader" />
     <None Include="Assets\Shader\GreenMask.shader" />
