@@ -70,6 +70,7 @@
     <Compile Include="Assets\Scripts\Ui\Background.cs" />
     <Compile Include="Assets\Scripts\Ui\Bar.cs" />
     <Compile Include="Assets\Scripts\Ui\Character.cs" />
+    <Compile Include="Assets\Scripts\Ui\CircleBar.cs" />
     <Compile Include="Assets\Scripts\Ui\Coordinate.cs" />
     <Compile Include="Assets\Scripts\Ui\Dialogue.cs" />
     <Compile Include="Assets\Scripts\Ui\ForegroundItem.cs" />

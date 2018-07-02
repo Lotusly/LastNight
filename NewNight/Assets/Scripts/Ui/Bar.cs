@@ -17,6 +17,7 @@ namespace Ui
 		public void Awake()
 		{
 			_text = GetComponentInChildren<TextMeshPro>();
+			if (_workingScale == null) _workingScale = transform;
 		}
 		
 		public void SetValue(int newValue)

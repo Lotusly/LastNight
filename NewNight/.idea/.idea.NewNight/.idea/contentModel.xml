@@ -38,6 +38,7 @@
             <e p="Background.cs" t="Include" />
             <e p="Bar.cs" t="Include" />
             <e p="Character.cs" t="Include" />
+            <e p="CircleBar.cs" t="Include" />
             <e p="Coordinate.cs" t="Include" />
             <e p="Dialogue.cs" t="Include" />
             <e p="ForegroundItem.cs" t="Include" />
