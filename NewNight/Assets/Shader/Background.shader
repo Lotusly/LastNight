@@ -75,6 +75,7 @@ Shader "Costume/Background"
 				v2f OUT;
 				OUT.vertex = UnityObjectToClipPos(IN.vertex);
 				OUT.texcoord = IN.texcoord;
+				
 				OUT.color = IN.color * _Color;
 				#ifdef PIXELSNAP_ON
 				OUT.vertex = UnityPixelSnap (OUT.vertex);
@@ -90,6 +91,7 @@ Shader "Costume/Background"
 			fixed4 SampleSpriteTexture (float2 uv)
 			{
 				fixed4 color = tex2D (_MainTex, uv);
+				
 
 #if UNITY_TEXTURE_ALPHASPLIT_ALLOWED
 				if (_AlphaSplitEnabled)
@@ -101,7 +103,9 @@ Shader "Costume/Background"
 
 			fixed4 frag(v2f IN) : SV_Target
 			{
+			   
 			
+				
 				fixed4 c = SampleSpriteTexture (IN.texcoord) * IN.color;
 	
         

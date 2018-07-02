@@ -193,6 +193,7 @@ b11448bc44f49db3e26525de9acc4a98 TextMeshPro-2017.1-Editor.dll:TMPro.EditorUtili
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:TMPro.TMP_DigitValidator
 e32922626f24c04fc874572b25191133 Assembly-CSharp.dll:Ui.UiMask
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:TMPro.Examples.TeleType
+68b71e8a8859205fe1d4642d6d5405ae Assembly-CSharp.dll:.BSC
 b2eb8cbb5793881e65dba317544e50c2 Assembly-CSharp.dll:TMPro.Examples.ShaderPropAnimator
 76015de5fcb247eeb8df66c001d5a22d Assembly-CSharp.dll:TMPro.Examples.TMP_FrameRateCounter
 22a2410ebd52066c6ef4b824e50ab6f3 Assembly-CSharp.dll:.TMPStory
@@ -212,6 +213,8 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 3f32f08a64daf40b09ed864d96fe3840 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransform
 73843688b51256aed059f049c540bca8 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformChild
 528ea1fd7c01796fc60c4e2f172ea229 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
+c9730109eaac42d4a85d177038b229c3 Assembly-CSharp.dll:.LightLeaking
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.PostEffects
 e32922626f24c04fc874572b25191133 Assembly-CSharp.dll:Ui.UiCamera
 62229a3e4d53ca59bec192e89627ed52 Assembly-CSharp.dll:TMPro.Examples.CameraController
 782155584b486247c2079f380bdd92b5 Assembly-CSharp.dll:Supportive.Test
@@ -246,10 +249,10 @@ fd32cec51220606c3ff8673508b3bdc6 Assembly-CSharp.dll:Ui.Option
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:TMPro.Examples.VertexColorCycler
 f4ab6a8d0bba502789b5ea253a2e3dc3 Assembly-CSharp.dll:.Story
 020550babdb991365f61c5bffe1f4f52 Assembly-CSharp.dll:TMPro.Examples.TextMeshSpawner
+cd5b4170db2e0e783e8805b60ff86f71 Assembly-CSharp.dll:Ui.Midground
 a69b3ee0402770d02d1c122324e4b00e Assembly-CSharp.dll:TMPro.Examples.SkewTextExample
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Video
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.SwitchScene
 c17f36de98bf3316431b688f709b9c63 Assembly-CSharp.dll:.VoffsetLetter
 34e025057ef78b1bf238460cdf6583a3 Assembly-CSharp.dll:TMPro.Examples.ObjectSpin
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:TMPro.Examples.SimpleScript
-cd5b4170db2e0e783e8805b60ff86f71 Assembly-CSharp.dll:Ui.Midground

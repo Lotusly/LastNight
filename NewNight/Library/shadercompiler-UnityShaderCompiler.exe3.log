@@ -1,54 +1,8 @@
 Base path: C:/Program Files/Unity/Editor/Data
 Cmd: initializeCompiler
-Cmd: compileComputeKernel
-  api=4 insize=13402 outsize=87685 ok=1
-Cmd: compileComputeKernel
-  api=4 insize=5188 outsize=4077 ok=1
-Cmd: compileComputeKernel
-  api=4 insize=9421 outsize=8629 ok=1
-Cmd: compileComputeKernel
-  api=4 insize=1836 outsize=645 ok=1
-Cmd: compileComputeKernel
-  api=4 insize=16785 outsize=13589 ok=1
-Cmd: compileComputeKernel
-  api=4 insize=30861 outsize=209 ok=1
-Cmd: compileComputeKernel
-  api=4 insize=2953 outsize=345 ok=1
-Cmd: compileComputeKernel
-  api=4 insize=1864 outsize=1365 ok=1
-Cmd: compileComputeKernel
-  api=4 insize=1505 outsize=581 ok=1
-Cmd: compileComputeKernel
-  api=4 insize=15322 outsize=5209 ok=1
-Cmd: compileComputeKernel
-  api=4 insize=15322 outsize=6985 ok=1
-Cmd: compileComputeKernel
-  api=4 insize=15322 outsize=7765 ok=1
-Cmd: compileComputeKernel
-  api=4 insize=15322 outsize=7237 ok=1
-Cmd: compileComputeKernel
-  api=4 insize=15322 outsize=8053 ok=1
-Cmd: compileComputeKernel
-  api=4 insize=15322 outsize=8253 ok=1
-Cmd: compileComputeKernel
-  api=4 insize=6056 outsize=15353 ok=1
-Cmd: compileComputeKernel
-  api=4 insize=570 outsize=489 ok=1
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
+Cmd: compileSnippet
+  api=4 type=1 insize=1234 outsize=2102 kw=UNITY_PASS_FORWARDADD POINT SHADOWS_CUBE pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_RGBM_ENCODING ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=11820 outsize=1142 kw=SHADOWS_SINGLE_CASCADE pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_RGBM_ENCODING ok=1
 Cmd: initializeCompiler
 Cmd: initializeCompiler
