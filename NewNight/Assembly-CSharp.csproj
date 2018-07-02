@@ -53,6 +53,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\10mm\Contructor.cs" />
     <Compile Include="Assets\2d_TDP\Script\Appear.cs" />
     <Compile Include="Assets\2d_TDP\Script\DialogBubble.cs" />
     <Compile Include="Assets\2d_TDP\Script\PixelBubble.cs" />
@@ -148,7 +149,9 @@
     <None Include="Assets\Shader\BlackTransparent.shader" />
     <None Include="Assets\Shader\Background.shader" />
     <None Include="Assets\Shader\LightLeaking.shader" />
+    <None Include="Assets\10mm\Forming.shader" />
     <None Include="Assets\Shader\GreenMask.shader" />
+    <None Include="Assets\10mm\VoxelWithColor.shader" />
     <None Include="Assets\Fonts\Documentation\JazzCreateAltKeys_BubbleFont.txt" />
     <None Include="Assets\Shader\Layer.shader" />
     <None Include="Assets\Shader\Midground.shader" />
