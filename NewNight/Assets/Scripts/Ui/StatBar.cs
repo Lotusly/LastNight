@@ -6,6 +6,7 @@ namespace Ui
 {
 	public class StatBar : UiItem
 	{
+		
 		private Dictionary<string, Bar> _stats = new Dictionary<string, Bar>();
 
 		public override void  Initialize(Vector3 aimPosition=new Vector3())
@@ -46,7 +47,7 @@ namespace Ui
 		{
 			if (!_stats.ContainsKey(name))
 			{
-				Debug.LogError("StatBar: ModifyStat tries to modify unexisted stat "+name+" "+addition.ToString());
+				Debug.LogError("StatBar: CheckStat tries to check unexisted stat "+name+" "+addition.ToString());
 				return false;
 			}
 			else
