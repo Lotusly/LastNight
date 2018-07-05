@@ -7,6 +7,7 @@
       <e p="Assets" t="Include">
         <e p="10mm" t="Include">
           <e p="Contructor.cs" t="Include" />
+          <e p="Demolishing.shader" t="Include" />
           <e p="Forming.shader" t="Include" />
           <e p="VoxelWithColor.shader" t="Include" />
         </e>

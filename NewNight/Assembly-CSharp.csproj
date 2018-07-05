@@ -153,6 +153,7 @@
     <None Include="Assets\Shader\GreenMask.shader" />
     <None Include="Assets\10mm\VoxelWithColor.shader" />
     <None Include="Assets\Fonts\Documentation\JazzCreateAltKeys_BubbleFont.txt" />
+    <None Include="Assets\10mm\Demolishing.shader" />
     <None Include="Assets\Shader\Layer.shader" />
     <None Include="Assets\Shader\Midground.shader" />
     <Reference Include="UnityEditor.StandardEvents">

@@ -68,18 +68,19 @@
 			[maxvertexcount(15)]
 			void geom(triangle v2f input[3], uint pid : SV_PrimitiveID,
                 inout TriangleStream<v2f> outStream){
+                float yError = max(0,(input[0].mpos.y+input[1].mpos.y+input[2].mpos.y)/3-_Height);
                 
-                float x = input[0].mpos.x+max(0,input[0].mpos.y-_Height)*sin(pid);
-                float y=input[0].mpos.y+max(0,input[0].mpos.y-_Height);
-                float z = input[0].mpos.z+max(0,input[0].mpos.y-_Height)*cos(pid);
+                float x = input[0].mpos.x+yError*sin(pid);
+                float y=input[0].mpos.y+yError;
+                float z = input[0].mpos.z+yError*cos(pid);
                 outStream.Append(GeneratePoint(UnityObjectToClipPos(float4(x,y,z,input[0].mpos.w)),input[0].uv,input[0].mpos));
                 x=input[1].mpos.x+max(0,input[1].mpos.y-_Height)*sin(pid);
-                y=input[1].mpos.y+max(0,input[1].mpos.y-_Height)*max(0,input[1].mpos.y-_Height);
-                z = input[1].mpos.z+max(0,input[1].mpos.y-_Height)*cos(pid);
+                y=input[1].mpos.y+yError;
+                z = input[1].mpos.z+yError*cos(pid);
                 outStream.Append(GeneratePoint(UnityObjectToClipPos(float4(x,y,z,input[1].mpos.w)),input[1].uv,input[1].mpos));
                 x=input[2].mpos.x+max(0,input[2].mpos.y-_Height)*sin(pid);
-                y=input[2].mpos.y+max(0,input[2].mpos.y-_Height)*max(0,input[2].mpos.y-_Height);
-                z = input[2].mpos.z+max(0,input[2].mpos.y-_Height)*cos(pid);
+                y=input[2].mpos.y+yError;
+                z = input[2].mpos.z+yError*cos(pid);
                 outStream.Append(GeneratePoint(UnityObjectToClipPos(float4(x,y,z,input[2].mpos.w)),input[2].uv,input[2].mpos));
                 
                 //outStream.Append(GeneratePoint(UnityObjectToClipPos(input[0].mpos)));
