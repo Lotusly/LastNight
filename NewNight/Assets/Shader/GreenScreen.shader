@@ -4,11 +4,14 @@ Shader "Costume/GreenScreen"
 {
 	Properties
 	{
-		[PerRendererData] _MainTex ("Sprite Texture", 2D) = "white" {}
+		_MainTex ("Sprite Texture", 2D) = "white" {}
 		_Color ("Tint", Color) = (1,1,1,1)
 		[MaterialToggle] PixelSnap ("Pixel snap", Float) = 0
 		_Cutoff ("Green Cutoff", Range(0,1)) = 0.5 //use this parameter to test transparent
-		_BeginDim("Green value to go dim",Range(0,1))=0.5
+		_BeginDim("Green value to go dim",Range(0,1))=0
+		_CutoffLow("Luminance Cutoff Low",Range(0,1)) = 0
+		_CutoffHigh("Luminance Cutoff High",Range(0,1))=1
+		
 		//_DistinguishColor("Color to distinguish parts",Color) = (1,1,1,1)
 		[Toggle(_ORIGINALCOLOR_ON)] _OriginalColor("Use Original Color",float)=0
 		
@@ -89,8 +92,8 @@ Shader "Costume/GreenScreen"
 			fixed4 _LowerMask;
 			bool UpperFix;
 			bool LowerFix;
-			//fixed _UpperFix;
-			//fixed _LowerFix;
+			fixed _CutoffLow;
+			fixed _CutoffHigh;
 
 			fixed4 SampleSpriteTexture (float2 uv)
 			{
@@ -107,15 +110,14 @@ Shader "Costume/GreenScreen"
 			fixed4 frag(v2f IN) : SV_Target
 			{
 				fixed4 c = SampleSpriteTexture (IN.texcoord) * IN.color;
-				if(c.g-c.r>_Cutoff && c.g-c.b>_Cutoff){
+				float luminance=0.2125*c.r + 0.7154*c.g + 0.0721*c.b;
+				if(c.g-c.r>_Cutoff && c.g-c.b>_Cutoff || luminance<_CutoffLow || luminance>_CutoffHigh){
 				   discard;
 				}
-				if(c.g-c.r>_BeginDim && c.g-c.b>_BeginDim){
-				    c.a = c.a*(max(c.g-c.r-_BeginDim,c.g-c.b-_BeginDim)/(_Cutoff-_BeginDim));
-				    //print(c.a);
-				    //c.g=c.g*(max(c.g-c.r-_BeginDim,c.g-c.b-_BeginDim)/(_Cutoff-_BeginDim));
-				    //c.g=0.5;
-				    //c.g=0;
+				else if(c.g-c.r>_BeginDim && c.g-c.b>_BeginDim){
+				    c.rgba *=(max(_Cutoff-c.g+c.r,_Cutoff-c.g+c.b)/(_Cutoff-_BeginDim));
+				    //c.g*=c.a;
+				    
 				}
 				#if _ORIGINALCOLOR_ON
 				    return c;

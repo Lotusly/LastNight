@@ -2,11 +2,1172 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f2dbc29-8adc-487a-9e24-6916f627edc1" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/../2018-3D/Assets/Scenes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-3D/Assets/Scenes/SampleScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-3D/Assets/Scenes/SampleScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-3D/Assets/Shader_test.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-3D/Assets/Shader_test/New Material.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-3D/Assets/Shader_test/New Material.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-3D/Assets/Shader_test/SimplexNoise3D.hlsl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-3D/Assets/Shader_test/SimplexNoise3D.hlsl.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-3D/Assets/Shader_test/Voxelizer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-3D/Assets/Shader_test/Voxelizer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-3D/Assets/Shader_test/Voxelizer.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-3D/Assets/Shader_test/Voxelizer.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-3D/Assets/Shader_test/VoxelizerCommon.hlsl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-3D/Assets/Shader_test/VoxelizerCommon.hlsl.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-3D/Assets/Shader_test/VoxelizerEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-3D/Assets/Shader_test/VoxelizerEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-3D/Assets/Shader_test/VoxelizerFragment.hlsl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-3D/Assets/Shader_test/VoxelizerFragment.hlsl.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-3D/Assets/Shader_test/VoxelizerGeometry.hlsl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-3D/Assets/Shader_test/VoxelizerGeometry.hlsl.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-3D/Packages/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-3D/ProjectSettings/AudioManager.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-3D/ProjectSettings/ClusterInputManager.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-3D/ProjectSettings/DynamicsManager.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-3D/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-3D/ProjectSettings/EditorSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-3D/ProjectSettings/GraphicsSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-3D/ProjectSettings/InputManager.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-3D/ProjectSettings/NavMeshAreas.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-3D/ProjectSettings/NetworkManager.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-3D/ProjectSettings/Physics2DSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-3D/ProjectSettings/PresetManager.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-3D/ProjectSettings/ProjectSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-3D/ProjectSettings/ProjectVersion.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-3D/ProjectSettings/QualitySettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-3D/ProjectSettings/TagManager.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-3D/ProjectSettings/TimeManager.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-3D/ProjectSettings/UnityConnectSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Materials/ConstructionLight_Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Materials/ConstructionLight_Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Materials/DryWallPainted_Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Materials/DryWallPainted_Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Materials/DryWall_Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Materials/DryWall_Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Materials/Ground_Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Materials/Ground_Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Materials/Hammer_Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Materials/Hammer_Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Materials/HardHat_Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Materials/HardHat_Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Materials/Jigsaw_Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Materials/Jigsaw_Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Materials/LightBulb_Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Materials/LightBulb_Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Materials/Liquid_Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Materials/Liquid_Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Materials/Metal_Blue_Simple_Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Materials/Metal_Blue_Simple_Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Materials/Metal_Simple_Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Materials/Metal_Simple_Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Materials/OBS_Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Materials/OBS_Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Materials/PaintBrush_Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Materials/PaintBrush_Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Materials/PaintCan_mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Materials/PaintCan_mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Materials/PaintLabel_Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Materials/PaintLabel_Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Materials/Plastic_Black_Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Materials/Plastic_Black_Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Materials/Plastic_Gray_Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Materials/Plastic_Gray_Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Materials/Plastic_Ridges_Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Materials/Plastic_Ridges_Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Materials/Plastic_Rough_Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Materials/Plastic_Rough_Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Materials/Plastic_Transparent.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Materials/Plastic_Transparent.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Materials/Plastic_White_Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Materials/Plastic_White_Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Materials/Plastic_Yellow_Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Materials/Plastic_Yellow_Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Materials/Strap_Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Materials/Strap_Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Materials/Stud_Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Materials/Stud_Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Models.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Models/Brush.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Models/Brush.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Models/ConstructionLight.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Models/ConstructionLight.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Models/ConstructionLight_Low.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Models/ConstructionLight_Low.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Models/Hammer.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Models/Hammer.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Models/Jigsaw.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Models/Jigsaw.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Models/MagneticLevel.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Models/MagneticLevel.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Models/PaintBucket.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Models/PaintBucket.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Models/SafetyGoggles.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Models/SafetyGoggles.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Models/SafetyHat.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Models/SafetyHat.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Models/Stud.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Models/Stud.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Models/Workbench.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Models/Workbench.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Models/Workbench_Low.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Models/Workbench_Low.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Models/Workshop_Set.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Models/Workshop_Set.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Prefabs/Props.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Prefabs/Props.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Prefabs/Workshop Set.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Prefabs/Workshop Set.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Concrete.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Concrete/Ground_Albedo.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Concrete/Ground_Albedo.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Concrete/Ground_MetallicOcculusionSmoothness.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Concrete/Ground_MetallicOcculusionSmoothness.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Concrete/Ground_Normal.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Concrete/Ground_Normal.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Drywall.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Drywall/DrywallPainted_Albedo.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Drywall/DrywallPainted_Albedo.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Drywall/DrywallPainted_MetallicSmootheness.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Drywall/DrywallPainted_MetallicSmootheness.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Drywall/DrywallPainted_Normal.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Drywall/DrywallPainted_Normal.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Drywall/Drywall_Albedo.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Drywall/Drywall_Albedo.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Drywall/Drywall_MetallicSmoothness.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Drywall/Drywall_MetallicSmoothness.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Drywall/Drywall_Normal.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Drywall/Drywall_Normal.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Light_Cookie.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Light_Cookie/Spotlight_Cookie.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Light_Cookie/Spotlight_Cookie.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Metal.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Metal/Metal_Albedo.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Metal/Metal_Albedo.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Metal/Metal_MetallicSmoothness.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Metal/Metal_MetallicSmoothness.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Metal/Metal_Normal.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Metal/Metal_Normal.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Plastic.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Plastic/Elastic_MetallicOcculusionSmoothness.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Plastic/Elastic_MetallicOcculusionSmoothness.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Plastic/Elastic_Normal.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Plastic/Elastic_Normal.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Plastic/PlasticRidges_Albedo.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Plastic/PlasticRidges_Albedo.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Plastic/PlasticRidges_MetallicOcculusionSmoothness.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Plastic/PlasticRidges_MetallicOcculusionSmoothness.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Plastic/PlasticRidges_Normal.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Plastic/PlasticRidges_Normal.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Plastic/PlasticRough_Albedo.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Plastic/PlasticRough_Albedo.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Plastic/PlasticRough_MetallicOcculusionSmoothness.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Plastic/PlasticRough_MetallicOcculusionSmoothness.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Plastic/Plastic_Albedo.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Plastic/Plastic_Albedo.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Plastic/Plastic_MetallicSmoothness.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Plastic/Plastic_MetallicSmoothness.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Plastic/Plastic_Normal.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Plastic/Plastic_Normal.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Props.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Props/Construction_Light.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Props/Construction_Light/ConstructionLight_Albedo.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Props/Construction_Light/ConstructionLight_Albedo.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Props/Construction_Light/ConstructionLight_MetallicOcculusionSmoothness.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Props/Construction_Light/ConstructionLight_MetallicOcculusionSmoothness.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Props/Hammer.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Props/Hammer/Hammer_Albedo.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Props/Hammer/Hammer_Albedo.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Props/Hammer/Hammer_MetallicOcculusionSmoothness.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Props/Hammer/Hammer_MetallicOcculusionSmoothness.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Props/Hammer/Hammer_Normal.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Props/Hammer/Hammer_Normal.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Props/HardHat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Props/HardHat/SafetyHat_Albedo.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Props/HardHat/SafetyHat_Albedo.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Props/HardHat/SafetyHat_MetallicOcculusionSmoothness.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Props/HardHat/SafetyHat_MetallicOcculusionSmoothness.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Props/HardHat/SafetyHat_Normal.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Props/HardHat/SafetyHat_Normal.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Props/Jigsaw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Props/Jigsaw/Jigsaw_Albedo.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Props/Jigsaw/Jigsaw_Albedo.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Props/Jigsaw/Jigsaw_MetallicOcculusionSmoothness.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Props/Jigsaw/Jigsaw_MetallicOcculusionSmoothness.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Props/Jigsaw/Jigsaw_Normal.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Props/Jigsaw/Jigsaw_Normal.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Props/Paint.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Props/Paint/Paint1G_Albedo.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Props/Paint/Paint1G_Albedo.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Props/Paint/Paint1G_MetallicOcculusionSmoothness.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Props/Paint/Paint1G_MetallicOcculusionSmoothness.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Props/Paint/Paint1G_Normal.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Props/Paint/Paint1G_Normal.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Props/Paint/Paint5G_Albedo.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Props/Paint/Paint5G_Albedo.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Props/Paint/Paintbrush_Albedo.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Props/Paint/Paintbrush_Albedo.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Props/Paint/Paintbrush_MetallicOcculusionSmoothness.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Props/Paint/Paintbrush_MetallicOcculusionSmoothness.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Props/Paint/Paintbrush_Normal.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Props/Paint/Paintbrush_Normal.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Wood.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Wood/OBS_Albedo.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Wood/OBS_Albedo.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Wood/OBS_MetallicOcculusionSmoothness.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Wood/OBS_MetallicOcculusionSmoothness.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Wood/OBS_Normal.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Wood/OBS_Normal.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Wood/Plywood_Albedo.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Wood/Plywood_Albedo.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Wood/Plywood_MetallicOcculusionSmoothness.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Wood/Plywood_MetallicOcculusionSmoothness.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Wood/Plywood_Normal.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/ExampleAssets/Textures/Wood/Plywood_Normal.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/Presets.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/Presets/AudioCompressedInMemory.preset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/Presets/AudioCompressedInMemory.preset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/Presets/AudioStreaming.preset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/Presets/AudioStreaming.preset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/Presets/Defaults.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/Presets/Defaults/AlbedoTexture_Default.preset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/Presets/Defaults/AlbedoTexture_Default.preset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/Presets/Defaults/AudioDecompressOnLoad_Default.preset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/Presets/Defaults/AudioDecompressOnLoad_Default.preset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/Presets/Defaults/DirectionalLight_Default.preset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/Presets/Defaults/DirectionalLight_Default.preset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/Presets/Defaults/SSSSettings_Default.preset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/Presets/Defaults/SSSSettings_Default.preset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/Presets/HDRTexture.preset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/Presets/HDRTexture.preset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/Presets/NormalTexture.preset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/Presets/NormalTexture.preset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/Presets/UtilityTexture.preset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/Presets/UtilityTexture.preset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/Readme.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/Readme.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/Scenes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/Scenes/samplescene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/Scenes/samplescene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/Scripts/SimpleCameraController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/Scripts/SimpleCameraController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/Settings.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/Settings/HDRenderPipelineAsset.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/Settings/HDRenderPipelineAsset.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/Settings/PostProcessVolumeProfile.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/Settings/PostProcessVolumeProfile.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/Settings/SSSSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/Settings/SSSSettings.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/Settings/VolumeSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/Settings/VolumeSettings.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/Settings/VolumeSettings_Baking.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/Settings/VolumeSettings_Baking.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/Shader_test.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/Shader_test/New Material.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/Shader_test/New Material.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/Shader_test/SimplexNoise3D.hlsl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/Shader_test/SimplexNoise3D.hlsl.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/Shader_test/Voxelizer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/Shader_test/Voxelizer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/Shader_test/Voxelizer.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/Shader_test/Voxelizer.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/Shader_test/VoxelizerCommon.hlsl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/Shader_test/VoxelizerCommon.hlsl.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/Shader_test/VoxelizerEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/Shader_test/VoxelizerEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/Shader_test/VoxelizerFragment.hlsl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/Shader_test/VoxelizerFragment.hlsl.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/Shader_test/VoxelizerGeometry.hlsl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/Shader_test/VoxelizerGeometry.hlsl.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/TutorialInfo.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/TutorialInfo/Icons.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/TutorialInfo/Icons/HDIcon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/TutorialInfo/Icons/HDIcon.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/TutorialInfo/Icons/Help_Icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/TutorialInfo/Icons/Help_Icon.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/TutorialInfo/Layout.wlt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/TutorialInfo/Layout.wlt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/TutorialInfo/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/TutorialInfo/Scripts/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/TutorialInfo/Scripts/Readme.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Assets/TutorialInfo/Scripts/Readme.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/Packages/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/ProjectSettings/AudioManager.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/ProjectSettings/ClusterInputManager.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/ProjectSettings/DynamicsManager.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/ProjectSettings/EditorSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/ProjectSettings/GraphicsSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/ProjectSettings/HDRPProjectVersion.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/ProjectSettings/InputManager.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/ProjectSettings/NavMeshAreas.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/ProjectSettings/NetworkManager.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/ProjectSettings/Physics2DSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/ProjectSettings/PresetManager.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/ProjectSettings/ProjectSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/ProjectSettings/ProjectVersion.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/ProjectSettings/QualitySettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/ProjectSettings/TagManager.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/ProjectSettings/TimeManager.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018-HDRP/ProjectSettings/UnityConnectSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/.idea/.idea.HDRP/.idea/contentModel.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/.idea/.idea.HDRP/.idea/indexLayout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/.idea/.idea.HDRP/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/.idea/.idea.HDRP/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/.idea/.idea.HDRP/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/.idea/.idea.HDRP/riderModule.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Animation.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Animation/CirclePopOut.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Animation/CirclePopOut.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Animation/CirclePopOut.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Animation/CirclePopOut.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Animation/CircleShrink.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Animation/CircleShrink.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Animation/CircleStay.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Animation/CircleStay.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Animation/SubtleMovement.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Animation/SubtleMovement.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Animation/SubtleMovement.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Animation/SubtleMovement.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Fonts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Fonts/ChineseRocksRg-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Fonts/ChineseRocksRg-Regular.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Fonts/Documentation.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Fonts/Documentation/JazzCreateAltKeys_BubbleFont.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Fonts/Documentation/JazzCreateAltKeys_BubbleFont.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Fonts/Documentation/JazzCreateBubble_VersionHistory_1.1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Fonts/Documentation/JazzCreateBubble_VersionHistory_1.1.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Fonts/JazzCreateBubble.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Fonts/JazzCreateBubble.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Fonts/Script.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Fonts/Script/scriptTexttest.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Fonts/Script/scriptTexttest.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Fonts/UIsprite.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Fonts/UIsprite/JazzCreateFontUI1024x512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Fonts/UIsprite/JazzCreateFontUI1024x512.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Fonts/_Scene.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Fonts/_Scene/Font.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Fonts/_Scene/Font.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Images.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Images/Background0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Images/Background0.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Images/Background1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Images/Background1.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Images/Bar Graph Icon white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Images/Bar Graph Icon white.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Images/Character0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Images/Character0.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Images/Circle0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Images/Circle0.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Images/Pattern0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Images/Pattern0.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Images/Prop0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Images/Prop0.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Images/Red Circle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Images/Red Circle.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Images/Relationship Icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Images/Relationship Icon.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Images/Stat Background.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Images/Stat Background.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Images/Stat Background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Images/Stat Background.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Images/StatBlue.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Images/StatBlue.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Images/StatWhite.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Images/StatWhite.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Images/Stats.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Images/Stats.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Images/Wheel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Images/Wheel.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Images/green tick bar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Images/green tick bar.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Images/stat outline.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Images/stat outline.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Images/wheel box back.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Images/wheel box back.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Images/wheel box front.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Images/wheel box front.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Materials/Background0.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Materials/Background0.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Materials/Background1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Materials/Background1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Materials/Character0.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Materials/Character0.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Materials/Circle0.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Materials/Circle0.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Materials/General0.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Materials/General0.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Materials/General1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Materials/General1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Materials/General2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Materials/General2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Materials/General3.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Materials/General3.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Materials/GreenMask.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Materials/GreenMask.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Materials/GreenScreen.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Materials/GreenScreen.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Materials/Mask1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Materials/Mask1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Materials/Mask2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Materials/Mask2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Materials/Mask3.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Materials/Mask3.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Materials/Midground.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Materials/Midground.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Materials/Pattern1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Materials/Pattern1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Materials/Pattern2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Materials/Pattern2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Materials/Prop0.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Materials/Prop0.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Materials/Test.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Materials/Test.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Materials/Wheel.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Materials/Wheel.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Materials/WheelBack.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Materials/WheelBack.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Materials/WheelFront.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Materials/WheelFront.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Plugins.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Plugins/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Plugins/Editor/JetBrains.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Presets.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Presets/AudioCompressedInMemory.preset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Presets/AudioCompressedInMemory.preset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Presets/AudioStreaming.preset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Presets/AudioStreaming.preset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Presets/Defaults.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Presets/Defaults/AlbedoTexture_Default.preset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Presets/Defaults/AlbedoTexture_Default.preset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Presets/Defaults/AudioDecompressOnLoad_Default.preset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Presets/Defaults/AudioDecompressOnLoad_Default.preset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Presets/Defaults/DirectionalLight_Default.preset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Presets/Defaults/DirectionalLight_Default.preset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Presets/Defaults/SSSSettings_Default.preset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Presets/Defaults/SSSSettings_Default.preset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Presets/HDRTexture.preset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Presets/HDRTexture.preset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Presets/NormalTexture.preset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Presets/NormalTexture.preset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Presets/UtilityTexture.preset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Presets/UtilityTexture.preset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Resources.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Resources/Backgrounds.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Resources/Backgrounds/0.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Resources/Backgrounds/0.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Resources/Backgrounds/1.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Resources/Backgrounds/1.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Resources/Backgrounds/New Material.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Resources/Backgrounds/New Material.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Resources/Characters.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Resources/Characters/0.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Resources/Characters/0.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Resources/Characters/1.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Resources/Characters/1.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Resources/Dialogues.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Resources/Dialogues/0.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Resources/Dialogues/0.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Resources/ForegroundItems.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Resources/ForegroundItems/0.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Resources/ForegroundItems/0.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Resources/Midground.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Resources/Midground/0.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Resources/Midground/0.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Resources/Props.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Resources/Props/0.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Resources/Props/0.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Resources/Shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Scenes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Scenes/UI.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Scenes/UI.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Scenes/samplescene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Scenes/samplescene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Scripts/BSC.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Scripts/BSC.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Scripts/LightLeaking.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Scripts/LightLeaking.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Scripts/PostEffects.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Scripts/PostEffects.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Scripts/Rotate.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Scripts/Rotate.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Scripts/Story.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Scripts/Story.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Scripts/Supportive.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Scripts/Supportive/Singleton.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Scripts/Supportive/Singleton.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Scripts/Supportive/Test.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Scripts/Supportive/Test.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Scripts/TMPStory.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Scripts/TMPStory.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Scripts/TMPStory1.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Scripts/TMPStory1.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Scripts/Ui.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Scripts/Ui/Background.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Scripts/Ui/Background.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Scripts/Ui/Bar.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Scripts/Ui/Bar.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Scripts/Ui/Character.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Scripts/Ui/Character.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Scripts/Ui/Coordinate.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Scripts/Ui/Coordinate.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Scripts/Ui/Dialogue.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Scripts/Ui/Dialogue.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Scripts/Ui/ForegroundItem.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Scripts/Ui/ForegroundItem.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Scripts/Ui/MarkCircle.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Scripts/Ui/MarkCircle.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Scripts/Ui/Midground.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Scripts/Ui/Midground.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Scripts/Ui/Option.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Scripts/Ui/Option.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Scripts/Ui/PlaybackWheel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Scripts/Ui/PlaybackWheel.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Scripts/Ui/StatBar.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Scripts/Ui/StatBar.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Scripts/Ui/UiCamera.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Scripts/Ui/UiCamera.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Scripts/Ui/UiItem.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Scripts/Ui/UiItem.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Scripts/Ui/UiManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Scripts/Ui/UiManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Scripts/Ui/UiMask.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Scripts/Ui/UiMask.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Scripts/Video.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Scripts/Video.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Scripts/VoffsetLetter.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Scripts/VoffsetLetter.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Settings.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Settings/HDRenderPipelineAsset.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Settings/HDRenderPipelineAsset.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Settings/PostProcessVolumeProfile.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Settings/PostProcessVolumeProfile.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Settings/SSSSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Settings/SSSSettings.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Settings/VolumeSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Settings/VolumeSettings.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Settings/VolumeSettings_Baking.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Settings/VolumeSettings_Baking.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Shader/BSC.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Shader/BSC.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Shader/Background.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Shader/Background.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Shader/GreenMask.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Shader/GreenMask.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Shader/GreenScreen.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Shader/GreenScreen.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Shader/Layer.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Shader/Layer.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Shader/LightLeaking.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Shader/LightLeaking.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Shader/LightLeaking.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Shader/LightLeaking.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Shader/Mask.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Shader/Mask.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Shader/Midground.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Shader/Midground.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Shader/Surface.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Shader/Surface.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Gizmos.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Gizmos/TMP - Dropdown Icon.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Gizmos/TMP - Dropdown Icon.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Gizmos/TMP - Font Asset Icon.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Gizmos/TMP - Font Asset Icon.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Gizmos/TMP - Input Field Icon.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Gizmos/TMP - Input Field Icon.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Gizmos/TMP - Text Component Icon.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Gizmos/TMP - Text Component Icon.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Gizmos/TextMeshPro Inline Graphics icon.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Gizmos/TextMeshPro Inline Graphics icon.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/TMPro_DarkSkin.guiskin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/TMPro_DarkSkin.guiskin.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/TMPro_LightSkin.guiskin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/TMPro_LightSkin.guiskin.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Textures/Box Area 85 Dark.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Textures/Box Area 85 Dark.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Textures/Box Area Dark (LEFT).psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Textures/Box Area Dark (LEFT).psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Textures/Box Area Dark.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Textures/Box Area Dark.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Textures/Box Area Light (LEFT).psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Textures/Box Area Light (LEFT).psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Textures/Box Area Light.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Textures/Box Area Light.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Textures/Box Area Medium (LEFT).psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Textures/Box Area Medium (LEFT).psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Textures/Box Area Medium.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Textures/Box Area Medium.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Textures/Square Box Area (40 Grey).psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Textures/Square Box Area (40 Grey).psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Textures/Square Box Area (85 Grey).psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Textures/Square Box Area (85 Grey).psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Textures/btn_AlignBaseLine.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Textures/btn_AlignBaseLine.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Textures/btn_AlignBaseLine_Light.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Textures/btn_AlignBaseLine_Light.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Textures/btn_AlignBottom.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Textures/btn_AlignBottom.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Textures/btn_AlignBottom_Light.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Textures/btn_AlignBottom_Light.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Textures/btn_AlignCapLine.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Textures/btn_AlignCapLine.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Textures/btn_AlignCapLine_Light.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Textures/btn_AlignCapLine_Light.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Textures/btn_AlignCenter.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Textures/btn_AlignCenter.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Textures/btn_AlignCenterGeo.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Textures/btn_AlignCenterGeo.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Textures/btn_AlignCenterGeo_Light.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Textures/btn_AlignCenterGeo_Light.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Textures/btn_AlignCenter_Light.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Textures/btn_AlignCenter_Light.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Textures/btn_AlignFlush.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Textures/btn_AlignFlush.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Textures/btn_AlignFlush_Light.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Textures/btn_AlignFlush_Light.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Textures/btn_AlignJustified.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Textures/btn_AlignJustified.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Textures/btn_AlignJustified_Light.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Textures/btn_AlignJustified_Light.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Textures/btn_AlignLeft.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Textures/btn_AlignLeft.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Textures/btn_AlignLeft_Light.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Textures/btn_AlignLeft_Light.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Textures/btn_AlignMidLine.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Textures/btn_AlignMidLine.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Textures/btn_AlignMiddle.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Textures/btn_AlignMiddle.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Textures/btn_AlignMiddle_Light.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Textures/btn_AlignMiddle_Light.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Textures/btn_AlignMidline_Light.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Textures/btn_AlignMidline_Light.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Textures/btn_AlignRight.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Textures/btn_AlignRight.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Textures/btn_AlignRight_Light.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Textures/btn_AlignRight_Light.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Textures/btn_AlignTop.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Textures/btn_AlignTop.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Textures/btn_AlignTop_Light.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Editor Resources/Textures/btn_AlignTop_Light.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Fonts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Fonts/Anton OFL.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Fonts/Anton OFL.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Fonts/Anton.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Fonts/Anton.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Fonts/Bangers - OFL.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Fonts/Bangers - OFL.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Fonts/Bangers.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Fonts/Bangers.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Fonts/LiberationSans - OFL.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Fonts/LiberationSans - OFL.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Fonts/LiberationSans.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Fonts/LiberationSans.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Fonts/NotoSans - License.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Fonts/NotoSans - License.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Fonts/NotoSans.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Fonts/NotoSans.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Fonts/Oswald Bold - OFL.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Fonts/Oswald Bold - OFL.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Fonts/Oswald Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Fonts/Oswald Bold.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Materials/Crate - Surface Shader Scene.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Materials/Crate - Surface Shader Scene.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Materials/Ground - Logo Scene.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Materials/Ground - Logo Scene.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Materials/Ground - Surface Shader Scene.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Materials/Ground - Surface Shader Scene.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Materials/Small Crate_diffuse.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Materials/Small Crate_diffuse.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Prefabs/Text Popup.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Prefabs/Text Popup.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Prefabs/TextMeshPro - Prefab 1.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Prefabs/TextMeshPro - Prefab 1.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Prefabs/TextMeshPro - Prefab 2.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Prefabs/TextMeshPro - Prefab 2.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Resources.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Color Gradient Presets.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Color Gradient Presets/Blue to Purple - Vertical.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Color Gradient Presets/Blue to Purple - Vertical.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Color Gradient Presets/Dark to Light Green - Vertical.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Color Gradient Presets/Dark to Light Green - Vertical.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Color Gradient Presets/Light to Dark Green - Vertical.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Color Gradient Presets/Light to Dark Green - Vertical.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Color Gradient Presets/Yellow to Orange - Vertical.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Color Gradient Presets/Yellow to Orange - Vertical.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF - 000.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF - 000.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF - Drop Shadow.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF - Drop Shadow.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF - Outline.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF - Outline.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF - Drop Shadow.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF - Drop Shadow.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF - Outline.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF - Outline.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF Glow.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF Glow.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF Logo.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF Logo.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/LiberationSans SDF - Drop Shadow.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/LiberationSans SDF - Drop Shadow.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/LiberationSans SDF - Metalic Green.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/LiberationSans SDF - Metalic Green.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/LiberationSans SDF - Outline.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/LiberationSans SDF - Outline.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/LiberationSans SDF - Overlay.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/LiberationSans SDF - Overlay.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/LiberationSans SDF - Soft Mask.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/LiberationSans SDF - Soft Mask.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Oswald Bold SDF.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Oswald Bold SDF.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF - Drop Shadow.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF - Drop Shadow.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF - Surface.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF - Surface.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Sprite Assets.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Sprite Assets/Default Sprite Asset.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Sprite Assets/Default Sprite Asset.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Sprite Assets/DropCap Numbers.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Sprite Assets/DropCap Numbers.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scenes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scenes/01-  Single Line TextMesh Pro.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scenes/01-  Single Line TextMesh Pro.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scenes/02 - Multi-line TextMesh Pro.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scenes/02 - Multi-line TextMesh Pro.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scenes/03 - Line Justification.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scenes/03 - Line Justification.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scenes/04 - Word Wrapping.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scenes/04 - Word Wrapping.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scenes/05 - Style Tags.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scenes/05 - Style Tags.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scenes/06 - Extra Rich Text Examples.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scenes/06 - Extra Rich Text Examples.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scenes/07 - Superscript &amp; Subscript Example.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scenes/07 - Superscript &amp; Subscript Example.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scenes/08 - Improved Text Alignment.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scenes/08 - Improved Text Alignment.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scenes/09 - Margin Tag Example.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scenes/09 - Margin Tag Example.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scenes/10 - Bullets &amp; Numbered List Example.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scenes/10 - Bullets &amp; Numbered List Example.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scenes/11 - The Style Tag.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scenes/11 - The Style Tag.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scenes/12 - Link Example.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scenes/12 - Link Example.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scenes/12a - Text Interactions.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scenes/12a - Text Interactions.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scenes/13 - Soft Hyphenation.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scenes/13 - Soft Hyphenation.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scenes/14 - Multi Font &amp; Sprites.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scenes/14 - Multi Font &amp; Sprites.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scenes/15 - Inline Graphics &amp; Sprites.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scenes/15 - Inline Graphics &amp; Sprites.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scenes/16 - Linked text overflow mode example.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scenes/16 - Linked text overflow mode example.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scenes/17 - Old Computer Terminal.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scenes/17 - Old Computer Terminal.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scenes/18 - ScrollRect &amp; Masking &amp; Layout.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scenes/18 - ScrollRect &amp; Masking &amp; Layout.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scenes/19 - Masking Texture &amp; Soft Mask.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scenes/19 - Masking Texture &amp; Soft Mask.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scenes/20 - Input Field with Scrollbar.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scenes/20 - Input Field with Scrollbar.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scenes/21 - Script Example.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scenes/21 - Script Example.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scenes/22 - Basic Scripting Example.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scenes/22 - Basic Scripting Example.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scenes/23 - Animating Vertex Attributes.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scenes/23 - Animating Vertex Attributes.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scenes/24 - Surface Shader Example.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scenes/24 - Surface Shader Example.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scenes/25 - TextMeshPro Title.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scenes/25 - TextMeshPro Title.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scenes/Benchmark (Floating Text).unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scenes/Benchmark (Floating Text).unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scenes/Benchmark (Point Sizes).unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scenes/Benchmark (Point Sizes).unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scenes/Benchmark (Script).unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scenes/Benchmark (Script).unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scenes/Benchmark (Shader Perf).unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scenes/Benchmark (Shader Perf).unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scenes/Distance Field Shader Check.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scenes/Distance Field Shader Check.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark01.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark01.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark01_UGUI.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark01_UGUI.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark02.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark02.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark03.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark03.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark04.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark04.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/CameraController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/CameraController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/ChatController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/ChatController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/EnvMapAnimator.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/EnvMapAnimator.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/ObjectSpin.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/ObjectSpin.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/ShaderPropAnimator.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/ShaderPropAnimator.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/SimpleScript.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/SimpleScript.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/SkewTextExample.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/SkewTextExample.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_DigitValidator.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_DigitValidator.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_ExampleScript_01.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_ExampleScript_01.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_FrameRateCounter.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_FrameRateCounter.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_PhoneNumberValidator.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_PhoneNumberValidator.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextEventCheck.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextEventCheck.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextEventHandler.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextEventHandler.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextInfoDebugTool.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextInfoDebugTool.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextSelector_A.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextSelector_A.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextSelector_B.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextSelector_B.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_UiFrameRateCounter.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_UiFrameRateCounter.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMPro_InstructionOverlay.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMPro_InstructionOverlay.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TeleType.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TeleType.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TextConsoleSimulator.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TextConsoleSimulator.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TextMeshProFloatingText.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TextMeshProFloatingText.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TextMeshSpawner.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TextMeshSpawner.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexColorCycler.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexColorCycler.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexJitter.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexJitter.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexShakeA.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexShakeA.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexShakeB.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexShakeB.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexZoom.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexZoom.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/WarpTextExample.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/WarpTextExample.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Sprites.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Sprites/Default Sprites.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Sprites/Default Sprites.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Sprites/DropCap Numbers.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Sprites/DropCap Numbers.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Textures/Brushed Metal 3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Textures/Brushed Metal 3.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Textures/Engraved Wall Normal.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Textures/Engraved Wall Normal.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Textures/Engraved Wall.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Textures/Engraved Wall.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Textures/Floor Cement.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Textures/Floor Cement.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Textures/Floor Tiles 1 - diffuse.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Textures/Floor Tiles 1 - diffuse.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Textures/Floor Tiles 1 - normal.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Textures/Floor Tiles 1 - normal.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Textures/Fruit Jelly (B&amp;W).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Textures/Fruit Jelly (B&amp;W).jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Textures/Gradient Diagonal (Color).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Textures/Gradient Diagonal (Color).jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Textures/Gradient Horizontal (Color).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Textures/Gradient Horizontal (Color).jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Textures/Gradient Vertical (Color).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Textures/Gradient Vertical (Color).jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Textures/Mask Zig-n-Zag.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Textures/Mask Zig-n-Zag.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Textures/Sand Normal Map.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Textures/Sand Normal Map.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Textures/Small Crate_diffuse.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Textures/Small Crate_diffuse.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Textures/Small Crate_normal.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Textures/Small Crate_normal.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Textures/Stainless 03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Textures/Stainless 03.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Textures/Text Overflow - Linked Text Image 1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Textures/Text Overflow - Linked Text Image 1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Textures/Text Overflow - Linked Text UI Screenshot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Textures/Text Overflow - Linked Text UI Screenshot.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Textures/Wipe Pattern - Circle.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Textures/Wipe Pattern - Circle.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Textures/Wipe Pattern - Diagonal.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Textures/Wipe Pattern - Diagonal.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Textures/Wipe Pattern - Radial Double.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Textures/Wipe Pattern - Radial Double.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Textures/Wipe Pattern - Radial Quad.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Examples &amp; Extras/Textures/Wipe Pattern - Radial Quad.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Plugins.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Plugins/32 Bit Plugins.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Plugins/32 Bit Plugins/TMPro_Plugin.bundle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Plugins/32 Bit Plugins/TMPro_Plugin.bundle.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Plugins/32 Bit Plugins/TMPro_Plugin.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Plugins/32 Bit Plugins/TMPro_Plugin.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Plugins/64 Bit Plugins.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Plugins/64 Bit Plugins/TMPro_Plugin.bundle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Plugins/64 Bit Plugins/TMPro_Plugin.bundle.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Plugins/64 Bit Plugins/TMPro_Plugin.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Plugins/64 Bit Plugins/TMPro_Plugin.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Plugins/Editor DLL.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.1-Editor.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.1-Editor.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.1-Runtime.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.1-Runtime.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Plugins/Runtime DLL.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Plugins/Runtime DLL/TextMeshPro-2017.1-Runtime.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Plugins/Runtime DLL/TextMeshPro-2017.1-Runtime.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Plugins/vcomp120.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Plugins/vcomp120.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Resources.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Resources/Fonts &amp; Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/ChineseRocksRg512 SDF - 000.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/ChineseRocksRg512 SDF - 000.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/ChineseRocksRg512 SDF.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/ChineseRocksRg512 SDF.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Resources/Shaders.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Resources/Shaders/TMP_Bitmap-Mobile.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Resources/Shaders/TMP_Bitmap-Mobile.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Resources/Shaders/TMP_Bitmap.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Resources/Shaders/TMP_Bitmap.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Resources/Shaders/TMP_SDF Overlay.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Resources/Shaders/TMP_SDF Overlay.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Resources/Shaders/TMP_SDF-Mobile Masking.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Resources/Shaders/TMP_SDF-Mobile Masking.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Resources/Shaders/TMP_SDF-Mobile Overlay.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Resources/Shaders/TMP_SDF-Mobile Overlay.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Resources/Shaders/TMP_SDF-Mobile.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Resources/Shaders/TMP_SDF-Mobile.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Resources/Shaders/TMP_SDF-Surface-Mobile.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Resources/Shaders/TMP_SDF-Surface-Mobile.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Resources/Shaders/TMP_SDF-Surface.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Resources/Shaders/TMP_SDF-Surface.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Resources/Shaders/TMP_SDF.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Resources/Shaders/TMP_SDF.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Resources/Shaders/TMP_Sprite.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Resources/Shaders/TMP_Sprite.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Resources/Shaders/TMPro.cginc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Resources/Shaders/TMPro.cginc.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Resources/Shaders/TMPro_Properties.cginc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Resources/Shaders/TMPro_Properties.cginc.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Resources/Shaders/TMPro_Surface.cginc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Resources/Shaders/TMPro_Surface.cginc.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Resources/Sprite Assets.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Resources/Style Sheets.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Resources/TMP Settings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Resources/TMP Settings.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Sprites.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Sprites/EmojiOne.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Sprites/EmojiOne.json.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Sprites/EmojiOne.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/Sprites/EmojiOne.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/User Guide.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/User Guide/TextMesh Pro User Guide 2016.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/TextMesh Pro/User Guide/TextMesh Pro User Guide 2016.pdf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Videos.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Videos/AfterEffect.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Videos/AfterEffect.mp4.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Videos/Blood.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Videos/Blood.mp4.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Videos/Cara.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Videos/Cara.mp4.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Videos/Cara_Croped.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Videos/Cara_Croped.mp4.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Videos/Escalator.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Videos/Escalator.mp4.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Videos/LightLeak.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Videos/LightLeak.mp4.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Videos/LightLeakTexture.renderTexture" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Videos/LightLeakTexture.renderTexture.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Videos/Spin.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Videos/Spin.mp4.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Videos/Spin1.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Videos/Spin1.mp4.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Videos/Spin5.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Videos/Spin5.mp4.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Videos/VeryGreen.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Videos/VeryGreen.mp4.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Videos/Water.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Videos/Water.mp4.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Videos/Water1.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Assets/Videos/Water1.mp4.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/Packages/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/ProjectSettings/AudioManager.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/ProjectSettings/ClusterInputManager.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/ProjectSettings/DynamicsManager.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/ProjectSettings/EditorSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/ProjectSettings/GraphicsSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/ProjectSettings/InputManager.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/ProjectSettings/NavMeshAreas.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/ProjectSettings/NetworkManager.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/ProjectSettings/Physics2DSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/ProjectSettings/PresetManager.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/ProjectSettings/ProjectSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/ProjectSettings/ProjectVersion.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/ProjectSettings/QualitySettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/ProjectSettings/TagManager.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/ProjectSettings/TimeManager.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HDRP/ProjectSettings/UnityConnectSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.NewNight/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NewNight/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.NewNight/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NewNight/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/10mm/Demolishing.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/10mm/Demolishing.shader" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/10mm.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/10mm.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ShaderCache.db" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ShaderCache.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Docs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Docs/Doc.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Docs/Doc.pdf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Prefab/NPC.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Prefab/NPC.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Resources.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Resources/Characters.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Resources/Characters/CharactersSample.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Resources/Characters/CharactersSample.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Resources/Customs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Resources/Customs/BubbleRectangle.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Resources/Customs/BubbleRectangle.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Resources/Customs/BubbleRound.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Resources/Customs/BubbleRound.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Resources/Customs/MouseIcon.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Resources/Customs/MouseIcon.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Resources/GUI.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Resources/GUI/Background Sample.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Resources/GUI/Background Sample.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Resources/GUI/Bubble.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Resources/GUI/Bubble/MouseIcon.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Resources/GUI/Bubble/MouseIcon/Mouse.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Resources/GUI/Bubble/MouseIcon/Mouse.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Resources/GUI/Bubble/MouseIcon/MouseBo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Resources/GUI/Bubble/MouseIcon/MouseBo.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Resources/GUI/Bubble/MouseIcon/MouseColor1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Resources/GUI/Bubble/MouseIcon/MouseColor1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Resources/GUI/Bubble/MouseIcon/MouseColor2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Resources/GUI/Bubble/MouseIcon/MouseColor2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Resources/GUI/Bubble/MouseIcon/MouseIcon.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Resources/GUI/Bubble/MouseIcon/MouseIcon.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Resources/GUI/Bubble/Talking.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Resources/GUI/Bubble/Talking/BaseBody.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Resources/GUI/Bubble/Talking/BaseBody.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Resources/GUI/Bubble/Talking/BaseBorder.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Resources/GUI/Bubble/Talking/BaseBorder.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Resources/GUI/Bubble/Talking/BubbleBody.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Resources/GUI/Bubble/Talking/BubbleBody.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Resources/GUI/Bubble/Talking/BubbleBorder.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Resources/GUI/Bubble/Talking/BubbleBorder.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Resources/GUI/Bubble/Thinking.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Resources/GUI/Bubble/Thinking/BaseBody.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Resources/GUI/Bubble/Thinking/BaseBody.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Resources/GUI/Bubble/Thinking/BaseBorder.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Resources/GUI/Bubble/Thinking/BaseBorder.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Resources/GUI/Bubble/Thinking/BubbleBody.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Resources/GUI/Bubble/Thinking/BubbleBody.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Resources/GUI/Bubble/Thinking/BubbleBorder.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Resources/GUI/Bubble/Thinking/BubbleBorder.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Resources/GUI/Bubble/Thinking/BubbleRound.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Resources/GUI/Bubble/Thinking/BubbleRound.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Resources/GUI/Bubble/Thinking/Thinking.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Resources/GUI/Bubble/Thinking/Thinking.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Resources/GUI/Grass1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Resources/GUI/Grass1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Resources/GUI/Icon.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Resources/GUI/Icon/DeadPixel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Resources/GUI/Icon/DeadPixel.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Resources/GUI/Icon/sDeadPixel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Resources/GUI/Icon/sDeadPixel.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Scene.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Scene/2d.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Scene/2d.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Scene/3d.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Scene/3d.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Script.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Script/Appear.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Script/Appear.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Script/DialogBubble.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Script/DialogBubble.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Script/PixelBubble.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Script/PixelBubble.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Script/SwitchScene.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d_TDP/Script/SwitchScene.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/Background0.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Images/Background0.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Background0.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Background0.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/GreenScreen.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/GreenScreen.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/test.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/test.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shader/GreenScreen.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shader/GreenScreen.shader" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/test/Background.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/test/Background.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/test/test.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/test/test.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/CurrentLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll.mdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll.mdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptMapper" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptMapper" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/assetDatabase3" beforeDir="false" afterPath="$PROJECT_DIR$/Library/assetDatabase3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/33/3353e73d64fc5974ab4bf910d56eda9a" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/33/3353e73d64fc5974ab4bf910d56eda9a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/33/3353e73d64fc5974ab4bf910d56eda9a.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/33/3353e73d64fc5974ab4bf910d56eda9a.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/50/50a5173d1d0e13d49afa826aa63099f4" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/50/50a5173d1d0e13d49afa826aa63099f4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/50/50a5173d1d0e13d49afa826aa63099f4.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/50/50a5173d1d0e13d49afa826aa63099f4.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/5f/5f9671f967915654da6bfd17f47aaf9d" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/5f/5f9671f967915654da6bfd17f47aaf9d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/5f/5f9671f967915654da6bfd17f47aaf9d.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/5f/5f9671f967915654da6bfd17f47aaf9d.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/b6/b61641b90e8d9f64da1a415727b1bc99" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/b6/b61641b90e8d9f64da1a415727b1bc99" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/df/dfd37dd2ed358e148a1138a39e988f48" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/df/dfd37dd2ed358e148a1138a39e988f48" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/df/dfd37dd2ed358e148a1138a39e988f48.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/df/dfd37dd2ed358e148a1138a39e988f48.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe1.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe1.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe2.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe2.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe3.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe3.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe4.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe4.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewNight.sln" beforeDir="false" afterPath="$PROJECT_DIR$/NewNight.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,7 +1181,7 @@
       <file leaf-file-name="Forming.shader" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/10mm/Forming.shader">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
+            <state relative-caret-position="510">
               <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
               <folding>
                 <marker date="1530803852013" expanded="true" signature="22:2778" ph="{...}" />
@@ -33,33 +1194,65 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Demolishing.shader" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Demolishing.shader" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/10mm/Demolishing.shader">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="57" column="24" selection-start-line="57" selection-start-column="24" selection-end-line="57" selection-end-column="24" />
+            <state relative-caret-position="870">
+              <caret line="58" column="24" selection-start-line="58" selection-start-column="24" selection-end-line="58" selection-end-column="24" />
               <folding>
-                <marker date="1530884992141" expanded="true" signature="26:3375" ph="{...}" />
-                <marker date="1530884992141" expanded="true" signature="41:220" ph="{...}" />
-                <marker date="1530884992141" expanded="true" signature="233:3373" ph="{...}" />
-                <marker date="1530884992141" expanded="true" signature="288:3370" ph="{...}" />
-                <marker date="1530884992141" expanded="true" signature="302:3361" ph="{...}" />
+                <marker date="1530885012979" expanded="true" signature="26:3391" ph="{...}" />
+                <marker date="1530885012979" expanded="true" signature="41:220" ph="{...}" />
+                <marker date="1530885012979" expanded="true" signature="233:3389" ph="{...}" />
+                <marker date="1530885012979" expanded="true" signature="288:3386" ph="{...}" />
+                <marker date="1530885012979" expanded="true" signature="302:3377" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Contructor.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/10mm/Contructor.cs">
+      <file leaf-file-name="FishEye.shader" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Shader/FishEye.shader">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+            <state>
               <folding>
-                <marker date="1530561148148" expanded="false" signature="6:78" ph="..." />
-                <marker date="1530561148148" expanded="true" signature="119:355" ph="{...}" />
-                <marker date="1530561148148" expanded="true" signature="159:209" ph="{...}" />
-                <marker date="1530561148148" expanded="true" signature="265:272" ph="{...}" />
-                <marker date="1530561148148" expanded="true" signature="321:351" ph="{...}" />
+                <marker date="1530544656227" expanded="true" signature="25:1473" ph="{...}" />
+                <marker date="1530544656227" expanded="true" signature="40:151" ph="{...}" />
+                <marker date="1530544656227" expanded="true" signature="164:1455" ph="{...}" />
+                <marker date="1530544656227" expanded="true" signature="221:1452" ph="{...}" />
+                <marker date="1530544656227" expanded="true" signature="298:1443" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BSC.shader" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Shader/BSC.shader">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="630">
+              <caret line="63" column="16" selection-start-line="63" selection-start-column="16" selection-end-line="63" selection-end-column="77" />
+              <folding>
+                <marker date="1530131094110" expanded="true" signature="19:1558" ph="{...}" />
+                <marker date="1530131094110" expanded="true" signature="34:184" ph="{...}" />
+                <marker date="1530131094110" expanded="true" signature="197:1540" ph="{...}" />
+                <marker date="1530131094110" expanded="true" signature="254:1537" ph="{...}" />
+                <marker date="1530131094110" expanded="true" signature="331:1528" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GreenScreen.shader" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Shader/GreenScreen.shader">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="55" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
+              <folding>
+                <marker date="1530905449455" expanded="true" signature="113:3780" ph="{...}" />
+                <marker date="1530905449455" expanded="true" signature="128:930" ph="{...}" />
+                <marker date="1530905449455" expanded="true" signature="944:3778" ph="{...}" />
+                <marker date="1530905449455" expanded="true" signature="955:1128" ph="{...}" />
+                <marker date="1530905449455" expanded="true" signature="1211:3775" ph="{...}" />
+                <marker date="1530905449455" expanded="true" signature="1225:3766" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -99,7 +1292,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ui/ForegroundItem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ui/MarkCircle.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shader/BSC.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/2d_TDP/Script/DialogBubble.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/10mm/VoxelWithColor.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FishEye.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Story.cs" root0="FORCE_HIGHLIGHTING" />
@@ -121,6 +1313,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/10mm/Contructor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shader/LightLeaking.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ui/Midground.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Shader/Effects.cginc" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Rotate.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shader/BlackTransparent.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/10mm/Demolishing.shader" root0="FORCE_HIGHLIGHTING" />
@@ -133,14 +1326,12 @@
     <setting file="file://$PROJECT_DIR$/Assets/Shader/Background.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/VoffsetLetter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ui/Character.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/2d_TDP/Script/SwitchScene.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ui/CircleBar.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Video.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/test/Background.shader" />
         <option value="$PROJECT_DIR$/Assets/test/Mask.shader" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Ui/Coordinate.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Supportive/test_test.cs" />
@@ -154,7 +1345,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Ui/PlaybackWheel.cs" />
         <option value="$PROJECT_DIR$/Assets/Shader/GreenMask.shader" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Video.cs" />
-        <option value="$PROJECT_DIR$/Assets/Shader/GreenScreen.shader" />
         <option value="$PROJECT_DIR$/Assets/Scripts/VoffsetLetter.cs" />
         <option value="$PROJECT_DIR$/Assets/Shader/Mask.shader" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Ui/Prop.cs" />
@@ -191,6 +1381,8 @@
         <option value="$PROJECT_DIR$/../../StandardGeometryShader-master/Assets/StandardGeometry.shader" />
         <option value="$PROJECT_DIR$/Assets/10mm/Forming.shader" />
         <option value="$PROJECT_DIR$/Assets/10mm/Demolishing.shader" />
+        <option value="$PROJECT_DIR$/Assets/Shader/ThickColor.shader" />
+        <option value="$PROJECT_DIR$/Assets/Shader/GreenScreen.shader" />
       </list>
     </option>
   </component>
@@ -221,7 +1413,7 @@
           <expand>
             <path>
               <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="NewNight (1 project)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="NewNight (4 projects)" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
           </expand>
           <select />
@@ -295,12 +1487,13 @@
       <workItem from="1530279313014" duration="1815000" />
       <workItem from="1530298917471" duration="6482000" />
       <workItem from="1530539152891" duration="10450000" />
-      <workItem from="1530796657123" duration="13389000" />
+      <workItem from="1530796657123" duration="13715000" />
+      <workItem from="1530901799691" duration="2914000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="190515000" />
+    <option name="totallyTimeSpent" value="193755000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -313,7 +1506,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2064" height="1128" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Errors In Solution" order="3" />
@@ -323,7 +1515,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26247504" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26546907" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Unity" order="8" />
       <window_info anchor="right" id="Database" order="3" />
@@ -349,20 +1541,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Ui/MarkCircle.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="31" column="28" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Ui/PlaybackWheel.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Ui/UiCamera.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -403,13 +1581,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
           <caret line="46" column="21" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Shader/GreenScreen.shader">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1785">
-          <caret line="119" column="37" selection-start-line="119" selection-start-column="20" selection-end-line="119" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -569,13 +1740,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Shader/FishEye.shader">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="66" column="54" selection-start-line="66" selection-start-column="54" selection-end-line="66" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/LightLeaking.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -587,13 +1751,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Shader/BSC.shader">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="607">
-          <caret line="63" column="77" selection-start-line="63" selection-start-column="34" selection-end-line="63" selection-end-column="77" />
         </state>
       </provider>
     </entry>
@@ -636,17 +1793,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="547">
           <caret line="39" column="37" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="37" />
-          <folding>
-            <marker date="1510051010000" expanded="true" signature="0:88" ph="/* Standard geometry shader example ... */" />
-            <marker date="1510051010000" expanded="true" signature="132:1784" ph="{...}" />
-            <marker date="1510051010000" expanded="true" signature="153:674" ph="{...}" />
-            <marker date="1510051010000" expanded="true" signature="693:1782" ph="{...}" />
-            <marker date="1510051010000" expanded="true" signature="743:920" ph="/* This shader only implements the deferred rendering pass (GBuffer ... */" />
-            <marker date="1510051010000" expanded="true" signature="943:1324" ph="{...}" />
-            <marker date="1510051010000" expanded="true" signature="1010:1309" ph="{...}" />
-            <marker date="1510051010000" expanded="true" signature="1347:1776" ph="{...}" />
-            <marker date="1510051010000" expanded="true" signature="1418:1761" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -666,7 +1812,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/10mm/Forming.shader">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
+        <state relative-caret-position="510">
           <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
           <folding>
             <marker date="1530803852013" expanded="true" signature="22:2778" ph="{...}" />
@@ -680,14 +1826,66 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/10mm/Demolishing.shader">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="57" column="24" selection-start-line="57" selection-start-column="24" selection-end-line="57" selection-end-column="24" />
+        <state relative-caret-position="870">
+          <caret line="58" column="24" selection-start-line="58" selection-start-column="24" selection-end-line="58" selection-end-column="24" />
           <folding>
-            <marker date="1530884992141" expanded="true" signature="26:3375" ph="{...}" />
-            <marker date="1530884992141" expanded="true" signature="41:220" ph="{...}" />
-            <marker date="1530884992141" expanded="true" signature="233:3373" ph="{...}" />
-            <marker date="1530884992141" expanded="true" signature="288:3370" ph="{...}" />
-            <marker date="1530884992141" expanded="true" signature="302:3361" ph="{...}" />
+            <marker date="1530885012979" expanded="true" signature="26:3391" ph="{...}" />
+            <marker date="1530885012979" expanded="true" signature="41:220" ph="{...}" />
+            <marker date="1530885012979" expanded="true" signature="233:3389" ph="{...}" />
+            <marker date="1530885012979" expanded="true" signature="288:3386" ph="{...}" />
+            <marker date="1530885012979" expanded="true" signature="302:3377" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Shader/FishEye.shader">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1530544656227" expanded="true" signature="25:1473" ph="{...}" />
+            <marker date="1530544656227" expanded="true" signature="40:151" ph="{...}" />
+            <marker date="1530544656227" expanded="true" signature="164:1455" ph="{...}" />
+            <marker date="1530544656227" expanded="true" signature="221:1452" ph="{...}" />
+            <marker date="1530544656227" expanded="true" signature="298:1443" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Shader/ThickColor.shader">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="885">
+          <caret line="59" column="58" selection-start-line="59" selection-start-column="58" selection-end-line="59" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Shader/BSC.shader">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="63" column="16" selection-start-line="63" selection-start-column="16" selection-end-line="63" selection-end-column="77" />
+          <folding>
+            <marker date="1530131094110" expanded="true" signature="19:1558" ph="{...}" />
+            <marker date="1530131094110" expanded="true" signature="34:184" ph="{...}" />
+            <marker date="1530131094110" expanded="true" signature="197:1540" ph="{...}" />
+            <marker date="1530131094110" expanded="true" signature="254:1537" ph="{...}" />
+            <marker date="1530131094110" expanded="true" signature="331:1528" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Shader/Effects.cginc">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Shader/GreenScreen.shader">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="55" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
+          <folding>
+            <marker date="1530905449455" expanded="true" signature="113:3780" ph="{...}" />
+            <marker date="1530905449455" expanded="true" signature="128:930" ph="{...}" />
+            <marker date="1530905449455" expanded="true" signature="944:3778" ph="{...}" />
+            <marker date="1530905449455" expanded="true" signature="955:1128" ph="{...}" />
+            <marker date="1530905449455" expanded="true" signature="1211:3775" ph="{...}" />
+            <marker date="1530905449455" expanded="true" signature="1225:3766" ph="{...}" />
           </folding>
         </state>
       </provider>
