@@ -3,9 +3,10 @@
 	Properties
 	{
 		_MainTex ("Texture", 2D) = "white" {}
-		_Height("Height",Float) = 0.0
-		_Span("Span",FLoat)=1.0
+		_Height("Height",Range(0,100)) = 0.0
+		_Span("Span",Range(0,50))=1.0
 		_Melt("Melt",Range(0,1))=0.5
+		_Sink("Sink",Range(1,5)) = 2.0
 	}
 	SubShader
 	{
@@ -54,6 +55,7 @@
 			float4 _MainTex_ST;
 			float _Height;
 			float _Span;
+			float _Sink;
 			float _Melt;
 			
 			
@@ -72,12 +74,13 @@
 			[maxvertexcount(15)]
 			void geom(triangle v2f input[3], uint pid : SV_PrimitiveID,
                 inout TriangleStream<v2f> outStream){
+                float base = pow(_Height,1/_Sink);
                 float4 center = (input[0].mpos+input[1].mpos+input[2].mpos)/3;
                 float h = max(0,_Height-center.y);
-                float yError = 0.5*_Height/(1+h/_Span);
+                float yError = base/(1+h/_Span);
                 float3 pNew = float3(center.x+h*sin(pid),yError,center.z+h*cos(pid));
                 if(h==0){
-                    pNew.y = center.y-yError;
+                    pNew.y = center.y-(_Height-yError);
                 }
                 
                 float x = pNew.x+(input[0].mpos.x-center.x)/(_Melt*h+1);

@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f2dbc29-8adc-487a-9e24-6916f627edc1" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.NewNight/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NewNight/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.NewNight/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NewNight/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/10mm/100mmMat.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/10mm/100mmMat.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/10mm/Forming.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/10mm/Forming.shader" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptMapper" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptMapper" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/10mm/Demolishing.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/10mm/Demolishing.shader" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/10mm.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/10mm.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ShaderCache.db" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ShaderCache.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/assetDatabase3" beforeDir="false" afterPath="$PROJECT_DIR$/Library/assetDatabase3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -40,14 +36,14 @@
       <file leaf-file-name="Demolishing.shader" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/10mm/Demolishing.shader">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="397">
-              <caret line="75" column="53" selection-start-line="75" selection-start-column="53" selection-end-line="75" selection-end-column="53" />
+            <state relative-caret-position="337">
+              <caret line="57" column="24" selection-start-line="57" selection-start-column="24" selection-end-line="57" selection-end-column="24" />
               <folding>
-                <marker date="1530824034749" expanded="true" signature="26:3200" ph="{...}" />
-                <marker date="1530824034749" expanded="true" signature="41:169" ph="{...}" />
-                <marker date="1530824034749" expanded="true" signature="182:3198" ph="{...}" />
-                <marker date="1530824034749" expanded="true" signature="237:3195" ph="{...}" />
-                <marker date="1530824034749" expanded="true" signature="251:3186" ph="{...}" />
+                <marker date="1530884992141" expanded="true" signature="26:3375" ph="{...}" />
+                <marker date="1530884992141" expanded="true" signature="41:220" ph="{...}" />
+                <marker date="1530884992141" expanded="true" signature="233:3373" ph="{...}" />
+                <marker date="1530884992141" expanded="true" signature="288:3370" ph="{...}" />
+                <marker date="1530884992141" expanded="true" signature="302:3361" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -299,12 +295,12 @@
       <workItem from="1530279313014" duration="1815000" />
       <workItem from="1530298917471" duration="6482000" />
       <workItem from="1530539152891" duration="10450000" />
-      <workItem from="1530796657123" duration="11791000" />
+      <workItem from="1530796657123" duration="13389000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="188917000" />
+    <option name="totallyTimeSpent" value="190515000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -684,14 +680,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/10mm/Demolishing.shader">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="75" column="53" selection-start-line="75" selection-start-column="53" selection-end-line="75" selection-end-column="53" />
+        <state relative-caret-position="337">
+          <caret line="57" column="24" selection-start-line="57" selection-start-column="24" selection-end-line="57" selection-end-column="24" />
           <folding>
-            <marker date="1530824034749" expanded="true" signature="26:3200" ph="{...}" />
-            <marker date="1530824034749" expanded="true" signature="41:169" ph="{...}" />
-            <marker date="1530824034749" expanded="true" signature="182:3198" ph="{...}" />
-            <marker date="1530824034749" expanded="true" signature="237:3195" ph="{...}" />
-            <marker date="1530824034749" expanded="true" signature="251:3186" ph="{...}" />
+            <marker date="1530884992141" expanded="true" signature="26:3375" ph="{...}" />
+            <marker date="1530884992141" expanded="true" signature="41:220" ph="{...}" />
+            <marker date="1530884992141" expanded="true" signature="233:3373" ph="{...}" />
+            <marker date="1530884992141" expanded="true" signature="288:3370" ph="{...}" />
+            <marker date="1530884992141" expanded="true" signature="302:3361" ph="{...}" />
           </folding>
         </state>
       </provider>

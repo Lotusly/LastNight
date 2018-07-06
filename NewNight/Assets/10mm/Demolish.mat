@@ -63,15 +63,16 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _Height: 0.1
+    - _Height: 0
     - _Highlight: 0
-    - _Melt: 0.262
+    - _Melt: 0.211
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
+    - _Sink: 2.34
     - _SmoothnessTextureChannel: 0
-    - _Span: 4
+    - _Span: 6.82
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
