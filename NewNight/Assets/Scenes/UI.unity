@@ -1123,13 +1123,15 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+  FishEyeMaterial: {fileID: 0}
+  briSatConMaterial: {fileID: 0}
 --- !u!114 &208202046
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 208202038}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1b4e9ff918c4019419b4831dee64206c, type: 3}
   m_Name: 
@@ -16882,9 +16884,9 @@ GameObject:
   - component: {fileID: 2132907776}
   - component: {fileID: 2132907775}
   - component: {fileID: 2132907771}
-  - component: {fileID: 2132907770}
   - component: {fileID: 2132907777}
   - component: {fileID: 2132907772}
+  - component: {fileID: 2132907770}
   m_Layer: 8
   m_Name: BackgroundCamera
   m_TagString: Untagged
@@ -16900,10 +16902,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2132907769}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93981c0bb88670342b5ed7a2e07ee032, type: 3}
+  m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FishEyeMaterial: {fileID: 2100000, guid: b113ea9a04dc88540b416f8735154c3f, type: 2}
+  profile: {fileID: 11400000, guid: 3f2d068648013ab46843749df1715dbe, type: 2}
 --- !u!114 &2132907771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16937,6 +16939,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+  FishEyeMaterial: {fileID: 0}
+  briSatConMaterial: {fileID: 0}
 --- !u!20 &2132907775
 Camera:
   m_ObjectHideFlags: 0
@@ -16992,7 +16996,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2132907769}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1b4e9ff918c4019419b4831dee64206c, type: 3}
   m_Name: 
