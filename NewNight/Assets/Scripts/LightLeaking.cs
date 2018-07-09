@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LightLeaking : PostEffects
+public class LightLeaking : Supportive.PostEffects
 {
 
 	//public Shader briSatConShader;

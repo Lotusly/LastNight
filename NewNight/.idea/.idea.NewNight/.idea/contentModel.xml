@@ -186,10 +186,10 @@
           <e p="BSC.cs" t="Include" />
           <e p="FishEye.cs" t="Include" />
           <e p="LightLeaking.cs" t="Include" />
-          <e p="PostEffects.cs" t="Include" />
           <e p="Rotate.cs" t="Include" />
           <e p="Story.cs" t="Include" />
           <e p="Supportive" t="Include">
+            <e p="PostEffects.cs" t="Include" />
             <e p="Singleton.cs" t="Include" />
             <e p="Test.cs" t="Include" />
           </e>
@@ -197,6 +197,7 @@
           <e p="Ui" t="Include">
             <e p="Background.cs" t="Include" />
             <e p="Bar.cs" t="Include" />
+            <e p="CameraManager.cs" t="Include" />
             <e p="Character.cs" t="Include" />
             <e p="CircleBar.cs" t="Include" />
             <e p="Coordinate.cs" t="Include" />

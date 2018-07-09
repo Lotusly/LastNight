@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FishEye : PostEffects
+public class FishEye : Supportive.PostEffects
 {
 	
 	public Material FishEyeMaterial;
