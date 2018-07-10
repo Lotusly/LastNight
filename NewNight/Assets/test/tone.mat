@@ -95,7 +95,7 @@ Material:
     - _Contrast: 1
     - _Cutoff: 1
     - _CutoffHigh: 0.7
-    - _CutoffLow: 0.369
+    - _CutoffLow: 0.118
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _Exposure: 1
