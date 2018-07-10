@@ -8,11 +8,11 @@ Material:
   m_PrefabInternal: {fileID: 0}
   m_Name: transparent
   m_Shader: {fileID: 4800000, guid: b61641b90e8d9f64da1a415727b1bc99, type: 3}
-  m_ShaderKeywords: _ORIGINALCOLOR_ON
+  m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 2901
+  m_CustomRenderQueue: 2900
   stringTagMap: {}
   disabledShaderPasses: []
   m_SavedProperties:
@@ -94,8 +94,8 @@ Material:
     - _ColorBoundary: 0.252
     - _Contrast: 1
     - _Cutoff: 1
-    - _CutoffHigh: 1
-    - _CutoffLow: 0
+    - _CutoffHigh: 0.574
+    - _CutoffLow: 0.177
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _Exposure: 1
@@ -106,7 +106,7 @@ Material:
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
-    - _OriginalColor: 1
+    - _OriginalColor: 0
     - _Parallax: 0.02
     - _Rotation: 0
     - _Saturation: 1
@@ -117,8 +117,8 @@ Material:
     - _UpperFix: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.6839622, g: 1, b: 0.9142225, a: 0.43529412}
+    - _Color: {r: 1, g: 0.9843137, b: 0.92941177, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _LowerMask: {r: 1, g: 0, b: 0, a: 0.50980395}
     - _Tint: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
-    - _UpperMask: {r: 0.5566038, g: 0.4227038, b: 0.4227038, a: 0.44705883}
+    - _UpperMask: {r: 0.5566038, g: 0.4227038, b: 0.4227038, a: 0.79607844}

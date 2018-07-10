@@ -222,7 +222,7 @@ GameObject:
   m_Component:
   - component: {fileID: 134118091}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Shadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -561,7 +561,7 @@ GameObject:
   m_Component:
   - component: {fileID: 635167505}
   m_Layer: 0
-  m_Name: GameObject (1)
+  m_Name: Tone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -590,7 +590,7 @@ GameObject:
   m_Component:
   - component: {fileID: 723511921}
   m_Layer: 0
-  m_Name: GameObject (2)
+  m_Name: Highlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1089,7 +1089,7 @@ GameObject:
   - component: {fileID: 1902823169}
   - component: {fileID: 1902823168}
   m_Layer: 0
-  m_Name: T2
+  m_Name: Transparent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1191,7 +1191,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2003380515}
   m_Layer: 0
-  m_Name: GameObject (4)
+  m_Name: Transparent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
