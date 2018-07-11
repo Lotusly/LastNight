@@ -57,6 +57,8 @@ namespace Ui
 
 			return newObject.GetComponent<UiItem>();
 		}
+		
+		
 
 		public bool NewScene(string name)
 		{
