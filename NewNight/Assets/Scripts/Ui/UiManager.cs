@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using Supportive;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 
 namespace Ui
@@ -44,6 +45,8 @@ namespace Ui
 		private List<Item> _potentialItems; // used to switch props
 
 		[SerializeField] private StatBar _statBar;
+
+		[SerializeField] private SceneManager _sceneManager;
 		// TEMP
 		[SerializeField] private Dialogue _singleDialogue;
 
@@ -219,6 +222,16 @@ namespace Ui
 			}
 		}
 
+
+		public bool CreateScene(string name)
+		{
+			return _sceneManager.NewScene(name);
+		}
+
+		public bool DestroyScene(string name)
+		{
+			return _sceneManager.DeleteScene(name);
+		}
 
 		public UiItem Generate(string pathName, int index, Vector3 position, bool inScreenSpace, bool initialize=true)
 		{

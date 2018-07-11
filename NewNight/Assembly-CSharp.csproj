@@ -78,6 +78,7 @@
     <Compile Include="Assets\Scripts\Ui\Midground.cs" />
     <Compile Include="Assets\Scripts\Ui\Option.cs" />
     <Compile Include="Assets\Scripts\Ui\PlaybackWheel.cs" />
+    <Compile Include="Assets\Scripts\Ui\SceneManager.cs" />
     <Compile Include="Assets\Scripts\Ui\StatBar.cs" />
     <Compile Include="Assets\Scripts\Ui\UiCamera.cs" />
     <Compile Include="Assets\Scripts\Ui\UiItem.cs" />

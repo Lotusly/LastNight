@@ -27,6 +27,12 @@
             <e p="scriptTexttest.cs" t="Include" />
           </e>
         </e>
+        <e p="OutOfDate" t="Include">
+          <e p="BSC.shader" t="Include" />
+          <e p="FishEye.shader" t="Include" />
+          <e p="Layer.shader" t="Include" />
+          <e p="LightLeaking.shader" t="Include" />
+        </e>
         <e p="Scripts" t="Include">
           <e p="BSC.cs" t="Include" />
           <e p="Effects" t="Include">
@@ -56,6 +62,7 @@
             <e p="Midground.cs" t="Include" />
             <e p="Option.cs" t="Include" />
             <e p="PlaybackWheel.cs" t="Include" />
+            <e p="SceneManager.cs" t="Include" />
             <e p="StatBar.cs" t="Include" />
             <e p="UiCamera.cs" t="Include" />
             <e p="UiItem.cs" t="Include" />
@@ -68,13 +75,9 @@
         <e p="Shader" t="Include">
           <e p="Background.shader" t="Include" />
           <e p="BlackTransparent.shader" t="Include" />
-          <e p="BSC.shader" t="Include" />
           <e p="Effects.cginc" t="Include" />
-          <e p="FishEye.shader" t="Include" />
           <e p="GreenMask.shader" t="Include" />
           <e p="GreenScreen.shader" t="Include" />
-          <e p="Layer.shader" t="Include" />
-          <e p="LightLeaking.shader" t="Include" />
           <e p="Mask.shader" t="Include" />
           <e p="Midground.shader" t="Include" />
           <e p="Surface.shader" t="Include" />

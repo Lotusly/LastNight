@@ -42,6 +42,7 @@ namespace Supportive
 				UiManager.instance.SwitchBackground(index);
 			}
 
+			
 			/*if (Input.GetMouseButtonDown(0))
 			{
 				for (int i = 0; i < 10; i++)

@@ -5,466 +5,16 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.NewNight/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NewNight/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.NewNight/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NewNight/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AfterEffects.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AfterEffects/MainDefault.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AfterEffects/MainDefault.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor Resources.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor Resources/Monitors.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor Resources/Monitors/HistogramCompute.compute" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor Resources/Monitors/HistogramCompute.compute.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor Resources/Monitors/HistogramRender.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor Resources/Monitors/HistogramRender.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor Resources/Monitors/ParadeRender.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor Resources/Monitors/ParadeRender.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor Resources/Monitors/VectorscopeCompute.compute" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor Resources/Monitors/VectorscopeCompute.compute.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor Resources/Monitors/VectorscopeRender.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor Resources/Monitors/VectorscopeRender.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor Resources/Monitors/WaveformCompute.compute" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor Resources/Monitors/WaveformCompute.compute.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor Resources/Monitors/WaveformRender.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor Resources/Monitors/WaveformRender.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor Resources/UI.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor Resources/UI/CurveBackground.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor Resources/UI/CurveBackground.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor Resources/UI/MotionBlendingIcon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor Resources/UI/MotionBlendingIcon.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor Resources/UI/Trackball.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor Resources/UI/Trackball.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Attributes.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Attributes/PostProcessingModelEditorAttribute.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Attributes/PostProcessingModelEditorAttribute.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Models.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Models/AmbientOcclusionModelEditor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Models/AmbientOcclusionModelEditor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Models/AntialiasingModelEditor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Models/AntialiasingModelEditor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Models/BloomModelEditor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Models/BloomModelEditor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Models/BuiltinDebugViewsEditor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Models/BuiltinDebugViewsEditor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Models/ChromaticAberrationEditor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Models/ChromaticAberrationEditor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Models/ColorGradingModelEditor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Models/ColorGradingModelEditor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Models/DefaultPostFxModelEditor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Models/DefaultPostFxModelEditor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Models/DepthOfFieldModelEditor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Models/DepthOfFieldModelEditor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Models/DitheringModelEditor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Models/DitheringModelEditor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Models/EyeAdaptationModelEditor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Models/EyeAdaptationModelEditor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Models/FogModelEditor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Models/FogModelEditor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Models/GrainModelEditor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Models/GrainModelEditor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Models/MotionBlurModelEditor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Models/MotionBlurModelEditor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Models/ScreenSpaceReflectionModelEditor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Models/ScreenSpaceReflectionModelEditor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Models/UserLutModelEditor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Models/UserLutModelEditor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Models/VignetteModelEditor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Models/VignetteModelEditor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Monitors.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Monitors/HistogramMonitor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Monitors/HistogramMonitor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Monitors/ParadeMonitor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Monitors/ParadeMonitor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Monitors/VectorscopeMonitor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Monitors/VectorscopeMonitor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Monitors/WaveformMonitor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Monitors/WaveformMonitor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/PostProcessingBehaviourEditor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/PostProcessingBehaviourEditor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/PostProcessingFactory.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/PostProcessingFactory.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/PostProcessingInspector.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/PostProcessingInspector.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/PostProcessingModelEditor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/PostProcessingModelEditor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/PostProcessingMonitor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/PostProcessingMonitor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/PropertyDrawers.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/PropertyDrawers/GetSetDrawer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/PropertyDrawers/GetSetDrawer.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/PropertyDrawers/MinDrawer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/PropertyDrawers/MinDrawer.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/PropertyDrawers/TrackballGroupDrawer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/PropertyDrawers/TrackballGroupDrawer.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Utils.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Utils/CurveEditor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Utils/CurveEditor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Utils/EditorGUIHelper.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Utils/EditorGUIHelper.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Utils/EditorResources.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Utils/EditorResources.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Utils/FxStyles.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Utils/FxStyles.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Utils/ReflectionUtils.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Utils/ReflectionUtils.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/COPYING.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/COPYING.txt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_0.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_10.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_11.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_12.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_13.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_14.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_14.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_15.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_15.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_16.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_17.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_17.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_18.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_18.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_19.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_19.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_20.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_20.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_21.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_21.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_22.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_22.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_23.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_23.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_24.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_24.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_25.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_25.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_26.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_26.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_27.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_27.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_28.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_28.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_29.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_29.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_3.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_30.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_30.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_31.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_31.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_32.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_33.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_33.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_34.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_34.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_35.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_35.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_36.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_36.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_37.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_37.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_38.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_38.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_39.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_39.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_4.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_40.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_40.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_41.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_41.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_42.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_42.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_43.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_43.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_44.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_44.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_45.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_45.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_46.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_46.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_47.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_47.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_48.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_48.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_49.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_49.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_5.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_50.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_50.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_51.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_51.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_52.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_52.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_53.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_53.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_54.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_54.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_55.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_55.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_56.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_56.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_57.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_57.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_58.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_58.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_59.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_59.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_6.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_60.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_60.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_61.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_61.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_62.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_62.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_63.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_63.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_7.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_8.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LDR_LLL1_9.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Bluenoise64/LICENSE.txt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Shaders.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Shaders/ACES.cginc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Shaders/ACES.cginc.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Shaders/AmbientOcclusion.cginc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Shaders/AmbientOcclusion.cginc.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Shaders/AmbientOcclusion.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Shaders/AmbientOcclusion.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Shaders/Blit.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Shaders/Blit.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Shaders/Bloom.cginc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Shaders/Bloom.cginc.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Shaders/Bloom.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Shaders/Bloom.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Shaders/BuiltinDebugViews.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Shaders/BuiltinDebugViews.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Shaders/ColorGrading.cginc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Shaders/ColorGrading.cginc.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Shaders/Common.cginc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Shaders/Common.cginc.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Shaders/DepthOfField.cginc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Shaders/DepthOfField.cginc.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Shaders/DepthOfField.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Shaders/DepthOfField.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Shaders/DiskKernels.cginc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Shaders/DiskKernels.cginc.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Shaders/EyeAdaptation.cginc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Shaders/EyeAdaptation.cginc.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Shaders/EyeAdaptation.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Shaders/EyeAdaptation.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Shaders/EyeHistogram.compute" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Shaders/EyeHistogram.compute.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Shaders/FXAA.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Shaders/FXAA.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Shaders/FXAA3.cginc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Shaders/FXAA3.cginc.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Shaders/Fog.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Shaders/Fog.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Shaders/GrainGen.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Shaders/GrainGen.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Shaders/LutGen.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Shaders/LutGen.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Shaders/MotionBlur.cginc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Shaders/MotionBlur.cginc.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Shaders/MotionBlur.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Shaders/MotionBlur.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Shaders/ScreenSpaceRaytrace.cginc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Shaders/ScreenSpaceRaytrace.cginc.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Shaders/ScreenSpaceReflection.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Shaders/ScreenSpaceReflection.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Shaders/TAA.cginc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Shaders/TAA.cginc.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Shaders/TAA.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Shaders/TAA.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Shaders/Tonemapping.cginc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Shaders/Tonemapping.cginc.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Shaders/Uber.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Shaders/Uber.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Shaders/UberSecondPass.cginc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Resources/Shaders/UberSecondPass.cginc.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Attributes.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Attributes/GetSetAttribute.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Attributes/GetSetAttribute.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Attributes/MinAttribute.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Attributes/MinAttribute.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Attributes/TrackballAttribute.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Attributes/TrackballAttribute.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Attributes/TrackballGroupAttribute.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Attributes/TrackballGroupAttribute.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Components.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Components/AmbientOcclusionComponent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Components/AmbientOcclusionComponent.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Components/BloomComponent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Components/BloomComponent.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Components/BuiltinDebugViewsComponent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Components/BuiltinDebugViewsComponent.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Components/ChromaticAberrationComponent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Components/ChromaticAberrationComponent.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Components/ColorGradingComponent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Components/ColorGradingComponent.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Components/DepthOfFieldComponent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Components/DepthOfFieldComponent.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Components/DitheringComponent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Components/DitheringComponent.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Components/EyeAdaptationComponent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Components/EyeAdaptationComponent.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Components/FogComponent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Components/FogComponent.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Components/FxaaComponent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Components/FxaaComponent.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Components/GrainComponent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Components/GrainComponent.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Components/MotionBlurComponent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Components/MotionBlurComponent.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Components/ScreenSpaceReflectionComponent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Components/ScreenSpaceReflectionComponent.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Components/TaaComponent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Components/TaaComponent.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Components/UserLutComponent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Components/UserLutComponent.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Components/VignetteComponent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Components/VignetteComponent.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Models.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Models/AmbientOcclusionModel.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Models/AmbientOcclusionModel.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Models/AntialiasingModel.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Models/AntialiasingModel.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Models/BloomModel.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Models/BloomModel.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Models/BuiltinDebugViewsModel.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Models/BuiltinDebugViewsModel.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Models/ChromaticAberrationModel.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Models/ChromaticAberrationModel.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Models/ColorGradingModel.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Models/ColorGradingModel.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Models/DepthOfFieldModel.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Models/DepthOfFieldModel.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Models/DitheringModel.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Models/DitheringModel.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Models/EyeAdaptationModel.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Models/EyeAdaptationModel.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Models/FogModel.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Models/FogModel.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Models/GrainModel.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Models/GrainModel.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Models/MotionBlurModel.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Models/MotionBlurModel.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Models/ScreenSpaceReflectionModel.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Models/ScreenSpaceReflectionModel.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Models/UserLutModel.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Models/UserLutModel.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Models/VignetteModel.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Models/VignetteModel.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/PostProcessingBehaviour.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/PostProcessingBehaviour.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/PostProcessingComponent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/PostProcessingComponent.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/PostProcessingContext.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/PostProcessingContext.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/PostProcessingModel.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/PostProcessingModel.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/PostProcessingProfile.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/PostProcessingProfile.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Utils.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Utils/ColorGradingCurve.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Utils/ColorGradingCurve.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Utils/GraphicsUtils.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Utils/GraphicsUtils.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Utils/MaterialFactory.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Utils/MaterialFactory.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Utils/RenderTextureFactory.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Utils/RenderTextureFactory.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Textures.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Textures/LUTs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Textures/LUTs/NeutralLUT_16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Textures/LUTs/NeutralLUT_16.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Textures/LUTs/NeutralLUT_32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Textures/LUTs/NeutralLUT_32.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Textures/Lens Dirt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Textures/Lens Dirt/LensDirt00.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Textures/Lens Dirt/LensDirt00.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Textures/Lens Dirt/LensDirt01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Textures/Lens Dirt/LensDirt01.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Textures/Lens Dirt/LensDirt02.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Textures/Lens Dirt/LensDirt02.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Textures/Lens Dirt/LensDirt03.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Textures/Lens Dirt/LensDirt03.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Textures/Spectral LUTs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Textures/Spectral LUTs/SpectralLut_BlueRed.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Textures/Spectral LUTs/SpectralLut_BlueRed.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Textures/Spectral LUTs/SpectralLut_GreenPurple.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Textures/Spectral LUTs/SpectralLut_GreenPurple.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Textures/Spectral LUTs/SpectralLut_PurpleGreen.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Textures/Spectral LUTs/SpectralLut_PurpleGreen.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Textures/Spectral LUTs/SpectralLut_RedBlue.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Textures/Spectral LUTs/SpectralLut_RedBlue.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Utilities.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Utilities/CustomMotionTexture.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Utilities/CustomMotionTexture/CustomMotionVectorDebugProfile.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Utilities/CustomMotionTexture/CustomMotionVectorDebugProfile.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Utilities/CustomMotionTexture/ExampleScene.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Utilities/CustomMotionTexture/ExampleScene.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Utilities/CustomMotionTexture/ExampleWheelController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Utilities/CustomMotionTexture/ExampleWheelController.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Utilities/CustomMotionTexture/Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Utilities/CustomMotionTexture/Materials/DebugMotionVectors.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Utilities/CustomMotionTexture/Materials/DebugMotionVectors.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Utilities/CustomMotionTexture/Materials/DebugQuad.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Utilities/CustomMotionTexture/Materials/DebugQuad.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Utilities/CustomMotionTexture/Materials/UVChecker.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Utilities/CustomMotionTexture/Materials/UVChecker.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Utilities/CustomMotionTexture/Materials/WheelMotionVectors.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Utilities/CustomMotionTexture/Materials/WheelMotionVectors.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Utilities/CustomMotionTexture/Models.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Utilities/CustomMotionTexture/Models/WheelMovecs.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Utilities/CustomMotionTexture/Models/WheelMovecs.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Utilities/CustomMotionTexture/Shaders.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Utilities/CustomMotionTexture/Shaders/CustomMotionVectorTexture.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Utilities/CustomMotionTexture/Shaders/CustomMotionVectorTexture.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Utilities/CustomMotionTexture/Textures.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Utilities/CustomMotionTexture/Textures/DebugMotionVectors.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Utilities/CustomMotionTexture/Textures/DebugMotionVectors.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Utilities/CustomMotionTexture/Textures/UVChecker.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Utilities/CustomMotionTexture/Textures/UVChecker.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Utilities/CustomMotionTexture/Textures/WheelMotionVectors.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Utilities/CustomMotionTexture/Textures/WheelMotionVectors.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/UI.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/UI.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LightLeaking.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LightLeaking.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ui/CameraManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ui/CameraManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ui/UiCamera.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ui/UiCamera.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentMaximizeLayout.dwlt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Supportive/Test.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Supportive/Test.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ui/UiManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ui/UiManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll.mdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll.mdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptMapper" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptMapper" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ShaderIncludePaths" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ShaderIncludePaths" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/assetDatabase3" beforeDir="false" afterPath="$PROJECT_DIR$/Library/assetDatabase3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/c0/c0eaab2a3b8638341a3cee6db403929e" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/c0/c0eaab2a3b8638341a3cee6db403929e" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/31/3104d37a894d4e148b1c1a61e2060f04" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/31/3104d37a894d4e148b1c1a61e2060f04" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/70/7016e67d78849d14da228447cfa7bbbd" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/70/7016e67d78849d14da228447cfa7bbbd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe1.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe1.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe2.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe2.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewNight.sln" beforeDir="false" afterPath="$PROJECT_DIR$/NewNight.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -479,35 +29,124 @@
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Effects/TextureBlending.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
-              <caret line="19" column="65" selection-start-line="19" selection-start-column="65" selection-end-line="19" selection-end-column="65" />
+              <caret line="19" column="65" selection-start-line="19" selection-start-column="65" selection-end-line="20" selection-end-column="5" />
               <folding>
-                <marker date="1531334285448" expanded="true" signature="6:76" ph="..." />
-                <marker date="1531334285448" expanded="true" signature="258:514" ph="{...}" />
-                <marker date="1531334285448" expanded="true" signature="605:977" ph="{...}" />
-                <marker date="1531334285448" expanded="true" signature="670:975" ph="{...}" />
+                <marker date="1531334596086" expanded="true" signature="6:76" ph="..." />
+                <marker date="1531334596086" expanded="true" signature="258:512" ph="{...}" />
+                <marker date="1531334596086" expanded="true" signature="603:975" ph="{...}" />
+                <marker date="1531334596086" expanded="true" signature="668:973" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LightLeaking.shader" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Shader/LightLeaking.shader">
+      <file leaf-file-name="SceneManager.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Ui/SceneManager.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="70" column="16" selection-start-line="70" selection-start-column="16" selection-end-line="70" selection-end-column="99" />
+            <state relative-caret-position="345">
+              <caret line="26" column="9" lean-forward="true" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
               <folding>
-                <marker date="1530194318239" expanded="true" signature="27:2185" ph="{...}" />
-                <marker date="1530194318239" expanded="true" signature="42:309" ph="{...}" />
-                <marker date="1530194318239" expanded="true" signature="197:306" ph="/* _Brightness(&quot;Brightness&quot;,Float) = 1 ... */" />
-                <marker date="1530194318239" expanded="true" signature="322:2167" ph="{...}" />
-                <marker date="1530194318239" expanded="true" signature="379:2164" ph="{...}" />
-                <marker date="1530194318239" expanded="true" signature="456:2155" ph="{...}" />
+                <marker date="1531339769849" expanded="false" signature="6:113" ph="..." />
+                <marker date="1531339769849" expanded="true" signature="127:1477" ph="{...}" />
+                <marker date="1531339769849" expanded="true" signature="172:1475" ph="{...}" />
+                <marker date="1531339769849" expanded="true" signature="197:286" ph="{...}" />
+                <marker date="1531339769849" expanded="true" signature="382:547" ph="{...}" />
+                <marker date="1531339769849" expanded="true" signature="584:1249" ph="{...}" />
+                <marker date="1531339769849" expanded="true" signature="960:1189" ph="{...}" />
+                <marker date="1531339769849" expanded="true" signature="1289:1435" ph="{...}" />
+                <marker date="1531339769849" expanded="true" signature="1460:1472" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TextureBlending.shader" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Test.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Supportive/Test.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="630">
+              <caret line="51" column="61" selection-start-line="51" selection-start-column="61" selection-end-line="51" selection-end-column="61" />
+              <folding>
+                <marker date="1531339529366" expanded="false" signature="7:85" ph="..." />
+                <marker date="1531339529366" expanded="true" signature="107:2342" ph="{...}" />
+                <marker date="1531339529366" expanded="true" signature="146:2340" ph="{...}" />
+                <marker date="1531339529366" expanded="true" signature="223:278" ph="{...}" />
+                <marker date="1531339529366" expanded="true" signature="314:356" ph="{...}" />
+                <marker date="1531339529366" expanded="true" signature="375:2337" ph="{...}" />
+                <marker date="1531339529366" expanded="true" signature="425:469" ph="{...}" />
+                <marker date="1531339529366" expanded="true" signature="510:597" ph="{...}" />
+                <marker date="1531339529366" expanded="true" signature="634:693" ph="{...}" />
+                <marker date="1531339529366" expanded="true" signature="730:790" ph="{...}" />
+                <marker date="1531339529366" expanded="true" signature="794:1177" ph="/* if (Input.GetMouseButtonDown(0)) ... */" />
+                <marker date="1531339529366" expanded="true" signature="1282:2333" ph="/* [SerializeField] private string pathName; ... */" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UiManager.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Ui/UiManager.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="600">
+              <caret line="227" selection-start-line="227" selection-end-line="227" />
+              <folding>
+                <marker date="1531339481147" expanded="true" signature="7:117" ph="..." />
+                <marker date="1531339481147" expanded="true" signature="132:11123" ph="{...}" />
+                <marker date="1531339481147" expanded="true" signature="193:11121" ph="{...}" />
+                <marker date="1531339481147" expanded="true" signature="210:298" ph="{...}" />
+                <marker date="1531339481147" expanded="false" signature="1383:2152" ph="{...}" />
+                <marker date="1531339481147" expanded="true" signature="1446:1648" ph="{...}" />
+                <marker date="1531339481147" expanded="false" signature="2253:2674" ph="{...}" />
+                <marker date="1531339481147" expanded="true" signature="2721:2771" ph="{...}" />
+                <marker date="1531339481147" expanded="false" signature="2847:4920" ph="{...}" />
+                <marker date="1531339481147" expanded="true" signature="2884:4915" ph="{...}" />
+                <marker date="1531339481147" expanded="true" signature="3754:4307" ph="{...}" />
+                <marker date="1531339481147" expanded="true" signature="3797:4045" ph="{...}" />
+                <marker date="1531339481147" expanded="true" signature="4055:4301" ph="{...}" />
+                <marker date="1531339481147" expanded="true" signature="4316:4856" ph="{...}" />
+                <marker date="1531339481147" expanded="true" signature="4359:4594" ph="{...}" />
+                <marker date="1531339481147" expanded="true" signature="4604:4850" ph="{...}" />
+                <marker date="1531339481147" expanded="true" signature="4956:4992" ph="{...}" />
+                <marker date="1531339481147" expanded="false" signature="5134:5314" ph="{...}" />
+                <marker date="1531339481147" expanded="false" signature="5372:5559" ph="{...}" />
+                <marker date="1531339481147" expanded="true" signature="5427:5555" ph="{...}" />
+                <marker date="1531339481147" expanded="false" signature="5606:6051" ph="{...}" />
+                <marker date="1531339481147" expanded="true" signature="5714:5788" ph="{...}" />
+                <marker date="1531339481147" expanded="true" signature="5919:6047" ph="{...}" />
+                <marker date="1531339481147" expanded="false" signature="6084:6874" ph="{...}" />
+                <marker date="1531339481147" expanded="true" signature="6824:6870" ph="{...}" />
+                <marker date="1531339481147" expanded="true" signature="6915:6963" ph="{...}" />
+                <marker date="1531339481147" expanded="true" signature="7004:7055" ph="{...}" />
+                <marker date="1531339481147" expanded="false" signature="7169:8188" ph="{...}" />
+                <marker date="1531339481147" expanded="true" signature="7192:7290" ph="{...}" />
+                <marker date="1531339481147" expanded="true" signature="7355:7438" ph="{...}" />
+                <marker date="1531339481147" expanded="true" signature="7549:7646" ph="{...}" />
+                <marker date="1531339481147" expanded="true" signature="7828:8004" ph="{...}" />
+                <marker date="1531339481147" expanded="true" signature="8012:8078" ph="{...}" />
+                <marker date="1531339481147" expanded="false" signature="8308:8655" ph="{...}" />
+                <marker date="1531339481147" expanded="true" signature="8442:8588" ph="{...}" />
+                <marker date="1531339481147" expanded="true" signature="8659:9121" ph="/* Now only has one single dialogue ... */" />
+                <marker date="1531339481147" expanded="false" signature="9211:9282" ph="{...}" />
+                <marker date="1531339481147" expanded="false" signature="9313:9357" ph="{...}" />
+                <marker date="1531339481147" expanded="true" signature="9410:9457" ph="{...}" />
+                <marker date="1531339481147" expanded="true" signature="9509:9563" ph="{...}" />
+                <marker date="1531339481147" expanded="true" signature="9602:9875" ph="{...}" />
+                <marker date="1531339481147" expanded="true" signature="9917:9985" ph="{...}" />
+                <marker date="1531339481147" expanded="true" signature="10010:10216" ph="{...}" />
+                <marker date="1531339481147" expanded="true" signature="10031:10211" ph="{...}" />
+                <marker date="1531339481147" expanded="true" signature="10277:10619" ph="{...}" />
+                <marker date="1531339481147" expanded="true" signature="10362:10615" ph="{...}" />
+                <marker date="1531339481147" expanded="true" signature="10461:10499" ph="{...}" />
+                <marker date="1531339481147" expanded="true" signature="10508:10610" ph="{...}" />
+                <marker date="1531339481147" expanded="true" signature="10700:11111" ph="{...}" />
+                <marker date="1531339481147" expanded="true" signature="10785:11107" ph="{...}" />
+                <marker date="1531339481147" expanded="true" signature="10884:10991" ph="{...}" />
+                <marker date="1531339481147" expanded="true" signature="11000:11102" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TextureBlending.shader" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Effects/TextureBlending.shader">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
@@ -555,6 +194,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ui/MarkCircle.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/10mm/VoxelWithColor.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FishEye.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ui/SceneManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Supportive/Test.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ui/PlaybackWheel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Supportive/Singleton.cs" root0="FORCE_HIGHLIGHTING" />
@@ -564,7 +204,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/Shader/Mask.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ui/UiManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ui/UiCamera.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Shader/FishEye.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Effects/LightLeaking.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/10mm/Contructor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ui/CameraManager.cs" root0="FORCE_HIGHLIGHTING" />
@@ -582,7 +221,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Effects/TextureBlending.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../StandardGeometryShader-master/Assets/StandardGeometry.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ui/ForegroundItem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Shader/BSC.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Story.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Supportive/PostEffects.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Shaders/TMP_SDF.shader" root0="FORCE_HIGHLIGHTING" />
@@ -590,11 +228,9 @@
     <setting file="file://$PROJECT_DIR$/Assets/Shader/GreenMask.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shader/GreenScreen.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ui/StatBar.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Shader/LightLeaking.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ui/Midground.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shader/Effects.cginc" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shader/BlackTransparent.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Shader/Layer.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shader/Background.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ui/Character.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0BF705E2-9AD1-4438-95D3-F09B716C6A37/02/c808cce4/PostProcessEffectSettings.cs" root0="SKIP_HIGHLIGHTING" />
@@ -602,7 +238,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Ui/MarkCircle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Rotate.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Supportive/Singleton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Ui/PlaybackWheel.cs" />
@@ -624,8 +259,6 @@
         <option value="$PROJECT_DIR$/Assets/Shader/Midground.shader" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Ui/Midground.cs" />
         <option value="$PROJECT_DIR$/Assets/Shader/LightLeaking.shader" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Ui/UiManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Supportive/Test.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Story.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Ui/Option.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Ui/Dialogue.cs" />
@@ -651,8 +284,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Ui/UiCamera.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Ui/CameraManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Effects/LightLeaking.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Effects/TextureBlending.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Effects/TextureBlending.shader" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Effects/TextureBlending.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Ui/UiManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Supportive/Test.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Ui/SceneManager.cs" />
       </list>
     </option>
   </component>
@@ -759,12 +395,12 @@
       <workItem from="1530539152891" duration="10450000" />
       <workItem from="1530796657123" duration="13715000" />
       <workItem from="1530901799691" duration="2914000" />
-      <workItem from="1531161279281" duration="13205000" />
+      <workItem from="1531161279281" duration="16385000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="206960000" />
+    <option name="totallyTimeSpent" value="210140000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -813,14 +449,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Ui/Dialogue1.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Ui/UiMask.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="59" column="36" selection-start-line="59" selection-start-column="36" selection-end-line="59" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/2d_TDP/Script/SwitchScene.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Ui/ForegroundItem.cs">
       <provider selected="true" editor-type-id="text-editor">
@@ -888,22 +516,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Ui/UiManager.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="322" column="38" selection-start-line="322" selection-start-column="38" selection-end-line="322" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Supportive/Singleton.cs">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Supportive/Test.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="54" column="15" selection-start-line="54" selection-start-column="15" selection-end-line="54" selection-end-column="15" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Shader/Voxelizer.shader" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Story.cs">
@@ -1012,30 +626,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Shader/FishEye.shader">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <marker date="1530544656227" expanded="true" signature="25:1473" ph="{...}" />
-            <marker date="1530544656227" expanded="true" signature="40:151" ph="{...}" />
-            <marker date="1530544656227" expanded="true" signature="164:1455" ph="{...}" />
-            <marker date="1530544656227" expanded="true" signature="221:1452" ph="{...}" />
-            <marker date="1530544656227" expanded="true" signature="298:1443" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Shader/ThickColor.shader" />
     <entry file="file://$PROJECT_DIR$/Assets/Shader/BSC.shader">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="945">
           <caret line="63" column="16" selection-start-line="63" selection-start-column="16" selection-end-line="63" selection-end-column="77" />
-          <folding>
-            <marker date="1530131094110" expanded="true" signature="19:1558" ph="{...}" />
-            <marker date="1530131094110" expanded="true" signature="34:184" ph="{...}" />
-            <marker date="1530131094110" expanded="true" signature="197:1540" ph="{...}" />
-            <marker date="1530131094110" expanded="true" signature="254:1537" ph="{...}" />
-            <marker date="1530131094110" expanded="true" signature="331:1528" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1220,31 +817,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Effects/TextureBlending.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="65" selection-start-line="19" selection-start-column="65" selection-end-line="19" selection-end-column="65" />
-          <folding>
-            <marker date="1531334285448" expanded="true" signature="6:76" ph="..." />
-            <marker date="1531334285448" expanded="true" signature="258:514" ph="{...}" />
-            <marker date="1531334285448" expanded="true" signature="605:977" ph="{...}" />
-            <marker date="1531334285448" expanded="true" signature="670:975" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Shader/LightLeaking.shader">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
+        <state relative-caret-position="757">
           <caret line="70" column="16" selection-start-line="70" selection-start-column="16" selection-end-line="70" selection-end-column="99" />
-          <folding>
-            <marker date="1530194318239" expanded="true" signature="27:2185" ph="{...}" />
-            <marker date="1530194318239" expanded="true" signature="42:309" ph="{...}" />
-            <marker date="1530194318239" expanded="true" signature="197:306" ph="/* _Brightness(&quot;Brightness&quot;,Float) = 1 ... */" />
-            <marker date="1530194318239" expanded="true" signature="322:2167" ph="{...}" />
-            <marker date="1530194318239" expanded="true" signature="379:2164" ph="{...}" />
-            <marker date="1530194318239" expanded="true" signature="456:2155" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1258,6 +834,138 @@
             <marker date="1531334530590" expanded="true" signature="831:1040" ph="{...}" />
             <marker date="1531334530590" expanded="true" signature="896:1034" ph="{...}" />
             <marker date="1531334530590" expanded="true" signature="921:1017" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Ui/UiMask.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1528920324985" expanded="false" signature="6:78" ph="..." />
+            <marker date="1528920324985" expanded="true" signature="92:2195" ph="{...}" />
+            <marker date="1528920324985" expanded="true" signature="125:2193" ph="{...}" />
+            <marker date="1528920324985" expanded="true" signature="388:915" ph="{...}" />
+            <marker date="1528920324985" expanded="true" signature="938:1042" ph="{...}" />
+            <marker date="1528920324985" expanded="true" signature="1087:1429" ph="{...}" />
+            <marker date="1528920324985" expanded="true" signature="1187:1425" ph="{...}" />
+            <marker date="1528920324985" expanded="true" signature="1531:2186" ph="{...}" />
+            <marker date="1528920324985" expanded="true" signature="1568:1610" ph="{...}" />
+            <marker date="1528920324985" expanded="true" signature="1936:1971" ph="{...}" />
+            <marker date="1528920324985" expanded="true" signature="2017:2045" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Effects/TextureBlending.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="65" selection-start-line="19" selection-start-column="65" selection-end-line="20" selection-end-column="5" />
+          <folding>
+            <marker date="1531334596086" expanded="true" signature="6:76" ph="..." />
+            <marker date="1531334596086" expanded="true" signature="258:512" ph="{...}" />
+            <marker date="1531334596086" expanded="true" signature="603:975" ph="{...}" />
+            <marker date="1531334596086" expanded="true" signature="668:973" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Supportive/Test.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="51" column="61" selection-start-line="51" selection-start-column="61" selection-end-line="51" selection-end-column="61" />
+          <folding>
+            <marker date="1531339529366" expanded="false" signature="7:85" ph="..." />
+            <marker date="1531339529366" expanded="true" signature="107:2342" ph="{...}" />
+            <marker date="1531339529366" expanded="true" signature="146:2340" ph="{...}" />
+            <marker date="1531339529366" expanded="true" signature="223:278" ph="{...}" />
+            <marker date="1531339529366" expanded="true" signature="314:356" ph="{...}" />
+            <marker date="1531339529366" expanded="true" signature="375:2337" ph="{...}" />
+            <marker date="1531339529366" expanded="true" signature="425:469" ph="{...}" />
+            <marker date="1531339529366" expanded="true" signature="510:597" ph="{...}" />
+            <marker date="1531339529366" expanded="true" signature="634:693" ph="{...}" />
+            <marker date="1531339529366" expanded="true" signature="730:790" ph="{...}" />
+            <marker date="1531339529366" expanded="true" signature="794:1177" ph="/* if (Input.GetMouseButtonDown(0)) ... */" />
+            <marker date="1531339529366" expanded="true" signature="1282:2333" ph="/* [SerializeField] private string pathName; ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Ui/UiManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="227" selection-start-line="227" selection-end-line="227" />
+          <folding>
+            <marker date="1531339481147" expanded="true" signature="7:117" ph="..." />
+            <marker date="1531339481147" expanded="true" signature="132:11123" ph="{...}" />
+            <marker date="1531339481147" expanded="true" signature="193:11121" ph="{...}" />
+            <marker date="1531339481147" expanded="true" signature="210:298" ph="{...}" />
+            <marker date="1531339481147" expanded="false" signature="1383:2152" ph="{...}" />
+            <marker date="1531339481147" expanded="true" signature="1446:1648" ph="{...}" />
+            <marker date="1531339481147" expanded="false" signature="2253:2674" ph="{...}" />
+            <marker date="1531339481147" expanded="true" signature="2721:2771" ph="{...}" />
+            <marker date="1531339481147" expanded="false" signature="2847:4920" ph="{...}" />
+            <marker date="1531339481147" expanded="true" signature="2884:4915" ph="{...}" />
+            <marker date="1531339481147" expanded="true" signature="3754:4307" ph="{...}" />
+            <marker date="1531339481147" expanded="true" signature="3797:4045" ph="{...}" />
+            <marker date="1531339481147" expanded="true" signature="4055:4301" ph="{...}" />
+            <marker date="1531339481147" expanded="true" signature="4316:4856" ph="{...}" />
+            <marker date="1531339481147" expanded="true" signature="4359:4594" ph="{...}" />
+            <marker date="1531339481147" expanded="true" signature="4604:4850" ph="{...}" />
+            <marker date="1531339481147" expanded="true" signature="4956:4992" ph="{...}" />
+            <marker date="1531339481147" expanded="false" signature="5134:5314" ph="{...}" />
+            <marker date="1531339481147" expanded="false" signature="5372:5559" ph="{...}" />
+            <marker date="1531339481147" expanded="true" signature="5427:5555" ph="{...}" />
+            <marker date="1531339481147" expanded="false" signature="5606:6051" ph="{...}" />
+            <marker date="1531339481147" expanded="true" signature="5714:5788" ph="{...}" />
+            <marker date="1531339481147" expanded="true" signature="5919:6047" ph="{...}" />
+            <marker date="1531339481147" expanded="false" signature="6084:6874" ph="{...}" />
+            <marker date="1531339481147" expanded="true" signature="6824:6870" ph="{...}" />
+            <marker date="1531339481147" expanded="true" signature="6915:6963" ph="{...}" />
+            <marker date="1531339481147" expanded="true" signature="7004:7055" ph="{...}" />
+            <marker date="1531339481147" expanded="false" signature="7169:8188" ph="{...}" />
+            <marker date="1531339481147" expanded="true" signature="7192:7290" ph="{...}" />
+            <marker date="1531339481147" expanded="true" signature="7355:7438" ph="{...}" />
+            <marker date="1531339481147" expanded="true" signature="7549:7646" ph="{...}" />
+            <marker date="1531339481147" expanded="true" signature="7828:8004" ph="{...}" />
+            <marker date="1531339481147" expanded="true" signature="8012:8078" ph="{...}" />
+            <marker date="1531339481147" expanded="false" signature="8308:8655" ph="{...}" />
+            <marker date="1531339481147" expanded="true" signature="8442:8588" ph="{...}" />
+            <marker date="1531339481147" expanded="true" signature="8659:9121" ph="/* Now only has one single dialogue ... */" />
+            <marker date="1531339481147" expanded="false" signature="9211:9282" ph="{...}" />
+            <marker date="1531339481147" expanded="false" signature="9313:9357" ph="{...}" />
+            <marker date="1531339481147" expanded="true" signature="9410:9457" ph="{...}" />
+            <marker date="1531339481147" expanded="true" signature="9509:9563" ph="{...}" />
+            <marker date="1531339481147" expanded="true" signature="9602:9875" ph="{...}" />
+            <marker date="1531339481147" expanded="true" signature="9917:9985" ph="{...}" />
+            <marker date="1531339481147" expanded="true" signature="10010:10216" ph="{...}" />
+            <marker date="1531339481147" expanded="true" signature="10031:10211" ph="{...}" />
+            <marker date="1531339481147" expanded="true" signature="10277:10619" ph="{...}" />
+            <marker date="1531339481147" expanded="true" signature="10362:10615" ph="{...}" />
+            <marker date="1531339481147" expanded="true" signature="10461:10499" ph="{...}" />
+            <marker date="1531339481147" expanded="true" signature="10508:10610" ph="{...}" />
+            <marker date="1531339481147" expanded="true" signature="10700:11111" ph="{...}" />
+            <marker date="1531339481147" expanded="true" signature="10785:11107" ph="{...}" />
+            <marker date="1531339481147" expanded="true" signature="10884:10991" ph="{...}" />
+            <marker date="1531339481147" expanded="true" signature="11000:11102" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Ui/SceneManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="26" column="9" lean-forward="true" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+          <folding>
+            <marker date="1531339769849" expanded="false" signature="6:113" ph="..." />
+            <marker date="1531339769849" expanded="true" signature="127:1477" ph="{...}" />
+            <marker date="1531339769849" expanded="true" signature="172:1475" ph="{...}" />
+            <marker date="1531339769849" expanded="true" signature="197:286" ph="{...}" />
+            <marker date="1531339769849" expanded="true" signature="382:547" ph="{...}" />
+            <marker date="1531339769849" expanded="true" signature="584:1249" ph="{...}" />
+            <marker date="1531339769849" expanded="true" signature="960:1189" ph="{...}" />
+            <marker date="1531339769849" expanded="true" signature="1289:1435" ph="{...}" />
+            <marker date="1531339769849" expanded="true" signature="1460:1472" ph="{...}" />
           </folding>
         </state>
       </provider>
