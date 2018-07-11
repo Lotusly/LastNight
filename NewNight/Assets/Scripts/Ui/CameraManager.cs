@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.Rendering.PostProcessing;
 
 namespace Ui
 {
@@ -12,6 +13,7 @@ namespace Ui
 		private static int _baseLayer = 9;
 		private Dictionary<string, UiCamera> _cameraList;
 		private UiCamera[] _layerSlots;
+		private PostProcessVolume[] _volumes;
 		void Awake()
 		{
 			Supportive.PostEffects.instance.CheckResources();
@@ -19,6 +21,7 @@ namespace Ui
 			_cameraList.Add("Main", _main);
 			_cameraList.Add("Background", _background);
 			_layerSlots = new UiCamera[6] ;
+			_volumes = GetComponentsInChildren<PostProcessVolume>();
 		}
 	
 		
@@ -56,11 +59,13 @@ namespace Ui
 			Camera newCamera = newObject.AddComponent<Camera>();
 			UiCamera newUiCamera = newObject.AddComponent<UiCamera>();
 			newObject.AddComponent<PhysicsRaycaster>();
+			newObject.AddComponent<PostProcessLayer>().volumeLayer=1<<(_baseLayer+layerFound);
 			newCamera.depth = depth;
 			newCamera.clearFlags = CameraClearFlags.Depth;
 			newCamera.cullingMask = 1 << (_baseLayer + layerFound);
 			_layerSlots[layerFound] = newUiCamera;
 			_cameraList.Add(name,newUiCamera);
+			newUiCamera.Volume = _volumes[2 + layerFound];
 			return true;
 		}
 
