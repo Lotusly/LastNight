@@ -72,7 +72,7 @@ namespace Ui
 			_potentialItems = new List<Item>();
 			_backgrounds=new Renderer[4];
 			_block=new MaterialPropertyBlock();
-			UiItem tmp = Generate("Backgrounds", 0, new Vector3(0, 0, 30), false);
+			UiItem tmp = GenerateInPresentScene("Backgrounds/0", new Vector3(0, 0, 30), false);
 			_backgrounds[0]=tmp.GetComponent<Renderer>();
 
 			_tmpTex = _backgrounds[0].material.mainTexture;
@@ -88,7 +88,7 @@ namespace Ui
 
 		private void PlaceBackground(int index, int stencilLayer, Vector3 worldPosition,  float lighting)
 		{
-			_backgrounds[stencilLayer]=Generate("Backgrounds", index, worldPosition, false).gameObject.GetComponent<Renderer>();
+			_backgrounds[stencilLayer]=GenerateInPresentScene("Backgrounds"+index.ToString(), worldPosition, false).gameObject.GetComponent<Renderer>();
 			_tmpTex = _backgrounds[stencilLayer].material.mainTexture;
 			_backgrounds[stencilLayer].material = _backgroundMats[stencilLayer];
 			_block.Clear();
@@ -183,7 +183,7 @@ namespace Ui
 		{
 			for (int i = 0; i < _potentialItems.Count; i++)
 			{
-				UiItem prop = Generate("Props", _potentialItems[i].Index, _potentialItems[i].PositionInScreen + direction, true);
+				UiItem prop = GenerateInPresentScene("Props"+_potentialItems[i].Index.ToString(), _potentialItems[i].PositionInScreen + direction, true);
 			}
 		}
 
@@ -233,56 +233,23 @@ namespace Ui
 			return _sceneManager.DeleteScene(name);
 		}
 
-		public UiItem Generate(string pathName, int index, Vector3 position, bool inScreenSpace, bool initialize=true)
+		
+		public UiItem GenerateInScene(string sceneName, string objectPath, Vector3 position, bool inScreenSpace,
+			string kindName = "", bool initialize = true)
 		{
-
-			if (index < 0)
-			{
-				Debug.LogError("error: try to generate item with negative index");
-				return null;
-			}
-			
-			Vector3 positionInWorld = position;
-			if (inScreenSpace)
-			{
-				positionInWorld = Coordinate.instance.Screen2Space(positionInWorld);
-			}
-			GameObject newItem = Resources.Load<GameObject>(pathName + "/" + index.ToString());
-			if (newItem == null)
-			{
-				Debug.LogError("error: try to generate item that doesn't exist");
-				return null;
-			}
-			newItem = Instantiate(newItem);
-			newItem.transform.position = positionInWorld;
-			newItem.name = pathName + "/" + index.ToString();
-			if (!_nameToParent.ContainsKey(pathName))
-			{
-				Debug.LogWarning("warning: UiManager generates an item that doesn't have registered  category/parent: "+pathName);
-				newItem.transform.parent = _generalParent;
-			}
-			else
-			{
-				newItem.transform.parent = _nameToParent[pathName];
-			}
-
-			if(initialize)newItem.GetComponent<UiItem>().Initialize();
-			return newItem.GetComponent<UiItem>();
-
+			if (inScreenSpace) position = Coordinate.instance.Screen2Space(position);
+			return  _sceneManager.GenerateItem(sceneName,objectPath,position,kindName,initialize);
 		}
 
-		public ForegroundItem GenerateForegroundItem(int index, Vector3 positionInScreen, Vector3 potentialPositionInScreen)
+		public UiItem GenerateInPresentScene(string objectPath, Vector3 position, bool inScreenSpace,
+			string kindName = "", bool initialize = true)
 		{
-
-			ForegroundItem item = (ForegroundItem) Generate("ForegroundItems", index, positionInScreen, true,false);
-			if (item == null)
-			{
-				Debug.LogError("UiManager.GenerateForegroundItem: Resources/ForegroundItems/"+index.ToString()+" does not exist");
-				return null;
-			}
-			item.Initialize(potentialPositionInScreen);
-			return item;
+			if (inScreenSpace) position = Coordinate.instance.Screen2Space(position);
+			return _sceneManager.GenerateItem(_sceneManager.GetPresentSceneName(), objectPath, position, kindName, initialize);
 		}
+
+		
+
 
 		/* Now only has one single dialogue
 		public Dialogue GenerateDialogue(int index, Vector3 positionInScreen, Vector3 potentialPositionInScreen)

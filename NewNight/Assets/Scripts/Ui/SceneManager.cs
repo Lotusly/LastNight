@@ -15,16 +15,52 @@ namespace Ui
 
 		private Dictionary<string, Scene> _sceneDict;
 		private string[] _nameList;
+		private string _presentSceneName="";
 
 		void Awake()
 		{
 			_nameList = new string[] {"Background", "Midground", "Foreground", "Others" };
 			_sceneDict = new Dictionary<string, Scene>();
 			NewScene("VoidScene");
+			_presentSceneName = "VoidScene";
+		}
+
+		public UiItem GenerateItem(string sceneName, string objectPath, Vector3 position, string kindName, bool initialize)
+		{
+			if (!_sceneDict.ContainsKey(sceneName)) return null;
+			GameObject newObject = Resources.Load<GameObject>(objectPath);
+			if (newObject == null) return null;
+
+			Scene theScene = _sceneDict[sceneName];
+			Transform parent;
+			if (theScene.dict.ContainsKey(kindName))
+			{
+				parent= theScene.dict[kindName];
+			}
+			else
+			{
+				parent = theScene.dict["Others"];
+			}
+
+			newObject = Instantiate(newObject,parent);
+			newObject.transform.position = position;
+
+			UiItem returnValue = newObject.GetComponent<UiItem>();
+			if (returnValue == null)
+			{
+				returnValue = newObject.AddComponent<UiItem>();
+			}
+			if (initialize)
+			{
+				returnValue.Initialize();
+			}
+
+			return newObject.GetComponent<UiItem>();
 		}
 
 		public bool NewScene(string name)
 		{
+			if (name == "") return false;
 			if (_sceneDict.ContainsKey(name)) return false;
 			
 			Scene newScene = new Scene();
@@ -56,9 +92,9 @@ namespace Ui
 			return true;
 		}
 
-		public void AddItem()
+		public string GetPresentSceneName()
 		{
-			
+			return _presentSceneName;
 		}
 	}
 }
