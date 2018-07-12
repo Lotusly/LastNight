@@ -24,7 +24,7 @@ namespace Ui
 		{
 			_nameList = new string[] {"Background", "Midground", "Foreground", "Others" };
 			_sceneDict = new Dictionary<string, Scene>();
-			NewScene("VoidScene");
+			_sceneDict.Add("VoidScene",_voidScene);
 			_presentSceneName = "VoidScene";
 		}
 
