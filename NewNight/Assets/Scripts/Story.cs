@@ -5,6 +5,7 @@ using Supportive;
 using Ui;
 using UnityEngine;
 
+
 public class Story : Singleton<Story>
 {
 
@@ -15,7 +16,8 @@ public class Story : Singleton<Story>
 	private Option.Cost _tmpCost;
 
 
-
+	// TEMP
+	private int sceneIndex = 0;
 
 
 	private int _num;
@@ -36,7 +38,10 @@ public class Story : Singleton<Story>
 			UiManager.instance.Generate("Midground", 0, new Vector3(-1f+i*0.2f,0,6), true, false);
 
 		}*/
-		
+		string sceneName = "scene" + sceneIndex.ToString();
+		UiManager.instance.CreateScene(sceneName);
+		UiManager.instance.FadeInScene(sceneName,-1);
+		UiManager.instance.GenerateInPresentScene("Backgrounds/0", new Vector3(0, 0, 30), false);
 		
 		// Clone from TmpStory to _dialogues (local variable)
 		_num = _tmpStory.TmpDialogues.Length;

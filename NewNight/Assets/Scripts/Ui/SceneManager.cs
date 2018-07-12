@@ -94,9 +94,22 @@ namespace Ui
 			return true;
 		}
 
+		public bool SwitchScene(string name)
+		{
+			if (!_sceneDict.ContainsKey(name)) return false;
+			_presentSceneName = name;
+			return true;
+		}
+	
+
 		public string GetPresentSceneName()
 		{
 			return _presentSceneName;
+		}
+
+		public Background GetPresentBackground()
+		{
+			return _sceneDict[_presentSceneName].dict["Background"].GetComponentInChildren<Background>();
 		}
 	}
 }

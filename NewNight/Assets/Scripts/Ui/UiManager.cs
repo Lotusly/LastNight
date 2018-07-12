@@ -19,7 +19,7 @@ namespace Ui
 		};
 		
 	
-
+		
 		[SerializeField] private Transform _generalParent;
 		[SerializeField] private Transform _characters;
 		[SerializeField] private Transform _portraits;
@@ -31,7 +31,6 @@ namespace Ui
 
 		private bool exitable = false;
 		private bool switchingBackground = false;
-		private Dictionary<string, Transform> _nameToParent;
 
 		[SerializeField] private UiMask _backgroundMask;
 		
@@ -57,38 +56,33 @@ namespace Ui
 		
 		void Start()
 		{
-			_nameToParent = new Dictionary<string, Transform>()
-			{
-				{ "Characters",_characters},
-				{"Props",_props},
-				{"ForegroundItems",_foregroundItems},
-				{"Dialogues",_dialogues},
-				{"Backgrounds",_backgroundParent},
-				{"Midground",_props}
-				
-			};
+			
 
 			
 			_potentialItems = new List<Item>();
 			_backgrounds=new Renderer[4];
 			_block=new MaterialPropertyBlock();
-			UiItem tmp = GenerateInPresentScene("Backgrounds/0", new Vector3(0, 0, 30), false);
-			_backgrounds[0]=tmp.GetComponent<Renderer>();
+			
+			
+			/*_backgrounds[0]=background.GetComponent<Renderer>();
 
 			_tmpTex = _backgrounds[0].material.mainTexture;
 			
 			_backgrounds[0].material = _backgroundMats[0];
 			_block.SetTexture("_MainTex",_tmpTex);
-			_backgrounds[0].SetPropertyBlock(_block);
+			_backgrounds[0].SetPropertyBlock(_block);*/
 
 			_backgroundMask.Initialize();
 
 			Story.instance.Initialize();
+			
 		}
+
+	
 
 		private void PlaceBackground(int index, int stencilLayer, Vector3 worldPosition,  float lighting)
 		{
-			_backgrounds[stencilLayer]=GenerateInPresentScene("Backgrounds"+index.ToString(), worldPosition, false).gameObject.GetComponent<Renderer>();
+			_backgrounds[stencilLayer]=GenerateInPresentScene("Backgrounds/"+index.ToString(), worldPosition, false).gameObject.GetComponent<Renderer>();
 			_tmpTex = _backgrounds[stencilLayer].material.mainTexture;
 			_backgrounds[stencilLayer].material = _backgroundMats[stencilLayer];
 			_block.Clear();
@@ -100,6 +94,22 @@ namespace Ui
 		public void SetSwitchMask(Vector2 interval)
 		{
 			_backgroundMask.SetInterval(interval);
+		}
+
+		public void FadeOutScene(string name, int method=0, int[] arguments = null)
+		{
+			//Background presentBackground = _sceneManager.GetPresentBackground();
+			//if (presentBackground != null)
+			{
+				// TEMP
+				StartCoroutine(FadeOut.MoveOut());
+			}
+		}
+		
+		public void FadeInScene(string name, int method=0, int[] arguments=null)
+		{
+			
+			if(method==-1) _sceneManager.SwitchScene(name);
 		}
 
 		public void SwitchBackground(int index, Vector2 direction=new Vector2())
