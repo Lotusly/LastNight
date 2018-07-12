@@ -16,7 +16,7 @@ namespace Ui
 		private PostProcessVolume[] _volumes;
 		void Awake()
 		{
-			Supportive.PostEffects.instance.CheckResources();
+			//Supportive.PostEffects.instance.CheckResources();
 			_cameraList = new Dictionary<string, UiCamera>();
 			_cameraList.Add("Main", _main);
 			_cameraList.Add("Background", _background);

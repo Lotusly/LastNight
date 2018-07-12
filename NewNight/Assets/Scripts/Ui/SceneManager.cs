@@ -1,21 +1,24 @@
-﻿using System.Collections;
+﻿using System;
 using System.Collections.Generic;
-using UnityEditor.SceneManagement;
 using UnityEngine;
+using Supportive;
 
 namespace Ui
 {
 	public class SceneManager : MonoBehaviour
 	{
+		[Serializable]
 		public struct Scene
 		{
 			public GameObject SceneObject;
-			public Dictionary<string, Transform> dict ;
+			[SerializeField] public StringTransformDict dict ;
 		};
 
+		
 		private Dictionary<string, Scene> _sceneDict;
 		private string[] _nameList;
 		private string _presentSceneName="";
+		[SerializeField] private Scene _voidScene;
 
 		void Awake()
 		{
@@ -66,7 +69,7 @@ namespace Ui
 			if (_sceneDict.ContainsKey(name)) return false;
 			
 			Scene newScene = new Scene();
-			newScene.dict = new Dictionary<string, Transform>();
+			newScene.dict = new StringTransformDict();
 			GameObject newObject = new GameObject(name);
 			newScene.SceneObject = newObject;
 			newObject.transform.parent = transform;

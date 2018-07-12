@@ -5,18 +5,13 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.NewNight/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NewNight/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.NewNight/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NewNight/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/UI.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/UI.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Story.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Story.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Supportive/Test.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Supportive/Test.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Prototype2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Prototype2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ui/CameraManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ui/CameraManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ui/SceneManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ui/SceneManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ui/UiManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ui/UiManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll.mdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll.mdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/assetDatabase3" beforeDir="false" afterPath="$PROJECT_DIR$/Library/assetDatabase3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/31/3104d37a894d4e148b1c1a61e2060f04" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/31/3104d37a894d4e148b1c1a61e2060f04" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/70/7016e67d78849d14da228447cfa7bbbd" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/70/7016e67d78849d14da228447cfa7bbbd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/74/74f6b04e30b4b3b40998607179673885" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/74/74f6b04e30b4b3b40998607179673885" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,31 +26,65 @@
       <file leaf-file-name="SceneManager.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Ui/SceneManager.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="592">
-              <caret line="96" column="43" selection-start-line="96" selection-start-column="43" selection-end-line="96" selection-end-column="43" />
+            <state relative-caret-position="-515">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
               <folding>
-                <marker date="1531418912913" expanded="false" signature="6:113" ph="..." />
-                <marker date="1531418912913" expanded="true" signature="127:2770" ph="{...}" />
-                <marker date="1531418912913" expanded="true" signature="172:2768" ph="{...}" />
-                <marker date="1531418912913" expanded="true" signature="197:286" ph="{...}" />
-                <marker date="1531418912913" expanded="true" signature="421:622" ph="{...}" />
-                <marker date="1531418912913" expanded="true" signature="741:1466" ph="{...}" />
-                <marker date="1531418912913" expanded="true" signature="1015:1062" ph="{...}" />
-                <marker date="1531418912913" expanded="true" signature="1070:1118" ph="{...}" />
-                <marker date="1531418912913" expanded="true" signature="1296:1358" ph="{...}" />
-                <marker date="1531418912913" expanded="true" signature="1377:1417" ph="{...}" />
-                <marker date="1531418912913" expanded="true" signature="1509:2207" ph="{...}" />
-                <marker date="1531418912913" expanded="true" signature="1918:2147" ph="{...}" />
-                <marker date="1531418912913" expanded="true" signature="2247:2393" ph="{...}" />
-                <marker date="1531418912913" expanded="true" signature="2433:2538" ph="{...}" />
-                <marker date="1531418912913" expanded="true" signature="2579:2616" ph="{...}" />
-                <marker date="1531418912913" expanded="true" signature="2660:2765" ph="{...}" />
+                <marker date="1531428246472" expanded="true" signature="6:84" ph="..." />
+                <marker date="1531428246472" expanded="true" signature="98:2803" ph="{...}" />
+                <marker date="1531428246472" expanded="true" signature="143:2801" ph="{...}" />
+                <marker date="1531428246472" expanded="true" signature="185:281" ph="{...}" />
+                <marker date="1531428246472" expanded="true" signature="464:665" ph="{...}" />
+                <marker date="1531428246472" expanded="true" signature="784:1509" ph="{...}" />
+                <marker date="1531428246472" expanded="true" signature="1058:1105" ph="{...}" />
+                <marker date="1531428246472" expanded="true" signature="1113:1161" ph="{...}" />
+                <marker date="1531428246472" expanded="true" signature="1339:1401" ph="{...}" />
+                <marker date="1531428246472" expanded="true" signature="1420:1460" ph="{...}" />
+                <marker date="1531428246472" expanded="true" signature="1552:2240" ph="{...}" />
+                <marker date="1531428246472" expanded="true" signature="1951:2180" ph="{...}" />
+                <marker date="1531428246472" expanded="true" signature="2280:2426" ph="{...}" />
+                <marker date="1531428246472" expanded="true" signature="2466:2571" ph="{...}" />
+                <marker date="1531428246472" expanded="true" signature="2612:2649" ph="{...}" />
+                <marker date="1531428246472" expanded="true" signature="2693:2798" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UiManager.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SerilizableDictionary.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Supportive/SerilizableDictionary.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="705">
+              <caret line="47" column="49" selection-start-line="47" selection-start-column="49" selection-end-line="47" selection-end-column="49" />
+              <folding>
+                <marker date="1531428410122" expanded="true" signature="161:221" ph="..." />
+                <marker date="1531428410122" expanded="true" signature="243:1382" ph="{...}" />
+                <marker date="1531428410122" expanded="true" signature="371:1380" ph="{...}" />
+                <marker date="1531428410122" expanded="true" signature="668:827" ph="{...}" />
+                <marker date="1531428410122" expanded="true" signature="761:823" ph="{...}" />
+                <marker date="1531428410122" expanded="true" signature="895:1377" ph="{...}" />
+                <marker date="1531428410122" expanded="true" signature="921:1129" ph="/* if (keys.Count != values.Count) ... */" />
+                <marker date="1531428410122" expanded="true" signature="1170:1368" ph="{...}" />
+                <marker date="1531428410122" expanded="true" signature="1258:1305" ph="{...}" />
+                <marker date="1531428410122" expanded="true" signature="1314:1363" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StringTransformDict.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Supportive/StringTransformDict.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="76" selection-start-line="6" selection-start-column="54" selection-end-line="6" selection-end-column="76" />
+              <folding>
+                <marker date="1531427274133" expanded="true" signature="6:32" ph="..." />
+                <marker date="1531427274133" expanded="true" signature="54:156" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UiManager.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Ui/UiManager.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-4532">
@@ -115,6 +144,28 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="CameraManager.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Ui/CameraManager.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+              <folding>
+                <marker date="1531420131603" expanded="false" signature="6:128" ph="..." />
+                <marker date="1531420131603" expanded="true" signature="142:2291" ph="{...}" />
+                <marker date="1531420131603" expanded="true" signature="188:2289" ph="{...}" />
+                <marker date="1531420131603" expanded="true" signature="462:755" ph="{...}" />
+                <marker date="1531420131603" expanded="true" signature="794:898" ph="{...}" />
+                <marker date="1531420131603" expanded="true" signature="829:879" ph="{...}" />
+                <marker date="1531420131603" expanded="true" signature="943:1053" ph="{...}" />
+                <marker date="1531420131603" expanded="true" signature="978:1034" ph="{...}" />
+                <marker date="1531420131603" expanded="true" signature="1102:1828" ph="{...}" />
+                <marker date="1531420131603" expanded="true" signature="1870:2147" ph="{...}" />
+                <marker date="1531420131603" expanded="true" signature="2189:2278" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Story.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Story.cs">
           <provider selected="true" editor-type-id="text-editor">
@@ -162,6 +213,7 @@
       <find>_Lighting</find>
       <find>camera</find>
       <find>CreateScene</find>
+      <find>SerializableDictionary</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -169,58 +221,58 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ui/Option.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/10mm/Forming.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Effects/TextureBlending.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ui/Dialogue.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ui/Bar.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../StandardGeometryShader-master/Assets/StandardGeometry.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ui/ForegroundItem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ui/MarkCircle.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/10mm/VoxelWithColor.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FishEye.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ui/SceneManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Story.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Supportive/PostEffects.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Supportive/Test.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ui/PlaybackWheel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Supportive/Singleton.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Shaders/TMP_SDF.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BSC.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ui/Coordinate.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shader/Midground.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ui/UiItem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shader/Mask.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ui/UiManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Shader/GreenMask.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Shader/GreenScreen.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ui/UiCamera.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Effects/LightLeaking.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/10mm/Contructor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ui/StatBar.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ui/CameraManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ui/Midground.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Shader/Effects.cginc" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Rotate.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Shader/BlackTransparent.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/10mm/Demolishing.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ui/Background.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TMPStory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ui/UiMask.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Effects/TextureBlending.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Supportive/StringTransformDict.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shader/Surface.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Supportive/FadeOut.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/VoffsetLetter.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Shader/Background.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ui/Character.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ui/CircleBar.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Video.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/10mm/Forming.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Effects/TextureBlending.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../StandardGeometryShader-master/Assets/StandardGeometry.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ui/ForegroundItem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Supportive/SerilizableDictionary.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Story.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Supportive/PostEffects.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Shaders/TMP_SDF.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BSC.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Shader/GreenMask.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Shader/GreenScreen.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ui/StatBar.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ui/Midground.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Shader/Effects.cginc" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Shader/BlackTransparent.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Shader/Background.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ui/Character.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0BF705E2-9AD1-4438-95D3-F09B716C6A37/02/c808cce4/PostProcessEffectSettings.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Supportive/Singleton.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Ui/PlaybackWheel.cs" />
         <option value="$PROJECT_DIR$/Assets/Shader/GreenMask.shader" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Video.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/VoffsetLetter.cs" />
@@ -261,15 +313,17 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/FishEye.cs" />
         <option value="$PROJECT_DIR$/Assets/test/GreyScale.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Ui/UiCamera.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Ui/CameraManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Effects/LightLeaking.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Effects/TextureBlending.shader" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Effects/TextureBlending.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Supportive/FadeOut.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Supportive/Test.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Ui/SceneManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Story.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Ui/UiManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Ui/CameraManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Supportive/StringTransformDict.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Ui/SceneManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Supportive/SerilizableDictionary.cs" />
       </list>
     </option>
   </component>
@@ -377,12 +431,12 @@
       <workItem from="1530796657123" duration="13715000" />
       <workItem from="1530901799691" duration="2914000" />
       <workItem from="1531161279281" duration="20193000" />
-      <workItem from="1531402954508" duration="5189000" />
+      <workItem from="1531402954508" duration="11224000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="219137000" />
+    <option name="totallyTimeSpent" value="225172000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -431,20 +485,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/TMPStory.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Ui/Character.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="35" column="37" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Ui/Background.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -623,13 +663,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Ui/CameraManager.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="67" column="41" selection-start-line="67" selection-start-column="33" selection-end-line="67" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0BF705E2-9AD1-4438-95D3-F09B716C6A37/02/c808cce4/PostProcessEffectSettings.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -717,31 +750,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Ui/SceneManager.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="592">
-          <caret line="96" column="43" selection-start-line="96" selection-start-column="43" selection-end-line="96" selection-end-column="43" />
-          <folding>
-            <marker date="1531418912913" expanded="false" signature="6:113" ph="..." />
-            <marker date="1531418912913" expanded="true" signature="127:2770" ph="{...}" />
-            <marker date="1531418912913" expanded="true" signature="172:2768" ph="{...}" />
-            <marker date="1531418912913" expanded="true" signature="197:286" ph="{...}" />
-            <marker date="1531418912913" expanded="true" signature="421:622" ph="{...}" />
-            <marker date="1531418912913" expanded="true" signature="741:1466" ph="{...}" />
-            <marker date="1531418912913" expanded="true" signature="1015:1062" ph="{...}" />
-            <marker date="1531418912913" expanded="true" signature="1070:1118" ph="{...}" />
-            <marker date="1531418912913" expanded="true" signature="1296:1358" ph="{...}" />
-            <marker date="1531418912913" expanded="true" signature="1377:1417" ph="{...}" />
-            <marker date="1531418912913" expanded="true" signature="1509:2207" ph="{...}" />
-            <marker date="1531418912913" expanded="true" signature="1918:2147" ph="{...}" />
-            <marker date="1531418912913" expanded="true" signature="2247:2393" ph="{...}" />
-            <marker date="1531418912913" expanded="true" signature="2433:2538" ph="{...}" />
-            <marker date="1531418912913" expanded="true" signature="2579:2616" ph="{...}" />
-            <marker date="1531418912913" expanded="true" signature="2660:2765" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Story.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="645">
@@ -820,6 +828,81 @@
             <marker date="1531419418831" expanded="true" signature="9964:10286" ph="{...}" />
             <marker date="1531419418831" expanded="true" signature="10063:10170" ph="{...}" />
             <marker date="1531419418831" expanded="true" signature="10179:10281" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Ui/CameraManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+          <folding>
+            <marker date="1531420131603" expanded="false" signature="6:128" ph="..." />
+            <marker date="1531420131603" expanded="true" signature="142:2291" ph="{...}" />
+            <marker date="1531420131603" expanded="true" signature="188:2289" ph="{...}" />
+            <marker date="1531420131603" expanded="true" signature="462:755" ph="{...}" />
+            <marker date="1531420131603" expanded="true" signature="794:898" ph="{...}" />
+            <marker date="1531420131603" expanded="true" signature="829:879" ph="{...}" />
+            <marker date="1531420131603" expanded="true" signature="943:1053" ph="{...}" />
+            <marker date="1531420131603" expanded="true" signature="978:1034" ph="{...}" />
+            <marker date="1531420131603" expanded="true" signature="1102:1828" ph="{...}" />
+            <marker date="1531420131603" expanded="true" signature="1870:2147" ph="{...}" />
+            <marker date="1531420131603" expanded="true" signature="2189:2278" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Supportive/StringTransformDict.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="76" selection-start-line="6" selection-start-column="54" selection-end-line="6" selection-end-column="76" />
+          <folding>
+            <marker date="1531427274133" expanded="true" signature="6:32" ph="..." />
+            <marker date="1531427274133" expanded="true" signature="54:156" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Ui/SceneManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-515">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <marker date="1531428246472" expanded="true" signature="6:84" ph="..." />
+            <marker date="1531428246472" expanded="true" signature="98:2803" ph="{...}" />
+            <marker date="1531428246472" expanded="true" signature="143:2801" ph="{...}" />
+            <marker date="1531428246472" expanded="true" signature="185:281" ph="{...}" />
+            <marker date="1531428246472" expanded="true" signature="464:665" ph="{...}" />
+            <marker date="1531428246472" expanded="true" signature="784:1509" ph="{...}" />
+            <marker date="1531428246472" expanded="true" signature="1058:1105" ph="{...}" />
+            <marker date="1531428246472" expanded="true" signature="1113:1161" ph="{...}" />
+            <marker date="1531428246472" expanded="true" signature="1339:1401" ph="{...}" />
+            <marker date="1531428246472" expanded="true" signature="1420:1460" ph="{...}" />
+            <marker date="1531428246472" expanded="true" signature="1552:2240" ph="{...}" />
+            <marker date="1531428246472" expanded="true" signature="1951:2180" ph="{...}" />
+            <marker date="1531428246472" expanded="true" signature="2280:2426" ph="{...}" />
+            <marker date="1531428246472" expanded="true" signature="2466:2571" ph="{...}" />
+            <marker date="1531428246472" expanded="true" signature="2612:2649" ph="{...}" />
+            <marker date="1531428246472" expanded="true" signature="2693:2798" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Supportive/SerilizableDictionary.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="47" column="49" selection-start-line="47" selection-start-column="49" selection-end-line="47" selection-end-column="49" />
+          <folding>
+            <marker date="1531428410122" expanded="true" signature="161:221" ph="..." />
+            <marker date="1531428410122" expanded="true" signature="243:1382" ph="{...}" />
+            <marker date="1531428410122" expanded="true" signature="371:1380" ph="{...}" />
+            <marker date="1531428410122" expanded="true" signature="668:827" ph="{...}" />
+            <marker date="1531428410122" expanded="true" signature="761:823" ph="{...}" />
+            <marker date="1531428410122" expanded="true" signature="895:1377" ph="{...}" />
+            <marker date="1531428410122" expanded="true" signature="921:1129" ph="/* if (keys.Count != values.Count) ... */" />
+            <marker date="1531428410122" expanded="true" signature="1170:1368" ph="{...}" />
+            <marker date="1531428410122" expanded="true" signature="1258:1305" ph="{...}" />
+            <marker date="1531428410122" expanded="true" signature="1314:1363" ph="{...}" />
           </folding>
         </state>
       </provider>

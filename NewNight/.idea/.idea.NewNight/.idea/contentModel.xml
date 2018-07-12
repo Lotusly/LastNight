@@ -46,7 +46,9 @@
           <e p="Supportive" t="Include">
             <e p="FadeOut.cs" t="Include" />
             <e p="PostEffects.cs" t="Include" />
+            <e p="SerilizableDictionary.cs" t="Include" />
             <e p="Singleton.cs" t="Include" />
+            <e p="StringTransformDict.cs" t="Include" />
             <e p="Test.cs" t="Include" />
           </e>
           <e p="TMPStory.cs" t="Include" />

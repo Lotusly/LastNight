@@ -64,7 +64,9 @@
     <Compile Include="Assets\Scripts\Story.cs" />
     <Compile Include="Assets\Scripts\Supportive\FadeOut.cs" />
     <Compile Include="Assets\Scripts\Supportive\PostEffects.cs" />
+    <Compile Include="Assets\Scripts\Supportive\SerilizableDictionary.cs" />
     <Compile Include="Assets\Scripts\Supportive\Singleton.cs" />
+    <Compile Include="Assets\Scripts\Supportive\StringTransformDict.cs" />
     <Compile Include="Assets\Scripts\Supportive\Test.cs" />
     <Compile Include="Assets\Scripts\TMPStory.cs" />
     <Compile Include="Assets\Scripts\Ui\Background.cs" />
