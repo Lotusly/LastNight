@@ -81,6 +81,7 @@ namespace Ui
 				newChild.transform.parent = newObject.transform;
 				newChild.transform.localPosition = Vector3.zero;
 				newScene.dict.Add(_nameList[i], newChild.transform);
+				newChild.AddComponent<BatchNode>();
 			}
 
 			_sceneDict.Add(name,newScene);

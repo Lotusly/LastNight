@@ -55,6 +55,7 @@
           <e p="Ui" t="Include">
             <e p="Background.cs" t="Include" />
             <e p="Bar.cs" t="Include" />
+            <e p="BatchNode.cs" t="Include" />
             <e p="CameraManager.cs" t="Include" />
             <e p="Character.cs" t="Include" />
             <e p="CircleBar.cs" t="Include" />

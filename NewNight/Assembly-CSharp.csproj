@@ -71,6 +71,7 @@
     <Compile Include="Assets\Scripts\TMPStory.cs" />
     <Compile Include="Assets\Scripts\Ui\Background.cs" />
     <Compile Include="Assets\Scripts\Ui\Bar.cs" />
+    <Compile Include="Assets\Scripts\Ui\BatchNode.cs" />
     <Compile Include="Assets\Scripts\Ui\CameraManager.cs" />
     <Compile Include="Assets\Scripts\Ui\Character.cs" />
     <Compile Include="Assets\Scripts\Ui\CircleBar.cs" />

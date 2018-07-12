@@ -11,14 +11,21 @@ namespace Ui
 
 	public class UiManager : Supportive.Singleton<UiManager>
 	{
-		struct Item
+		struct Item // TEMP : this will be replaced by the new transition system
 		{
 			public string Name;
 			public int Index;
 			public Vector3 PositionInScreen;
 		};
-		
-	
+
+		public struct TransitionParameterBlock
+		{
+			public int BackgroundMethod;
+			public int MidgroundMethod;
+			public int ForegroundMethod;
+			public int BackgroundCameraMethod;
+			public int MainCameraMethod;
+		};
 		
 		[SerializeField] private Transform _generalParent;
 		[SerializeField] private Transform _characters;
