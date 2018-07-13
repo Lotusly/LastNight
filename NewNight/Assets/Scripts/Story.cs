@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using Supportive;
 using Ui;
+using UnityEditorInternal;
 using UnityEngine;
 
 
@@ -14,6 +15,7 @@ public class Story : Singleton<Story>
 	private string name = "Cara";
 	private Option.OptionCon _tmpOptionCon;
 	private Option.Cost _tmpCost;
+	private Transitions.TransitionParameterBlock _transitionParameters;
 
 
 	// TEMP
@@ -40,7 +42,7 @@ public class Story : Singleton<Story>
 		}*/
 		string sceneName = "scene" + sceneIndex.ToString();
 		UiManager.instance.CreateScene(sceneName);
-		UiManager.instance.FadeInScene(sceneName,-1);
+		//UiManager.instance.FadeInScene(sceneName,-1);
 		UiManager.instance.GenerateInPresentScene("Backgrounds/0", new Vector3(0, 0, 30), false,"Background");
 		UiManager.instance.GenerateInPresentScene("Characters/2", new Vector3(-5.2f, -3.6f, 13.53f), false,"Foreground");
 		

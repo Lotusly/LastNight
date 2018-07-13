@@ -18,14 +18,7 @@ namespace Ui
 			public Vector3 PositionInScreen;
 		};
 
-		public struct TransitionParameterBlock
-		{
-			public int BackgroundMethod;
-			public int MidgroundMethod;
-			public int ForegroundMethod;
-			public int BackgroundCameraMethod;
-			public int MainCameraMethod;
-		};
+		
 		
 		[SerializeField] private Transform _generalParent;
 		[SerializeField] private Transform _characters;
@@ -105,18 +98,14 @@ namespace Ui
 
 		public void FadeOutScene(string name, int method=0, int[] arguments = null)
 		{
-			//Background presentBackground = _sceneManager.GetPresentBackground();
-			//if (presentBackground != null)
-			{
-				// TEMP
-				StartCoroutine(FadeOut.MoveOut());
-			}
+			
 		}
 		
-		public void FadeInScene(string name, int method=0, int[] arguments=null)
+		public void FadeInScene(string name, Transitions.TransitionParameterBlock methods)
 		{
 			
-			if(method==-1) _sceneManager.SwitchScene(name);
+			_sceneManager.SwitchScene(name);
+			
 		}
 
 		public void SwitchBackground(int index, Vector2 direction=new Vector2())
