@@ -1,11 +1,12 @@
 ﻿using System.Collections.Generic;
+using Supportive;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.Rendering.PostProcessing;
 
 namespace Ui
 {
-	public class CameraManager : MonoBehaviour
+	public class CameraManager : Singleton<CameraManager>
 	{
 		[SerializeField] private UiCamera _main;
 

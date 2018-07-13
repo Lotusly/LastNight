@@ -44,7 +44,6 @@
           <e p="Rotate.cs" t="Include" />
           <e p="Story.cs" t="Include" />
           <e p="Supportive" t="Include">
-            <e p="FadeOut.cs" t="Include" />
             <e p="PostEffects.cs" t="Include" />
             <e p="SerilizableDictionary.cs" t="Include" />
             <e p="Singleton.cs" t="Include" />

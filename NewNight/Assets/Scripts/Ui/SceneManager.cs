@@ -5,7 +5,7 @@ using Supportive;
 
 namespace Ui
 {
-	public class SceneManager : MonoBehaviour
+	public class SceneManager : Singleton<SceneManager>
 	{
 		[Serializable]
 		public struct Scene
@@ -111,9 +111,29 @@ namespace Ui
 			return _presentSceneName;
 		}
 
-		public Background GetPresentBackground()
+		public Transform GetPresentBackground()
 		{
-			return _sceneDict[_presentSceneName].dict["Background"].GetComponentInChildren<Background>();
+			return _sceneDict[_presentSceneName].dict["Background"];
+		}
+
+		public Transform GetBackground(string name)
+		{
+			return _sceneDict[name].dict["Background"];
+		}
+
+		public Transform GetMidground(string name)
+		{
+			return _sceneDict[name].dict["Midground"];
+		}
+		
+		public Transform GetForeground(string name)
+		{
+			return _sceneDict[name].dict["Foreground"];
+		}
+		
+		public Transform GetOthers(string name)
+		{
+			return _sceneDict[name].dict["Others"];
 		}
 	}
 }

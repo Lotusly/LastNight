@@ -1,9 +1,9 @@
 ﻿
 using System.Collections.Generic;
-using System.IO;
 using Supportive;
 using UnityEngine;
-using UnityEngine.Rendering;
+using System.Collections;
+
 
 
 namespace Ui
@@ -50,27 +50,12 @@ namespace Ui
 		[SerializeField] private Dialogue _singleDialogue;
 
 		
-
-		
-		
 		
 		void Start()
-		{
-			
-
-			
+		{			
 			_potentialItems = new List<Item>();
 			_backgrounds=new Renderer[4];
 			_block=new MaterialPropertyBlock();
-			
-			
-			/*_backgrounds[0]=background.GetComponent<Renderer>();
-
-			_tmpTex = _backgrounds[0].material.mainTexture;
-			
-			_backgrounds[0].material = _backgroundMats[0];
-			_block.SetTexture("_MainTex",_tmpTex);
-			_backgrounds[0].SetPropertyBlock(_block);*/
 
 			_backgroundMask.Initialize();
 
@@ -96,7 +81,7 @@ namespace Ui
 			_backgroundMask.SetInterval(interval);
 		}
 
-		public void FadeOutScene(string name, int method=0, int[] arguments = null)
+		public void FadeOutPresentScene(string name, int method=0, int[] arguments = null)
 		{
 			
 		}
@@ -106,7 +91,12 @@ namespace Ui
 			
 			_sceneManager.SwitchScene(name);
 			
+			
 		}
+		
+		
+
+		
 
 		public void SwitchBackground(int index, Vector2 direction=new Vector2())
 		{

@@ -62,7 +62,6 @@
     <Compile Include="Assets\Scripts\FishEye.cs" />
     <Compile Include="Assets\Scripts\Rotate.cs" />
     <Compile Include="Assets\Scripts\Story.cs" />
-    <Compile Include="Assets\Scripts\Supportive\FadeOut.cs" />
     <Compile Include="Assets\Scripts\Supportive\PostEffects.cs" />
     <Compile Include="Assets\Scripts\Supportive\SerilizableDictionary.cs" />
     <Compile Include="Assets\Scripts\Supportive\Singleton.cs" />
