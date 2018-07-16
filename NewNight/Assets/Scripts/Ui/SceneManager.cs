@@ -92,9 +92,13 @@ namespace Ui
 
 		public bool DeleteScene(string name)
 		{
-			if (!_sceneDict.ContainsKey(name)) return false;
+			if (!_sceneDict.ContainsKey(name) || name=="VoidScene") return false;
 			Destroy(_sceneDict[name].SceneObject);
 			_sceneDict.Remove(name);
+			if (name == _presentSceneName)
+			{
+				_presentSceneName = "VoidScene";
+			}
 			return true;
 		}
 
@@ -134,6 +138,11 @@ namespace Ui
 		public Transform GetOthers(string name)
 		{
 			return _sceneDict[name].dict["Others"];
+		}
+
+		public bool SceneExist(string name)
+		{
+			return _sceneDict.ContainsKey(name);
 		}
 	}
 }

@@ -6,7 +6,7 @@ using UnityEngine;
 namespace Ui
 {
 
-	public class Transitions : ScriptableObject
+	public class Transitions : Supportive.Singleton<Transitions>
 	{
 		//------------------------------PARAMETER BLOCK--------------------------------------------
 		public struct TransitionParameterBlock
@@ -46,7 +46,7 @@ namespace Ui
 			public float OthersDelay;
 		};
 
-		void ClearParameter(ref TransitionParameterBlock block)
+		public void ClearParameter(ref TransitionParameterBlock block)
 		{
 			block.BackgroundMethod = 0;
 			block.MidgroundMethod = 0;
@@ -83,7 +83,7 @@ namespace Ui
 
 		}
 
-		void SetBackgroundParameters(ref TransitionParameterBlock block, int method, Vector3 newPosition, bool inScreen, float speed=1, float delay = 0)
+		public void SetBackgroundParameters(ref TransitionParameterBlock block, int method, Vector3 newPosition, bool inScreen, float speed=1, float delay = 0)
 		{
 			block.BackgroundMethod = method;
 			block.BackgroundPosition = newPosition;
@@ -92,7 +92,7 @@ namespace Ui
 			block.BackgroundDelay = delay;
 		}
 		
-		void SetMidgroundParameters(ref TransitionParameterBlock block, int method, Vector3 newPosition, bool inScreen, float speed=1, float delay = 0)
+		public void SetMidgroundParameters(ref TransitionParameterBlock block, int method, Vector3 newPosition, bool inScreen, float speed=1, float delay = 0)
 		{
 			block.MidgroundMethod = method;
 			block.MidgroundPosition = newPosition;
@@ -101,7 +101,7 @@ namespace Ui
 			block.MidgroundDelay = delay;
 		}
 		
-		void SetForegroundParameters(ref TransitionParameterBlock block, int method, Vector3 newPosition, bool inScreen, float speed=1, float delay = 0)
+		public void SetForegroundParameters(ref TransitionParameterBlock block, int method, Vector3 newPosition, bool inScreen, float speed=1, float delay = 0)
 		{
 			block.ForegroundMethod = method;
 			block.ForegroundPosition = newPosition;
@@ -110,7 +110,7 @@ namespace Ui
 			block.ForegroundDelay = delay;
 		}
 		
-		void SetBackgroundCameraParameters(ref TransitionParameterBlock block, int method, Vector3 newPosition, bool inScreen, float speed=1, float delay = 0)
+		public void SetBackgroundCameraParameters(ref TransitionParameterBlock block, int method, Vector3 newPosition, bool inScreen, float speed=1, float delay = 0)
 		{
 			block.BackgroundCameraMethod = method;
 			block.BackgroundCameraPosition = newPosition;
@@ -118,7 +118,7 @@ namespace Ui
 			block.BackgroundCameraDelay = delay;
 		}
 		
-		void SetMainCameraParameters(ref TransitionParameterBlock block, int method, Vector3 newPosition, bool inScreen, float speed=1, float delay = 0)
+		public void SetMainCameraParameters(ref TransitionParameterBlock block, int method, Vector3 newPosition, bool inScreen, float speed=1, float delay = 0)
 		{
 			block.MainCameraMethod = method;
 			block.MainCameraPosition = newPosition;
@@ -128,7 +128,7 @@ namespace Ui
 		
 		//------------------------------------------MOVEMENT------------------------------------------------
 		public delegate IEnumerator Movement(Transform tran, Vector3 newPosition, bool inScreen, float speed, float delay); // speed here means finish the whole movement in 1/speed seconds
-		public static Movement[] Movements;
+		public Movement[] Movements;
 
 		void Awake()
 		{
@@ -138,13 +138,13 @@ namespace Ui
 			Movements[2] = Average;
 		}
 	
-		public static IEnumerator Nothing(Transform tran, Vector3 newPosition, bool inScreen, float speed=1, float delay=0)
+		public IEnumerator Nothing(Transform tran, Vector3 newPosition, bool inScreen, float speed=1, float delay=0)
 		{
 			Debug.Log("Nothing");
 			yield return null;
 		}
 
-		public static IEnumerator Direct(Transform tran, Vector3 newPosition, bool inScreen, float speed=1, float delay=0)
+		public IEnumerator Direct(Transform tran, Vector3 newPosition, bool inScreen, float speed=1, float delay=0)
 		{
 			Debug.Log("Direct");
 			yield return new WaitForSecondsRealtime(delay);
@@ -152,7 +152,7 @@ namespace Ui
 			else tran.position = newPosition;
 		}
 
-		public static IEnumerator Average(Transform tran, Vector3 newPosition, bool inScreen, float speed=1, float delay=0)
+		public IEnumerator Average(Transform tran, Vector3 newPosition, bool inScreen, float speed=1, float delay=0)
 		{
 			Debug.Log("Average");
 			yield return new WaitForSecondsRealtime(delay);
@@ -182,6 +182,12 @@ namespace Ui
 				}
 			}
 		}
+
+		public IEnumerator Lerp(Transform tran, Vector3 newPosition, bool inScreen, float speed = 1, float delay = 0)
+		{
+			yield return null;
+			// not finished
+		}
 		
 		//------------------------FUNCTION------------------------------------
 		public void PerformTransition(string name, TransitionParameterBlock block)
@@ -194,6 +200,7 @@ namespace Ui
 				block.ForegroundInScreen, block.ForegroundSpeed, block.ForegroundDelay);
 			Movements[block.OthersMethod](SceneManager.instance.GetOthers(name), block.OthersPosition,
 				block.OthersInScreen, block.OthersSpeed, block.OthersDelay);
+			// not finished
 		}
 		
 	}

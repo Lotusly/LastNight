@@ -81,17 +81,30 @@ namespace Ui
 			_backgroundMask.SetInterval(interval);
 		}
 
-		public void FadeOutPresentScene(string name, int method=0, int[] arguments = null)
+
+		public void FadeOutScene(string name, Transitions.TransitionParameterBlock block)
 		{
+			if (SceneManager.instance.SceneExist(name))
+			{
+				Transitions.instance.PerformTransition(name,block);
+			}
+		}
+		
+		public void FadeInScene(string name, Transitions.TransitionParameterBlock block)
+		{
+			if (SceneManager.instance.SceneExist(name))
+			{
+				SceneManager.instance.SwitchScene(name);
+				Transitions.instance.PerformTransition(name, block);
+			}
+			
+			
 			
 		}
 		
-		public void FadeInScene(string name, Transitions.TransitionParameterBlock methods)
+		public void FadeOutPresentScene(Transitions.TransitionParameterBlock block)
 		{
-			
-			_sceneManager.SwitchScene(name);
-			
-			
+			Transitions.instance.PerformTransition(SceneManager.instance.GetPresentSceneName(), block);
 		}
 		
 		
@@ -229,6 +242,11 @@ namespace Ui
 			return _sceneManager.DeleteScene(name);
 		}
 
+
+		public bool SwitchScene(string name)
+		{
+			return _sceneManager.SwitchScene(name);
+		}
 		
 		public UiItem GenerateInScene(string sceneName, string objectPath, Vector3 position, bool inScreenSpace,
 			string kindName = "", bool initialize = true)
@@ -243,22 +261,6 @@ namespace Ui
 			if (inScreenSpace) position = Coordinate.instance.Screen2Space(position);
 			return _sceneManager.GenerateItem(_sceneManager.GetPresentSceneName(), objectPath, position, kindName, initialize);
 		}
-
-		
-
-
-		/* Now only has one single dialogue
-		public Dialogue GenerateDialogue(int index, Vector3 positionInScreen, Vector3 potentialPositionInScreen)
-		{
-			Dialogue item = (Dialogue) Generate("Dialogues", index, positionInScreen, true, false);
-			if (item == null)
-			{
-				Debug.LogError("UiManager.GenerateDialogue: Resources/Dialogues/"+index.ToString()+" does not exist");
-				return null;
-			}
-			item.Initialize(potentialPositionInScreen);
-			return item;
-		} */
 
 		public void SetDialogueCon(Dialogue.DialogueContaining newDiaCon, bool updateNow=true)
 		{

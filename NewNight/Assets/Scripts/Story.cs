@@ -1,9 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System.Globalization;
+﻿
 using Supportive;
 using Ui;
-using UnityEditorInternal;
 using UnityEngine;
 
 
@@ -26,25 +23,22 @@ public class Story : Singleton<Story>
 	[SerializeField] private TMPStory _tmpStory;
 	// TEST
 	public Dialogue.DialogueContaining[] _dialogues;
-	
+	private string sceneName;
 
 	public void Initialize()
 	{
-		//UiManager.instance.Generate("Backgrounds", 1, new Vector3(0, 0, 30), false);
-		UiManager.instance.PutPotentialProp(0,new Vector3(0.3f,-0.2f,15f));
-		//Character woman = (Character)UiManager.instance.Generate("Characters", 1, new Vector3(-1.8f, -0.1f, 15), true);
-		//woman.Transfer(new Vector3(0,-0.1f,15),true,false);
-		//woman.SetOriginPosition(new Vector3(0,-0.1f,15),true);
-		/*for (int i = 0; i < 10; i++)
-		{
-			UiManager.instance.Generate("Midground", 0, new Vector3(-1f+i*0.2f,0,6), true, false);
-
-		}*/
-		string sceneName = "scene" + sceneIndex.ToString();
+		//UiManager.instance.PutPotentialProp(0,new Vector3(0.3f,-0.2f,15f));
+		
+		sceneName = "scene" + sceneIndex.ToString();
+		sceneIndex++;
+		
 		UiManager.instance.CreateScene(sceneName);
-		//UiManager.instance.FadeInScene(sceneName,-1);
+		UiManager.instance.SwitchScene(sceneName);
 		UiManager.instance.GenerateInPresentScene("Backgrounds/0", new Vector3(0, 0, 30), false,"Background");
 		UiManager.instance.GenerateInPresentScene("Characters/2", new Vector3(-5.2f, -3.6f, 13.53f), false,"Foreground");
+		_transitionParameters = new Transitions.TransitionParameterBlock();
+		
+		
 		
 		// Clone from TmpStory to _dialogues (local variable)
 		_num = _tmpStory.TmpDialogues.Length;
@@ -54,12 +48,29 @@ public class Story : Singleton<Story>
 			_dialogues[i] = _tmpStory.TmpDialogues[i];
 		}
 		
-		//_tmpDiaCon.Options=new List<Option.OptionCon>();
-		//_tmpOptionCon.Costs = new List<Option.Cost>();
+		
 		SwitchDialogue(1);
 		//UiManager.instance.CallDialogue();
+	}
+
+	public void Transfer()
+	{
+		Transitions.instance.ClearParameter(ref _transitionParameters);
+		Transitions.instance.SetBackgroundParameters(ref _transitionParameters,2,new Vector3(2,0,30), true);
+		Transitions.instance.SetForegroundParameters(ref _transitionParameters, 2, new Vector3(2,0,13.53f), true );
+		UiManager.instance.FadeOutPresentScene(_transitionParameters);
 		
-		//UiManager.instance.GenerateForegroundItem(0, new Vector3(1.2f, 1.2f, 4), new Vector3(0.8f, 0.7f, 4), true);
+		sceneName="scene" + sceneIndex.ToString();
+		sceneIndex++;
+		
+		UiManager.instance.CreateScene(sceneName);
+		UiManager.instance.GenerateInScene(sceneName,"Backgrounds/1", new Vector3(-2, 0, 30), true, "Background");
+		UiManager.instance.GenerateInScene(sceneName,"Characters/3", new Vector3(-2, 0, 13.53f), true, "Foreground");
+		
+		Transitions.instance.ClearParameter(ref _transitionParameters);
+		Transitions.instance.SetBackgroundParameters(ref _transitionParameters,2,new Vector3(0,-0.3f,30), true);
+		Transitions.instance.SetForegroundParameters(ref _transitionParameters, 2, new Vector3(0.75f,-0.3f,13.53f), true );
+		UiManager.instance.FadeInScene(sceneName,_transitionParameters);
 	}
 
 

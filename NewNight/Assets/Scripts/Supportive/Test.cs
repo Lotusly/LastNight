@@ -44,7 +44,7 @@ namespace Supportive
 
 			if (Input.GetMouseButtonDown(0))
 			{
-				//UiManager.instance.FadeOutBackground("");
+				Story.instance.Transfer();
 			}
 
 			
