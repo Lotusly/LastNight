@@ -128,6 +128,7 @@ namespace Ui
 		
 		//------------------------------------------MOVEMENT------------------------------------------------
 		public delegate IEnumerator Movement(Transform tran, Vector3 newPosition, bool inScreen, float speed, float delay); // speed here means finish the whole movement in 1/speed seconds
+		public delegate void AfterTransition();
 		public Movement[] Movements;
 		public static TransitionForm instance;
 		void Awake()

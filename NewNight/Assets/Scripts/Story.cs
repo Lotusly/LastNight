@@ -70,7 +70,7 @@ public class Story : Singleton<Story>
 		UiManager.instance.GenerateInScene(sceneName,"Characters/3", new Vector3(-2, 0, 13.53f), true, "Foreground");
 		
 		TransitionForm.instance.ClearParameter(ref _transitionParameters);
-		TransitionForm.instance.SetBackgroundParameters(ref _transitionParameters,2,new Vector3(0,-0.3f,30), true);
+		TransitionForm.instance.SetBackgroundParameters(ref _transitionParameters,2,new Vector3(0,0,30), true);
 		TransitionForm.instance.SetForegroundParameters(ref _transitionParameters, 2, new Vector3(0.75f,-0.3f,13.53f), true );
 		UiManager.instance.FadeInScene(sceneName,_transitionParameters);
 	}
