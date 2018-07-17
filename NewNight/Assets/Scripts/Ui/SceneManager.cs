@@ -5,7 +5,7 @@ using Supportive;
 
 namespace Ui
 {
-	public class SceneManager : Singleton<SceneManager>
+	public class SceneManager : MonoBehaviour
 	{
 		[Serializable]
 		public struct Scene
@@ -20,8 +20,11 @@ namespace Ui
 		private string _presentSceneName="";
 		[SerializeField] private Scene _voidScene;
 
+		public static SceneManager instance;
+		
 		void Awake()
 		{
+			if (instance == null) instance = this;
 			_nameList = new string[] {"Background", "Midground", "Foreground", "Others" };
 			_sceneDict = new Dictionary<string, Scene>();
 			_sceneDict.Add("VoidScene",_voidScene);
@@ -45,6 +48,8 @@ namespace Ui
 				parent = theScene.dict["Others"];
 			}
 
+			int count = parent.gameObject.GetComponentsInChildren<UiItem>().Length + 1;
+			parent.position = ((count - 1) * parent.position + position) / count;
 			newObject = Instantiate(newObject,parent);
 			newObject.transform.position = position;
 
@@ -81,7 +86,6 @@ namespace Ui
 				newChild.transform.parent = newObject.transform;
 				newChild.transform.localPosition = Vector3.zero;
 				newScene.dict.Add(_nameList[i], newChild.transform);
-				newChild.AddComponent<BatchNode>();
 			}
 
 			_sceneDict.Add(name,newScene);

@@ -9,7 +9,7 @@ using System.Collections;
 namespace Ui
 {
 
-	public class UiManager : Supportive.Singleton<UiManager>
+	public class UiManager : Singleton<UiManager>
 	{
 		struct Item // TEMP : this will be replaced by the new transition system
 		{
@@ -82,29 +82,29 @@ namespace Ui
 		}
 
 
-		public void FadeOutScene(string name, Transitions.TransitionParameterBlock block)
+		public void FadeOutScene(string name, TransitionForm.TransitionParameterBlock block)
 		{
 			if (SceneManager.instance.SceneExist(name))
 			{
-				Transitions.instance.PerformTransition(name,block);
+				TransitionForm.instance.PerformTransition(name,block);
 			}
 		}
 		
-		public void FadeInScene(string name, Transitions.TransitionParameterBlock block)
+		public void FadeInScene(string name, TransitionForm.TransitionParameterBlock block)
 		{
 			if (SceneManager.instance.SceneExist(name))
 			{
 				SceneManager.instance.SwitchScene(name);
-				Transitions.instance.PerformTransition(name, block);
+				TransitionForm.instance.PerformTransition(name, block);
 			}
 			
 			
 			
 		}
 		
-		public void FadeOutPresentScene(Transitions.TransitionParameterBlock block)
+		public void FadeOutPresentScene(TransitionForm.TransitionParameterBlock block)
 		{
-			Transitions.instance.PerformTransition(SceneManager.instance.GetPresentSceneName(), block);
+			TransitionForm.instance.PerformTransition(SceneManager.instance.GetPresentSceneName(), block);
 		}
 		
 		

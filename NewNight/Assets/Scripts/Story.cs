@@ -1,7 +1,7 @@
-﻿
-using Supportive;
+﻿using Supportive;
 using Ui;
 using UnityEngine;
+using UnityEngine.UI;
 
 
 public class Story : Singleton<Story>
@@ -12,7 +12,7 @@ public class Story : Singleton<Story>
 	private string name = "Cara";
 	private Option.OptionCon _tmpOptionCon;
 	private Option.Cost _tmpCost;
-	private Transitions.TransitionParameterBlock _transitionParameters;
+	private TransitionForm.TransitionParameterBlock _transitionParameters;
 
 
 	// TEMP
@@ -36,7 +36,7 @@ public class Story : Singleton<Story>
 		UiManager.instance.SwitchScene(sceneName);
 		UiManager.instance.GenerateInPresentScene("Backgrounds/0", new Vector3(0, 0, 30), false,"Background");
 		UiManager.instance.GenerateInPresentScene("Characters/2", new Vector3(-5.2f, -3.6f, 13.53f), false,"Foreground");
-		_transitionParameters = new Transitions.TransitionParameterBlock();
+		_transitionParameters = new TransitionForm.TransitionParameterBlock();
 		
 		
 		
@@ -55,9 +55,11 @@ public class Story : Singleton<Story>
 
 	public void Transfer()
 	{
-		Transitions.instance.ClearParameter(ref _transitionParameters);
-		Transitions.instance.SetBackgroundParameters(ref _transitionParameters,2,new Vector3(2,0,30), true);
-		Transitions.instance.SetForegroundParameters(ref _transitionParameters, 2, new Vector3(2,0,13.53f), true );
+		transform.position = Coordinate.instance.transform.position;
+		
+		TransitionForm.instance.ClearParameter(ref _transitionParameters);
+		TransitionForm.instance.SetBackgroundParameters(ref _transitionParameters,2,new Vector3(2,0,30), true);
+		TransitionForm.instance.SetForegroundParameters(ref _transitionParameters, 2, new Vector3(2,0,13.53f), true );
 		UiManager.instance.FadeOutPresentScene(_transitionParameters);
 		
 		sceneName="scene" + sceneIndex.ToString();
@@ -67,9 +69,9 @@ public class Story : Singleton<Story>
 		UiManager.instance.GenerateInScene(sceneName,"Backgrounds/1", new Vector3(-2, 0, 30), true, "Background");
 		UiManager.instance.GenerateInScene(sceneName,"Characters/3", new Vector3(-2, 0, 13.53f), true, "Foreground");
 		
-		Transitions.instance.ClearParameter(ref _transitionParameters);
-		Transitions.instance.SetBackgroundParameters(ref _transitionParameters,2,new Vector3(0,-0.3f,30), true);
-		Transitions.instance.SetForegroundParameters(ref _transitionParameters, 2, new Vector3(0.75f,-0.3f,13.53f), true );
+		TransitionForm.instance.ClearParameter(ref _transitionParameters);
+		TransitionForm.instance.SetBackgroundParameters(ref _transitionParameters,2,new Vector3(0,-0.3f,30), true);
+		TransitionForm.instance.SetForegroundParameters(ref _transitionParameters, 2, new Vector3(0.75f,-0.3f,13.53f), true );
 		UiManager.instance.FadeInScene(sceneName,_transitionParameters);
 	}
 

@@ -1,13 +1,13 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
-using System.Threading;
 using UnityEngine;
+using Supportive;
 
 namespace Ui
 {
 
-	public class Transitions : Supportive.Singleton<Transitions>
+	public class TransitionForm : MonoBehaviour
 	{
+		
 		//------------------------------PARAMETER BLOCK--------------------------------------------
 		public struct TransitionParameterBlock
 		{
@@ -129,9 +129,10 @@ namespace Ui
 		//------------------------------------------MOVEMENT------------------------------------------------
 		public delegate IEnumerator Movement(Transform tran, Vector3 newPosition, bool inScreen, float speed, float delay); // speed here means finish the whole movement in 1/speed seconds
 		public Movement[] Movements;
-
+		public static TransitionForm instance;
 		void Awake()
 		{
+			if(instance==null)instance = this;
 			Movements = new Movement[6];
 			Movements[0] = Nothing;
 			Movements[1] = Direct;
@@ -192,14 +193,16 @@ namespace Ui
 		//------------------------FUNCTION------------------------------------
 		public void PerformTransition(string name, TransitionParameterBlock block)
 		{
-			Movements[block.BackgroundMethod](SceneManager.instance.GetBackground(name), block.BackgroundPosition,
-				block.BackgroundInScreen, block.BackgroundSpeed, block.BackgroundDelay);
-			Movements[block.MidgroundMethod](SceneManager.instance.GetMidground(name), block.MidgroundPosition,
-				block.MidgroundInScreen, block.MidgroundSpeed, block.MidgroundDelay);
-			Movements[block.ForegroundMethod](SceneManager.instance.GetForeground(name), block.ForegroundPosition,
-				block.ForegroundInScreen, block.ForegroundSpeed, block.ForegroundDelay);
-			Movements[block.OthersMethod](SceneManager.instance.GetOthers(name), block.OthersPosition,
-				block.OthersInScreen, block.OthersSpeed, block.OthersDelay);
+			StartCoroutine(Movements[block.BackgroundMethod](SceneManager.instance.GetBackground(name),
+				block.BackgroundPosition,
+				block.BackgroundInScreen, block.BackgroundSpeed, block.BackgroundDelay));
+
+			StartCoroutine(Movements[block.MidgroundMethod](SceneManager.instance.GetMidground(name), block.MidgroundPosition,
+				block.MidgroundInScreen, block.MidgroundSpeed, block.MidgroundDelay));
+			StartCoroutine(Movements[block.ForegroundMethod](SceneManager.instance.GetForeground(name), block.ForegroundPosition,
+				block.ForegroundInScreen, block.ForegroundSpeed, block.ForegroundDelay));
+			StartCoroutine(Movements[block.OthersMethod](SceneManager.instance.GetOthers(name), block.OthersPosition,
+				block.OthersInScreen, block.OthersSpeed, block.OthersDelay));
 			// not finished
 		}
 		

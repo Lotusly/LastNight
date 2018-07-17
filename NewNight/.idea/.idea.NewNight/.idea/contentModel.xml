@@ -67,7 +67,7 @@
             <e p="PlaybackWheel.cs" t="Include" />
             <e p="SceneManager.cs" t="Include" />
             <e p="StatBar.cs" t="Include" />
-            <e p="Transitions.cs" t="Include" />
+            <e p="TransitionForm.cs" t="Include" />
             <e p="UiCamera.cs" t="Include" />
             <e p="UiItem.cs" t="Include" />
             <e p="UiManager.cs" t="Include" />

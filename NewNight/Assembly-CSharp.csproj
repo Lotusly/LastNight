@@ -83,7 +83,7 @@
     <Compile Include="Assets\Scripts\Ui\PlaybackWheel.cs" />
     <Compile Include="Assets\Scripts\Ui\SceneManager.cs" />
     <Compile Include="Assets\Scripts\Ui\StatBar.cs" />
-    <Compile Include="Assets\Scripts\Ui\Transitions.cs" />
+    <Compile Include="Assets\Scripts\Ui\TransitionForm.cs" />
     <Compile Include="Assets\Scripts\Ui\UiCamera.cs" />
     <Compile Include="Assets\Scripts\Ui\UiItem.cs" />
     <Compile Include="Assets\Scripts\Ui\UiManager.cs" />
