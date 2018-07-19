@@ -10,18 +10,11 @@ namespace Ui
 		[SerializeField]private Vector3 _potentialPosition; // this is always in screen space
 		
 
-		void Start()
-		{
-			if (_selfBoost)
-			{
-				
-				Initialize(_potentialPosition);
-			}
-		}
+		
 		public override void Initialize(Vector3 aimPosition=new Vector3())
 		{
-			SetPosition(transform.position, false, false, true);
-			UpdateOriginPosition();
+			UpdateState(ref presentState, true, true);
+			
 			if (aimPosition != Vector3.zero)
 			{
 				_potentialPosition = aimPosition;
@@ -39,12 +32,12 @@ namespace Ui
 
 		public override void MoveBack()
 		{
-			Transfer(GetOriginalPosition(),false,false,true);
+			Transfer(lastState.Position,lastState.InScreen,true);
 		}
 
 		public override void MoveOut(UiItem focus=null)
 		{
-			Transfer(_potentialPosition,true,false,true);
+			Transfer(_potentialPosition,true,true);
 		}
 	}
 }

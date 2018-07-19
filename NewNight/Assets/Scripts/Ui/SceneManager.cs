@@ -11,7 +11,7 @@ namespace Ui
 		public struct Scene
 		{
 			public GameObject SceneObject;
-			[SerializeField] public StringTransformDict dict ;
+			[SerializeField] public StringBatchDict dict ;
 		};
 
 		
@@ -41,11 +41,11 @@ namespace Ui
 			Transform parent;
 			if (theScene.dict.ContainsKey(kindName))
 			{
-				parent= theScene.dict[kindName];
+				parent= theScene.dict[kindName].transform;
 			}
 			else
 			{
-				parent = theScene.dict["Others"];
+				parent = theScene.dict["Others"].transform;
 			}
 
 			int count = parent.gameObject.GetComponentsInChildren<UiItem>().Length + 1;
@@ -74,7 +74,7 @@ namespace Ui
 			if (_sceneDict.ContainsKey(name)) return false;
 			
 			Scene newScene = new Scene();
-			newScene.dict = new StringTransformDict();
+			newScene.dict = new StringBatchDict();
 			GameObject newObject = new GameObject(name);
 			newScene.SceneObject = newObject;
 			newObject.transform.parent = transform;
@@ -85,7 +85,7 @@ namespace Ui
 				GameObject newChild = new GameObject(_nameList[i]);
 				newChild.transform.parent = newObject.transform;
 				newChild.transform.localPosition = Vector3.zero;
-				newScene.dict.Add(_nameList[i], newChild.transform);
+				newScene.dict.Add(_nameList[i], newChild.AddComponent<BatchNode>());
 			}
 
 			_sceneDict.Add(name,newScene);
@@ -119,27 +119,27 @@ namespace Ui
 			return _presentSceneName;
 		}
 
-		public Transform GetPresentBackground()
+		public BatchNode GetPresentBackground()
 		{
 			return _sceneDict[_presentSceneName].dict["Background"];
 		}
 
-		public Transform GetBackground(string name)
+		public BatchNode GetBackground(string name)
 		{
 			return _sceneDict[name].dict["Background"];
 		}
 
-		public Transform GetMidground(string name)
+		public BatchNode GetMidground(string name)
 		{
 			return _sceneDict[name].dict["Midground"];
 		}
 		
-		public Transform GetForeground(string name)
+		public BatchNode GetForeground(string name)
 		{
 			return _sceneDict[name].dict["Foreground"];
 		}
 		
-		public Transform GetOthers(string name)
+		public BatchNode GetOthers(string name)
 		{
 			return _sceneDict[name].dict["Others"];
 		}

@@ -1,9 +1,10 @@
 ﻿using System;
+using Ui;
 using UnityEngine;
 
 namespace Supportive
 {
 
-	[Serializable] public class StringTransformDict : SerializableDictionary<string, Transform> {}
+	[Serializable] public class StringBatchDict : SerializableDictionary<string, BatchNode> {}
 
 }

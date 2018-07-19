@@ -78,7 +78,6 @@
     <Compile Include="Assets\Scripts\Ui\Dialogue.cs" />
     <Compile Include="Assets\Scripts\Ui\ForegroundItem.cs" />
     <Compile Include="Assets\Scripts\Ui\MarkCircle.cs" />
-    <Compile Include="Assets\Scripts\Ui\Midground.cs" />
     <Compile Include="Assets\Scripts\Ui\Option.cs" />
     <Compile Include="Assets\Scripts\Ui\PlaybackWheel.cs" />
     <Compile Include="Assets\Scripts\Ui\SceneManager.cs" />

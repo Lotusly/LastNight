@@ -125,11 +125,11 @@ namespace Ui
 				
 				
 				PlaceBackground(index, 1, new Vector3(0, 0, 20-randomSeed*5),  -.4f);
-				_backgrounds[1].gameObject.GetComponent<UiItem>().Transfer(_backgrounds[1].transform.position+new Vector3(0,0,1)*5*randomSeed,false,false);
+				_backgrounds[1].gameObject.GetComponent<UiItem>().Transfer(_backgrounds[1].transform.position+new Vector3(0,0,1)*5*randomSeed,false);
 				PlaceBackground(index, 2, new Vector3(0, 0, 20-randomSeed*5),  0.4f);
-				_backgrounds[2].gameObject.GetComponent<UiItem>().Transfer(_backgrounds[2].transform.position+new Vector3(0,0,1)*5*randomSeed,false,false);
+				_backgrounds[2].gameObject.GetComponent<UiItem>().Transfer(_backgrounds[2].transform.position+new Vector3(0,0,1)*5*randomSeed,false);
 				PlaceBackground(index, 3, new Vector3(0, 0, 30-randomSeed*7.5f), 0f);
-				_backgrounds[3].gameObject.GetComponent<UiItem>().Transfer(_backgrounds[3].transform.position+new Vector3(0,0,1)*7.5f*randomSeed,false,false);
+				_backgrounds[3].gameObject.GetComponent<UiItem>().Transfer(_backgrounds[3].transform.position+new Vector3(0,0,1)*7.5f*randomSeed,false);
 
 				
 				
@@ -139,14 +139,14 @@ namespace Ui
 					{
 						PropsSwitch(Vector3.right*2);
 						_backgrounds[0].gameObject.GetComponent<UiItem>().Transfer(
-							Coordinate.instance.Space2Screen(_backgrounds[0].transform.position) - Vector3.right*2, true, false, false, 2,
+							Coordinate.instance.Space2Screen(_backgrounds[0].transform.position) - Vector3.right*2, true, false, 2,
 							0.7f);
 					}
 					else
 					{
 						PropsSwitch(Vector3.down*2);
 						_backgrounds[0].gameObject.GetComponent<UiItem>().Transfer(
-							Coordinate.instance.Space2Screen(_backgrounds[0].transform.position) - Vector3.down*2, true, false, false, 2,
+							Coordinate.instance.Space2Screen(_backgrounds[0].transform.position) - Vector3.down*2, true, false, 2,
 							0.7f);
 					}
 				}
@@ -156,13 +156,13 @@ namespace Ui
 					{
 						PropsSwitch(Vector3.up*2);
 						_backgrounds[0].gameObject.GetComponent<UiItem>().Transfer(
-							Coordinate.instance.Space2Screen(_backgrounds[0].transform.position) - Vector3.up*2, true, false, false, 2, 0.7f);
+							Coordinate.instance.Space2Screen(_backgrounds[0].transform.position) - Vector3.up*2, true, false, 2, 0.7f);
 					}
 					else
 					{
 						PropsSwitch(Vector3.left*2);
 						_backgrounds[0].gameObject.GetComponent<UiItem>().Transfer(
-							Coordinate.instance.Space2Screen(_backgrounds[0].transform.position) - Vector3.left*2, true, false, false, 2,
+							Coordinate.instance.Space2Screen(_backgrounds[0].transform.position) - Vector3.left*2, true, false, 2,
 							0.7f);
 					}
 				}
@@ -207,7 +207,7 @@ namespace Ui
 			props=_props.GetComponentsInChildren<UiItem>();
 			for (int i = 0; i < props.Length; i++)
 			{
-				props[i].Transfer(Coordinate.instance.Space2Screen(props[i].transform.position)-direction,true,false,false,0,2f);
+				props[i].Transfer(Coordinate.instance.Space2Screen(props[i].transform.position)-direction,true,false,0,2f);
 			}
 		}
 
@@ -215,7 +215,8 @@ namespace Ui
 		{
 			_backgrounds[0].transform.SetPositionAndRotation(_backgrounds[3].transform.position,_backgrounds[3].transform.rotation);
 			_backgrounds[0].transform.localScale = _backgrounds[3].transform.localScale;
-			_backgrounds[0].gameObject.GetComponent<UiItem>().EnableFollowObject(_backgrounds[3].gameObject.GetComponent<UiItem>());
+			// EnableFollowObject function has been destroyed. Need replacement
+			//_backgrounds[0].gameObject.GetComponent<UiItem>().EnableFollowObject(_backgrounds[3].gameObject.GetComponent<UiItem>());
 			_backgrounds[3].GetPropertyBlock(_block);
 			_backgrounds[0].SetPropertyBlock(_block);
 			_backgroundMask.Reset();
@@ -285,7 +286,7 @@ namespace Ui
 		public void ZoomIn(Character focus)
 		{
 			exitable = true;
-			_camera.Transfer(new Vector3(0,0,3),false,false);
+			_camera.Transfer(new Vector3(0,0,3),false);
 			MoveOutGroup(_characters,focus);
 			MoveOutGroup(_foregroundItems,focus);
 			focus.transform.parent = _portraits;

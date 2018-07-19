@@ -127,7 +127,7 @@ namespace Ui
 		}
 		
 		//------------------------------------------MOVEMENT------------------------------------------------
-		public delegate IEnumerator Movement(Transform tran, Vector3 newPosition, bool inScreen, float speed, float delay); // speed here means finish the whole movement in 1/speed seconds
+		public delegate IEnumerator Movement(BatchNode tran, Vector3 newPosition, bool inScreen, float speed, float delay); // speed here means finish the whole movement in 1/speed seconds
 		public delegate void AfterTransition();
 		public Movement[] Movements;
 		public static TransitionForm instance;
@@ -140,55 +140,31 @@ namespace Ui
 			Movements[2] = Average;
 		}
 	
-		public IEnumerator Nothing(Transform tran, Vector3 newPosition, bool inScreen, float speed=1, float delay=0)
+		public IEnumerator Nothing(BatchNode tran, Vector3 newPosition, bool inScreen, float speed=1, float delay=0)
 		{
 			Debug.Log("Nothing");
 			yield return null;
 		}
 
-		public IEnumerator Direct(Transform tran, Vector3 newPosition, bool inScreen, float speed=1, float delay=0)
+		public IEnumerator Direct(BatchNode tran, Vector3 newPosition, bool inScreen, float speed=1, float delay=0)
 		{
 			Debug.Log("Direct");
 			yield return new WaitForSecondsRealtime(delay);
-			if (inScreen) tran.position = Coordinate.instance.Screen2Space(newPosition);
-			else tran.position = newPosition;
+			tran.SetPosition(newPosition,inScreen);	
 		}
 
-		public IEnumerator Average(Transform tran, Vector3 newPosition, bool inScreen, float speed=1, float delay=0)
+		public IEnumerator Average(BatchNode tran, Vector3 newPosition, bool inScreen, float speed=1, float delay=0)
 		{
 			Debug.Log("Average");
 			yield return new WaitForSecondsRealtime(delay);
-			Vector3 oriPosition;
-			if (inScreen) oriPosition = Coordinate.instance.Space2Screen(tran.position);
-			else oriPosition = tran.position;
-			if (speed > 0)
-			{
-				float tMax = 1 / speed;
-				Vector3 perSecond = (newPosition - oriPosition) *speed;
-				float t = 0;
-				Vector3 presentPosition=oriPosition;
-				while (t < tMax)
-				{
-					if (inScreen)
-					{
-						presentPosition += perSecond * Time.deltaTime;
-						tran.position = Coordinate.instance.Screen2Space(presentPosition);
-					}
-					else
-					{
-						tran.position += perSecond * Time.deltaTime;
-					}
-
-					t += Time.deltaTime;
-					yield return new WaitForEndOfFrame();
-				}
-			}
+			tran.Transfer(newPosition, inScreen,false,1);
 		}
 
-		public IEnumerator Lerp(Transform tran, Vector3 newPosition, bool inScreen, float speed = 1, float delay = 0)
+		public IEnumerator Lerp(BatchNode tran, Vector3 newPosition, bool inScreen, float speed = 1, float delay = 0)
 		{
-			yield return null;
-			// not finished
+			Debug.Log("Lerp");
+			yield return new WaitForSecondsRealtime(delay);
+			tran.Transfer(newPosition, inScreen);
 		}
 		
 		//------------------------FUNCTION------------------------------------

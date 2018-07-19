@@ -62,7 +62,6 @@
             <e p="Dialogue.cs" t="Include" />
             <e p="ForegroundItem.cs" t="Include" />
             <e p="MarkCircle.cs" t="Include" />
-            <e p="Midground.cs" t="Include" />
             <e p="Option.cs" t="Include" />
             <e p="PlaybackWheel.cs" t="Include" />
             <e p="SceneManager.cs" t="Include" />

@@ -8,22 +8,32 @@ namespace Ui
 	public class UiItem : MonoBehaviour
 	{
 
+		public struct StateInfo
+		{
+			public Vector3 Position;
+			public bool InScreen;
+			public bool FollowCamera;
+			public bool Stable;
+		};
+		
 		private const float Deviation = 0.2f;
 		protected float _speed=1f; // later make this adjustable
 		[SerializeField]protected Vector3 _positionOutScreen;
-		protected Vector3 _originalPosition;
+		//protected Vector3 _originalPosition;
 		[SerializeField] protected bool _selfBoost=false;
 		public UnityEvent AfterArrival = new UnityEvent();
 
-		private Vector3 _followingCoordinate;
+		//private Vector3 _followingCoordinate;
+		protected StateInfo lastState;
+		protected StateInfo presentState;
 
 		
 		
 		
-		private Vector3 _destination;
-		private bool _isInScreenSpace=false;// used in both Follow Camera and Lerp To Transfer
+		//private Vector3 _destination;
+		//private bool _isInScreenSpace=false;// used in both Follow Camera and Lerp To Transfer
 
-		protected UiItem _followingObject = null; // UiItem should have function to stay static to the camera
+		//protected UiItem _followingObject = null; // UiItem should have function to stay static to the camera
 		
 		
 
@@ -31,156 +41,180 @@ namespace Ui
 
 		void Start()
 		{
+			
+			lastState = new StateInfo();
+			presentState = new StateInfo();
+			UpdateState(ref lastState);
+			UpdateState(ref presentState);
+			
+			
 			if (_selfBoost)
 			{
-				Initialize();
+				Initialize(); // Initialize() should properly update state infos. should modify later
 			}
+
+			
+		}
+
+		protected void UpdateState(ref StateInfo info, bool inScreen = false, bool follow = false)
+		{
+			info.Position = inScreen ? Coordinate.instance.Space2Screen(transform.position) : transform.position;
+			info.InScreen = inScreen;
+			info.FollowCamera = follow;
+			info.Stable = true;
+		}
+
+		private void DuplicateState(ref StateInfo des, StateInfo sor)
+		{
+			des.Position = sor.Position;
+			des.InScreen = sor.InScreen;
+			des.FollowCamera = sor.FollowCamera;
+			des.Stable = sor.Stable;
 		}
 		
 		
-		void Update()
+		void Update() 
 		{
-			if (_followingObject!=null)
+			if (presentState.FollowCamera && presentState.Stable)
 			{
-				if (_isInScreenSpace)
+				if (presentState.InScreen)
 				{
-					Debug.LogError("UiItem follow object while in screen space");
-					_followingObject = null;
+					transform.position = Coordinate.instance.Screen2Space(presentState.Position);
 				}
 				else
 				{
-					transform.position = _followingObject.transform.position + _followingCoordinate;
+					Debug.LogError(this.name+" UiItem.cs Update(): FollowCamera=true, InScreen=false.");
+					presentState.FollowCamera = false;
 				}
 			}
 		}
 
-		public virtual void Initialize(Vector3 aimPosition = new Vector3()) {}
-
-
-
-		public Vector3 GetOriginalPosition()
-		{
-			return _originalPosition;
+		public virtual void Initialize(Vector3 aimPosition = new Vector3()) {
+			// if any child class of UiItem wants to initialize the original states in screen space
+			// it should do it in Initialize function
+			
 		}
 
-		public Vector3 GetDestination()
-		{
-			return _destination;
-		}
+
+
 
 		public virtual void MoveOut(UiItem focus = null) {} 
 
 
 		public virtual void MoveBack()
 		{
-			Transfer(_originalPosition,false,false);
+			Transfer(lastState.Position,lastState.InScreen);
 		}
 
-		public void EnableFollowObject(UiItem item = null)
+		public void EnableFollowCamera()
 		{
-			if(item == null) _followingObject = UiManager.instance._camera;
-			else _followingObject = item;
 			
 			if(_runningCoroutine!=null) StopCoroutine(_runningCoroutine);
+			presentState.InScreen = true;
+			presentState.Position = Coordinate.instance.Space2Screen(transform.position);
+			presentState.FollowCamera = true;
+			presentState.Stable = true;
+			// follow camera only work when stable
 
-			_followingCoordinate = transform.position-_followingObject.transform.position;
-			_isInScreenSpace = false;
 
+		}
+
+		private void DisableFollowCamera()
+		{
+			presentState.FollowCamera = false;
+		}
+
+
+		public void SetPosition(Vector3 newPosition, bool inScreenSpace,  bool followCamera = false) //new function
+		{
+			DisableFollowCamera();
+			DuplicateState(ref lastState,presentState);
 			
-		}
-
-		private void DisableFollowObject()
-		{
-			_followingObject = null;
-		}
-
-
-		public void SetPosition(Vector3 newPosition, bool inScreenSpace, bool recordOrigin, bool followCamera = false) //new function
-		{
-			if (recordOrigin) _originalPosition = transform.position; // if record, then remember where it leaves; otherwise don't update
-			//EnableFollowObject();
 			if(_runningCoroutine!=null) StopCoroutine(_runningCoroutine);
-			_destination = newPosition;
-			_isInScreenSpace = inScreenSpace;
+			presentState.Position = newPosition;
+			presentState.InScreen = inScreenSpace;
+			if(followCamera) EnableFollowCamera(); 
+			// for SetPosition, the state is stable directly.
+			
+			/*_destination = newPosition;
+			_isInScreenSpace = inScreenSpace;*/
 			transform.position = (inScreenSpace ? Coordinate.instance.Screen2Space(newPosition) : newPosition);
-			if(followCamera) EnableFollowObject();
+			//if(followCamera) EnableFollowObject();
 		}
 
-		public void UpdateOriginPosition() //new function
-		{
-			_originalPosition = transform.position;
-		}
-
-	
-
-		public void SetOriginPosition(Vector3 position, bool inScreenSpace)
-		{
-			_originalPosition = inScreenSpace?Coordinate.instance.Screen2Space(position):position;
-		}
+		
 
 
-		public void Transfer(Vector3 newPosition, bool inScreenSpace, bool recordOrigin, bool followCamera = false,
+
+		public void Transfer(Vector3 newPosition, bool inScreenSpace, bool followCamera = false,
 			int mode = 0, float speed = 1.5f)
 		{
-			if (recordOrigin) _originalPosition = transform.position; // if record, then remember where it leaves; otherwise don't update
-			DisableFollowObject();
-			_destination = newPosition;
-			_isInScreenSpace = inScreenSpace;
+			//if (recordOrigin) _originalPosition = transform.position; // if record, then remember where it leaves; otherwise don't update
+			DisableFollowCamera();
+			/*_destination = newPosition;
+			_isInScreenSpace = inScreenSpace;*/
+			DuplicateState(ref lastState,presentState);
+			presentState.Position = newPosition;
+			presentState.InScreen = inScreenSpace;
+			presentState.FollowCamera = followCamera;
+			presentState.Stable = false;
+			// for Transfer, the state is not stable at first
 			
 			if(_runningCoroutine!=null) StopCoroutine(_runningCoroutine);
+			
 			switch (mode)
 			{
 				case 1:
-					_runningCoroutine = StartCoroutine(ConstantTransfer(followCamera,speed));
+					_runningCoroutine = StartCoroutine(ConstantTransfer(speed));
 					break;
 				case 0:
-					_runningCoroutine = StartCoroutine(PlainLerp(followCamera,speed));
+					_runningCoroutine = StartCoroutine(PlainLerp(speed));
 					break;
 				case 2:
-					_runningCoroutine = StartCoroutine(AccelerateTransfer(followCamera,speed,1f));
+					_runningCoroutine = StartCoroutine(AccelerateTransfer(speed,1f));
 					break;
 			}
 		}
 
-		private IEnumerator PlainLerp(bool followCamera, float speed)
+		private IEnumerator PlainLerp(float speed)
 		{
 			yield return null;
 			while (true)
 			{
-				transform.position = Vector3.Lerp(transform.position, (_isInScreenSpace?Coordinate.instance.Screen2Space(_destination):_destination),Time.deltaTime*speed);
+				transform.position = Vector3.Lerp(transform.position, (presentState.InScreen?Coordinate.instance.Screen2Space(presentState.Position):presentState.Position),Time.deltaTime*speed);
 				yield return new WaitForEndOfFrame();
-				if (Vector3.Distance(transform.position, (_isInScreenSpace?Coordinate.instance.Screen2Space(_destination):_destination)) < Deviation) break;
+				if (Vector3.Distance(transform.position, (presentState.InScreen?Coordinate.instance.Screen2Space(presentState.Position):presentState.Position)) < Deviation) break;
 			}
-			if(followCamera) EnableFollowObject();
+			if(presentState.FollowCamera) EnableFollowCamera();
 			AfterArrival.Invoke();
 			_runningCoroutine = null;
 			
 		}
 
-		private IEnumerator ConstantTransfer(bool followCamera, float speed)
+		private IEnumerator ConstantTransfer(float speed)
 		{
 			yield return null;
-			float scope = ((_isInScreenSpace ? Coordinate.instance.Screen2Space(_destination) : _destination) -
+			float scope = ((presentState.InScreen ? Coordinate.instance.Screen2Space(presentState.Position) : presentState.Position) -
 			               transform.position).magnitude;
 			speed *= scope;
 			while (true)
 			{
-				transform.position +=( (_isInScreenSpace?Coordinate.instance.Screen2Space(_destination):_destination) - transform.position).normalized * Time.deltaTime * speed;
+				transform.position +=( (presentState.InScreen?Coordinate.instance.Screen2Space(presentState.Position):presentState.Position) - transform.position).normalized * Time.deltaTime * speed;
 				yield return new WaitForEndOfFrame();
 				if (Vector3.Distance(transform.position,
-					    _isInScreenSpace ? Coordinate.instance.Screen2Space(_destination) : _destination) <
+					    presentState.InScreen ? Coordinate.instance.Screen2Space(presentState.Position) : presentState.Position) <
 				    Deviation*scope*0.1f) break;
 			}
-			if(followCamera) EnableFollowObject();
+			if(presentState.FollowCamera) EnableFollowCamera();
 			AfterArrival.Invoke();
 			_runningCoroutine = null;
 			
 		}
 		
-		private IEnumerator AccelerateTransfer(bool followCamera, float speedMax, float acce)
+		private IEnumerator AccelerateTransfer(float speedMax, float acce)
 		{
 			yield return null;
-			float scope = ((_isInScreenSpace ? Coordinate.instance.Screen2Space(_destination) : _destination) -
+			float scope = ((presentState.InScreen ? Coordinate.instance.Screen2Space(presentState.Position) : presentState.Position) -
 			               transform.position).magnitude;
 			speedMax *= scope;
 			float speed = 0;
@@ -188,13 +222,13 @@ namespace Ui
 			while (true)
 			{
 				if(speed<speedMax) speed += Time.deltaTime * acce*scope;
-				transform.position +=( (_isInScreenSpace?Coordinate.instance.Screen2Space(_destination):_destination) - transform.position).normalized * Time.deltaTime * speed;
+				transform.position +=( (presentState.InScreen?Coordinate.instance.Screen2Space(presentState.Position):presentState.Position) - transform.position).normalized * Time.deltaTime * speed;
 				yield return new WaitForEndOfFrame();
 				if (Vector3.Distance(transform.position,
-					    _isInScreenSpace ? Coordinate.instance.Screen2Space(_destination) : _destination) <
+					    presentState.InScreen ? Coordinate.instance.Screen2Space(presentState.Position) : presentState.Position) <
 				    Deviation*scope) break;
 			}
-			if(followCamera) EnableFollowObject();
+			if(presentState.FollowCamera) EnableFollowCamera();
 			AfterArrival.Invoke();
 			_runningCoroutine = null;
 			

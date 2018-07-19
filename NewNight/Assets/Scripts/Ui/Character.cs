@@ -17,7 +17,6 @@ namespace Ui
 		{
 			_col=GetComponent<BoxCollider>();
 			_mark = GetComponentInChildren<MarkCircle>();
-			UpdateOriginPosition();
 		}
 
 
@@ -40,7 +39,7 @@ namespace Ui
 		{
 			_col.enabled = false;
 			if(focus==this)
-				Transfer(_moveOutTo,true,false);
+				Transfer(_moveOutTo,true);
 			
 		}
 
@@ -48,7 +47,7 @@ namespace Ui
 		public override void MoveBack()
 		{
 			_col.enabled = true;
-			Transfer(_originalPosition,false,false);
+			Transfer(lastState.Position,lastState.InScreen);
 		}
 
 		
