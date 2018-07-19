@@ -38,19 +38,20 @@ namespace Ui
 			if (newObject == null) return null;
 
 			Scene theScene = _sceneDict[sceneName];
-			Transform parent;
+			BatchNode parentNode;
 			if (theScene.dict.ContainsKey(kindName))
 			{
-				parent= theScene.dict[kindName].transform;
+				parentNode= theScene.dict[kindName];
 			}
 			else
 			{
-				parent = theScene.dict["Others"].transform;
+				parentNode = theScene.dict["Others"];
 			}
 
-			int count = parent.gameObject.GetComponentsInChildren<UiItem>().Length + 1;
-			parent.position = ((count - 1) * parent.position + position) / count;
-			newObject = Instantiate(newObject,parent);
+			int count = parentNode.Count;
+			parentNode.SwitchPosition((parentNode.transform.position*count+position)/(count+1));
+
+			newObject = Instantiate(newObject,parentNode.transform);
 			newObject.transform.position = position;
 
 			UiItem returnValue = newObject.GetComponent<UiItem>();
@@ -94,7 +95,7 @@ namespace Ui
 
 		}
 
-		public bool DeleteScene(string name)
+		public bool DeleteScene(string name) // not finished. add recalculate of the batchnote position later
 		{
 			if (!_sceneDict.ContainsKey(name) || name=="VoidScene") return false;
 			Destroy(_sceneDict[name].SceneObject);

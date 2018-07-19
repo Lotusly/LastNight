@@ -96,19 +96,13 @@ namespace Ui
 			{
 				SceneManager.instance.SwitchScene(name);
 				TransitionForm.instance.PerformTransition(name, block);
-			}
-			
-			
-			
+			}		
 		}
 		
 		public void FadeOutPresentScene(TransitionForm.TransitionParameterBlock block)
 		{
 			TransitionForm.instance.PerformTransition(SceneManager.instance.GetPresentSceneName(), block);
 		}
-		
-		
-
 		
 
 		public void SwitchBackground(int index, Vector2 direction=new Vector2())
