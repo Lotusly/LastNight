@@ -121,6 +121,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 24782269}
+  - component: {fileID: 24782270}
   m_Layer: 0
   m_Name: Midground
   m_TagString: Untagged
@@ -143,6 +144,25 @@ Transform:
   m_Father: {fileID: 1996061457}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &24782270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 24782268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 109a29a1996c8c649b25662c36582dd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _positionOutScreen: {x: 0, y: 0, z: 0}
+  _selfBoost: 0
+  AfterArrival:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  Count: 0
 --- !u!1 &54992717
 GameObject:
   m_ObjectHideFlags: 0
@@ -1945,10 +1965,10 @@ MonoBehaviour:
       - Foreground
       - Others
       values:
-      - {fileID: 963210426}
-      - {fileID: 24782269}
-      - {fileID: 664543914}
-      - {fileID: 645855159}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
 --- !u!4 &370245052
 Transform:
   m_ObjectHideFlags: 0
@@ -3641,6 +3661,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 645855159}
+  - component: {fileID: 645855160}
   m_Layer: 0
   m_Name: Others
   m_TagString: Untagged
@@ -3663,6 +3684,25 @@ Transform:
   m_Father: {fileID: 1996061457}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &645855160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 645855158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 109a29a1996c8c649b25662c36582dd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _positionOutScreen: {x: 0, y: 0, z: 0}
+  _selfBoost: 0
+  AfterArrival:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  Count: 0
 --- !u!1 &664543913
 GameObject:
   m_ObjectHideFlags: 0
@@ -3671,6 +3711,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 664543914}
+  - component: {fileID: 664543915}
   m_Layer: 0
   m_Name: Foreground
   m_TagString: Untagged
@@ -3692,6 +3733,25 @@ Transform:
   m_Father: {fileID: 1996061457}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &664543915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 664543913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 109a29a1996c8c649b25662c36582dd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _positionOutScreen: {x: 0, y: 0, z: 0}
+  _selfBoost: 0
+  AfterArrival:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  Count: 0
 --- !u!1 &681684132
 GameObject:
   m_ObjectHideFlags: 0
@@ -5101,6 +5161,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 963210426}
+  - component: {fileID: 963210427}
   m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
@@ -5121,6 +5182,25 @@ Transform:
   m_Father: {fileID: 1996061457}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &963210427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 963210425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 109a29a1996c8c649b25662c36582dd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _positionOutScreen: {x: 0, y: 0, z: 0}
+  _selfBoost: 0
+  AfterArrival:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  Count: 0
 --- !u!1001 &979845245
 Prefab:
   m_ObjectHideFlags: 0

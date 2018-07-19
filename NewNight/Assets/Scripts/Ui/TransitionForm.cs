@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 using Supportive;
+using UnityEngine.Events;
 
 namespace Ui
 {
@@ -16,6 +17,7 @@ namespace Ui
 			public bool BackgroundInScreen;
 			public float BackgroundSpeed;
 			public float BackgroundDelay;
+			
 			
 			public int MidgroundMethod;
 			public Vector3 MidgroundPosition;
@@ -127,8 +129,7 @@ namespace Ui
 		}
 		
 		//------------------------------------------MOVEMENT------------------------------------------------
-		public delegate IEnumerator Movement(BatchNode tran, Vector3 newPosition, bool inScreen, float speed, float delay); // speed here means finish the whole movement in 1/speed seconds
-		public delegate void AfterTransition();
+		public delegate IEnumerator Movement(BatchNode tran, Vector3 newPosition, bool inScreen, bool destroy, float speed, float delay); // speed here means finish the whole movement in 1/speed seconds
 		public Movement[] Movements;
 		public static TransitionForm instance;
 		void Awake()
@@ -138,50 +139,86 @@ namespace Ui
 			Movements[0] = Nothing;
 			Movements[1] = Direct;
 			Movements[2] = Average;
+			Movements[3] = Lerp;
 		}
+
 	
-		public IEnumerator Nothing(BatchNode tran, Vector3 newPosition, bool inScreen, float speed=1, float delay=0)
+		public IEnumerator Nothing(BatchNode tran, Vector3 newPosition, bool inScreen, bool destroy=false, float speed=1, float delay=0)
 		{
 			Debug.Log("Nothing");
 			yield return null;
+			if (destroy)
+			{
+				Destroy(tran.gameObject);
+			}
 		}
 
-		public IEnumerator Direct(BatchNode tran, Vector3 newPosition, bool inScreen, float speed=1, float delay=0)
+		public IEnumerator Direct(BatchNode tran, Vector3 newPosition, bool inScreen, bool destroy=false, float speed=1, float delay=0)
 		{
 			Debug.Log("Direct");
 			yield return new WaitForSecondsRealtime(delay);
-			tran.SetPosition(newPosition,inScreen);	
+			tran.SetPosition(newPosition,inScreen);
+			if (destroy)
+			{
+				Destroy(tran.gameObject);
+			}
 		}
 
-		public IEnumerator Average(BatchNode tran, Vector3 newPosition, bool inScreen, float speed=1, float delay=0)
+		public IEnumerator Average(BatchNode tran, Vector3 newPosition, bool inScreen, bool destroy=false, float speed=1, float delay=0)
 		{
 			Debug.Log("Average");
 			yield return new WaitForSecondsRealtime(delay);
-			tran.Transfer(newPosition, inScreen,false,1);
+			yield return StartCoroutine(tran.Transfer(newPosition, inScreen,false,1));
+			if (destroy)
+			{
+				Destroy(tran.gameObject);
+			}
 		}
 
-		public IEnumerator Lerp(BatchNode tran, Vector3 newPosition, bool inScreen, float speed = 1, float delay = 0)
+		public IEnumerator Lerp(BatchNode tran, Vector3 newPosition, bool inScreen, bool destroy=false, float speed = 1, float delay = 0)
 		{
 			Debug.Log("Lerp");
 			yield return new WaitForSecondsRealtime(delay);
-			tran.Transfer(newPosition, inScreen);
+			yield return StartCoroutine(tran.Transfer(newPosition, inScreen));
+			if (destroy)
+			{
+				Destroy(tran.gameObject);
+			}
 		}
 		
 		//------------------------FUNCTION------------------------------------
-		public void PerformTransition(string name, TransitionParameterBlock block)
+		public void PerformTransition(string name, TransitionParameterBlock block, bool destroy) 
+			// this function should only be called by SceneManager, cause void scene should never be destroyed
 		{
+			
+			/*BatchNode tmpNode;
+			
+			tmpNode = SceneManager.instance.GetBackground(name);
+			tmpNode.AfterArrival.AddListener(tmpNode.DestroyHandler);
+			
+			tmpNode = SceneManager.instance.GetMidground(name);
+			tmpNode.AfterArrival.AddListener(tmpNode.DestroyHandler);
+			
+			tmpNode = SceneManager.instance.GetForeground(name);
+			tmpNode.AfterArrival.AddListener(tmpNode.DestroyHandler);
+			
+			tmpNode = SceneManager.instance.GetOthers(name);
+			tmpNode.AfterArrival.AddListener(tmpNode.DestroyHandler);*/
+			
 			StartCoroutine(Movements[block.BackgroundMethod](SceneManager.instance.GetBackground(name),
 				block.BackgroundPosition,
-				block.BackgroundInScreen, block.BackgroundSpeed, block.BackgroundDelay));
+				block.BackgroundInScreen, destroy, block.BackgroundSpeed, block.BackgroundDelay));
 
 			StartCoroutine(Movements[block.MidgroundMethod](SceneManager.instance.GetMidground(name), block.MidgroundPosition,
-				block.MidgroundInScreen, block.MidgroundSpeed, block.MidgroundDelay));
+				block.MidgroundInScreen, destroy, block.MidgroundSpeed, block.MidgroundDelay));
 			StartCoroutine(Movements[block.ForegroundMethod](SceneManager.instance.GetForeground(name), block.ForegroundPosition,
-				block.ForegroundInScreen, block.ForegroundSpeed, block.ForegroundDelay));
+				block.ForegroundInScreen, destroy, block.ForegroundSpeed, block.ForegroundDelay));
 			StartCoroutine(Movements[block.OthersMethod](SceneManager.instance.GetOthers(name), block.OthersPosition,
-				block.OthersInScreen, block.OthersSpeed, block.OthersDelay));
-			// not finished
+				block.OthersInScreen, destroy, block.OthersSpeed, block.OthersDelay));
+			// not finished. Still need to deal with cameras
 		}
+
+		
 		
 	}
 }

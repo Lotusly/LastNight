@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Supportive;
@@ -11,27 +12,28 @@ namespace Ui
 		public struct Scene
 		{
 			public GameObject SceneObject;
-			[SerializeField] public StringBatchDict dict ;
+			[SerializeField] public StringBatchDict dict;
 		};
 
-		
+
 		private Dictionary<string, Scene> _sceneDict;
 		private string[] _nameList;
-		private string _presentSceneName="";
+		private string _presentSceneName = "";
 		[SerializeField] private Scene _voidScene;
 
 		public static SceneManager instance;
-		
+
 		void Awake()
 		{
 			if (instance == null) instance = this;
-			_nameList = new string[] {"Background", "Midground", "Foreground", "Others" };
+			_nameList = new string[] {"Background", "Midground", "Foreground", "Others"};
 			_sceneDict = new Dictionary<string, Scene>();
-			_sceneDict.Add("VoidScene",_voidScene);
+			_sceneDict.Add("VoidScene", _voidScene);
 			_presentSceneName = "VoidScene";
 		}
 
-		public UiItem GenerateItem(string sceneName, string objectPath, Vector3 position, string kindName, bool initialize)
+		public UiItem GenerateItem(string sceneName, string objectPath, Vector3 position, string kindName,
+			bool initialize)
 		{
 			if (!_sceneDict.ContainsKey(sceneName)) return null;
 			GameObject newObject = Resources.Load<GameObject>(objectPath);
@@ -41,24 +43,26 @@ namespace Ui
 			BatchNode parentNode;
 			if (theScene.dict.ContainsKey(kindName))
 			{
-				parentNode= theScene.dict[kindName];
+				parentNode = theScene.dict[kindName];
 			}
 			else
 			{
 				parentNode = theScene.dict["Others"];
 			}
 
-			int count = parentNode.Count;
-			parentNode.SwitchPosition((parentNode.transform.position*count+position)/(count+1));
-
-			newObject = Instantiate(newObject,parentNode.transform);
+			newObject = Instantiate(newObject, parentNode.transform);
 			newObject.transform.position = position;
+
+			// Call parentNode.UpdatePosition here, if its leaves are likely to move from original position
+			parentNode.AddLeaf(newObject.transform);
+
 
 			UiItem returnValue = newObject.GetComponent<UiItem>();
 			if (returnValue == null)
 			{
 				returnValue = newObject.AddComponent<UiItem>();
 			}
+
 			if (initialize)
 			{
 				returnValue.Initialize();
@@ -66,14 +70,14 @@ namespace Ui
 
 			return newObject.GetComponent<UiItem>();
 		}
-		
-		
+
+
 
 		public bool NewScene(string name)
 		{
 			if (name == "") return false;
 			if (_sceneDict.ContainsKey(name)) return false;
-			
+
 			Scene newScene = new Scene();
 			newScene.dict = new StringBatchDict();
 			GameObject newObject = new GameObject(name);
@@ -89,21 +93,22 @@ namespace Ui
 				newScene.dict.Add(_nameList[i], newChild.AddComponent<BatchNode>());
 			}
 
-			_sceneDict.Add(name,newScene);
-			
+			_sceneDict.Add(name, newScene);
+
 			return true;
 
 		}
 
-		public bool DeleteScene(string name) // not finished. add recalculate of the batchnote position later
+		public bool DeleteScene(string name)
 		{
-			if (!_sceneDict.ContainsKey(name) || name=="VoidScene") return false;
+			if (!_sceneDict.ContainsKey(name) || name == "VoidScene") return false;
 			Destroy(_sceneDict[name].SceneObject);
 			_sceneDict.Remove(name);
 			if (name == _presentSceneName)
 			{
 				_presentSceneName = "VoidScene";
 			}
+
 			return true;
 		}
 
@@ -113,7 +118,18 @@ namespace Ui
 			_presentSceneName = name;
 			return true;
 		}
-	
+
+		public void TransferScene(string name, TransitionForm.TransitionParameterBlock block, bool destroy = false)
+		{
+			if (name == "VoidScene" && destroy || !_sceneDict.ContainsKey(name)) return;
+
+			
+			TransitionForm.instance.PerformTransition(name,block, destroy);
+			
+			
+			
+		}
+
 
 		public string GetPresentSceneName()
 		{

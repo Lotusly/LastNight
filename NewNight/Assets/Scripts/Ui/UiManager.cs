@@ -84,24 +84,22 @@ namespace Ui
 
 		public void FadeOutScene(string name, TransitionForm.TransitionParameterBlock block)
 		{
-			if (SceneManager.instance.SceneExist(name))
-			{
-				TransitionForm.instance.PerformTransition(name,block);
-			}
+			
+			SceneManager.instance.TransferScene(name,block,true);
+			
 		}
 		
 		public void FadeInScene(string name, TransitionForm.TransitionParameterBlock block)
 		{
-			if (SceneManager.instance.SceneExist(name))
-			{
-				SceneManager.instance.SwitchScene(name);
-				TransitionForm.instance.PerformTransition(name, block);
-			}		
+			
+			SceneManager.instance.SwitchScene(name);
+			SceneManager.instance.TransferScene(name, block);
+					
 		}
 		
 		public void FadeOutPresentScene(TransitionForm.TransitionParameterBlock block)
 		{
-			TransitionForm.instance.PerformTransition(SceneManager.instance.GetPresentSceneName(), block);
+			SceneManager.instance.TransferScene(SceneManager.instance.GetPresentSceneName(), block,true);
 		}
 		
 

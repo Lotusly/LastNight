@@ -146,7 +146,7 @@ namespace Ui
 
 
 
-		public void Transfer(Vector3 newPosition, bool inScreenSpace, bool followCamera = false,
+		public IEnumerator Transfer(Vector3 newPosition, bool inScreenSpace, bool followCamera = false,
 			int mode = 0, float speed = 1.5f)
 		{
 			//if (recordOrigin) _originalPosition = transform.position; // if record, then remember where it leaves; otherwise don't update
@@ -165,15 +165,16 @@ namespace Ui
 			switch (mode)
 			{
 				case 1:
-					_runningCoroutine = StartCoroutine(ConstantTransfer(speed));
+					yield return _runningCoroutine = StartCoroutine(ConstantTransfer(speed));
 					break;
 				case 0:
-					_runningCoroutine = StartCoroutine(PlainLerp(speed));
+					yield return _runningCoroutine = StartCoroutine(PlainLerp(speed));
 					break;
 				case 2:
-					_runningCoroutine = StartCoroutine(AccelerateTransfer(speed,1f));
+					yield return _runningCoroutine = StartCoroutine(AccelerateTransfer(speed,1f));
 					break;
 			}
+
 		}
 
 		private IEnumerator PlainLerp(float speed)
