@@ -1954,21 +1954,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08c473b66888d0643b71af9c33cac1e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _voidScene:
-    SceneObject: {fileID: 1996061456}
-    dict:
-      defaultKey: 
-      defaultValue: {fileID: 0}
-      keys:
-      - Background
-      - Midground
-      - Foreground
-      - Others
-      values:
-      - {fileID: 0}
-      - {fileID: 0}
-      - {fileID: 0}
-      - {fileID: 0}
+  _voidScene: {fileID: 1996061458}
 --- !u!4 &370245052
 Transform:
   m_ObjectHideFlags: 0
@@ -9185,6 +9171,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1996061457}
+  - component: {fileID: 1996061458}
   m_Layer: 0
   m_Name: VoidScene
   m_TagString: Untagged
@@ -9209,6 +9196,31 @@ Transform:
   m_Father: {fileID: 370245052}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1996061458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1996061456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff9a35e3c565afa48aefdc896be76210, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _positionOutScreen: {x: 0, y: 0, z: 0}
+  _selfBoost: 0
+  AfterArrival:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  Count: 0
+  SceneObject: {fileID: 0}
+  dict:
+    defaultKey: 
+    defaultValue: {fileID: 0}
+    keys: []
+    values: []
 --- !u!1 &2017447856
 GameObject:
   m_ObjectHideFlags: 0

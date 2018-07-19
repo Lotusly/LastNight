@@ -64,6 +64,7 @@
             <e p="MarkCircle.cs" t="Include" />
             <e p="Option.cs" t="Include" />
             <e p="PlaybackWheel.cs" t="Include" />
+            <e p="Scene.cs" t="Include" />
             <e p="SceneManager.cs" t="Include" />
             <e p="StatBar.cs" t="Include" />
             <e p="TransitionForm.cs" t="Include" />

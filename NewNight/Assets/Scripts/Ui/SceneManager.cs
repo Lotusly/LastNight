@@ -8,13 +8,6 @@ namespace Ui
 {
 	public class SceneManager : MonoBehaviour
 	{
-		[Serializable]
-		public struct Scene
-		{
-			public GameObject SceneObject;
-			[SerializeField] public StringBatchDict dict;
-		};
-
 
 		private Dictionary<string, Scene> _sceneDict;
 		private string[] _nameList;
@@ -41,13 +34,13 @@ namespace Ui
 
 			Scene theScene = _sceneDict[sceneName];
 			BatchNode parentNode;
-			if (theScene.dict.ContainsKey(kindName))
+			if (theScene.DetectSceneBatch(kindName))
 			{
-				parentNode = theScene.dict[kindName];
+				parentNode = theScene.GetSceneBatch(kindName);
 			}
 			else
 			{
-				parentNode = theScene.dict["Others"];
+				parentNode = theScene.GetSceneBatch("Others");
 			}
 
 			newObject = Instantiate(newObject, parentNode.transform);
@@ -78,10 +71,9 @@ namespace Ui
 			if (name == "") return false;
 			if (_sceneDict.ContainsKey(name)) return false;
 
-			Scene newScene = new Scene();
-			newScene.dict = new StringBatchDict();
+			
 			GameObject newObject = new GameObject(name);
-			newScene.SceneObject = newObject;
+			Scene newScene = newObject.AddComponent<Scene>();
 			newObject.transform.parent = transform;
 			newObject.transform.localPosition = Vector3.zero;
 
@@ -90,7 +82,7 @@ namespace Ui
 				GameObject newChild = new GameObject(_nameList[i]);
 				newChild.transform.parent = newObject.transform;
 				newChild.transform.localPosition = Vector3.zero;
-				newScene.dict.Add(_nameList[i], newChild.AddComponent<BatchNode>());
+				newScene.AddSceneBatch(_nameList[i], newChild.AddComponent<BatchNode>());
 			}
 
 			_sceneDict.Add(name, newScene);
@@ -102,7 +94,7 @@ namespace Ui
 		public bool DeleteScene(string name)
 		{
 			if (!_sceneDict.ContainsKey(name) || name == "VoidScene") return false;
-			Destroy(_sceneDict[name].SceneObject);
+			Destroy(_sceneDict[name].gameObject);
 			_sceneDict.Remove(name);
 			if (name == _presentSceneName)
 			{
@@ -138,27 +130,27 @@ namespace Ui
 
 		public BatchNode GetPresentBackground()
 		{
-			return _sceneDict[_presentSceneName].dict["Background"];
+			return _sceneDict[_presentSceneName].GetSceneBatch("Background");
 		}
 
 		public BatchNode GetBackground(string name)
 		{
-			return _sceneDict[name].dict["Background"];
+			return _sceneDict[name].GetSceneBatch("Background");
 		}
 
 		public BatchNode GetMidground(string name)
 		{
-			return _sceneDict[name].dict["Midground"];
+			return _sceneDict[name].GetSceneBatch("Midground");
 		}
 		
 		public BatchNode GetForeground(string name)
 		{
-			return _sceneDict[name].dict["Foreground"];
+			return _sceneDict[name].GetSceneBatch("Foreground");
 		}
 		
 		public BatchNode GetOthers(string name)
 		{
-			return _sceneDict[name].dict["Others"];
+			return _sceneDict[name].GetSceneBatch("Others");
 		}
 
 		public bool SceneExist(string name)
