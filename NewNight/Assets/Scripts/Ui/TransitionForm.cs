@@ -149,8 +149,16 @@ namespace Ui
 			yield return null;
 			if (destroy)
 			{
-				if(tran.transform.parent.childCount==1) Destroy(tran.transform.parent.gameObject);
-				else Destroy(tran.gameObject);
+				Scene theScene = tran.transform.parent.gameObject.GetComponent<Scene>();
+				if (theScene == null)
+				{
+					Debug.LogError("TransitionForm.cs Average: parent doesn't have Scene component");
+				}
+				else
+				{
+					theScene.RemoveSceneBatch(tran.name);
+					theScene.DestroyOnEmpty();
+				}
 			}
 		}
 
@@ -161,8 +169,16 @@ namespace Ui
 			tran.SetPosition(newPosition,inScreen);
 			if (destroy)
 			{
-				if(tran.transform.parent.childCount==1) Destroy(tran.transform.parent.gameObject);
-				else Destroy(tran.gameObject);
+				Scene theScene = tran.transform.parent.gameObject.GetComponent<Scene>();
+				if (theScene == null)
+				{
+					Debug.LogError("TransitionForm.cs Average: parent doesn't have Scene component");
+				}
+				else
+				{
+					theScene.RemoveSceneBatch(tran.name);
+					theScene.DestroyOnEmpty();
+				}
 			}
 		}
 

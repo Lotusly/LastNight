@@ -93,14 +93,17 @@ namespace Ui
 
 		public bool DeleteScene(string name)
 		{
+			print(name+" 0");
 			if (!_sceneDict.ContainsKey(name) || name == "VoidScene") return false;
+			print(name+" 1");
 			Destroy(_sceneDict[name].gameObject);
+			print(name+" 2");
 			_sceneDict.Remove(name);
 			if (name == _presentSceneName)
 			{
 				_presentSceneName = "VoidScene";
 			}
-
+			print(name+" 3");
 			return true;
 		}
 

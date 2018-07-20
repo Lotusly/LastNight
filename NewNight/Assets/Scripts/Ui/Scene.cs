@@ -53,6 +53,7 @@ namespace Ui
 			{
 				SceneManager.instance.DeleteScene(name);
 			}
+
 		}
 	
 	}
