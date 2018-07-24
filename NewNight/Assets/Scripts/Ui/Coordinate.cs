@@ -11,7 +11,13 @@ namespace Ui
 			if (cam == null)
 				cam = Camera.main;
 
-			return cam.WorldToScreenPoint(corSpace);
+			Vector3 v = cam.WorldToViewportPoint(corSpace);
+
+			// Go from unity viewport to lotus viewport
+			v.x = v.x * 2 - 1;
+			v.y = v.y * 2 - 1;
+
+			return v;
 		}
 
 		public Vector3 Screen2Space(Vector3 corScreen, Camera cam = null)
@@ -19,7 +25,11 @@ namespace Ui
 			if (cam == null)
 				cam = Camera.main;
 
-			return cam.ScreenToWorldPoint(corScreen);
+			// Go from lotus viewport to unity viewport
+			corScreen.x = corScreen.x / 2 + 1/2f;
+			corScreen.y = corScreen.y / 2 + 1/2f;
+
+			return cam.ViewportToWorldPoint(corScreen);
 		}
 	}
 }
