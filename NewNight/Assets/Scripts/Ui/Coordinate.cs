@@ -6,22 +6,30 @@ namespace Ui
 {
 	public class Coordinate : Supportive.Singleton<Coordinate>
 	{
-
-
-		public Vector3 Space2Screen(Vector3 corSpace)
+		public Vector3 Space2Screen(Vector3 corSpace, Camera cam = null)
 		{
-			float tanFV = Mathf.Tan(Camera.main.fieldOfView * Mathf.PI / 360);
-			Vector3 corSpaceRelated = corSpace - Camera.main.transform.position;
-			return new Vector3(corSpaceRelated.x * ((float) (Screen.height) / Screen.width) / (tanFV *corSpaceRelated.z),
-				corSpaceRelated.y / (corSpaceRelated.z * tanFV), corSpaceRelated.z);
+			if (cam == null)
+				cam = Camera.main;
+
+			Vector3 v = cam.WorldToViewportPoint(corSpace);
+
+			// Go from unity viewport to lotus viewport
+			v.x = v.x * 2 - 1;
+			v.y = v.y * 2 - 1;
+
+			return v;
 		}
 
-		public Vector3 Screen2Space(Vector3 corScreen)
+		public Vector3 Screen2Space(Vector3 corScreen, Camera cam = null)
 		{
-			float tanFV = Mathf.Tan(Camera.main.fieldOfView * Mathf.PI / 360);
-			Vector3 corSpaceRelated = new Vector3(corScreen.x * corScreen.z * tanFV * ((float) (Screen.width) / Screen.height),
-				corScreen.y * corScreen.z * tanFV, corScreen.z);
-			return Camera.main.transform.position + corSpaceRelated;
+			if (cam == null)
+				cam = Camera.main;
+
+			// Go from lotus viewport to unity viewport
+			corScreen.x = corScreen.x / 2 + 1/2f;
+			corScreen.y = corScreen.y / 2 + 1/2f;
+
+			return cam.ViewportToWorldPoint(corScreen);
 		}
 	}
 }
