@@ -34,17 +34,21 @@
           <e p="LightLeaking.shader" t="Include" />
         </e>
         <e p="Scripts" t="Include">
-          <e p="BSC.cs" t="Include" />
           <e p="Effects" t="Include">
             <e p="LightLeaking.cs" t="Include" />
             <e p="TextureBlending.cs" t="Include" />
             <e p="TextureBlending.shader" t="Include" />
           </e>
-          <e p="FishEye.cs" t="Include" />
+          <e p="Legacy" t="Include">
+            <e p="BSC.cs" t="Include" />
+            <e p="FishEye.cs" t="Include" />
+            <e p="PostEffects.cs" t="Include" />
+            <e p="Video.cs" t="Include" />
+            <e p="VoffsetLetter.cs" t="Include" />
+          </e>
           <e p="Rotate.cs" t="Include" />
           <e p="Story.cs" t="Include" />
           <e p="Supportive" t="Include">
-            <e p="PostEffects.cs" t="Include" />
             <e p="SerilizableDictionary.cs" t="Include" />
             <e p="Singleton.cs" t="Include" />
             <e p="StringTransformDict.cs" t="Include" />
@@ -73,8 +77,6 @@
             <e p="UiManager.cs" t="Include" />
             <e p="UiMask.cs" t="Include" />
           </e>
-          <e p="Video.cs" t="Include" />
-          <e p="VoffsetLetter.cs" t="Include" />
         </e>
         <e p="Shader" t="Include">
           <e p="Background.shader" t="Include" />

@@ -56,13 +56,15 @@
     <Compile Include="Assets\_App\Scripts\RandomLightIntensity.cs" />
     <Compile Include="Assets\10mm\Contructor.cs" />
     <Compile Include="Assets\Fonts\Script\scriptTexttest.cs" />
-    <Compile Include="Assets\Scripts\BSC.cs" />
     <Compile Include="Assets\Scripts\Effects\LightLeaking.cs" />
     <Compile Include="Assets\Scripts\Effects\TextureBlending.cs" />
-    <Compile Include="Assets\Scripts\FishEye.cs" />
+    <Compile Include="Assets\Scripts\Legacy\BSC.cs" />
+    <Compile Include="Assets\Scripts\Legacy\FishEye.cs" />
+    <Compile Include="Assets\Scripts\Legacy\PostEffects.cs" />
+    <Compile Include="Assets\Scripts\Legacy\Video.cs" />
+    <Compile Include="Assets\Scripts\Legacy\VoffsetLetter.cs" />
     <Compile Include="Assets\Scripts\Rotate.cs" />
     <Compile Include="Assets\Scripts\Story.cs" />
-    <Compile Include="Assets\Scripts\Supportive\PostEffects.cs" />
     <Compile Include="Assets\Scripts\Supportive\SerilizableDictionary.cs" />
     <Compile Include="Assets\Scripts\Supportive\Singleton.cs" />
     <Compile Include="Assets\Scripts\Supportive\StringTransformDict.cs" />
@@ -88,8 +90,6 @@
     <Compile Include="Assets\Scripts\Ui\UiItem.cs" />
     <Compile Include="Assets\Scripts\Ui\UiManager.cs" />
     <Compile Include="Assets\Scripts\Ui\UiMask.cs" />
-    <Compile Include="Assets\Scripts\Video.cs" />
-    <Compile Include="Assets\Scripts\VoffsetLetter.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />

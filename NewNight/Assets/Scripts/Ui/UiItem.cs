@@ -125,7 +125,7 @@ namespace Ui
 		}
 
 
-		public void SetPosition(Vector3 newPosition, bool inScreenSpace,  bool followCamera = false) //new function
+		public void SetPosition(Vector3 newPosition, bool inScreenSpace,  bool followCamera = false) 
 		{
 			DisableFollowCamera();
 			DuplicateState(ref lastState,presentState);
