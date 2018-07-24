@@ -12,7 +12,6 @@ namespace Supportive
 		[SerializeField] private TKey defaultKey;
 		[SerializeField] private TValue defaultValue;
 		[SerializeField] private List<TKey> keys = new List<TKey>();
-
 		[SerializeField] private List<TValue> values = new List<TValue>();
 
 		// save the dictionary to lists
@@ -48,11 +47,7 @@ namespace Supportive
 					this.Add(keys[i],defaultValue);
 				}
 			}
-				
+
 		}
 	}
 }
-	
-
-	
-	

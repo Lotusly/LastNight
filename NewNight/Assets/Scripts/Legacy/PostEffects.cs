@@ -9,11 +9,10 @@ using UnityEngine;
 namespace Supportive
 {
 	[ExecuteInEditMode]
-
 	public class PostEffects : MonoBehaviour
 	{
-
 		public static PostEffects instance;
+
 		public void CheckResources()
 		{
 			bool isSupported = CheckSupport();

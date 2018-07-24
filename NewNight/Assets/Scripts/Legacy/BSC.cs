@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class BSC : Supportive.PostEffects
 {
-
 	public Shader briSatConShader;
 	private Material briSatConMaterial;
 	[Range(0.0f, 3.0f)] public float brightness = 1.0f;
@@ -20,6 +19,7 @@ public class BSC : Supportive.PostEffects
 		}
 	}
 
+	//
 	void OnRenderImage(RenderTexture src, RenderTexture dest)
 	{
 		if (material != null)
@@ -35,5 +35,5 @@ public class BSC : Supportive.PostEffects
 			Graphics.Blit(src,dest);
 		}
 	}
-	
+
 }

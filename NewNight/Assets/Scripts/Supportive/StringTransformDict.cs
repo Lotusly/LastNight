@@ -4,7 +4,5 @@ using UnityEngine;
 
 namespace Supportive
 {
-
 	[Serializable] public class StringBatchDict : SerializableDictionary<string, BatchNode> {}
-
 }

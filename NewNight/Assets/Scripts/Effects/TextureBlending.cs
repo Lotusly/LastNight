@@ -12,9 +12,8 @@ public sealed class TextureBlending : PostProcessEffectSettings
 	[Tooltip("Texture to mix.")]
 	public TextureParameter tex = new TextureParameter{value=null};
 	//public TextureParameter tex;
-
 }
- 
+
 public sealed class TextureBlendingRenderer : PostProcessEffectRenderer<TextureBlending>
 {
 	public override void Render(PostProcessRenderContext context)

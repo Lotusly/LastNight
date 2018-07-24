@@ -1,5 +1,4 @@
-﻿
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Ui;
 using UnityEngine;
 using UnityEngine.UI;
@@ -8,14 +7,8 @@ namespace Supportive
 {
 	public class Test : Singleton<Test>
 	{
-
-
 		public int index=1;
-		
 		private Image [] _images;
-
-
-
 
 		void Start()
 		{
@@ -26,11 +19,9 @@ namespace Supportive
 		{
 			_images[index].enabled = true;
 		}
-		
+
 		void Update()
 		{
-
-			
 			if (Input.GetKeyDown(KeyCode.Escape))
 			{
 				UiManager.instance.ZoomOut();
@@ -47,7 +38,6 @@ namespace Supportive
 				Story.instance.Transfer();
 			}
 
-			
 			/*if (Input.GetMouseButtonDown(0))
 			{
 				for (int i = 0; i < 10; i++)
@@ -60,28 +50,28 @@ namespace Supportive
 				UiManager.instance.SwitchBackground(index,direction);
 			}*/
 
-		
-			
+
+
 			// the block below is to test Coordinate class and UiManager.Generate and UiItem.Transfer
 			/*
-			 
+
 			[SerializeField] private string pathName;
 			[SerializeField] private int _index;
 			[SerializeField] private Vector3 _spaceInScreen;
 			[SerializeField] private List<GameObject> _objects;
-			
-	
+
+
 			[SerializeField] private bool _generate = false;
 			[SerializeField] private bool _eliminate = false;
 			[SerializeField] private bool _transfer = false;
 			[SerializeField] private bool _clearAll = false;
-			
+
 			if (_generate)
 			{
 				_generate = false;
 				GameObject newItem = Ui.UiManager.instance.Generate(pathName,_index, _spaceInScreen, true).gameObject;
 				_objects.Add(newItem);
-				
+
 			}
 
 			if (_eliminate)

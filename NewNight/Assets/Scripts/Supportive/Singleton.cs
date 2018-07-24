@@ -6,7 +6,6 @@ namespace Supportive
 {
 	public abstract class Singleton<T> : MonoBehaviour where T : Component
 	{
-
 		public static T instance;
 
 		void Awake()

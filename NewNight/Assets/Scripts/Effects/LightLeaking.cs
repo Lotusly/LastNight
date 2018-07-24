@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class LightLeaking : Supportive.PostEffects
 {
-
-	//public Shader briSatConShader;
-	
 	public Material briSatConMaterial;
 
 	/*public Material material
@@ -22,7 +19,6 @@ public class LightLeaking : Supportive.PostEffects
 	{
 		if (briSatConMaterial != null)
 		{
-
 			Graphics.Blit(src, dest, briSatConMaterial);
 		}
 		else

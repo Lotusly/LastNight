@@ -1,11 +1,9 @@
-﻿
-using TMPro;
+﻿using TMPro;
 using UnityEngine;
 
 
 public class VoffsetLetter : MonoBehaviour
 {
-
 	[SerializeField] private TextMeshPro _tm;
 	[Range(0.0f,1.0f)] [SerializeField] private float _possibility;
 	[Range(-2.0f,2.0f)][SerializeField] private float _deviation;
@@ -13,17 +11,12 @@ public class VoffsetLetter : MonoBehaviour
 	[SerializeField] private bool _reset;
 
 	private string _originalText;
-	
-	
-	
 
-	// Use this for initialization
 	void Start ()
 	{
 		_originalText = _tm.text;
 	}
-	
-	// Update is called once per frame
+
 	void Update () {
 		if (_reset)
 		{
@@ -36,7 +29,7 @@ public class VoffsetLetter : MonoBehaviour
 	{
 		string _enterSwift="<voffset="+_deviation.ToString()+"em>";
 		string _outSwift = "</voffset>";
-		
+
 		bool _inBrackets=false;
 		int _len = _originalText.Length;
 		string result = "";
@@ -75,10 +68,8 @@ public class VoffsetLetter : MonoBehaviour
 				}
 			}
 		}
-
 		_tm.text = result;
 
 	}
-
 
 }

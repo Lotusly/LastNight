@@ -1,10 +1,11 @@
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{1697E402-B269-5773-6BBC-8ADD94832221}"
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio for Mac
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewNight", "Assembly-CSharp.csproj", "{1697E402-B269-5773-6BBC-8ADD94832221}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-firstpass", "Assembly-CSharp-firstpass.csproj", "{3B5772BB-859C-BAD5-530A-A5C49E82FC1D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewNight", "Assembly-CSharp-firstpass.csproj", "{3B5772BB-859C-BAD5-530A-A5C49E82FC1D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor-firstpass", "Assembly-CSharp-Editor-firstpass.csproj", "{9FEEAA80-59DD-98F0-8057-B95342EB7907}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewNight", "Assembly-CSharp-Editor-firstpass.csproj", "{9FEEAA80-59DD-98F0-8057-B95342EB7907}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,8 +28,5 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = Assembly-CSharp.csproj
 	EndGlobalSection
 EndGlobal
