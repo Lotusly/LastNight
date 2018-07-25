@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Supportive;
 using UnityEngine;
 using System.Collections;
-
+using DG.Tweening;
 
 
 namespace Ui
@@ -49,8 +49,11 @@ namespace Ui
 		// TEMP
 		[SerializeField] private Dialogue _singleDialogue;
 
-		
-		
+		void Awake()
+		{
+			DOTween.Init(true);
+		}
+
 		void Start()
 		{			
 			_potentialItems = new List<Item>();
