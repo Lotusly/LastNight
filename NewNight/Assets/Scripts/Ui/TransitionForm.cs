@@ -238,15 +238,17 @@ namespace Ui
 			if (b != null)
 			{
 				GameObject _base = b.gameObject;
+				_base.transform.localScale = new Vector3(32.5f, 19, 1);
 				if (_base.GetComponent<Animator>() == null) _base.AddComponent<Animator>();
-				GameObject _shadow = Instantiate(_base), _tone = Instantiate(_base), _highlight = Instantiate(_base), _transparent = Instantiate(_base);
+				GameObject _shadow = Instantiate(_base,tran.transform), _tone = Instantiate(_base,tran.transform), _highlight = Instantiate(_base,tran.transform), _transparent = Instantiate(_base,tran.transform);
 				GameObject[] trackObjects = new GameObject[6];
-				trackObjects[0] = _base;
-				trackObjects[1] = _shadow;
-				trackObjects[2] = _transparent;
-				trackObjects[3] = _tone;
-				trackObjects[4] = _highlight;
-				trackObjects[5] = CameraManager.instance.gameObject;
+				trackObjects[0] = _shadow;
+				trackObjects[1] = _transparent;
+				trackObjects[2] = _tone;
+				trackObjects[3] = _highlight;
+				trackObjects[4] = CameraManager.instance.gameObject;
+				_base.transform.position = newPosition;
+				tran.SetPosition(newPosition,inScreen);
 
 				_base.GetComponent<Renderer>().material = Resources.Load<Material>("Timelines/base");
 				_shadow.GetComponent<Renderer>().material = Resources.Load<Material>("Timelines/shadow");
@@ -275,9 +277,14 @@ namespace Ui
 				director.Play();
 			}
 
-			
-			
-			
+			else
+			{
+				tran.SetPosition(newPosition, inScreen);
+			}
+
+
+
+
 
 
 		}
