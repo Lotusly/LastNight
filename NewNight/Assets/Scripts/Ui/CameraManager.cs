@@ -15,7 +15,8 @@ namespace Ui
 		private Dictionary<string, UiCamera> _cameraList;
 		private UiCamera[] _layerSlots;
 		private PostProcessVolume[] _volumes;
-		void Awake()
+		
+		void Start()
 		{
 			//Supportive.PostEffects.instance.CheckResources();
 			_cameraList = new Dictionary<string, UiCamera>();
