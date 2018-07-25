@@ -1,7 +1,10 @@
 ﻿using System.Collections;
 using UnityEngine;
 using Supportive;
+using UnityEditor.ShaderGraph;
 using UnityEngine.Events;
+using UnityEngine.Playables;
+using UnityEngine.Timeline;
 
 namespace Ui
 {
@@ -132,6 +135,8 @@ namespace Ui
 		public delegate IEnumerator Movement(BatchNode tran, Vector3 newPosition, bool inScreen, bool destroy, float speed, float delay); // speed here means finish the whole movement in 1/speed seconds
 		public Movement[] Movements;
 		public static TransitionForm instance;
+		// TEMP
+		public PlayableAsset timeLine;
 		void Awake()
 		{
 			if(instance==null)instance = this;
@@ -140,6 +145,7 @@ namespace Ui
 			Movements[1] = Direct;
 			Movements[2] = Average;
 			Movements[3] = Lerp;
+			Movements[4] = Layers;
 		}
 
 	
@@ -220,6 +226,60 @@ namespace Ui
 					theScene.DestroyOnEmpty();
 				}
 			}
+		}
+
+		public IEnumerator Layers(BatchNode tran, Vector3 newPosition, bool inScreen, bool destroy = false,
+			float speed = 1, float delay = 0)
+		{
+			Debug.Log("Layers");
+			yield return new WaitForSecondsRealtime(delay);
+
+			Background b = tran.gameObject.GetComponentInChildren<Background>();
+			if (b != null)
+			{
+				GameObject _base = b.gameObject;
+				if (_base.GetComponent<Animator>() == null) _base.AddComponent<Animator>();
+				GameObject _shadow = Instantiate(_base), _tone = Instantiate(_base), _highlight = Instantiate(_base), _transparent = Instantiate(_base);
+				GameObject[] trackObjects = new GameObject[6];
+				trackObjects[0] = _base;
+				trackObjects[1] = _shadow;
+				trackObjects[2] = _transparent;
+				trackObjects[3] = _tone;
+				trackObjects[4] = _highlight;
+				trackObjects[5] = CameraManager.instance.gameObject;
+
+				_base.GetComponent<Renderer>().material = Resources.Load<Material>("Timelines/base");
+				_shadow.GetComponent<Renderer>().material = Resources.Load<Material>("Timelines/shadow");
+				_transparent.GetComponent<Renderer>().material = Resources.Load<Material>("Timelines/transparent");
+				_tone.GetComponent<Renderer>().material = Resources.Load<Material>("Timelines/tone");
+				_highlight.GetComponent<Renderer>().material = Resources.Load<Material>("Timelines/highlight");
+				
+				PlayableDirector director = tran.gameObject.GetComponent<PlayableDirector>();
+			
+				if (director == null)
+				{
+					director=tran.gameObject.AddComponent<PlayableDirector>();
+				}
+
+				director.playableAsset = Instantiate(Resources.Load("Timelines/0") as PlayableAsset);
+				director.playOnAwake = false;
+				director.extrapolationMode = DirectorWrapMode.Hold;
+			
+				//director.SetGenericBinding("0",trackObjects[0]);
+				int i = 0;
+				foreach(var tr in director.playableAsset.outputs)
+				{
+					director.SetGenericBinding(tr.sourceObject,trackObjects[i]);
+					i++;
+				}
+				director.Play();
+			}
+
+			
+			
+			
+
+
 		}
 		
 		//------------------------FUNCTION------------------------------------

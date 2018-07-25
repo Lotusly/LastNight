@@ -1,7 +1,10 @@
 ﻿using System.Collections.Generic;
 using Ui;
 using UnityEngine;
+using UnityEngine.Playables;
+using UnityEngine.Timeline;
 using UnityEngine.UI;
+using UnityEngine.XR.WSA.Input;
 
 namespace Supportive
 {
@@ -9,7 +12,12 @@ namespace Supportive
 	{
 		public int index=1;
 		private Image [] _images;
-
+		public PlayableAsset timeLine;
+		public GameObject[] trackObjects;
+		private TransitionForm.TransitionParameterBlock _transitionParameters;
+		private string sceneName;
+		private int sceneIndex = 1;
+		
 		void Start()
 		{
 			_images = GetComponentsInChildren<Image>();
@@ -18,6 +26,68 @@ namespace Supportive
 		public void ShowImage(int index)
 		{
 			_images[index].enabled = true;
+		}
+
+		private void performLayer()
+		{
+
+			PlayableDirector director = GetComponent<PlayableDirector>();
+			if(director==null) director=gameObject.AddComponent<PlayableDirector>();
+
+			director.playOnAwake = false;
+			director.extrapolationMode = DirectorWrapMode.Hold;
+			director.playableAsset = Instantiate(timeLine);
+			//director.SetGenericBinding("0",trackObjects[0]);
+			int i = 0;
+			foreach(var tr in director.playableAsset.outputs)
+			{
+				director.SetGenericBinding(tr.sourceObject,trackObjects[i]);
+				i++;
+			}
+			director.Play();
+		}
+		public void Transfer2()
+		{
+			//transform.position = Coordinate.instance.transform.position;
+
+			TransitionForm.instance.ClearParameter(ref _transitionParameters);
+			TransitionForm.instance.SetBackgroundParameters(ref _transitionParameters,2,new Vector3(2,0,30), true);
+			TransitionForm.instance.SetForegroundParameters(ref _transitionParameters, 2, new Vector3(2,0,13.53f), true );
+			UiManager.instance.FadeOutPresentScene(_transitionParameters);
+
+			sceneName="scene" + sceneIndex.ToString();
+			sceneIndex++;
+
+			UiManager.instance.CreateScene(sceneName);
+			UiManager.instance.GenerateInScene(sceneName,"Backgrounds/1", new Vector3(-2, 0, 30), true, "Background");
+			UiManager.instance.GenerateInScene(sceneName,"Characters/3", new Vector3(-2, 0, 13.53f), true, "Foreground");
+
+			TransitionForm.instance.ClearParameter(ref _transitionParameters);
+			TransitionForm.instance.SetBackgroundParameters(ref _transitionParameters,2,new Vector3(0,0,30), true);
+			TransitionForm.instance.SetForegroundParameters(ref _transitionParameters, 2, new Vector3(0.75f,-0.3f,13.53f), true );
+			UiManager.instance.FadeInScene(sceneName,_transitionParameters);
+		}
+		
+		public void Transfer3()
+		{
+			transform.position = Coordinate.instance.transform.position;
+
+			TransitionForm.instance.ClearParameter(ref _transitionParameters);
+			TransitionForm.instance.SetBackgroundParameters(ref _transitionParameters,2,new Vector3(2,0,30), true);
+			TransitionForm.instance.SetForegroundParameters(ref _transitionParameters, 2, new Vector3(2,0,13.53f), true );
+			UiManager.instance.FadeOutPresentScene(_transitionParameters);
+
+			sceneName="scene" + sceneIndex.ToString();
+			sceneIndex++;
+
+			UiManager.instance.CreateScene(sceneName);
+			UiManager.instance.GenerateInScene(sceneName,"Backgrounds/1", new Vector3(-2, 0, 30), true, "Background");
+			UiManager.instance.GenerateInScene(sceneName,"Characters/3", new Vector3(-2, 0, 13.53f), true, "Foreground");
+
+			TransitionForm.instance.ClearParameter(ref _transitionParameters);
+			TransitionForm.instance.SetBackgroundParameters(ref _transitionParameters,4,new Vector3(0,0,30), true);
+			TransitionForm.instance.SetForegroundParameters(ref _transitionParameters, 2, new Vector3(0.75f,-0.3f,13.53f), true );
+			UiManager.instance.FadeInScene(sceneName,_transitionParameters);
 		}
 
 		void Update()
@@ -35,7 +105,12 @@ namespace Supportive
 
 			if (Input.GetMouseButtonDown(0))
 			{
-				Story.instance.Transfer();
+				Transfer2();
+			}
+
+			if (Input.GetKeyDown(KeyCode.J))
+			{
+				performLayer();
 			}
 
 			/*if (Input.GetMouseButtonDown(0))
