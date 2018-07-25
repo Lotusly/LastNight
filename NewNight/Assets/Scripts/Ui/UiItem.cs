@@ -5,9 +5,16 @@ using UnityEngine.Events;
 
 namespace Ui
 {
+    /// <summary>
+    /// UiItem is the base class of many UI classes. It handles many UI functions,
+    /// including the item position, state, and more.
+    /// </summary>
 	public class UiItem : MonoBehaviour
 	{
 
+        /// <summary>
+        /// Stores information on the state of the UiItem.
+        /// </summary>
 		public struct StateInfo
 		{
 			public Vector3 Position;
@@ -26,19 +33,18 @@ namespace Ui
 		//private Vector3 _followingCoordinate;
 		protected StateInfo lastState;
 		protected StateInfo presentState;
-
-		
-		
 		
 		//private Vector3 _destination;
 		//private bool _isInScreenSpace=false;// used in both Follow Camera and Lerp To Transfer
 
 		//protected UiItem _followingObject = null; // UiItem should have function to stay static to the camera
-		
-		
 
 		private Coroutine _runningCoroutine=null; // this method can only run one animation at the same time: no addition
 
+
+        /// <summary>
+        /// Called after the item is initialized. It handles the initial state setting.
+        /// </summary>
 		void Start()
 		{
 			
@@ -56,6 +62,12 @@ namespace Ui
 			
 		}
 
+        /// <summary>
+        /// Updates an existing state.
+        /// </summary>
+        /// <param name="info">The state to be updated.</param>
+        /// <param name="inScreen">False by default.</param>
+        /// <param name="follow">False by default.</param>
 		protected void UpdateState(ref StateInfo info, bool inScreen = false, bool follow = false)
 		{
 			info.Position = inScreen ? Coordinate.instance.Space2Screen(transform.position) : transform.position;
@@ -64,6 +76,11 @@ namespace Ui
 			info.Stable = true;
 		}
 
+        /// <summary>
+        /// Updates an existing state by making it a duplicate of another existing state.
+        /// </summary>
+        /// <param name="des">The state to change</param>
+        /// <param name="sor">The state to duplicate</param>
 		private void DuplicateState(ref StateInfo des, StateInfo sor)
 		{
 			des.Position = sor.Position;
@@ -72,7 +89,9 @@ namespace Ui
 			des.Stable = sor.Stable;
 		}
 		
-		
+		/// <summary>
+        /// Handles camera following if it is activated and the state is currently stable.
+        /// </summary>
 		void Update() 
 		{
 			if (presentState.FollowCamera && presentState.Stable)
@@ -89,23 +108,31 @@ namespace Ui
 			}
 		}
 
-		public virtual void Initialize(Vector3 aimPosition = new Vector3()) {
-			// if any child class of UiItem wants to initialize the original states in screen space
-			// it should do it in Initialize function
-			
-		}
+        /// <summary>
+        /// if any child class of UiItem wants to initialize the original states in screen space
+        /// it should do it in this function. Because it is virtual it needs to be overridden by
+        /// child classes.
+        /// </summary>
+        /// <param name="aimPosition">the starting position of the UI item.</param>
+		public virtual void Initialize(Vector3 aimPosition = new Vector3()) {}
 
+        /// <summary>
+        /// Not being used anymore? Because it is virtual it needs to be overridden by child classes.
+        /// </summary>
+        /// <param name="focus"></param>
+		public virtual void MoveOut(UiItem focus = null) {}
 
-
-
-		public virtual void MoveOut(UiItem focus = null) {} 
-
-
-		public virtual void MoveBack()
+        /// <summary>
+        /// Not being used anymore? Because it is virtual it needs to be overridden by child classes.
+        /// </summary>
+        public virtual void MoveBack()
 		{
 			Transfer(lastState.Position,lastState.InScreen);
 		}
 
+        /// <summary>
+        /// Enables camera following on the current state (which only works when the state is currently stable).
+        /// </summary>
 		public void EnableFollowCamera()
 		{
 			
@@ -119,12 +146,21 @@ namespace Ui
 
 		}
 
+        /// <summary>
+        /// Disables camera following on the current state.
+        /// </summary>
 		private void DisableFollowCamera()
 		{
 			presentState.FollowCamera = false;
 		}
 
 
+        /// <summary>
+        /// Sets the item to a new position and updates the current state.
+        /// </summary>
+        /// <param name="newPosition">The position to set the item to.</param>
+        /// <param name="inScreenSpace">The new screenspace state.</param>
+        /// <param name="followCamera">The new follow camera state.</param>
 		public void SetPosition(Vector3 newPosition, bool inScreenSpace,  bool followCamera = false) 
 		{
 			DisableFollowCamera();
@@ -142,10 +178,15 @@ namespace Ui
 			//if(followCamera) EnableFollowObject();
 		}
 
-		
-
-
-
+        /// <summary>
+        /// Moves to new position gradually, using 1 of 3 different movement modes.
+        /// </summary>
+        /// <param name="newPosition">The position to move to.</param>
+        /// <param name="inScreenSpace">The screen space state</param>
+        /// <param name="followCamera">The follow camera state</param>
+        /// <param name="mode">The mode of movement to the new position</param>
+        /// <param name="speed">The speed of movement</param>
+        /// <returns></returns>
 		public IEnumerator Transfer(Vector3 newPosition, bool inScreenSpace, bool followCamera = false,
 			int mode = 0, float speed = 1.5f)
 		{
