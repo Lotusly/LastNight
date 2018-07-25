@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using DG.Tweening;
 
 namespace Ui
 {
@@ -188,7 +189,7 @@ namespace Ui
         /// <param name="speed">The speed of movement</param>
         /// <returns></returns>
 		public IEnumerator Transfer(Vector3 newPosition, bool inScreenSpace, bool followCamera = false,
-			int mode = 0, float speed = 1.5f)
+			int mode = 0, float speed = 1.5f, Ease ease = Ease.Linear)
 		{
 			//if (recordOrigin) _originalPosition = transform.position; // if record, then remember where it leaves; otherwise don't update
 			DisableFollowCamera();
@@ -201,8 +202,11 @@ namespace Ui
 			presentState.Stable = false;
 			// for Transfer, the state is not stable at first
 			
-			if(_runningCoroutine!=null) StopCoroutine(_runningCoroutine);
-			
+			//if(_runningCoroutine!=null) StopCoroutine(_runningCoroutine);
+
+			transform.DOMove(newPosition, speed).SetEase(ease).OnComplete(Arrival);
+			yield return null;
+		/*
 			switch (mode)
 			{
 				case 1:
@@ -215,22 +219,35 @@ namespace Ui
 					yield return _runningCoroutine = StartCoroutine(AccelerateTransfer(speed,1f));
 					break;
 			}
-
+		*/
 		}
 
 		private IEnumerator PlainLerp(float speed)
 		{
 			yield return null;
+
+			Ease ease;
+			transform.DOMove((presentState.InScreen?Coordinate.instance.Screen2Space(presentState.Position):presentState.Position), speed);
+			transform.DOKill(false);
+
+			/*
 			while (true)
 			{
 				transform.position = Vector3.Lerp(transform.position, (presentState.InScreen?Coordinate.instance.Screen2Space(presentState.Position):presentState.Position),Time.deltaTime*speed);
 				yield return new WaitForEndOfFrame();
 				if (Vector3.Distance(transform.position, (presentState.InScreen?Coordinate.instance.Screen2Space(presentState.Position):presentState.Position)) < Deviation) break;
 			}
+			*/
+
 			if(presentState.FollowCamera) EnableFollowCamera();
 			AfterArrival.Invoke();
 			_runningCoroutine = null;
 			
+		}
+
+		private void Arrival()
+		{
+			AfterArrival.Invoke();
 		}
 
 		private IEnumerator ConstantTransfer(float speed)

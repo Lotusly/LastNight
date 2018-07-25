@@ -49,13 +49,10 @@ namespace Ui
 		// TEMP
 		[SerializeField] private Dialogue _singleDialogue;
 
-		void Awake()
-		{
-			DOTween.Init(true);
-		}
-
 		void Start()
 		{			
+			DOTween.Init(true);
+			
 			_potentialItems = new List<Item>();
 			_backgrounds=new Renderer[4];
 			_block=new MaterialPropertyBlock();
