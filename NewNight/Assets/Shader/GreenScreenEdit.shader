@@ -121,6 +121,9 @@ Shader "Costume/GreenScreenEdit"
 				return HSV;
 			}
 
+			// average the red and blue channels together
+			// rp - the proportion of the red channel
+			// bp - the proportion of the blue channel
 			float avgColors(fixed4 c, float rp, float bp)
 			{
 				float avg = (c.r * rp + c.b * bp) / (rp + bp);
@@ -132,6 +135,7 @@ Shader "Costume/GreenScreenEdit"
 				return c.g;
 			}
 
+			// if there's more green than blue, use blue as green
 			float blueLimit(float4 c)
 			{
 				if(c.g > c.b)
@@ -160,7 +164,9 @@ Shader "Costume/GreenScreenEdit"
 					return c.r;
 				}
 			#elif CS_BLUE_AVG_MIX
-				return lerp(blueLimit(c), avgColors(c, 1.0f, 1.0f), 0.5f);
+				// blue limit has the best results, but also tints the image red
+				// so this option mixes blue limit with the double blue average
+				return lerp(blueLimit(c), avgColors(c, 1.0f, 2.0f), 0.5f);
 			#endif
 
 				return c.g;
@@ -173,6 +179,8 @@ Shader "Costume/GreenScreenEdit"
 
 				// compute hsv for green screen check
 				fixed3 hsv = RGBtoHSV(c.rgb);
+
+				// simple hue check
 				if(
 					hsv.x >= _GreenHueMin && 
 					hsv.x <= _GreenHueMax && 
@@ -182,6 +190,7 @@ Shader "Costume/GreenScreenEdit"
 					discard;
 				}
 
+				// adapted from https://stackoverflow.com/a/41184530/3697679
 				if(
 					hsv.x >= _GreenHueMin &&
 					hsv.x <= _GreenHueMax &&
@@ -203,7 +212,12 @@ Shader "Costume/GreenScreenEdit"
 				// perform despill
 				c.g = despillGreen(c);
 
-				float luminance=0.2125*origC.r + 0.7154*origC.g + 0.0721*origC.b;
+				// perform rgb green screen tests on original color 
+				// this way we get the best of both methods
+				float luminance = 
+					0.2125 * origC.r + 
+					0.7154 * origC.g + 
+					0.0721 * origC.b;
 				if(
 					origC.g - origC.r > _Cutoff && 
 					origC.g - origC.b > _Cutoff || 
@@ -211,15 +225,16 @@ Shader "Costume/GreenScreenEdit"
 					luminance > _CutoffHigh){
 				   discard;
 				}
-				else if(c.g-c.r>_BeginDim && c.g-c.b>_BeginDim){
-				    c.rgba *=(max(_Cutoff-c.g+c.r,_Cutoff-c.g+c.b)/(_Cutoff-_BeginDim));
-				    //c.g*=c.a;
+				else if(c.g - c.r > _BeginDim && c.g - c.b > _BeginDim){
+				    c.rgba *= (max(_Cutoff - c.g + c.r, _Cutoff - c.g + c.b) / (_Cutoff - _BeginDim));
 				}
+
 				#if _ORIGINALCOLOR_ON
 				    return c;
 				#endif
-				fixed tmp = (c.r+c.b+c.g)/3;
-				if(tmp<_ColorBoundary) {
+
+				fixed tmp = (c.r + c.b + c.g) / 3;
+				if(tmp < _ColorBoundary) {
 				    #if _LOWERFIX_ON
 				        //c.r=0.8;c.b=0.1;c.g=0.1;c.a=0.85;
 				        c.rgba=_LowerMask.rgba;
