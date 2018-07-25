@@ -7,12 +7,12 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: GreenScreen
-  m_Shader: {fileID: 4800000, guid: b61641b90e8d9f64da1a415727b1bc99, type: 3}
+  m_Shader: {fileID: 4800000, guid: 4de820e821deda94784a92451b350169, type: 3}
   m_ShaderKeywords: _ORIGINALCOLOR_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 2998
+  m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
   m_SavedProperties:
@@ -57,10 +57,10 @@ Material:
     m_Floats:
     - PixelSnap: 0
     - _AlphaCutoff: 0.496
-    - _BeginDim: 0
+    - _BeginDim: 0.052
     - _BumpScale: 1
-    - _ColorBoundary: 0.14
-    - _Cutoff: 0.029
+    - _ColorBoundary: 0.105
+    - _Cutoff: 0.048
     - _CutoffHigh: 1
     - _CutoffLow: 0
     - _DetailNormalMapScale: 1
@@ -69,6 +69,8 @@ Material:
     - _Glossiness: 0.5
     - _GlossyReflections: 1
     - _GreenCutoff: 0.147
+    - _GreenHueMax: 0.535
+    - _GreenHueMin: 0.149
     - _LowerFix: 0
     - _Metallic: 0
     - _Mode: 0
