@@ -87,6 +87,7 @@
           <e p="GreenScreenEdit.shader" t="Include" />
           <e p="Mask.shader" t="Include" />
           <e p="Midground.shader" t="Include" />
+          <e p="RadialBlur.shader" t="Include" />
           <e p="Surface.shader" t="Include" />
         </e>
         <e p="Standard Assets" t="Include">

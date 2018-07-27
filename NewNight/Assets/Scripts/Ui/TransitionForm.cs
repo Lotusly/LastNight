@@ -155,16 +155,7 @@ namespace Ui
 			yield return null;
 			if (destroy)
 			{
-				Scene theScene = tran.transform.parent.gameObject.GetComponent<Scene>();
-				if (theScene == null)
-				{
-					Debug.LogError("TransitionForm.cs Average: parent doesn't have Scene component");
-				}
-				else
-				{
-					theScene.RemoveSceneBatch(tran.name);
-					theScene.DestroyOnEmpty();
-				}
+				DestroyTran(tran);
 			}
 		}
 
@@ -175,16 +166,7 @@ namespace Ui
 			tran.SetPosition(newPosition,inScreen);
 			if (destroy)
 			{
-				Scene theScene = tran.transform.parent.gameObject.GetComponent<Scene>();
-				if (theScene == null)
-				{
-					Debug.LogError("TransitionForm.cs Average: parent doesn't have Scene component");
-				}
-				else
-				{
-					theScene.RemoveSceneBatch(tran.name);
-					theScene.DestroyOnEmpty();
-				}
+				DestroyTran(tran);
 			}
 		}
 
@@ -195,16 +177,7 @@ namespace Ui
 			yield return StartCoroutine(tran.Transfer(newPosition, inScreen,false,1));
 			if (destroy)
 			{
-				Scene theScene = tran.transform.parent.gameObject.GetComponent<Scene>();
-				if (theScene == null)
-				{
-					Debug.LogError("TransitionForm.cs Average: parent doesn't have Scene component");
-				}
-				else
-				{
-					theScene.RemoveSceneBatch(tran.name);
-					theScene.DestroyOnEmpty();
-				}
+				DestroyTran(tran);
 			}
 		}
 
@@ -215,19 +188,23 @@ namespace Ui
 			yield return StartCoroutine(tran.Transfer(newPosition, inScreen));
 			if (destroy)
 			{
-				Scene theScene = tran.transform.parent.gameObject.GetComponent<Scene>();
-				if (theScene == null)
-				{
-					Debug.LogError("TransitionForm.cs Average: parent doesn't have Scene component");
-				}
-				else
-				{
-					theScene.RemoveSceneBatch(tran.name);
-					theScene.DestroyOnEmpty();
-				}
+				DestroyTran(tran);
 			}
 		}
 
+		
+
+		
+		/// <summary>
+		/// The 4th transfer method. Cinematic Parallax fade-in. Should apply to background. Resources/Timelines/1.
+		/// </summary>
+		/// <param name="tran"> For background BatchNode only. There should be only 1 background under this BatchNode.</param>
+		/// <param name="newPosition"> The position you want the background to be finally be.</param>
+		/// <param name="inScreen"> Whether newPosition is in screen space or world space.</param>
+		/// <param name="destroy"> Redundant parameter. Tran will not be destroyed anyway.</param>
+		/// <param name="speed"> Redundant for now.</param>
+		/// <param name="delay"> Wait for seconds before performing the fade-in.</param>
+		/// <returns></returns>
 		public IEnumerator Layers(BatchNode tran, Vector3 newPosition, bool inScreen, bool destroy = false,
 			float speed = 1, float delay = 0)
 		{
@@ -240,25 +217,24 @@ namespace Ui
 			if (b != null)
 			{
 				GameObject _original = b.gameObject;
-				_original.GetComponent<Renderer>().material =
-					Resources.Load<Material>("Timelines/" + index.ToString() + "_0");
 
 				GameObject _base = Instantiate(_original, tran.transform);
 				if(_base.GetComponent<Animator>()==null) _base.AddComponent<Animator>();
 				GameObject _shadow = Instantiate(_base,tran.transform), _tone = Instantiate(_base,tran.transform),
 					_highlight = Instantiate(_base,tran.transform),_highlight1 = Instantiate(_base,tran.transform), _transparent = Instantiate(_base,tran.transform);
-				GameObject[] trackObjects = new GameObject[6];
+				GameObject[] trackObjects = new GameObject[7];
 				_base.transform.localScale = new Vector3(32.5f, 19, 1);
 				if (_base.GetComponent<Animator>() == null) _base.AddComponent<Animator>();
-				trackObjects[0] = _base;
-				trackObjects[1] = _highlight1;
-				trackObjects[2] = _highlight;
-				trackObjects[3] = _shadow;
-				trackObjects[4] = _tone;
-				trackObjects[5] = _transparent;
-				for (i = 0; i < 6; i++)
+				trackObjects[0] = _original;
+				trackObjects[1] = _base;
+				trackObjects[2] = _highlight1;
+				trackObjects[3] = _highlight;
+				trackObjects[4] = _shadow;
+				trackObjects[5] = _tone;
+				trackObjects[6] = _transparent;
+				for (i = 0; i < 7; i++)
 				{
-					trackObjects[i].GetComponent<Renderer>().material=Resources.Load<Material>("Timelines/" + index.ToString() + "_"+(i+1).ToString());
+					trackObjects[i].GetComponent<Renderer>().material=Resources.Load<Material>("Timelines/" + index.ToString() + "_"+(i).ToString());
 				}
 				
 				tran.SetPosition(newPosition,inScreen);
@@ -276,14 +252,17 @@ namespace Ui
 				director.playableAsset = Instantiate(Resources.Load("Timelines/"+index.ToString()) as PlayableAsset);
 				director.playOnAwake = false;
 				director.extrapolationMode = DirectorWrapMode.Hold;
+				
 
 				i = 0;
 				foreach(var tr in director.playableAsset.outputs)
 				{
-					director.SetGenericBinding(tr.sourceObject,trackObjects[i]);
+					director.SetGenericBinding(tr.sourceObject,trackObjects[i+1]);
 					i++;
 				}
 				director.Play();
+				yield return new WaitForSecondsRealtime(3.4f);
+				AfterLayers(tran,trackObjects);
 			}
 
 			else
@@ -292,14 +271,72 @@ namespace Ui
 				
 			}
 
+		}
 
+		/// <summary>
+		/// The 5th transfer method. RadialBlur fade-out. Should apply to background.
+		/// </summary>
+		/// <param name="tran"></param>
+		/// <param name="newPosition"></param>
+		/// <param name="inScreen"></param>
+		/// <param name="destroy"> Redundant. Tran will be destroyed anyway.</param>
+		/// <param name="speed"></param>
+		/// <param name="delay"></param>
+		/// <returns></returns>
+		public IEnumerator RadialBlur(BatchNode tran, Vector3 newPosition, bool inScreen, bool destroy = true,
+			float speed = 1, float delay = 0)
+		{
+			Debug.Log("RadialBlur");
+			yield return new WaitForSecondsRealtime(delay);
 
-
-
+			Background b = tran.GetComponentInChildren<Background>();
+			if (b != null)
+			{
+				// MODIFYING
+				//b.gameObject.GetComponent<Renderer>().material = 
+			}
+			else
+			{
+				tran.SetPosition(newPosition,inScreen);
+				DestroyTran(tran);
+			}
 
 		}
 		
+		/// <summary>
+		/// Called automatically after Layers fade-in, or when the fade-in is manually stopped.
+		/// </summary>
+		private void AfterLayers(BatchNode tran, GameObject[] trackObjects)
+		{
+			trackObjects[0].active = true;
+			for (int i = 1; i < trackObjects.Length; i++)
+			{
+				Destroy(trackObjects[i]);
+			}
+			Destroy(tran.GetComponent<PlayableDirector>());
+		}
+
+		private void DestroyTran(BatchNode tran)
+		{
+			Scene theScene = tran.transform.parent.gameObject.GetComponent<Scene>();
+			if (theScene == null)
+			{
+				Debug.LogError("TransitionForm.cs DestroyTran: parent doesn't have Scene component");
+			}
+			else
+			{
+				theScene.RemoveSceneBatch(tran.name);
+				theScene.DestroyOnEmpty();
+			}
+		}
+		
 		//------------------------FUNCTION------------------------------------
+		/// <summary>
+		/// At one time, there should not be more than one transition performed on the same scene. (No interruption protection)
+		/// </summary>
+		/// <param name="name"></param>
+		/// <param name="block"></param>
+		/// <param name="destroy"></param>
 		public void PerformTransition(string name, TransitionParameterBlock block, bool destroy) 
 			// this function should only be called by SceneManager, cause void scene should never be destroyed
 		{
