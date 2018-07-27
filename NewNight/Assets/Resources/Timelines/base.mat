@@ -8,11 +8,11 @@ Material:
   m_PrefabInternal: {fileID: 0}
   m_Name: base
   m_Shader: {fileID: 4800000, guid: b61641b90e8d9f64da1a415727b1bc99, type: 3}
-  m_ShaderKeywords: 
+  m_ShaderKeywords: _LOWERFIX_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 2899
+  m_CustomRenderQueue: 2870
   stringTagMap: {}
   disabledShaderPasses: []
   m_SavedProperties:
@@ -59,7 +59,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 1221019a36b03438291142e94b7231fa, type: 3}
+        m_Texture: {fileID: 2800000, guid: f807415431a436f41ac53c9d49d1bf2f, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -91,7 +91,7 @@ Material:
     - _BeginDim: 1
     - _Brightness: 1
     - _BumpScale: 1
-    - _ColorBoundary: 1
+    - _ColorBoundary: 0.578
     - _Contrast: 1
     - _Cutoff: 1
     - _CutoffHigh: 1
@@ -120,5 +120,9 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _LowerMask: {r: 0.18396229, g: 1, b: 0.91068244, a: 1}
+    - _LowerMask1: {r: 0, g: 0.14357352, b: 1, a: 1}
+    - _LowerMask2: {r: 0, g: 0, b: 0, a: 1}
     - _Tint: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
     - _UpperMask: {r: 0.36320752, g: 0.9529412, b: 1, a: 1}
+    - _UpperMask1: {r: 1, g: 0, b: 0, a: 1}
+    - _UpperMask2: {r: 1, g: 1, b: 1, a: 1}

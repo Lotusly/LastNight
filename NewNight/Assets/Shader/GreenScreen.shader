@@ -16,9 +16,11 @@ Shader "Costume/GreenScreen"
 		[Toggle(_ORIGINALCOLOR_ON)] _OriginalColor("Use Original Color",float)=0
 		
 		_ColorBoundary("Value to distinguish parts",Range(0,1))=0.3
-		_UpperMask("Bright Color",Color)=(1,1,1,1)
+		_UpperMask1("Bright Color Up",Color)=(1,1,1,1)
+		_UpperMask2("Bright Color Down",Color)=(1,1,1,1)
 		[Toggle(_UPPERFIX_ON)] _UpperFix("Fixed color",float)=0
-		_LowerMask("Dim Color",Color)=(1,1,1,1)
+		_LowerMask1("Dim Color Up",Color)=(1,1,1,1)
+		_LowerMask2("Dim Color Down",Color)=(1,1,1,1)
 		[Toggle(_LOWERFIX_ON)] _LowerFix("Fixed color",float)=0
 		
 	}
@@ -88,8 +90,10 @@ Shader "Costume/GreenScreen"
 			fixed _Cutoff;
 			fixed _BeginDim;
 			fixed _ColorBoundary;
-			fixed4 _UpperMask;
-			fixed4 _LowerMask;
+			fixed4 _UpperMask1;
+			fixed4 _UpperMask2;
+			fixed4 _LowerMask1;
+			fixed4 _LowerMask2;
 			bool UpperFix;
 			bool LowerFix;
 			fixed _CutoffLow;
@@ -123,6 +127,8 @@ Shader "Costume/GreenScreen"
 				    return c;
 				#endif
 				fixed tmp = (c.r+c.b+c.g)/3;
+				fixed4 _LowerMask = _LowerMask1*(IN.texcoord.y)+_LowerMask2*(1-IN.texcoord.y);
+				fixed4 _UpperMask = _UpperMask1*(IN.texcoord.y)+_UpperMask2*(1-IN.texcoord.y);
 				if(tmp<_ColorBoundary) {
 				    #if _LOWERFIX_ON
 				        //c.r=0.8;c.b=0.1;c.g=0.1;c.a=0.85;

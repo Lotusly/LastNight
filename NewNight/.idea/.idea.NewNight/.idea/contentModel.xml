@@ -84,6 +84,7 @@
           <e p="Effects.cginc" t="Include" />
           <e p="GreenMask.shader" t="Include" />
           <e p="GreenScreen.shader" t="Include" />
+          <e p="GreenScreenEdit.shader" t="Include" />
           <e p="Mask.shader" t="Include" />
           <e p="Midground.shader" t="Include" />
           <e p="Surface.shader" t="Include" />
