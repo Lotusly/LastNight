@@ -231,30 +231,40 @@ namespace Ui
 		public IEnumerator Layers(BatchNode tran, Vector3 newPosition, bool inScreen, bool destroy = false,
 			float speed = 1, float delay = 0)
 		{
+			int index = 1; // this means the transition uses Resources/Timelines/1
+			int i;
 			Debug.Log("Layers");
 			yield return new WaitForSecondsRealtime(delay);
 
 			Background b = tran.gameObject.GetComponentInChildren<Background>();
 			if (b != null)
 			{
-				GameObject _base = b.gameObject;
+				GameObject _original = b.gameObject;
+				_original.GetComponent<Renderer>().material =
+					Resources.Load<Material>("Timelines/" + index.ToString() + "_0");
+
+				GameObject _base = Instantiate(_original, tran.transform);
+				if(_base.GetComponent<Animator>()==null) _base.AddComponent<Animator>();
+				GameObject _shadow = Instantiate(_base,tran.transform), _tone = Instantiate(_base,tran.transform),
+					_highlight = Instantiate(_base,tran.transform),_highlight1 = Instantiate(_base,tran.transform), _transparent = Instantiate(_base,tran.transform);
+				GameObject[] trackObjects = new GameObject[6];
 				_base.transform.localScale = new Vector3(32.5f, 19, 1);
 				if (_base.GetComponent<Animator>() == null) _base.AddComponent<Animator>();
-				GameObject _shadow = Instantiate(_base,tran.transform), _tone = Instantiate(_base,tran.transform), _highlight = Instantiate(_base,tran.transform), _transparent = Instantiate(_base,tran.transform);
-				GameObject[] trackObjects = new GameObject[6];
-				trackObjects[0] = _shadow;
-				trackObjects[1] = _transparent;
-				trackObjects[2] = _tone;
-				trackObjects[3] = _highlight;
-				trackObjects[4] = CameraManager.instance.gameObject;
-				_base.transform.position = newPosition;
+				trackObjects[0] = _base;
+				trackObjects[1] = _highlight1;
+				trackObjects[2] = _highlight;
+				trackObjects[3] = _shadow;
+				trackObjects[4] = _tone;
+				trackObjects[5] = _transparent;
+				for (i = 0; i < 6; i++)
+				{
+					trackObjects[i].GetComponent<Renderer>().material=Resources.Load<Material>("Timelines/" + index.ToString() + "_"+(i+1).ToString());
+				}
+				
 				tran.SetPosition(newPosition,inScreen);
+				_original.transform.position = newPosition;
+				_original.active = false;
 
-				_base.GetComponent<Renderer>().material = Resources.Load<Material>("Timelines/base");
-				_shadow.GetComponent<Renderer>().material = Resources.Load<Material>("Timelines/shadow");
-				_transparent.GetComponent<Renderer>().material = Resources.Load<Material>("Timelines/transparent");
-				_tone.GetComponent<Renderer>().material = Resources.Load<Material>("Timelines/tone");
-				_highlight.GetComponent<Renderer>().material = Resources.Load<Material>("Timelines/highlight");
 				
 				PlayableDirector director = tran.gameObject.GetComponent<PlayableDirector>();
 			
@@ -263,12 +273,11 @@ namespace Ui
 					director=tran.gameObject.AddComponent<PlayableDirector>();
 				}
 
-				director.playableAsset = Instantiate(Resources.Load("Timelines/0") as PlayableAsset);
+				director.playableAsset = Instantiate(Resources.Load("Timelines/"+index.ToString()) as PlayableAsset);
 				director.playOnAwake = false;
 				director.extrapolationMode = DirectorWrapMode.Hold;
-			
-				//director.SetGenericBinding("0",trackObjects[0]);
-				int i = 0;
+
+				i = 0;
 				foreach(var tr in director.playableAsset.outputs)
 				{
 					director.SetGenericBinding(tr.sourceObject,trackObjects[i]);
@@ -280,6 +289,7 @@ namespace Ui
 			else
 			{
 				tran.SetPosition(newPosition, inScreen);
+				
 			}
 
 
