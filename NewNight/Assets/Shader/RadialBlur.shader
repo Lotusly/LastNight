@@ -14,19 +14,25 @@ fDecay ("fDecay", Float) = 0.9
 fDensity ("fDensity", Float) = 0.0
 fWeight ("fWeight", Float) = 0.4
 fClamp ("fClamp", Float) = 1.0
+_alpha("_alpha",Range(0,1)) = 1.0
 //iSamples ("iSamples", Int) = 20
 }
 SubShader {
-Tags { "RenderType"="Opaque" }
+Tags { 
+"RenderType"="Transparent"
+ "RenderType"="Transparent" }
 LOD 200
 Cull Off
+Lighting Off
+ZWrite Off
+Blend One OneMinusSrcAlpha
  
 CGPROGRAM
 #pragma target 3.0
-#pragma surface surf Lambert
+#pragma surface surf Lambert alpha
  
 sampler2D tDiffuse;
-float fX,fY,fExposure,fDecay,fDensity,fWeight,fClamp,iSamples;
+float fX,fY,fExposure,fDecay,fDensity,fWeight,fClamp,iSamples,_alpha;
  
 struct Input {
 float2 uvtDiffuse;
@@ -54,8 +60,9 @@ illuminationDecay *= fDecay;
 FragColor *= fExposure;
 FragColor = clamp(FragColor, 0.0, fClamp);
 float4 c = FragColor;
+
+o.Alpha = _alpha*c.a;
 o.Albedo = c.rgb;
-o.Alpha = c.a;
  
 }
 ENDCG

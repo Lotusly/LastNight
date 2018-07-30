@@ -288,12 +288,19 @@ namespace Ui
 		{
 			Debug.Log("RadialBlur");
 			yield return new WaitForSecondsRealtime(delay);
+			
 
 			Background b = tran.GetComponentInChildren<Background>();
 			if (b != null)
 			{
 				// MODIFYING
 				//b.gameObject.GetComponent<Renderer>().material = 
+				Renderer rend = b.gameObject.GetComponent<Renderer>();
+				MaterialPropertyBlock matBlock=new MaterialPropertyBlock();
+				matBlock.Clear();
+				matBlock.SetTexture("_MainTex", rend.material.mainTexture);
+				rend.material = Instantiate(Resources.Load<Material>("Material/0"));
+				rend.SetPropertyBlock(matBlock);
 			}
 			else
 			{
