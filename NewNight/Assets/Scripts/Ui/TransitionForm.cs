@@ -146,6 +146,7 @@ namespace Ui
 			Movements[2] = Average;
 			Movements[3] = Lerp;
 			Movements[4] = Layers;
+			Movements[5] = RadialBlur;
 		}
 
 	
@@ -185,7 +186,7 @@ namespace Ui
 		{
 			Debug.Log("Lerp");
 			yield return new WaitForSecondsRealtime(delay);
-			yield return StartCoroutine(tran.Transfer(newPosition, inScreen));
+			yield return StartCoroutine(tran.Transfer(newPosition, inScreen,false,0,speed));
 			if (destroy)
 			{
 				DestroyTran(tran);
@@ -295,12 +296,31 @@ namespace Ui
 			{
 				// MODIFYING
 				//b.gameObject.GetComponent<Renderer>().material = 
-				Renderer rend = b.gameObject.GetComponent<Renderer>();
+				Renderer rend = b.gameObject.GetComponentInChildren<Renderer>();
 				MaterialPropertyBlock matBlock=new MaterialPropertyBlock();
 				matBlock.Clear();
-				matBlock.SetTexture("_MainTex", rend.material.mainTexture);
+				matBlock.SetTexture("tDiffuse", rend.material.mainTexture);
 				rend.material = Instantiate(Resources.Load<Material>("Material/0"));
-				rend.SetPropertyBlock(matBlock);
+				//rend.SetPropertyBlock(matBlock);
+
+				//matBlock.Clear();
+				if (speed <= 0) speed = 1;
+				float alpha = 1;
+				float density = 0;
+				float alphaStep = -1*speed;
+				float densityStep = 2*speed;
+				while (alpha > 0)
+				{
+					alpha += alphaStep * Time.deltaTime;
+					density += densityStep * Time.deltaTime;
+					matBlock.SetFloat("_alpha",alpha);
+					matBlock.SetFloat("fDensity", density);
+					rend.SetPropertyBlock(matBlock);
+					yield return new WaitForEndOfFrame();
+				}
+
+				DestroyTran(tran);
+
 			}
 			else
 			{

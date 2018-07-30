@@ -6,7 +6,7 @@ Shader "Costume/FakeRadialBlur"
 {
 Properties
 {
-tDiffuse ("Base (RGB)", 2D) = "white" {}
+tDiffuse ("tDiffuse", 2D) = "white" {}
 fX ("fX", Float) = 0.5
 fY ("fY", Float) = 0.5
 fExposure ("fExposure", Float) = 0.2

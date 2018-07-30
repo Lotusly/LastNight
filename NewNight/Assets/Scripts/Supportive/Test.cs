@@ -73,7 +73,7 @@ namespace Supportive
 			transform.position = Coordinate.instance.transform.position;
 
 			TransitionForm.instance.ClearParameter(ref _transitionParameters);
-			TransitionForm.instance.SetBackgroundParameters(ref _transitionParameters,2,new Vector3(2,0,30), true);
+			TransitionForm.instance.SetBackgroundParameters(ref _transitionParameters,5,new Vector3(2,0,30), true,0.4f);
 			TransitionForm.instance.SetForegroundParameters(ref _transitionParameters, 2, new Vector3(2,0,13.53f), true );
 			UiManager.instance.FadeOutPresentScene(_transitionParameters);
 
@@ -81,12 +81,12 @@ namespace Supportive
 			sceneIndex++;
 
 			UiManager.instance.CreateScene(sceneName);
-			UiManager.instance.GenerateInScene(sceneName,"Backgrounds/1", new Vector3(-2, 0, 30), true, "Background");
-			UiManager.instance.GenerateInScene(sceneName,"Characters/3", new Vector3(-2, 0, 13.53f), true, "Foreground");
+			UiManager.instance.GenerateInScene(sceneName,"Backgrounds/1", new Vector3(-3, 0, 30), true, "Background");
+			UiManager.instance.GenerateInScene(sceneName,"Characters/3", new Vector3(-3, 0, 13.53f), true, "Foreground");
 
 			TransitionForm.instance.ClearParameter(ref _transitionParameters);
-			TransitionForm.instance.SetBackgroundParameters(ref _transitionParameters,4,new Vector3(0,0,30), true);
-			TransitionForm.instance.SetForegroundParameters(ref _transitionParameters, 2, new Vector3(0.75f,-0.3f,13.53f), true );
+			TransitionForm.instance.SetBackgroundParameters(ref _transitionParameters,4,new Vector3(0,0,30), true,1,1.5f);
+			TransitionForm.instance.SetForegroundParameters(ref _transitionParameters, 2, new Vector3(0.75f,-0.3f,13.53f), true,1,1.5f );
 			UiManager.instance.FadeInScene(sceneName,_transitionParameters);
 		}
 

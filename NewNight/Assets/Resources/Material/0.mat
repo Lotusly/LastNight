@@ -55,7 +55,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - tDiffuse:
-        m_Texture: {fileID: 2800000, guid: 1221019a36b03438291142e94b7231fa, type: 3}
+        m_Texture: {fileID: 2800000, guid: 2733461baff5d79458b42f09d0b0d287, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
@@ -80,7 +80,7 @@ Material:
     - fClamp: 1
     - fDecay: 0.9
     - fDensity: 0
-    - fExposure: 0.2
+    - fExposure: 0.25
     - fWeight: 0.4
     - fX: 0.5
     - fY: 0.5
