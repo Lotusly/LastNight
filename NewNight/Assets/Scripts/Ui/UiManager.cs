@@ -5,19 +5,11 @@ using UnityEngine;
 using System.Collections;
 
 
-
 namespace Ui
 {
-
+	// Singleton: only exist one 
 	public class UiManager : Singleton<UiManager>
 	{
-		struct Item // TEMP : this will be replaced by the new transition system
-		{
-			public string Name;
-			public int Index;
-			public Vector3 PositionInScreen;
-		};
-
 		
 		
 		[SerializeField] private Transform _generalParent;
@@ -25,8 +17,6 @@ namespace Ui
 		[SerializeField] private Transform _portraits;
 		[SerializeField] private Transform _dialogues;
 		[SerializeField] private Transform _foregroundItems;
-		[SerializeField] private Transform _props; // this transform contains both props (static picture) and midground (floating picture)
-		[SerializeField] private Transform _backgroundParent;
 		public UiCamera _camera;
 
 		private bool exitable = false;
@@ -41,54 +31,47 @@ namespace Ui
 		
 		private Texture _tmpTex;
 
-		private List<Item> _potentialItems; // used to switch props
-
 		[SerializeField] private StatBar _statBar;
 
 		[SerializeField] private SceneManager _sceneManager;
-		// TEMP
+		// For now use single dialogue
 		[SerializeField] private Dialogue _singleDialogue;
 
 		
 		
 		void Start()
-		{			
-			_potentialItems = new List<Item>();
-			_backgrounds=new Renderer[4];
-			_block=new MaterialPropertyBlock();
-
-			_backgroundMask.Initialize();
-
+		{		
+			// followings are dated transition setup
+			//_backgrounds=new Renderer[4];
+			//_block=new MaterialPropertyBlock();
+			//_backgroundMask.Initialize();
+			
 			Story.instance.Initialize();
 			
 		}
 
-	
 
-		private void PlaceBackground(int index, int stencilLayer, Vector3 worldPosition,  float lighting)
-		{
-			_backgrounds[stencilLayer]=GenerateInPresentScene("Backgrounds/"+index.ToString(), worldPosition, false).gameObject.GetComponent<Renderer>();
-			_tmpTex = _backgrounds[stencilLayer].material.mainTexture;
-			_backgrounds[stencilLayer].material = _backgroundMats[stencilLayer];
-			_block.Clear();
-			_block.SetTexture("_MainTex",_tmpTex);
-			_block.SetFloat("_Lighting",lighting);
-			_backgrounds[stencilLayer].SetPropertyBlock(_block);
-		}
-
-		public void SetSwitchMask(Vector2 interval)
-		{
-			_backgroundMask.SetInterval(interval);
-		}
-
-
+		#region transition
+		//-------------------------------------------------------------------------------------------------------
+		// Perform transition
+		//-----------------------------------------------------------------------------------------------------
+		
+		/// <summary>
+		/// Call this fucntion to fade out a certain scene (not necessarily the present scene)
+		/// </summary>
+		/// <param name="name">The name of the scene to fade out</param>
+		/// <param name="block">Parameters that defines the transition</param>
 		public void FadeOutScene(string name, TransitionForm.TransitionParameterBlock block)
 		{
-			
 			SceneManager.instance.TransferScene(name,block,true);
-			
 		}
 		
+		
+		/// <summary>
+		/// Call this function to fade in a scene
+		/// </summary>
+		/// <param name="name">The name of the scene to fade out</param>
+		/// <param name="block">Parameters that defines the transition</param>
 		public void FadeInScene(string name, TransitionForm.TransitionParameterBlock block)
 		{
 			
@@ -97,133 +80,20 @@ namespace Ui
 					
 		}
 		
+		/// <summary>
+		/// Fade out the present scene
+		/// </summary>
+		/// <param name="block">Parameters that defines the transition</param>
 		public void FadeOutPresentScene(TransitionForm.TransitionParameterBlock block)
 		{
 			SceneManager.instance.TransferScene(SceneManager.instance.GetPresentSceneName(), block,true);
 		}
+		#endregion
 		
-
-		public void SwitchBackground(int index, Vector2 direction=new Vector2())
-		{
-			
-			if (!switchingBackground)
-			{
-				//TEST
-				Test.instance.index = (Test.instance.index + 1) % 2;
-				
-				float randomSeed = Random.value-0.5f;
-				switchingBackground = true;
-				
-				
-				
-				PlaceBackground(index, 1, new Vector3(0, 0, 20-randomSeed*5),  -.4f);
-				_backgrounds[1].gameObject.GetComponent<UiItem>().Transfer(_backgrounds[1].transform.position+new Vector3(0,0,1)*5*randomSeed,false);
-				PlaceBackground(index, 2, new Vector3(0, 0, 20-randomSeed*5),  0.4f);
-				_backgrounds[2].gameObject.GetComponent<UiItem>().Transfer(_backgrounds[2].transform.position+new Vector3(0,0,1)*5*randomSeed,false);
-				PlaceBackground(index, 3, new Vector3(0, 0, 30-randomSeed*7.5f), 0f);
-				_backgrounds[3].gameObject.GetComponent<UiItem>().Transfer(_backgrounds[3].transform.position+new Vector3(0,0,1)*7.5f*randomSeed,false);
-
-				
-				
-				if (direction.x > direction.y)
-				{
-					if (direction.x > -direction.y)
-					{
-						PropsSwitch(Vector3.right*2);
-						_backgrounds[0].gameObject.GetComponent<UiItem>().Transfer(
-							Coordinate.instance.Space2Screen(_backgrounds[0].transform.position) - Vector3.right*2, true, false, 2,
-							0.7f);
-					}
-					else
-					{
-						PropsSwitch(Vector3.down*2);
-						_backgrounds[0].gameObject.GetComponent<UiItem>().Transfer(
-							Coordinate.instance.Space2Screen(_backgrounds[0].transform.position) - Vector3.down*2, true, false, 2,
-							0.7f);
-					}
-				}
-				else
-				{
-					if (direction.x > -direction.y)
-					{
-						PropsSwitch(Vector3.up*2);
-						_backgrounds[0].gameObject.GetComponent<UiItem>().Transfer(
-							Coordinate.instance.Space2Screen(_backgrounds[0].transform.position) - Vector3.up*2, true, false, 2, 0.7f);
-					}
-					else
-					{
-						PropsSwitch(Vector3.left*2);
-						_backgrounds[0].gameObject.GetComponent<UiItem>().Transfer(
-							Coordinate.instance.Space2Screen(_backgrounds[0].transform.position) - Vector3.left*2, true, false, 2,
-							0.7f);
-					}
-				}
-				_backgroundMask.SwitchBackground(direction);
-				
-			}
-
-		}
-
-		public void ClearPotentialProp()
-		{
-			_potentialItems.Clear();
-		}
-
-		public void PutPotentialProp(int index, Vector3 positionInScreen) // position muast in screen space. By default, put out of the right edge
-		{
-			Item newItem = new Item();
-			newItem.Name = "Props";
-			newItem.Index = index;
-			newItem.PositionInScreen = positionInScreen;
-			_potentialItems.Add(newItem);
-			
-			
-		}
-
-		private void GeneratePotentialProps(Vector3 direction)
-		{
-			for (int i = 0; i < _potentialItems.Count; i++)
-			{
-				UiItem prop = GenerateInPresentScene("Props"+_potentialItems[i].Index.ToString(), _potentialItems[i].PositionInScreen + direction, true);
-			}
-		}
-
-		private void PropsSwitch(Vector3 direction)
-		{
-			UiItem[] props = _props.GetComponentsInChildren<UiItem>();
-			for (int i = 0; i < props.Length; i++)
-			{
-				props[i].AfterArrival.AddListener(props[i].DestroyHandler);
-			}
-			GeneratePotentialProps(direction);
-			props=_props.GetComponentsInChildren<UiItem>();
-			for (int i = 0; i < props.Length; i++)
-			{
-				props[i].Transfer(Coordinate.instance.Space2Screen(props[i].transform.position)-direction,true,false,0,2f);
-			}
-		}
-
-		public void AfterBackground()
-		{
-			_backgrounds[0].transform.SetPositionAndRotation(_backgrounds[3].transform.position,_backgrounds[3].transform.rotation);
-			_backgrounds[0].transform.localScale = _backgrounds[3].transform.localScale;
-			// EnableFollowObject function has been destroyed. Need replacement
-			//_backgrounds[0].gameObject.GetComponent<UiItem>().EnableFollowObject(_backgrounds[3].gameObject.GetComponent<UiItem>());
-			_backgrounds[3].GetPropertyBlock(_block);
-			_backgrounds[0].SetPropertyBlock(_block);
-			_backgroundMask.Reset();
-			Destroy(_backgrounds[1].gameObject);
-			Destroy(_backgrounds[2].gameObject);
-			Destroy(_backgrounds[3].gameObject);
-			switchingBackground = false;
-			// destroy remaining old props
-			UiItem[] props = _props.GetComponentsInChildren<UiItem>();
-			for (int i = 0; i < props.Length; i++)
-			{
-				props[i].AfterArrival.Invoke();
-			}
-		}
-
+		#region scene management
+		//---------------------------------------------------------------------------------------------------------------
+		// Manager scenes by calling functions in SceneManager
+		//------------------------------------------------------------------------------------------------------------
 
 		public bool CreateScene(string name)
 		{
@@ -254,6 +124,12 @@ namespace Ui
 			if (inScreenSpace) position = Coordinate.instance.Screen2Space(position);
 			return _sceneManager.GenerateItem(_sceneManager.GetPresentSceneName(), objectPath, position, kindName, initialize);
 		}
+		#endregion
+		
+		#region dialogue control
+		//-------------------------------------------------------------------------------------------------------
+		// Manager dialogue contents
+		//-----------------------------------------------------------------------------------------------------
 
 		public void SetDialogueCon(Dialogue.DialogueContaining newDiaCon, bool updateNow=true)
 		{
@@ -264,7 +140,12 @@ namespace Ui
 		{
 			_singleDialogue.ClearDialogue();
 		}
+		#endregion
 
+		#region statebar control
+		//-------------------------------------------------------------------------------------------------------
+		// Manager statbar
+		//-----------------------------------------------------------------------------------------------------
 		public void ModifyStat(string name, int addition)
 		{
 			_statBar.ModifyStat(name,addition);
@@ -274,7 +155,15 @@ namespace Ui
 		{
 			return _statBar.CheckStat(name, addition);
 		}
+		#endregion
 
+		
+		#region dated batch control
+		//-----------------------------------------------------------------------------------------------------------------
+		// An dated system for items batch control
+		// Call the MoveOut/MoveBack function in UiItem class, to conveniently move it between two positions.
+		//--------------------------------------------------------------------------------------------------------------
+		
 		public void ZoomIn(Character focus)
 		{
 			exitable = true;
@@ -288,12 +177,6 @@ namespace Ui
 			
 		}
 		
-		// TEMP
-		public void CallDialogue()
-		{
-			Story.instance.OnClick(0);
-			_singleDialogue.MoveOut();
-		}
 
 		public void ZoomOut()
 		{
@@ -343,7 +226,94 @@ namespace Ui
 				}
 			}
 		} 
+		#endregion
 		
+		
+		
+		#region dated transition
+		//--------------------------------------------------------------------------------------------------
+		// The old version of transition.
+		// Now cannot work anymore
+		// https://dejobaan.slack.com/files/UARV9SNAU/FB7527SQ2/aftereffect4.gif
+		//-------------------------------------------------------------------------------------------------
+		
+		private void PlaceBackground(int index, int stencilLayer, Vector3 worldPosition,  float lighting)
+		{
+			_backgrounds[stencilLayer]=GenerateInPresentScene("Backgrounds/"+index.ToString(), worldPosition, false).gameObject.GetComponent<Renderer>();
+			_tmpTex = _backgrounds[stencilLayer].material.mainTexture;
+			_backgrounds[stencilLayer].material = _backgroundMats[stencilLayer];
+			_block.Clear();
+			_block.SetTexture("_MainTex",_tmpTex);
+			_block.SetFloat("_Lighting",lighting);
+			_backgrounds[stencilLayer].SetPropertyBlock(_block);
+		}
+		
+		/// <summary>
+		/// Perform the transition.
+		/// </summary>
+		/// <param name="index">Which background to transfer to.</param>
+		/// <param name="direction">Transfer in which direction.</param>
+		public void SwitchBackground(int index, Vector2 direction=new Vector2())
+		{
+			if (!switchingBackground)
+			{			
+				float randomSeed = Random.value-0.5f;
+				switchingBackground = true;	
+				PlaceBackground(index, 1, new Vector3(0, 0, 20-randomSeed*5),  -.4f);
+				_backgrounds[1].gameObject.GetComponent<UiItem>().Transfer(_backgrounds[1].transform.position+new Vector3(0,0,1)*5*randomSeed,false);
+				PlaceBackground(index, 2, new Vector3(0, 0, 20-randomSeed*5),  0.4f);
+				_backgrounds[2].gameObject.GetComponent<UiItem>().Transfer(_backgrounds[2].transform.position+new Vector3(0,0,1)*5*randomSeed,false);
+				PlaceBackground(index, 3, new Vector3(0, 0, 30-randomSeed*7.5f), 0f);
+				_backgrounds[3].gameObject.GetComponent<UiItem>().Transfer(_backgrounds[3].transform.position+new Vector3(0,0,1)*7.5f*randomSeed,false);
+				if (direction.x > direction.y)
+				{
+					if (direction.x > -direction.y)
+					{
+						_backgrounds[0].gameObject.GetComponent<UiItem>().Transfer(
+							Coordinate.instance.Space2Screen(_backgrounds[0].transform.position) - Vector3.right*2, true, false, 2,
+							0.7f);
+					}
+					else
+					{
+						_backgrounds[0].gameObject.GetComponent<UiItem>().Transfer(
+							Coordinate.instance.Space2Screen(_backgrounds[0].transform.position) - Vector3.down*2, true, false, 2,
+							0.7f);
+					}
+				}
+				else
+				{
+					if (direction.x > -direction.y)
+					{
+						_backgrounds[0].gameObject.GetComponent<UiItem>().Transfer(
+							Coordinate.instance.Space2Screen(_backgrounds[0].transform.position) - Vector3.up*2, true, false, 2, 0.7f);
+					}
+					else
+					{
+						_backgrounds[0].gameObject.GetComponent<UiItem>().Transfer(
+							Coordinate.instance.Space2Screen(_backgrounds[0].transform.position) - Vector3.left*2, true, false, 2,
+							0.7f);
+					}
+				}
+				_backgroundMask.SwitchBackground(direction);			
+			}
+
+		}
+		
+		
+		// Called by UiMask script, after the old transition is done.
+		public void AfterBackground()
+		{
+			_backgrounds[0].transform.SetPositionAndRotation(_backgrounds[3].transform.position,_backgrounds[3].transform.rotation);
+			_backgrounds[0].transform.localScale = _backgrounds[3].transform.localScale;
+			_backgrounds[3].GetPropertyBlock(_block);
+			_backgrounds[0].SetPropertyBlock(_block);
+			_backgroundMask.Reset();
+			Destroy(_backgrounds[1].gameObject);
+			Destroy(_backgrounds[2].gameObject);
+			Destroy(_backgrounds[3].gameObject);
+			switchingBackground = false;
+		}
+		#endregion
 		
 	}
 }

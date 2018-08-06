@@ -2,7 +2,10 @@
 using Ui;
 using UnityEngine;
 using UnityEngine.UI;
-
+/// <summary>
+/// Temporary script that parse story and call UiManager
+/// A good reference to learn how to use the system interfaces
+/// </summary>
 public class Story : Singleton<Story>
 {
 	private int state = 0;
@@ -15,18 +18,13 @@ public class Story : Singleton<Story>
 
 	[SerializeField] private TMPStory _tmpStory;
 
-	// TEMP
 	private int sceneIndex = 0;
-
-	// TEST
 	public Dialogue.DialogueContaining[] _dialogues;
 	private string sceneName;
 
 	// Establish the scene and dialogue (Aaron)
 	public void Initialize()
 	{
-		//UiManager.instance.PutPotentialProp(0,new Vector3(0.3f,-0.2f,15f));
-
 		sceneName = "scene" + sceneIndex.ToString();
 		sceneIndex++;
 
@@ -43,15 +41,16 @@ public class Story : Singleton<Story>
 		{
 			_dialogues[i] = _tmpStory.TmpDialogues[i];
 		}
-
 		SwitchDialogue(1);
-		//UiManager.instance.CallDialogue();
 	}
 
 	
 
 
-
+	/// <summary>
+	/// This function will be called when mouse down on the screen.
+	/// </summary>
+	/// <param name="optionIndex">0: clicked on background; other: clicked on the optionIndex_th choice (start from 1)</param>
 	public void OnClick(int optionIndex)
 	{
 		// TEST
@@ -72,7 +71,10 @@ public class Story : Singleton<Story>
 		}
 	}
 
-	// TEMP
+	/// <summary>
+	/// 
+	/// </summary>
+	/// <param name="i">0: empty dialogue. other: the i_th dialogue in the list _dialogues.</param>
 	private void SwitchDialogue(int i)
 	{
 		if (i > 0)
@@ -83,7 +85,6 @@ public class Story : Singleton<Story>
 		if(i==0)
 		{
 			UiManager.instance.ClearDialogue();
-			//UiManager.instance.ZoomOut();
 			state = 0;
 		}
 

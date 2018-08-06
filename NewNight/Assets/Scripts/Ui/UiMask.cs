@@ -5,6 +5,10 @@ using UnityEngine;
 namespace Ui
 {
 
+	/// <summary>
+	/// Used in the dated transition only
+	/// https://dejobaan.slack.com/files/UARV9SNAU/FB7527SQ2/aftereffect4.gif
+	/// </summary>
 	public class UiMask : UiItem
 	{
 

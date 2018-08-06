@@ -5,6 +5,11 @@ using Supportive;
 
 namespace Ui
 {
+	/// <summary>
+	/// Each Scene (Shot in Elliot's system) can contain BatchNode_s in its dictionary variable dict.
+	/// In present system, dict contains 4 keys: "Background" "Foreground" "Midground" "Others"
+	/// This class just provides functions to manage the dict.
+	/// </summary>
 	public class Scene : BatchNode
 	{
 		[SerializeField] private StringBatchDict dict;
@@ -36,6 +41,8 @@ namespace Ui
 
 			return false;
 		}
+		
+	
 
 		public BatchNode GetSceneBatch(string name)
 		{
