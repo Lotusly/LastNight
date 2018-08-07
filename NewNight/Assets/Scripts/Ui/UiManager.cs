@@ -164,6 +164,7 @@ namespace Ui
 		// Call the MoveOut/MoveBack function in UiItem class, to conveniently move it between two positions.
 		//--------------------------------------------------------------------------------------------------------------
 		
+		// Called by Character.cs: another dated script
 		public void ZoomIn(Character focus)
 		{
 			exitable = true;
